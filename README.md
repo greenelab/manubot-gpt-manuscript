@@ -1,4 +1,4 @@
-# Automated scholarly manuscripts on GitHub
+# A publishing infrastructure for AI-assisted academic authoring
 
 <!-- usage note: edit the H1 title above to personalize the manuscript -->
 
@@ -10,8 +10,13 @@
 
 <!-- usage note: edit this section. -->
 
-This repository is a template manuscript (a.k.a. rootstock).
-Actual manuscript instances will clone this repository (see [`SETUP.md`](SETUP.md)) and replace this paragraph with a description of their manuscript.
+Academics often communicate through scholarly manuscripts.
+These manuscripts describe new advances, summarize existing literature, or argue for changes in the status quo.
+Writing and revising manuscripts can be a time-consuming process.
+Large language models are bringing new capabilities to many areas of knowledge work.
+We integrated the use of large language models into the Manubot publishing ecosystem.
+Users of Manubot can run a workflow, which will trigger a series of queries to OpenAI's language models, produce revisions, and create a timestamped set of suggested revisions.
+Given the amount of time that researchers put into crafting prose, we expect this advance to radically transform the type of knowledge work that academics perform.
 
 ## Manubot
 

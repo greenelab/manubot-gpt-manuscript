@@ -1,28 +1,28 @@
 ---
-title: "Manuscript Title"
+title: "A publishing infrastructure for AI-assisted academic authoring"
 date: null  # Defaults to date generated, but can specify like '2022-10-31'.
 keywords:
-  - markdown
-  - publishing
   - manubot
+  - artificial intelligence
+  - scholarly publishing
+  - software
 lang: en-US
 authors:
-  - github: johndoe
-    name: John Doe
-    initials: JD
-    orcid: XXXX-XXXX-XXXX-XXXX
-    twitter: johndoe
-    email: john.doe@something.com
+  - name: Milton Pividori
+    github: miltondp
+    initials: MP
+    orcid: 0000-0002-3035-4403
+    twitter: miltondp
+    email: miltondp@gmail.com
     affiliations:
-      - Department of Something, University of Whatever
-    funders:
-      - Grant XXXXXXXX
-  - github: janeroe
-    name: Jane Roe
-    initials: JR
-    orcid: XXXX-XXXX-XXXX-XXXX
-    email: jane.roe@whatever.edu
+      - Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
+  - name: Casey S. Greene
+    github: cgreene
+    initials: CSG
+    orcid: 0000-0001-8713-9213
+    twitter: GreeneScientist
+    email: casey.s.greene@cuanschutz.edu
     affiliations:
-      - Department of Something, University of Whatever
-      - Department of Whatever, University of Something
+      - Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA
+      - Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA
     corresponding: true
