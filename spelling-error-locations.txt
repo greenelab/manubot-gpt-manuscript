@@ -8,3 +8,13 @@ content/03.methods.md:4:pandoc
 content/03.methods.md:6:Appveyor
 content/03.methods.md:9:OpenAI
 content/03.methods.md:11:triggerable
+content/04.results.md:4:CCC
+content/04.results.md:4:Clustermatch
+content/04.results.md:5:CCC
+content/04.results.md:6:CCC
+content/04.results.md:8:CCC
+content/04.results.md:8:Kincaid
+content/04.results.md:19:Kincaid
+content/04.results.md:25:OpenAI
+content/04.results.md:25:OpenAI's
+content/04.results.md:28:Kincaid

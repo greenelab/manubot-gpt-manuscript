@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2022-12-25" />
   <meta name="citation_publication_date" content="2022-12-25" />
   <meta property="article:published_time" content="2022-12-25" />
-  <meta name="dc.modified" content="2022-12-25T19:10:09+00:00" />
-  <meta property="article:modified_time" content="2022-12-25T19:10:09+00:00" />
+  <meta name="dc.modified" content="2022-12-25T19:12:12+00:00" />
+  <meta property="article:modified_time" content="2022-12-25T19:12:12+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/31cf431251956072770156dbc00337ba56185ddd/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/31cf431251956072770156dbc00337ba56185ddd/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/31cf431251956072770156dbc00337ba56185ddd/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/ee49f2e10ec7bd45328fbf93ec1ca8dceea392b6/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/ee49f2e10ec7bd45328fbf93ec1ca8dceea392b6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/ee49f2e10ec7bd45328fbf93ec1ca8dceea392b6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/31cf431251956072770156dbc00337ba56185ddd/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/ee49f2e10ec7bd45328fbf93ec1ca8dceea392b6/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@31cf431](https://github.com/greenelab/manubot-gpt-manuscript/tree/31cf431251956072770156dbc00337ba56185ddd)
+from [greenelab/manubot-gpt-manuscript@ee49f2e](https://github.com/greenelab/manubot-gpt-manuscript/tree/ee49f2e10ec7bd45328fbf93ec1ca8dceea392b6)
 on December 25, 2022.
 </em></small>
 
@@ -172,10 +172,41 @@ This workflow allows text to be attributed either to the initial user or to the 
 
 # Results
 
+We used this infrastructure to revise an existing manuscript as well as to author a new one.
+We back-ported the changes in Manubot to a manuscript describing the Clustermatch Correlation Coefficient (CCC) [@doi:10.1101/2022.06.15.496326].
+The CCC was designed to capture both linear and non-linear relationships between variables.
+The CCC manuscript describes its use, in particular with gene expression data.
+
+The abstract of the CCC manuscript before revision had a Flesh-Kincaid readability score of X and a grade level of Y.
+> PREVIOUS_VERSION
+
+After suggested revisions, the readability score was X and the grade level was Y and read as follows:
+> NEW_VERSION
+
+The full manuscript before AI-based revision is available at [link], and the revised version is available at [new_link].
+We noticed that the model has difficulty with the Manubot citation style, which may lead to some references becoming incorrect.
+This pipeline is not fully automated: authors will need to review changes and verify the output.
+
+We also used this framework in the context of authoring a new manuscript that described a publishing infrastructure that implemented large language models to suggest revisions.
+The abstract before revisions had a Flesh-Kincaid readability score of X and a grade level of Y and read as follows:
+> Academics often communicate through scholarly manuscripts.
+> These manuscripts describe new advances, summarize existing literature, or argue for changes in the status quo.
+> Writing and revising manuscripts can be a time-consuming process.
+> Large language models are bringing new capabilities to many areas of knowledge work.
+> We integrated the use of large language models into the Manubot publishing ecosystem.
+> Users of Manubot can run a workflow, which will trigger a series of queries to OpenAI's language models, produce revisions, and create a timestamped set of suggested revisions.
+> Given the amount of time that researchers put into crafting prose, we expect this advance to radically transform the type of knowledge work that academics perform.
+
+After suggested revisions, abstract had a Flesh-Kincaid readability score of X and a grade level of Y and read as follows:
+> NEW_VERSION
 
 
 # Conclusions
 
+We implemented AI-based models into publishing infrastructure.
+While most manuscripts have been written by humans, the process is time consuming and academic writing can be difficult to parse.
+We sought to develop a technology that academics could use to make their writing more understandable without changing the fundamental meaning.
+This work lays the foundation for a future where academic manuscripts are constructed by a process that incorporates both human and machine authors.
 
 ## References {.page_break_before}
 

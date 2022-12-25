@@ -1,8 +1,11 @@
 Appveyor
+CCC
 cgreene
+Clustermatch
 COVID
 GPT
 GreeneScientist
+Kincaid
 miltondp
 OpenAI
 OpenAI’s
