@@ -1,176 +1,249 @@
 [
   {
-    "publisher": "The Royal Society",
-    "issue": "141",
-    "abstract": "<jats:p>Deep learning describes a class of machine learning algorithms that are capable of combining raw inputs into layers of intermediate features. These algorithms have recently shown impressive results across a variety of domains. Biology and medicine are data-rich disciplines, but the data are complex and often ill-understood. Hence, deep learning techniques may be particularly well suited to solve problems of these fields. We examine applications of deep learning to a variety of biomedical problems—patient classification, fundamental biological processes and treatment of patients—and discuss whether deep learning will be able to transform these tasks or if the biomedical sphere poses unique challenges. Following from an extensive literature review, we find that deep learning has yet to revolutionize biomedicine or definitively resolve any of the most pressing challenges in the field, but promising advances have been made on the prior state of the art. Even though improvements over previous baselines have been modest in general, the recent progress indicates that deep learning methods will provide valuable means for speeding up or aiding human investigation. Though progress has been made linking a specific neural network's prediction to input features, understanding how users should interpret these models to make testable hypotheses about the system under study remains an open challenge. Furthermore, the limited amount of labelled data for training presents problems in some domains, as do legal and privacy constraints on work with sensitive health records. Nonetheless, we foresee deep learning enabling changes at both bench and bedside with the potential to transform several areas of biology and medicine.</jats:p>",
-    "DOI": "10.1098/rsif.2017.0387",
-    "type": "article-journal",
-    "page": "20170387",
-    "source": "Crossref",
-    "title": "Opportunities and obstacles for deep learning in biology and medicine",
-    "volume": "15",
+    "id": "bYOaJHMe",
+    "URL": "https://arxiv.org/abs/2005.14165",
+    "number": "2005.14165",
+    "title": "Language Models are Few-Shot Learners",
+    "issued": {
+      "date-parts": [
+        [
+          2020,
+          7,
+          24
+        ]
+      ]
+    },
     "author": [
       {
-        "given": "Travers",
-        "family": "Ching"
+        "given": "Tom B.",
+        "family": "Brown"
       },
       {
-        "given": "Daniel S.",
-        "family": "Himmelstein"
+        "given": "Benjamin",
+        "family": "Mann"
       },
       {
-        "given": "Brett K.",
-        "family": "Beaulieu-Jones"
+        "given": "Nick",
+        "family": "Ryder"
       },
       {
-        "given": "Alexandr A.",
-        "family": "Kalinin"
+        "given": "Melanie",
+        "family": "Subbiah"
       },
       {
-        "given": "Brian T.",
-        "family": "Do"
+        "given": "Jared",
+        "family": "Kaplan"
       },
       {
-        "given": "Gregory P.",
-        "family": "Way"
+        "given": "Prafulla",
+        "family": "Dhariwal"
       },
       {
-        "given": "Enrico",
-        "family": "Ferrero"
+        "given": "Arvind",
+        "family": "Neelakantan"
       },
       {
-        "given": "Paul-Michael",
-        "family": "Agapow"
+        "given": "Pranav",
+        "family": "Shyam"
       },
       {
-        "given": "Michael",
-        "family": "Zietz"
+        "given": "Girish",
+        "family": "Sastry"
       },
       {
-        "given": "Michael M.",
-        "family": "Hoffman"
+        "given": "Amanda",
+        "family": "Askell"
       },
       {
-        "given": "Wei",
-        "family": "Xie"
+        "given": "Sandhini",
+        "family": "Agarwal"
       },
       {
-        "given": "Gail L.",
-        "family": "Rosen"
+        "given": "Ariel",
+        "family": "Herbert-Voss"
       },
       {
-        "given": "Benjamin J.",
-        "family": "Lengerich"
+        "given": "Gretchen",
+        "family": "Krueger"
       },
       {
-        "given": "Johnny",
-        "family": "Israeli"
+        "given": "Tom",
+        "family": "Henighan"
+      },
+      {
+        "given": "Rewon",
+        "family": "Child"
+      },
+      {
+        "given": "Aditya",
+        "family": "Ramesh"
+      },
+      {
+        "given": "Daniel M.",
+        "family": "Ziegler"
+      },
+      {
+        "given": "Jeffrey",
+        "family": "Wu"
+      },
+      {
+        "given": "Clemens",
+        "family": "Winter"
+      },
+      {
+        "given": "Christopher",
+        "family": "Hesse"
+      },
+      {
+        "given": "Mark",
+        "family": "Chen"
+      },
+      {
+        "given": "Eric",
+        "family": "Sigler"
+      },
+      {
+        "given": "Mateusz",
+        "family": "Litwin"
+      },
+      {
+        "given": "Scott",
+        "family": "Gray"
+      },
+      {
+        "given": "Benjamin",
+        "family": "Chess"
       },
       {
         "given": "Jack",
-        "family": "Lanchantin"
+        "family": "Clark"
       },
       {
-        "given": "Stephen",
-        "family": "Woloszynek"
+        "given": "Christopher",
+        "family": "Berner"
       },
       {
-        "given": "Anne E.",
-        "family": "Carpenter"
+        "given": "Sam",
+        "family": "McCandlish"
       },
       {
-        "given": "Avanti",
-        "family": "Shrikumar"
+        "given": "Alec",
+        "family": "Radford"
       },
       {
-        "given": "Jinbo",
-        "family": "Xu"
+        "given": "Ilya",
+        "family": "Sutskever"
       },
       {
-        "given": "Evan M.",
-        "family": "Cofer"
-      },
-      {
-        "given": "Christopher A.",
-        "family": "Lavender"
-      },
-      {
-        "given": "Srinivas C.",
-        "family": "Turaga"
-      },
-      {
-        "given": "Amr M.",
-        "family": "Alexandari"
-      },
-      {
-        "given": "Zhiyong",
-        "family": "Lu"
-      },
-      {
-        "given": "David J.",
-        "family": "Harris"
-      },
-      {
-        "given": "Dave",
-        "family": "DeCaprio"
-      },
-      {
-        "given": "Yanjun",
-        "family": "Qi"
-      },
-      {
-        "given": "Anshul",
-        "family": "Kundaje"
-      },
-      {
-        "given": "Yifan",
-        "family": "Peng"
-      },
-      {
-        "given": "Laura K.",
-        "family": "Wiley"
-      },
-      {
-        "given": "Marwin H. S.",
-        "family": "Segler"
-      },
-      {
-        "given": "Simina M.",
-        "family": "Boca"
-      },
-      {
-        "given": "S. Joshua",
-        "family": "Swamidass"
-      },
-      {
-        "given": "Austin",
-        "family": "Huang"
-      },
-      {
-        "given": "Anthony",
-        "family": "Gitter"
-      },
-      {
-        "given": "Casey S.",
-        "family": "Greene"
+        "given": "Dario",
+        "family": "Amodei"
       }
     ],
-    "container-title": "Journal of The Royal Society Interface",
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "type": "report",
+    "abstract": "  Recent work has demonstrated substantial gains on many NLP tasks and benchmarks by pre-training on a large corpus of text followed by fine-tuning on a specific task. While typically task-agnostic in architecture, this method still requires task-specific fine-tuning datasets of thousands or tens of thousands of examples. By contrast, humans can generally perform a new language task from only a few examples or from simple instructions - something which current NLP systems still largely struggle to do. Here we show that scaling up language models greatly improves task-agnostic, few-shot performance, sometimes even reaching competitiveness with prior state-of-the-art fine-tuning approaches. Specifically, we train GPT-3, an autoregressive language model with 175 billion parameters, 10x more than any previous non-sparse language model, and test its performance in the few-shot setting. For all tasks, GPT-3 is applied without any gradient updates or fine-tuning, with tasks and few-shot demonstrations specified purely via text interaction with the model. GPT-3 achieves strong performance on many NLP datasets, including translation, question-answering, and cloze tasks, as well as several tasks that require on-the-fly reasoning or domain adaptation, such as unscrambling words, using a novel word in a sentence, or performing 3-digit arithmetic. At the same time, we also identify some datasets where GPT-3's few-shot learning still struggles, as well as some datasets where GPT-3 faces methodological issues related to training on large web corpora. Finally, we find that GPT-3 can generate samples of news articles which human evaluators have difficulty distinguishing from articles written by humans. We discuss broader societal impacts of this finding and of GPT-3 in general. ",
+    "note": "license: http://arxiv.org/licenses/nonexclusive-distrib/1.0/\nThis CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: arxiv:2005.14165"
+  },
+  {
+    "id": "xq1uEbPa",
+    "URL": "https://arxiv.org/abs/2102.02503",
+    "number": "2102.02503",
+    "title": "Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          2,
+          5
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Alex",
+        "family": "Tamkin"
+      },
+      {
+        "given": "Miles",
+        "family": "Brundage"
+      },
+      {
+        "given": "Jack",
+        "family": "Clark"
+      },
+      {
+        "given": "Deep",
+        "family": "Ganguli"
+      }
+    ],
+    "container-title": "arXiv",
+    "publisher": "arXiv",
+    "type": "report",
+    "abstract": "  On October 14th, 2020, researchers from OpenAI, the Stanford Institute for Human-Centered Artificial Intelligence, and other universities convened to discuss open research questions surrounding GPT-3, the largest publicly-disclosed dense language model at the time. The meeting took place under Chatham House Rules. Discussants came from a variety of research backgrounds including computer science, linguistics, philosophy, political science, communications, cyber policy, and more. Broadly, the discussion centered around two main questions: 1) What are the technical capabilities and limitations of large language models? 2) What are the societal effects of widespread use of large language models? Here, we provide a detailed summary of the discussion organized by the two themes above. ",
+    "note": "license: http://arxiv.org/licenses/nonexclusive-distrib/1.0/\nThis CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: arxiv:2102.02503"
+  },
+  {
+    "publisher": "Elsevier BV",
+    "issue": "8",
+    "DOI": "10.1016/s0167-7799(02)01985-6",
+    "type": "article-journal",
+    "page": "357-358",
+    "source": "Crossref",
+    "title": "The history of the peer-review process",
+    "volume": "20",
+    "author": [
+      {
+        "given": "Ray",
+        "family": "Spier"
+      }
+    ],
+    "container-title": "Trends in Biotechnology",
+    "language": "en",
+    "issued": {
+      "date-parts": [
+        [
+          2002,
+          8
+        ]
+      ]
+    },
+    "URL": "https://doi.org/d26d8b",
+    "container-title-short": "Trends in Biotechnology",
+    "PMID": "12127284",
+    "id": "1HMhNrQq1",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1016/s0167-7799(02)01985-6"
+  },
+  {
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "7694",
+    "DOI": "10.1038/d41586-018-02404-4",
+    "type": "article-journal",
+    "page": "129-130",
+    "source": "Crossref",
+    "title": "How to write a first-class paper",
+    "volume": "555",
+    "author": [
+      {
+        "given": "Virginia",
+        "family": "Gewin"
+      }
+    ],
+    "container-title": "Nature",
     "language": "en",
     "issued": {
       "date-parts": [
         [
           2018,
-          4
+          2,
+          28
         ]
       ]
     },
-    "URL": "https://doi.org/gddkhn",
-    "container-title-short": "J. R. Soc. Interface.",
-    "PMCID": "PMC5938574",
-    "PMID": "29618526",
-    "id": "PZMP42Ak",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1098/rsif.2017.0387"
+    "URL": "https://doi.org/ggh63n",
+    "container-title-short": "Nature",
+    "id": "19YWsShi0",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1038/d41586-018-02404-4"
   },
   {
     "publisher": "Public Library of Science (PLoS)",
@@ -236,241 +309,92 @@
     "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.1371/journal.pcbi.1007128"
   },
   {
-    "publisher": "eLife Sciences Publications, Ltd",
-    "abstract": "<jats:p>The website Sci-Hub enables users to download PDF versions of scholarly articles, including many articles that are paywalled at their journal’s site. Sci-Hub has grown rapidly since its creation in 2011, but the extent of its coverage has been unclear. Here we report that, as of March 2017, Sci-Hub’s database contains 68.9% of the 81.6 million scholarly articles registered with Crossref and 85.1% of articles published in toll access journals. We find that coverage varies by discipline and publisher, and that Sci-Hub preferentially covers popular, paywalled content. For toll access articles, we find that Sci-Hub provides greater coverage than the University of Pennsylvania, a major research university in the United States. Green open access to toll access articles via licit services, on the other hand, remains quite limited. Our interactive browser at https://greenelab.github.io/scihub allows users to explore these findings in more detail. For the first time, nearly all scholarly literature is available gratis to anyone with an Internet connection, suggesting the toll access business model may become unsustainable.</jats:p>",
-    "DOI": "10.7554/elife.32822",
-    "type": "article-journal",
-    "source": "Crossref",
-    "title": "Sci-Hub provides access to nearly all scholarly literature",
-    "volume": "7",
+    "id": "F3iZfGUC",
+    "type": "book",
+    "call-number": "PN4784.T3 K7 1976",
+    "edition": "2d ed",
+    "event-place": "Metuchen, N.J",
+    "ISBN": "9780810808447",
+    "number-of-pages": "336",
+    "publisher": "Scarecrow Press",
+    "publisher-place": "Metuchen, N.J",
+    "source": "Library of Congress ISBN",
+    "title": "A history of scientific & technical periodicals: the origins and development of the scientific and technical press, 1665-1790",
+    "title-short": "A history of scientific & technical periodicals",
     "author": [
+      {
+        "family": "Kronick",
+        "given": "David A."
+      }
+    ],
+    "issued": {
+      "date-parts": [
+        [
+          "1976"
+        ]
+      ]
+    },
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: isbn:9780810808447"
+  },
+  {
+    "title": "An Open-Publishing Response to the COVID-19 Infodemic.",
+    "container-title": "ArXiv",
+    "container-title-short": "ArXiv",
+    "ISSN": "2331-8422",
+    "issued": {
+      "date-parts": [
+        [
+          2021,
+          9,
+          17
+        ]
+      ]
+    },
+    "author": [
+      {
+        "given": "Halie M",
+        "family": "Rando"
+      },
+      {
+        "given": "Simina M",
+        "family": "Boca"
+      },
+      {
+        "given": "Lucy D'Agostino",
+        "family": "McGowan"
+      },
       {
         "given": "Daniel S",
         "family": "Himmelstein"
       },
       {
-        "given": "Ariel Rodriguez",
-        "family": "Romero"
+        "given": "Michael P",
+        "family": "Robson"
       },
       {
-        "given": "Jacob G",
-        "family": "Levernier"
+        "given": "Vincent",
+        "family": "Rubinetti"
       },
       {
-        "given": "Thomas Anthony",
-        "family": "Munro"
+        "given": "Ryan",
+        "family": "Velazquez"
       },
-      {
-        "given": "Stephen Reid",
-        "family": "McLaughlin"
-      },
-      {
-        "given": "Bastian",
-        "family": "Greshake Tzovaras"
-      },
+      {},
       {
         "given": "Casey S",
         "family": "Greene"
-      }
-    ],
-    "container-title": "eLife",
-    "language": "en",
-    "issued": {
-      "date-parts": [
-        [
-          2018,
-          3,
-          1
-        ]
-      ]
-    },
-    "URL": "https://doi.org/ckcj",
-    "PMCID": "PMC5832410",
-    "PMID": "29424689",
-    "id": "IhliSZDo",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: doi:10.7554/elife.32822"
-  },
-  {
-    "id": "zBPP9YKu",
-    "type": "book",
-    "call-number": "Z286.O63 S83 2012",
-    "collection-title": "MIT Press essential knowledge series",
-    "event-place": "Cambridge, Mass",
-    "ISBN": "9780262517638",
-    "note": "OCLC: ocn754518563\nThis CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: isbn:9780262517638",
-    "number-of-pages": "242",
-    "publisher": "MIT Press",
-    "publisher-place": "Cambridge, Mass",
-    "source": "Library of Congress ISBN",
-    "title": "Open access",
-    "author": [
-      {
-        "family": "Suber",
-        "given": "Peter"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          "2012"
-        ]
-      ]
-    }
-  },
-  {
-    "source": "PubMed",
-    "accessed": {
-      "date-parts": [
-        [
-          2022,
-          12,
-          25
-        ]
-      ]
-    },
-    "id": "mSMVRkoc",
-    "title": "Reproducibility of computational workflows is automated using continuous analysis",
-    "author": [
-      {
-        "family": "Beaulieu-Jones",
-        "given": "Brett K"
       },
       {
-        "family": "Greene",
-        "given": "Casey S"
+        "given": "Anthony",
+        "family": "Gitter"
       }
     ],
-    "container-title-short": "Nat Biotechnol",
-    "container-title": "Nature biotechnology",
-    "publisher-place": "United States",
-    "ISSN": "1087-0156",
-    "issued": {
-      "date-parts": [
-        [
-          2017,
-          4
-        ]
-      ]
-    },
-    "page": "342-346",
-    "volume": "35",
-    "issue": "4",
-    "PMID": "28288103",
-    "PMCID": "PMC6103790",
-    "DOI": "10.1038/nbt.3780",
+    "PMID": "34545336",
+    "PMCID": "PMC8452106",
+    "abstract": "The COVID-19 pandemic catalyzed the rapid dissemination of papers and preprints investigating the disease and its associated virus, SARS-CoV-2. The multifaceted nature of COVID-19 demands a multidisciplinary approach, but the urgency of the crisis combined with the need for social distancing measures present unique challenges to collaborative science. We applied a massive online open publishing approach to this problem using Manubot. Through GitHub, collaborators summarized and critiqued COVID-19 literature, creating a review manuscript. Manubot automatically compiled citation information for referenced preprints, journal publications, websites, and clinical trials. Continuous integration workflows retrieved up-to-date data from online sources nightly, regenerating some of the manuscript's figures and statistics. Manubot rendered the manuscript into PDF, HTML, LaTeX, and DOCX outputs, immediately updating the version available online upon the integration of new content. Through this effort, we organized over 50 scientists from a range of backgrounds who evaluated over 1,500 sources and developed seven literature reviews. While many efforts from the computational community have focused on mining COVID-19 literature, our project illustrates the power of open publishing to organize both technical and non-technical scientists to aggregate and disseminate information in response to an evolving crisis.",
+    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/34545336",
     "type": "article-journal",
-    "URL": "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6103790/",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: pmc:PMC6103790"
-  },
-  {
-    "title": "Bitcoin for the biological literature.",
-    "volume": "566",
-    "issue": "7742",
-    "page": "141-142",
-    "container-title": "Nature",
-    "container-title-short": "Nature",
-    "ISSN": "1476-4687",
-    "issued": {
-      "date-parts": [
-        [
-          2019,
-          2
-        ]
-      ]
-    },
-    "author": [
-      {
-        "given": "Douglas",
-        "family": "Heaven"
-      }
-    ],
-    "PMID": "30718888",
-    "DOI": "10.1038/d41586-019-00447-9",
-    "URL": "https://www.ncbi.nlm.nih.gov/pubmed/30718888",
-    "type": "article-journal",
-    "id": "126Wi5Us4",
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: pubmed:30718888"
-  },
-  {
-    "id": "1GGGHdsew",
-    "type": "report",
-    "language": "en-US",
-    "publisher": "Manubot",
-    "source": "greenelab.github.io",
-    "title": "Open collaborative writing with Manubot",
-    "URL": "https://greenelab.github.io/meta-review/",
-    "author": [
-      {
-        "family": "Himmelstein",
-        "given": "Daniel S."
-      },
-      {
-        "family": "Rubinetti",
-        "given": "Vincent"
-      },
-      {
-        "family": "Slochower",
-        "given": "David R."
-      },
-      {
-        "family": "Hu",
-        "given": "Dongbo"
-      },
-      {
-        "family": "Malladi",
-        "given": "Venkat S."
-      },
-      {
-        "family": "Greene",
-        "given": "Casey S."
-      },
-      {
-        "family": "Gitter",
-        "given": "Anthony"
-      }
-    ],
-    "accessed": {
-      "date-parts": [
-        [
-          "2022",
-          12,
-          25
-        ]
-      ]
-    },
-    "issued": {
-      "date-parts": [
-        [
-          "2020",
-          5,
-          25
-        ]
-      ]
-    },
-    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: url:https://greenelab.github.io/meta-review/"
-  },
-  {
-    "id": "QhC8yJ7V",
-    "type": "article",
-    "note": "QID: Q56458321\nThis CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: wikidata:Q56458321",
-    "source": "Wikidata",
-    "title": "Plan S: Accelerating the transition to full and immediate Open Access to scientific publications",
-    "title-short": "Plan S",
-    "author": [
-      {
-        "family": "S",
-        "given": "cOAlition"
-      }
-    ],
-    "issued": {
-      "date-parts": [
-        [
-          "2018",
-          9,
-          4
-        ]
-      ]
-    },
-    "URL": "https://www.wikidata.org/wiki/Q56458321"
+    "id": "10gsAq0o",
+    "note": "This CSL Item was generated by Manubot v0.5.5 from its persistent identifier (standard_id).\nstandard_id: pubmed:34545336"
   }
 ]
