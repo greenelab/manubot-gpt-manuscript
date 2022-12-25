@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2022-12-25" />
   <meta name="citation_publication_date" content="2022-12-25" />
   <meta property="article:published_time" content="2022-12-25" />
-  <meta name="dc.modified" content="2022-12-25T18:14:48+00:00" />
-  <meta property="article:modified_time" content="2022-12-25T18:14:48+00:00" />
+  <meta name="dc.modified" content="2022-12-25T18:15:57+00:00" />
+  <meta property="article:modified_time" content="2022-12-25T18:15:57+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/5294da3cbb2d495437425fa5d01e9dda3ee48d19/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/5294da3cbb2d495437425fa5d01e9dda3ee48d19/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/5294da3cbb2d495437425fa5d01e9dda3ee48d19/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/48fe6473a42ca6b2ac67e1b7e4f0812572574d24/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/48fe6473a42ca6b2ac67e1b7e4f0812572574d24/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/48fe6473a42ca6b2ac67e1b7e4f0812572574d24/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/5294da3cbb2d495437425fa5d01e9dda3ee48d19/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/48fe6473a42ca6b2ac67e1b7e4f0812572574d24/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@5294da3](https://github.com/greenelab/manubot-gpt-manuscript/tree/5294da3cbb2d495437425fa5d01e9dda3ee48d19)
+from [greenelab/manubot-gpt-manuscript@48fe647](https://github.com/greenelab/manubot-gpt-manuscript/tree/48fe6473a42ca6b2ac67e1b7e4f0812572574d24)
 on December 25, 2022.
 </em></small>
 
@@ -150,6 +150,17 @@ Manubot was designed as an end-to-end publishing platform for scholarly writing 
 It has been used for collaborations of approximately 50 authors writing hundreds of pages of text reviewing progress during the COVID19 pandemic [@pmid:34545336].
 We developed a new workflow that parses the manuscript, uses a large language model with section-specific custom prompts to revise the manuscript, and then creates a set of suggested changes to reach the revised state.
 Changes are presented to the user through the GitHub interface for author review and integration into the published document.
+
+
+# Methods
+
+
+
+# Results
+
+
+
+# Conclusions
 
 
 ## References {.page_break_before}
