@@ -1,14 +1,15 @@
 ---
-title: Manuscript Title
+title: A publishing infrastructure for AI-assisted academic authoring
 keywords:
-- markdown
-- publishing
 - manubot
+- artificial intelligence
+- scholarly publishing
+- software
 lang: en-US
 date-meta: '2022-12-25'
 author-meta:
-- John Doe
-- Jane Roe
+- Milton Pividori
+- Casey S. Greene
 header-includes: |
   <!--
   Manubot generated metadata rendered from header-includes-template.html.
@@ -16,38 +17,39 @@ header-includes: |
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="A publishing infrastructure for AI-assisted academic authoring" />
+  <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
+  <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
+  <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta name="dc.date" content="2022-12-25" />
   <meta name="citation_publication_date" content="2022-12-25" />
   <meta property="article:published_time" content="2022-12-25" />
-  <meta name="dc.modified" content="2022-12-25T16:24:53+00:00" />
-  <meta property="article:modified_time" content="2022-12-25T16:24:53+00:00" />
+  <meta name="dc.modified" content="2022-12-25T16:35:04+00:00" />
+  <meta property="article:modified_time" content="2022-12-25T16:35:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Milton Pividori" />
+  <meta name="citation_author_institution" content="Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA" />
+  <meta name="citation_author_orcid" content="0000-0002-3035-4403" />
+  <meta name="twitter:creator" content="@miltondp" />
+  <meta name="citation_author" content="Casey S. Greene" />
+  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
+  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+  <meta name="twitter:creator" content="@GreeneScientist" />
   <link rel="canonical" href="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta property="og:url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta property="twitter:url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/eeb1784c9a57b34a7bc950499caee9e995d6f3a7/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/eeb1784c9a57b34a7bc950499caee9e995d6f3a7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/eeb1784c9a57b34a7bc950499caee9e995d6f3a7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/2251f8c77195479b4d4dd102ed388387712a4be5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/2251f8c77195479b4d4dd102ed388387712a4be5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/2251f8c77195479b4d4dd102ed388387712a4be5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/eeb1784c9a57b34a7bc950499caee9e995d6f3a7/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/2251f8c77195479b4d4dd102ed388387712a4be5/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@eeb1784](https://github.com/greenelab/manubot-gpt-manuscript/tree/eeb1784c9a57b34a7bc950499caee9e995d6f3a7)
+from [greenelab/manubot-gpt-manuscript@2251f8c](https://github.com/greenelab/manubot-gpt-manuscript/tree/2251f8c77195479b4d4dd102ed388387712a4be5)
 on December 25, 2022.
 </em></small>
 
@@ -81,36 +83,37 @@ on December 25, 2022.
 
 
 
-+ **John Doe**
++ **Milton Pividori**
   <br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0002-3035-4403](https://orcid.org/0000-0002-3035-4403)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [johndoe](https://github.com/johndoe)
+    [miltondp](https://github.com/miltondp)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
-    [johndoe](https://twitter.com/johndoe)
+    [miltondp](https://twitter.com/miltondp)
     <br>
   <small>
-     Department of Something, University of Whatever
-     · Funded by Grant XXXXXXXX
+     Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
   </small>
 
-+ **Jane Roe**
++ **Casey S. Greene**
   ^[✉](#correspondence)^<br>
     ![ORCID icon](images/orcid.svg){.inline_icon width=16 height=16}
-    [XXXX-XXXX-XXXX-XXXX](https://orcid.org/XXXX-XXXX-XXXX-XXXX)
+    [0000-0001-8713-9213](https://orcid.org/0000-0001-8713-9213)
     · ![GitHub icon](images/github.svg){.inline_icon width=16 height=16}
-    [janeroe](https://github.com/janeroe)
+    [cgreene](https://github.com/cgreene)
+    · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
+    [GreeneScientist](https://twitter.com/GreeneScientist)
     <br>
   <small>
-     Department of Something, University of Whatever; Department of Whatever, University of Something
+     Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA
   </small>
 
 
 ::: {#correspondence}
 ✉ — Correspondence possible via [GitHub Issues](https://github.com/greenelab/manubot-gpt-manuscript/issues)
 or email to
-Jane Roe \<jane.roe@whatever.edu\>.
+Casey S. Greene \<casey.s.greene@cuanschutz.edu\>.
 
 
 :::
@@ -118,7 +121,13 @@ Jane Roe \<jane.roe@whatever.edu\>.
 
 ## Abstract {.page_break_before}
 
-
+Academics often communicate through scholarly manuscripts.
+These manuscripts describe new advances, summarize existing literature, or argue for changes in the status quo.
+Writing and revising manuscripts can be a time-consuming process.
+Large language models are bringing new capabilities to many areas of knowledge work.
+We integrated the use of large language models into the Manubot publishing ecosystem.
+Users of Manubot can run a workflow, which will trigger a series of queries to OpenAI's language models, produce revisions, and create a timestamped set of suggested revisions.
+Given the amount of time that researchers put into crafting prose, we expect this advance to radically transform the type of knowledge work that academics perform.
 
 
 This manuscript is a template (aka "rootstock") for [Manubot](https://manubot.org/ "Manubot"), a tool for writing scholarly manuscripts.

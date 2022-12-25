@@ -4,11 +4,11 @@
   <meta charset="utf-8" />
   <meta name="generator" content="pandoc" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
-  <meta name="author" content="John Doe" />
-  <meta name="author" content="Jane Roe" />
+  <meta name="author" content="Milton Pividori" />
+  <meta name="author" content="Casey S. Greene" />
   <meta name="dcterms.date" content="2022-12-25" />
-  <meta name="keywords" content="markdown, publishing, manubot" />
-  <title>Manuscript Title</title>
+  <meta name="keywords" content="manubot, artificial intelligence, scholarly publishing, software" />
+  <title>A publishing infrastructure for AI-assisted academic authoring</title>
   <style>
     code{white-space: pre-wrap;}
     span.smallcaps{font-variant: small-caps;}
@@ -110,38 +110,39 @@
   -->
   <meta name="dc.format" content="text/html" />
   <meta property="og:type" content="article" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
+  <meta name="dc.title" content="A publishing infrastructure for AI-assisted academic authoring" />
+  <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
+  <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
+  <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta name="dc.date" content="2022-12-25" />
   <meta name="citation_publication_date" content="2022-12-25" />
   <meta property="article:published_time" content="2022-12-25" />
-  <meta name="dc.modified" content="2022-12-25T16:24:53+00:00" />
-  <meta property="article:modified_time" content="2022-12-25T16:24:53+00:00" />
+  <meta name="dc.modified" content="2022-12-25T16:35:04+00:00" />
+  <meta property="article:modified_time" content="2022-12-25T16:35:04+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
   <meta name="dc.publisher" content="Manubot" />
   <meta name="citation_journal_title" content="Manubot" />
   <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
+  <meta name="citation_author" content="Milton Pividori" />
+  <meta name="citation_author_institution" content="Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA" />
+  <meta name="citation_author_orcid" content="0000-0002-3035-4403" />
+  <meta name="twitter:creator" content="@miltondp" />
+  <meta name="citation_author" content="Casey S. Greene" />
+  <meta name="citation_author_institution" content="Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
+  <meta name="citation_author_institution" content="Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA" />
+  <meta name="citation_author_orcid" content="0000-0001-8713-9213" />
+  <meta name="twitter:creator" content="@GreeneScientist" />
   <link rel="canonical" href="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta property="og:url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta property="twitter:url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/eeb1784c9a57b34a7bc950499caee9e995d6f3a7/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/eeb1784c9a57b34a7bc950499caee9e995d6f3a7/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/eeb1784c9a57b34a7bc950499caee9e995d6f3a7/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/2251f8c77195479b4d4dd102ed388387712a4be5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/2251f8c77195479b4d4dd102ed388387712a4be5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/2251f8c77195479b4d4dd102ed388387712a4be5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -161,47 +162,55 @@
 </head>
 <body>
 <header id="title-block-header">
-<h1 class="title">Manuscript Title</h1>
+<h1 class="title">A publishing infrastructure for AI-assisted academic authoring</h1>
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/eeb1784c9a57b34a7bc950499caee9e995d6f3a7/">permalink</a>)
+(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/2251f8c77195479b4d4dd102ed388387712a4be5/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/eeb1784c9a57b34a7bc950499caee9e995d6f3a7">greenelab/manubot-gpt-manuscript@eeb1784</a>
+from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/2251f8c77195479b4d4dd102ed388387712a4be5">greenelab/manubot-gpt-manuscript@2251f8c</a>
 on December 25, 2022.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
-<li><p><strong>John Doe</strong>
+<li><p><strong>Milton Pividori</strong>
 <br>
 <img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+<a href="https://orcid.org/0000-0002-3035-4403">0000-0002-3035-4403</a>
 · <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/johndoe">johndoe</a>
+<a href="https://github.com/miltondp">miltondp</a>
 · <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
-<a href="https://twitter.com/johndoe">johndoe</a>
+<a href="https://twitter.com/miltondp">miltondp</a>
 <br>
 <small>
-Department of Something, University of Whatever
-· Funded by Grant XXXXXXXX
+Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
 </small></p></li>
-<li><p><strong>Jane Roe</strong>
+<li><p><strong>Casey S. Greene</strong>
 <sup><a href="#correspondence">✉</a></sup><br>
 <img src="images/orcid.svg" class="inline_icon" width="16" height="16" alt="ORCID icon" />
-<a href="https://orcid.org/XXXX-XXXX-XXXX-XXXX">XXXX-XXXX-XXXX-XXXX</a>
+<a href="https://orcid.org/0000-0001-8713-9213">0000-0001-8713-9213</a>
 · <img src="images/github.svg" class="inline_icon" width="16" height="16" alt="GitHub icon" />
-<a href="https://github.com/janeroe">janeroe</a>
+<a href="https://github.com/cgreene">cgreene</a>
+· <img src="images/twitter.svg" class="inline_icon" width="16" height="16" alt="Twitter icon" />
+<a href="https://twitter.com/GreeneScientist">GreeneScientist</a>
 <br>
 <small>
-Department of Something, University of Whatever; Department of Whatever, University of Something
+Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA
 </small></p></li>
 </ul>
 <div id="correspondence">
 <p>✉ — Correspondence possible via <a href="https://github.com/greenelab/manubot-gpt-manuscript/issues">GitHub Issues</a>
 or email to
-Jane Roe &lt;jane.roe@whatever.edu&gt;.</p>
+Casey S. Greene &lt;casey.s.greene@cuanschutz.edu&gt;.</p>
 </div>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
+<p>Academics often communicate through scholarly manuscripts.
+These manuscripts describe new advances, summarize existing literature, or argue for changes in the status quo.
+Writing and revising manuscripts can be a time-consuming process.
+Large language models are bringing new capabilities to many areas of knowledge work.
+We integrated the use of large language models into the Manubot publishing ecosystem.
+Users of Manubot can run a workflow, which will trigger a series of queries to OpenAI’s language models, produce revisions, and create a timestamped set of suggested revisions.
+Given the amount of time that researchers put into crafting prose, we expect this advance to radically transform the type of knowledge work that academics perform.</p>
 <p>This manuscript is a template (aka “rootstock”) for <a href="https://manubot.org/" title="Manubot">Manubot</a>, a tool for writing scholarly manuscripts.
 Use this template as a starting point for your manuscript.</p>
 <p>The rest of this document is a full list of formatting elements/features supported by Manubot.
@@ -422,7 +431,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:0ca52148-6158-4b62-a4bd-ce6b010eb966" class="tablenos">
+<div id="tbl:c1c73158-1469-4230-a7aa-856f90803a17" class="tablenos">
 <table id="tbl:">
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
