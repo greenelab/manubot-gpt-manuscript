@@ -1,0 +1,30 @@
+name: chatgpt-revise
+on:
+  workflow_dispatch:
+    inputs:
+      branch:
+        description: 'Branch to revise'
+        type: string
+        default: 'main' 
+
+jobs:
+  chatgpt-revise:
+    name: GPT Revise
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v3
+        with: 
+          ref: ${{ inputs.branch }} 
+      - name: Install Manubot ChatGPT editor
+        run: bash ci/install-manuscript-editor.sh
+      - name: Revise manuscript
+        env:
+          OPENAI_API_KEY: ${{ secrets.CHATGPT_API_KEY }}
+        run: python ci/run-manuscript-editor.py
+      - name: Create Pull Request
+        uses: peter-evans/create-pull-request@v4
+        with:
+          commit-message: 'GPT revised manuscript'
+          title: 'GPT used to revise manuscript'
+          author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
