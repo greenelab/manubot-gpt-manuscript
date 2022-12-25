@@ -6,6 +6,10 @@ on:
         description: 'Branch to revise'
         type: string
         default: 'main' 
+      model:
+        description: 'Language model to use'
+        type: string
+        default: 'text-davinci-003' 
 
 jobs:
   chatgpt-revise:
@@ -21,10 +25,11 @@ jobs:
       - name: Revise manuscript
         env:
           OPENAI_API_KEY: ${{ secrets.CHATGPT_API_KEY }}
+          LANGUAGE_MODEL: ${{ inputs.model }} 
         run: python ci/run-manuscript-editor.py
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
         with:
           commit-message: 'GPT revised manuscript'
-          title: 'GPT used to revise manuscript'
+          title: 'GPT (${{ inputs.model }}) used to revise manuscript'
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
