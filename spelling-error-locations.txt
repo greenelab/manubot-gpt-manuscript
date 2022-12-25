@@ -1,3 +1,10 @@
+content/00.front-matter.md:4:Pandoc
+content/00.front-matter.md:14:appveyor
+content/01.abstract.md:8:OpenAI
 content/01.abstract.md:8:OpenAI's
 content/02.introduction.md:3:pre
 content/02.introduction.md:13:GPT
+content/03.methods.md:4:pandoc
+content/03.methods.md:6:Appveyor
+content/03.methods.md:9:OpenAI
+content/03.methods.md:11:triggerable

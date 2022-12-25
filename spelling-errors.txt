@@ -1,8 +1,12 @@
+Appveyor
 cgreene
 COVID
 GPT
 GreeneScientist
 miltondp
+OpenAI
 OpenAI’s
+pandoc
 Pividori
 pre
+triggerable

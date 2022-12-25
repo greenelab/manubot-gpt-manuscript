@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2022-12-25" />
   <meta name="citation_publication_date" content="2022-12-25" />
   <meta property="article:published_time" content="2022-12-25" />
-  <meta name="dc.modified" content="2022-12-25T18:23:45+00:00" />
-  <meta property="article:modified_time" content="2022-12-25T18:23:45+00:00" />
+  <meta name="dc.modified" content="2022-12-25T19:10:09+00:00" />
+  <meta property="article:modified_time" content="2022-12-25T19:10:09+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/1a77711b2a63583236981f8fd56edf54ae944c58/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/1a77711b2a63583236981f8fd56edf54ae944c58/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/1a77711b2a63583236981f8fd56edf54ae944c58/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/31cf431251956072770156dbc00337ba56185ddd/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/31cf431251956072770156dbc00337ba56185ddd/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/31cf431251956072770156dbc00337ba56185ddd/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/1a77711b2a63583236981f8fd56edf54ae944c58/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/31cf431251956072770156dbc00337ba56185ddd/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@1a77711](https://github.com/greenelab/manubot-gpt-manuscript/tree/1a77711b2a63583236981f8fd56edf54ae944c58)
+from [greenelab/manubot-gpt-manuscript@31cf431](https://github.com/greenelab/manubot-gpt-manuscript/tree/31cf431251956072770156dbc00337ba56185ddd)
 on December 25, 2022.
 </em></small>
 
@@ -154,7 +154,21 @@ Changes are presented to the user through the GitHub interface for author review
 
 # Methods
 
+We implemented the AI-based revision infrastructure in Manubot [@doi:10.1371/journal.pcbi.1007128].
+Manubot takes Markdown as input and produces HTML, PDF, or other pandoc-supported formats as output.
+It includes a robust cite-by-persistent-identifier infrastructure.
+Its workflows are implemented in continuous integration software (Appveyor, GitHub Actions, etc).
+Most workflows run with each commit.
 
+We used the OpenAI API for access to large language models, with a focus on the completion endpoints.
+This API incurs a cost with each run that depends on manuscript length.
+Because of this cost, we implemented our workflow in GitHub actions, making it triggerable by the user.
+The user can select the model that they wish to use, allowing costs to be tuned.
+With the most complex model, `text-davinci-003`, the cost per run is under $0.50 for many manuscripts.
+
+When the user triggers the action, the manuscript is parsed by section and then by paragraph, passed to the model along with a set of custom prompts, returned, reformatted, and output.
+Our workflow then uses the GitHub API to generate a new pull request, allowing the user to review and, if desired, modify the output before merging.
+This workflow allows text to be attributed either to the initial user or to the language model, which may be important in the event that future legal decisions alter the copyright landscape around the outputs of generative models.
 
 # Results
 
