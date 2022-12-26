@@ -5,11 +5,11 @@ on:
       branch:
         description: 'Branch to revise'
         type: string
-        default: 'main' 
+        default: 'main'
       model:
         description: 'Language model to use'
         type: string
-        default: 'text-davinci-003' 
+        default: 'text-davinci-003'
 
 jobs:
   chatgpt-revise:
@@ -33,3 +33,6 @@ jobs:
           commit-message: 'GPT revised manuscript'
           title: 'GPT (${{ inputs.model }}) used to revise manuscript'
           author: ${{ github.actor }} <${{ github.actor }}@users.noreply.github.com>
+          add-paths: |
+            content/*.md
+          branch: ai-revision
