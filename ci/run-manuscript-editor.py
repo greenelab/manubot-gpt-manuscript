@@ -1,9 +1,10 @@
 #!/usr/bin/env python
 
+import shutil
 from pathlib import Path
 
-from chatgpt_editor.editor import ManuscriptEditor
-from chatgpt_editor.models import GPT3CompletionModel
+from manubot.ai_editor.editor import ManuscriptEditor
+from manubot.ai_editor.models import GPT3CompletionModel
 
 if __name__ == "__main__":
     # create a manuscript editor and model to revise
@@ -17,7 +18,8 @@ if __name__ == "__main__":
     )
 
     # revise the manuscript
-    output_folder = (Path("tmp") / "chatgpt-editor-output").resolve()
+    output_folder = (Path("tmp") / "manubot-ai-editor-output").resolve()
+    shutil.rmtree(output_folder, ignore_errors=True)
     output_folder.mkdir(parents=True, exist_ok=True)
 
     me.revise_manuscript(output_folder, model, debug=True)
