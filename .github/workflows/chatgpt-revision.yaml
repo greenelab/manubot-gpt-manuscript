@@ -11,7 +11,7 @@ on:
         type: string
         default: 'text-davinci-003'
       branch_suffix:
-        description: 'Branch suffix. Leave empty for default (overwrites current branch)'
+        description: 'Branch suffix. It can be empty (default), random, timestamp or short-commit-hash'
         type: string
         default: ''
 
