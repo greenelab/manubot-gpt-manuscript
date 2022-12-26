@@ -6,4 +6,4 @@
 set -o errexit \
     -o pipefail
 
-pip install -U manubot-chatgpt-editor
+pip install -U manubot-ai-editor
