@@ -10,7 +10,7 @@ on:
         description: 'Language model to use'
         type: string
         default: 'text-davinci-003'
-      branch-suffix:
+      branch_suffix:
         description: 'Branch suffix. Leave empty for default (overwrites current branch)'
         type: string
         default: ''
@@ -41,4 +41,4 @@ jobs:
             content/*.md
           branch: ai-revision
           draft: true
-          branch-suffix: ${{ inputs.model }}
+          branch-suffix: ${{ inputs.branch_suffix }}
