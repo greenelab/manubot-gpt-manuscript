@@ -25,7 +25,7 @@ jobs:
       - name: Revise manuscript
         env:
           OPENAI_API_KEY: ${{ secrets.OPENAI_API_KEY }}
-          LANGUAGE_MODEL: ${{ inputs.model }} 
+          AI_EDITOR_LANGUAGE_MODEL: ${{ inputs.model }}
         run: python ci/run-manuscript-editor.py
       - name: Create Pull Request
         uses: peter-evans/create-pull-request@v4
