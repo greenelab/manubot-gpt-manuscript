@@ -10,6 +10,10 @@ on:
         description: 'Language model to use'
         type: string
         default: 'text-davinci-003'
+      branch-suffix:
+        description: 'Branch suffix. Leave empty for default (overwrites current branch)'
+        type: string
+        default: ''
 
 jobs:
   chatgpt-revise:
@@ -36,3 +40,5 @@ jobs:
           add-paths: |
             content/*.md
           branch: ai-revision
+          draft: true
+          branch-suffix: ${{ inputs.model }}
