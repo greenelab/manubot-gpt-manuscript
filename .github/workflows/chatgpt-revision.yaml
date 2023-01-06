@@ -8,17 +8,17 @@ on:
         type: string
         default: 'main'
       file_names:
-        description: 'File names to revise (e.g., "00.abstract.md,01.intro.md")'
+        description: 'File names to revise'
         required: false
         type: string
         default: ''
       model:
-        description: 'Language model to use (https://beta.openai.com/docs/models/gpt-3)'
+        description: 'Language model'
         required: true
         type: string
         default: 'text-davinci-003'
       branch_name:
-        description: 'Branch name where revised text will be pushed'
+        description: 'Output branch'
         required: true
         type: string
         default: 'ai-revision-davinci'
