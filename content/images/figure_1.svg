@@ -46,7 +46,14 @@
      inkscape:groupmode="layer"
      inkscape:label="figure_1"
      transform="matrix(1.3333333,0,0,-1.3333333,-16.425791,1087.6386)"><g
-       id="g10"><g
+       id="g10"><rect
+         style="fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:0.75;stroke-miterlimit:4;stroke-dasharray:0.75, 0.75;stroke-dashoffset:0"
+         id="rect270"
+         width="639.69598"
+         height="846.01532"
+         x="-42.669769"
+         y="-847.08167"
+         transform="scale(1,-1)" /><g
          id="g12"
          clip-path="url(#clipPath16)"><g
            id="g20"
