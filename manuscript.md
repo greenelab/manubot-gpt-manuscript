@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-01-06'
+date-meta: '2023-01-07'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-06" />
-  <meta name="citation_publication_date" content="2023-01-06" />
-  <meta property="article:published_time" content="2023-01-06" />
-  <meta name="dc.modified" content="2023-01-06T21:09:54+00:00" />
-  <meta property="article:modified_time" content="2023-01-06T21:09:54+00:00" />
+  <meta name="dc.date" content="2023-01-07" />
+  <meta name="citation_publication_date" content="2023-01-07" />
+  <meta property="article:published_time" content="2023-01-07" />
+  <meta name="dc.modified" content="2023-01-07T05:26:39+00:00" />
+  <meta property="article:modified_time" content="2023-01-07T05:26:39+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/7972764f664e4170d0432a4931c5f6b601476309/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/7972764f664e4170d0432a4931c5f6b601476309/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/7972764f664e4170d0432a4931c5f6b601476309/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/47f5b02fa54888194f2ea9172def45b5bb007879/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/47f5b02fa54888194f2ea9172def45b5bb007879/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/47f5b02fa54888194f2ea9172def45b5bb007879/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/7972764f664e4170d0432a4931c5f6b601476309/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/47f5b02fa54888194f2ea9172def45b5bb007879/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@7972764](https://github.com/greenelab/manubot-gpt-manuscript/tree/7972764f664e4170d0432a4931c5f6b601476309)
-on January 6, 2023.
+from [greenelab/manubot-gpt-manuscript@47f5b02](https://github.com/greenelab/manubot-gpt-manuscript/tree/47f5b02fa54888194f2ea9172def45b5bb007879)
+on January 7, 2023.
 </em></small>
 
 
@@ -152,23 +152,106 @@ We developed a new workflow that parses the manuscript, uses a large language mo
 Changes are presented to the user through the GitHub interface for author review and integration into the published document.
 
 
-# Methods
+# Implementing AI-based revision into the Manubot publishing ecosystem
+
+## Overview
+
+![
+**AI-based revision applied on a Manubot-based manuscript.**
+**a)** A manuscript (written with Manubot) with different sections.
+**b)** Section-specific prompts used to process each paragraph.
+If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only.
+](images/figure_1.svg "AI-based revision applied on a Manubot manuscript"){#fig:ai_revision width="85%"}
 
 We implemented the AI-based revision infrastructure in Manubot [@doi:10.1371/journal.pcbi.1007128].
-Manubot takes Markdown as input and produces HTML, PDF, or other pandoc-supported formats as output.
-It includes a robust cite-by-persistent-identifier infrastructure.
-Its workflows are implemented in continuous integration software (Appveyor, GitHub Actions, etc).
-Most workflows run with each commit.
+Manubot is a tool for collaborative writing of scientific manuscripts.
+It utilizes version control and a continuous integration workflow to facilitate efficient and transparent collaboration among authors.
+Manubot integrates with popular version control platforms such as GitHub, allowing authors to easily track changes and collaborate on writing in real time.
+Additionally, Manubot automates the process of generating a formatted manuscript (such as HTML, PDF, DOCX; Figure {@fig:ai_revision}a shows the HTML output), reducing the time and effort required for manuscript preparation and submission.
+Built on this modern and open paradigm, our AI-based revision software was built using GitHub Actions, which allows the user to easily trigger an automated revision task on the entire manuscript or specific sections of it.
 
-We used the OpenAI API for access to large language models, with a focus on the completion endpoints.
-This API incurs a cost with each run that depends on manuscript length.
-Because of this cost, we implemented our workflow in GitHub actions, making it triggerable by the user.
-The user can select the model that they wish to use, allowing costs to be tuned.
-With the most complex model, `text-davinci-003`, the cost per run is under $0.50 for many manuscripts.
 
-When the user triggers the action, the manuscript is parsed by section and then by paragraph, passed to the model along with a set of custom prompts, returned, reformatted, and output.
-Our workflow then uses the GitHub API to generate a new pull request, allowing the user to review and, if desired, modify the output before merging.
-This workflow allows text to be attributed either to the initial user or to the language model, which may be important in the event that future legal decisions alter the copyright landscape around the outputs of generative models.
+When the user triggers the action, the manuscript is parsed by section and then by paragraph (Figure {@fig:ai_revision}b), passed to the language model along with a set of custom prompts, returned, reformatted, and output.
+Our workflow then uses the GitHub API to generate a new pull request, allowing the user to review and modify the output before merging the changes into the manuscript.
+This workflow attributes text to either the human user or to the AI language model, which may be important if future legal decisions alter the copyright landscape around the outputs of generative models.
+
+
+We used the [OpenAI API](https://openai.com/api/) for access to these models.
+Since this API incurs a cost with each run that depends on manuscript length, we implemented an workflow in GitHub Actions that can be manually triggered by the user.
+Our implementation allows users to tune the costs to their needs by allowing to select specific sections to be revised instead of the entire manuscript.
+Additionally, several model parameters can be adjusted to tune costs even further, such as the language model version (including Davinci and Curie, and potentially newly published ones), how much risk the model will take, or the "quality" of the completions.
+For instance, using Davinci models (the most complex and capable ones), the cost per run is under $0.50 for most manuscripts.
+
+
+## Implementation details
+
+Our tools are comprised of Python scripts that perform the AI-based revision ([https://github.com/greenelab/manubot-ai-editor](https://github.com/greenelab/manubot-ai-editor)) and a GitHub Actions workflow that integrates manuscript with Manubot.
+The user only needs to run the workflow by specifing the branch that will be revised and selecting the files/sections of the manuscript (optional), the language model to use (`text-davinci-003` by default) and the output branch name.
+As explained later, for more advanced users it is also possible change most of the tool's behavior or the language model parameters.
+
+
+When the workflow is triggered, it downloads the manuscript by cloning the specified branch.
+It revises all of the manuscript files, or only some of them if the user specifies a subset.
+Next, each paragraph in the file is read and submitted to the OpenAI API for revision.
+If the request is successful, the tool will write the revised paragraph in place of the original one using one sentence per line (which is the recommended format for the input text).
+If the request fails, the tool might try again (up to five times by default) if it is a common error (such as "server overloaded") or a model specific error that requires to change some of its parameters.
+If the error cannot be handled or the maximum number of retries is reached, the original paragraph is written instead with an HTML comment at the top explaining the cause of the error.
+This allows the user to debug the problem and attempt to fix it if desired.
+
+
+As shown in Figure {@fig:ai_revision}b, each API request comprises a prompt (the instructions given to the model) and the paragraph to be revised.
+The prompt uses the manuscript title and keywords, so both have to be accurate for getting the best revision outcomes.
+The other key component to process a paragraph is its section.
+Some paragraphs are simpler to process than others.
+For instance, the abstract is a set of sentences with no citations, whereas a paragraph from the Introduction section has several references to other scientific papers.
+A paragraph in the Results section has fewer citations but many references to figures or tables, where enough details about the experiments must be provided to understand and interpret the outcomes.
+The Methods section is more dependent on the type of paper, but in general it has to provide technical details and sometimes mathematical formulas and equations.
+Therefore, we designed section-specific prompts, which we found led to the most useful suggestions.
+Figures and tables captions, as well as paragraphs that contain only one or two sentences and less than sixty words, are not processed and copied directly to the output file.
+
+
+The section of a paragraph is automatically inferred from the file name using a simple strategy (such as if "introduction" or "methods" is part of the file name).
+If the tool fails to infer a section from the file, then the file will not be processed.
+If this happens, the user is still able to specify which section the file belongs to.
+The section could be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure {@fig:ai_revision}b), or a non-standard one for which a default prompt will be used to instruct the model to perform only a basic revision (`minimize the use of jargon, ensure text grammar is correct spelling errors are fixed, and the text has a clear sentence structure`).
+<!--
+TODO:
+  - make sure the documentation of the workflow mention this section mapping, and also custom sections (using the default prompt)
+ -->
+
+
+## Properties of language models
+
+Our AI-based revision workflow uses [text completion](https://beta.openai.com/docs/guides/completion) to process each paragraph, either using the completion endpoint or the new edits endpoint (which is currently in beta).
+We tested our tool using Davinci and Curie models, including `text-davinci-003`, `text-davinci-edit-001` and `text-curie-001`.
+Davinci models are the most powerful GPT-3 model, whereas Curie ones are less capable but faster and less expensive.
+Although the edits endpoints would be the ideal interface for our task, it is still in beta.
+Therefore, we mainly focused on the completion endpoint.
+<!-- REMEMBER TO SEND RESULTS TO OPENAI ABOUT THE edits endpoint, they are requesting feedback -->
+All models can be fine-tuned using different parameters [@url:https://beta.openai.com/docs/api-reference/completions], and the most important ones can be easily adjusted using our tool.
+
+
+Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
+This limit includes the size of the prompt and the paragraph, and the maximum number of tokens to generate for the completion (parameter `max_tokens`).
+For instance, the context length of Davinci models is 4,000, and 2,048 for Curie [@url:https://beta.openai.com/docs/models/overview].
+For this reason, it is still not possible to use the entire manuscript as input, not even entire sections.
+Therefore, our AI-assisted revision software process each paragraph of the manuscript with section-specific prompts, as shown in Figure {@fig:ai_revision}b.
+The advantage of this approach is the ability to process large manuscripts by processing small chunks of text.
+The main issue, however, is that the language model processes only a single paragraph from a section, potentially losing important context to produce a better output.
+Nonetheless, we find that the model still produces high-quality output (see [Results](#sec:results)).
+Additionally, since the goal of our tool is to revise a paragraph, by default we set the maximum number of tokens (parameter `max_tokens`) as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, as indicated in [@url:https://beta.openai.com/tokenizer]).
+The tool automatically adjusts this parameter and performs the request again if a related error is returned by the API.
+The user can force the tool to either use a fixed value for `max_tokens` for all paragraphs, or change the fraction of maximum tokens based on the estimated paragraph size (two by default).
+
+
+The language models used are stochastic: they will generate a different revision for the same input paragraph each time.
+This behavior can be changed by using the "sampling temperature" or "nucleus sampling" parameters (we use `temperature=0.5` by default).
+Although we selected default values that worked well across multiple manuscripts, these parameters can be changed by the user if necessary to make the model more deterministic.
+The user can also instruct the model to generate, for each paragraph, several completions and select the one with the highest log probability per token, what can improve the quality of the revision.
+Our proof-of-concept implementation generates only one completion (parameter `best_of=1`) to avoid potentially high costs for the user.
+Additionally, our workflow allows to process either the entire manuscript or individual sections.
+This allows to control costs more effectively while focusing on a single piece of text in which the user can run the tool several times and pick the prefered revised text.
+
 
 # Results
 
