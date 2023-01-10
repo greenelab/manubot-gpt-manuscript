@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-01-09'
+date-meta: '2023-01-10'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-09" />
-  <meta name="citation_publication_date" content="2023-01-09" />
-  <meta property="article:published_time" content="2023-01-09" />
-  <meta name="dc.modified" content="2023-01-09T14:57:31+00:00" />
-  <meta property="article:modified_time" content="2023-01-09T14:57:31+00:00" />
+  <meta name="dc.date" content="2023-01-10" />
+  <meta name="citation_publication_date" content="2023-01-10" />
+  <meta property="article:published_time" content="2023-01-10" />
+  <meta name="dc.modified" content="2023-01-10T21:01:19+00:00" />
+  <meta property="article:modified_time" content="2023-01-10T21:01:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/c0ac78f5a71776286465be92dbe722ffff2825df/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c0ac78f5a71776286465be92dbe722ffff2825df/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c0ac78f5a71776286465be92dbe722ffff2825df/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/46ec665965806fef3128ccfa26a0c117600db865/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/46ec665965806fef3128ccfa26a0c117600db865/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/46ec665965806fef3128ccfa26a0c117600db865/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/c0ac78f5a71776286465be92dbe722ffff2825df/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/46ec665965806fef3128ccfa26a0c117600db865/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@c0ac78f](https://github.com/greenelab/manubot-gpt-manuscript/tree/c0ac78f5a71776286465be92dbe722ffff2825df)
-on January 9, 2023.
+from [greenelab/manubot-gpt-manuscript@46ec665](https://github.com/greenelab/manubot-gpt-manuscript/tree/46ec665965806fef3128ccfa26a0c117600db865)
+on January 10, 2023.
 </em></small>
 
 
@@ -228,18 +228,18 @@ Davinci models are the most powerful GPT-3 model, whereas Curie ones are less ca
 Although the edits endpoints would be the ideal interface for our task, it is still in beta.
 Therefore, we mainly focused on the completion endpoint.
 <!-- REMEMBER TO SEND RESULTS TO OPENAI ABOUT THE edits endpoint, they are requesting feedback -->
-All models can be fine-tuned using different parameters [@url:https://beta.openai.com/docs/api-reference/completions], and the most important ones can be easily adjusted using our tool.
+All models can be fine-tuned using different parameters (see [OpenAI - API Reference](https://beta.openai.com/docs/api-reference/completions)), and the most important ones can be easily adjusted using our tool.
 
 
 Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
 This limit includes the size of the prompt and the paragraph, and the maximum number of tokens to generate for the completion (parameter `max_tokens`).
-For instance, the context length of Davinci models is 4,000, and 2,048 for Curie [@url:https://beta.openai.com/docs/models/overview].
+For instance, the context length of Davinci models is 4,000, and 2,048 for Curie (see [OpenAI - Models overview](https://beta.openai.com/docs/models/overview)).
 For this reason, it is still not possible to use the entire manuscript as input, not even entire sections.
 Therefore, our AI-assisted revision software process each paragraph of the manuscript with section-specific prompts, as shown in Figure {@fig:ai_revision}b.
 The advantage of this approach is the ability to process large manuscripts by processing small chunks of text.
 The main issue, however, is that the language model processes only a single paragraph from a section, potentially losing important context to produce a better output.
 Nonetheless, we find that the model still produces high-quality output (see [Results](#sec:results)).
-Additionally, since the goal of our tool is to revise a paragraph, by default we set the maximum number of tokens (parameter `max_tokens`) as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, as indicated in [@url:https://beta.openai.com/tokenizer]).
+Additionally, since the goal of our tool is to revise a paragraph, by default we set the maximum number of tokens (parameter `max_tokens`) as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, see [OpenAI - Tokenizer](https://beta.openai.com/tokenizer])).
 The tool automatically adjusts this parameter and performs the request again if a related error is returned by the API.
 The user can force the tool to either use a fixed value for `max_tokens` for all paragraphs, or change the fraction of maximum tokens based on the estimated paragraph size (two by default).
 

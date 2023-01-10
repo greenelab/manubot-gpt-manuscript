@@ -18,9 +18,14 @@ content/03.methods.md:73:Davinci
 content/03.methods.md:73:GPT
 content/03.methods.md:76:OPENAI
 content/03.methods.md:77:openai
+content/03.methods.md:77:OpenAI
 content/03.methods.md:82:Davinci
 content/03.methods.md:82:openai
+content/03.methods.md:82:OpenAI
 content/03.methods.md:88:openai
+content/03.methods.md:88:OpenAI
+content/03.methods.md:88:tokenizer
+content/03.methods.md:88:Tokenizer
 content/03.methods.md:99:prefered
 content/04.results.md:4:CCC
 content/04.results.md:4:Clustermatch

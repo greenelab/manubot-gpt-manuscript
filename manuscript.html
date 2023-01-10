@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Milton Pividori" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2023-01-09" />
+  <meta name="dcterms.date" content="2023-01-10" />
   <meta name="keywords" content="manubot, artificial intelligence, scholarly publishing, software" />
   <title>A publishing infrastructure for AI-assisted academic authoring</title>
   <style>
@@ -51,11 +51,11 @@
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-09" />
-  <meta name="citation_publication_date" content="2023-01-09" />
-  <meta property="article:published_time" content="2023-01-09" />
-  <meta name="dc.modified" content="2023-01-09T14:57:31+00:00" />
-  <meta property="article:modified_time" content="2023-01-09T14:57:31+00:00" />
+  <meta name="dc.date" content="2023-01-10" />
+  <meta name="citation_publication_date" content="2023-01-10" />
+  <meta property="article:published_time" content="2023-01-10" />
+  <meta name="dc.modified" content="2023-01-10T21:01:19+00:00" />
+  <meta property="article:modified_time" content="2023-01-10T21:01:19+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/c0ac78f5a71776286465be92dbe722ffff2825df/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c0ac78f5a71776286465be92dbe722ffff2825df/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c0ac78f5a71776286465be92dbe722ffff2825df/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/46ec665965806fef3128ccfa26a0c117600db865/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/46ec665965806fef3128ccfa26a0c117600db865/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/46ec665965806fef3128ccfa26a0c117600db865/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/c0ac78f5a71776286465be92dbe722ffff2825df/">permalink</a>)
+(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/46ec665965806fef3128ccfa26a0c117600db865/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/c0ac78f5a71776286465be92dbe722ffff2825df">greenelab/manubot-gpt-manuscript@c0ac78f</a>
-on January 9, 2023.
+from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/46ec665965806fef3128ccfa26a0c117600db865">greenelab/manubot-gpt-manuscript@46ec665</a>
+on January 10, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -217,16 +217,16 @@ Davinci models are the most powerful GPT-3 model, whereas Curie ones are less ca
 Although the edits endpoints would be the ideal interface for our task, it is still in beta.
 Therefore, we mainly focused on the completion endpoint.
 <!-- REMEMBER TO SEND RESULTS TO OPENAI ABOUT THE edits endpoint, they are requesting feedback -->
-All models can be fine-tuned using different parameters <span class="citation" data-cites="kOYQOtpX">[<a href="#ref-kOYQOtpX" role="doc-biblioref">8</a>]</span>, and the most important ones can be easily adjusted using our tool.</p>
+All models can be fine-tuned using different parameters (see <a href="https://beta.openai.com/docs/api-reference/completions">OpenAI - API Reference</a>), and the most important ones can be easily adjusted using our tool.</p>
 <p>Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
 This limit includes the size of the prompt and the paragraph, and the maximum number of tokens to generate for the completion (parameter <code>max_tokens</code>).
-For instance, the context length of Davinci models is 4,000, and 2,048 for Curie <span class="citation" data-cites="KSFGihw1">[<a href="#ref-KSFGihw1" role="doc-biblioref">9</a>]</span>.
+For instance, the context length of Davinci models is 4,000, and 2,048 for Curie (see <a href="https://beta.openai.com/docs/models/overview">OpenAI - Models overview</a>).
 For this reason, it is still not possible to use the entire manuscript as input, not even entire sections.
 Therefore, our AI-assisted revision software process each paragraph of the manuscript with section-specific prompts, as shown in Figure <a href="#fig:ai_revision">1</a>b.
 The advantage of this approach is the ability to process large manuscripts by processing small chunks of text.
 The main issue, however, is that the language model processes only a single paragraph from a section, potentially losing important context to produce a better output.
 Nonetheless, we find that the model still produces high-quality output (see <a href="#sec:results">Results</a>).
-Additionally, since the goal of our tool is to revise a paragraph, by default we set the maximum number of tokens (parameter <code>max_tokens</code>) as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, as indicated in <span class="citation" data-cites="nU8EaRo2">[<a href="#ref-nU8EaRo2" role="doc-biblioref">10</a>]</span>).
+Additionally, since the goal of our tool is to revise a paragraph, by default we set the maximum number of tokens (parameter <code>max_tokens</code>) as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, see <a href="https://beta.openai.com/tokenizer%5D">OpenAI - Tokenizer</a>).
 The tool automatically adjusts this parameter and performs the request again if a related error is returned by the API.
 The user can force the tool to either use a fixed value for <code>max_tokens</code> for all paragraphs, or change the fraction of maximum tokens based on the estimated paragraph size (two by default).</p>
 <p>The language models used are stochastic: they will generate a different revision for the same input paragraph each time.
@@ -238,7 +238,7 @@ Additionally, our workflow allows to process either the entire manuscript or ind
 This allows to control costs more effectively while focusing on a single piece of text in which the user can run the tool several times and pick the prefered revised text.</p>
 <h1 id="results">Results</h1>
 <p>We used this infrastructure to revise an existing manuscript as well as to author a new one.
-We back-ported the changes in Manubot to a manuscript describing the Clustermatch Correlation Coefficient (CCC) <span class="citation" data-cites="eirYTTyk">[<a href="#ref-eirYTTyk" role="doc-biblioref">11</a>]</span>.
+We back-ported the changes in Manubot to a manuscript describing the Clustermatch Correlation Coefficient (CCC) <span class="citation" data-cites="eirYTTyk">[<a href="#ref-eirYTTyk" role="doc-biblioref">8</a>]</span>.
 The CCC was designed to capture both linear and non-linear relationships between variables.
 The CCC manuscript describes its use, in particular with gene expression data.</p>
 <p>The abstract of the CCC manuscript before revision had a Flesh-Kincaid readability score of X and a grade level of Y.
@@ -288,17 +288,8 @@ This work lays the foundation for a future where academic manuscripts are constr
 <div id="ref-10gsAq0o" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">7. </div><div class="csl-right-inline"><strong>An Open-Publishing Response to the COVID-19 Infodemic.</strong> <div class="csl-block">Halie M Rando, Simina M Boca, Lucy D'Agostino McGowan, Daniel S Himmelstein, Michael P Robson, Vincent Rubinetti, Ryan Velazquez, Casey S Greene, Anthony Gitter</div> <em>ArXiv</em> (2021-09-17) <a href="https://www.ncbi.nlm.nih.gov/pubmed/34545336">https://www.ncbi.nlm.nih.gov/pubmed/34545336</a> <div class="csl-block">PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/34545336">34545336</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8452106">PMC8452106</a></div></div>
 </div>
-<div id="ref-kOYQOtpX" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>OpenAI API</strong> <a href="https://beta.openai.com">https://beta.openai.com</a></div>
-</div>
-<div id="ref-KSFGihw1" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">9. </div><div class="csl-right-inline"><strong>OpenAI API</strong> <a href="https://beta.openai.com">https://beta.openai.com</a></div>
-</div>
-<div id="ref-nU8EaRo2" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">10. </div><div class="csl-right-inline"><strong>OpenAI API</strong> <a href="https://beta.openai.com">https://beta.openai.com</a></div>
-</div>
 <div id="ref-eirYTTyk" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">11. </div><div class="csl-right-inline"><strong>An efficient not-only-linear correlation coefficient based on machine learning</strong> <div class="csl-block">Milton Pividori, Marylyn D Ritchie, Diego H Milone, Casey S Greene</div> <em>Cold Spring Harbor Laboratory</em> (2022-06-17) <a href="https://doi.org/gqcvbw">https://doi.org/gqcvbw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2022.06.15.496326">10.1101/2022.06.15.496326</a></div></div>
+<div class="csl-left-margin">8. </div><div class="csl-right-inline"><strong>An efficient not-only-linear correlation coefficient based on machine learning</strong> <div class="csl-block">Milton Pividori, Marylyn D Ritchie, Diego H Milone, Casey S Greene</div> <em>Cold Spring Harbor Laboratory</em> (2022-06-17) <a href="https://doi.org/gqcvbw">https://doi.org/gqcvbw</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1101/2022.06.15.496326">10.1101/2022.06.15.496326</a></div></div>
 </div>
 </div>
 <!-- default theme -->
