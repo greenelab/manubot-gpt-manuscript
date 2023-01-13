@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Milton Pividori" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2023-01-10" />
+  <meta name="dcterms.date" content="2023-01-13" />
   <meta name="keywords" content="manubot, artificial intelligence, scholarly publishing, software" />
   <title>A publishing infrastructure for AI-assisted academic authoring</title>
   <style>
@@ -51,11 +51,11 @@
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-10" />
-  <meta name="citation_publication_date" content="2023-01-10" />
-  <meta property="article:published_time" content="2023-01-10" />
-  <meta name="dc.modified" content="2023-01-10T21:05:43+00:00" />
-  <meta property="article:modified_time" content="2023-01-10T21:05:43+00:00" />
+  <meta name="dc.date" content="2023-01-13" />
+  <meta name="citation_publication_date" content="2023-01-13" />
+  <meta property="article:published_time" content="2023-01-13" />
+  <meta name="dc.modified" content="2023-01-13T14:47:28+00:00" />
+  <meta property="article:modified_time" content="2023-01-13T14:47:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/333107c06d8245329a9a00c450ecb533cf18d952/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/333107c06d8245329a9a00c450ecb533cf18d952/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/333107c06d8245329a9a00c450ecb533cf18d952/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/333107c06d8245329a9a00c450ecb533cf18d952/">permalink</a>)
+(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/333107c06d8245329a9a00c450ecb533cf18d952">greenelab/manubot-gpt-manuscript@333107c</a>
-on January 10, 2023.
+from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb">greenelab/manubot-gpt-manuscript@cc0cb35</a>
+on January 13, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -161,11 +161,13 @@ Changes are presented to the user through the GitHub interface for author review
 <h2 id="overview">Overview</h2>
 <div id="fig:ai_revision" class="fignos">
 <figure>
-<img src="images/figure_1.svg" style="width:85.0%" alt="Figure 1: AI-based revision applied on a Manubot-based manuscript. a) A manuscript (written with Manubot) with different sections. b) Section-specific prompts used to process each paragraph. If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only." />
+<img src="images/figure_1.svg" style="width:85.0%" alt="Figure 1: AI-based revision applied on a Manubot-based manuscript. a) A manuscript (written with Manubot) with different sections. b) Section-specific prompts used to process each paragraph. If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only. The prompt for the Methods section includes the formatting of equations with identifiers. All sections’ prompts include these instructions: “the text grammar is correct, spelling errors are fixed, and the text has a clear sentence structure”, although these are only shown for abstracts." />
 <figcaption aria-hidden="true"><span>Figure 1:</span> <strong>AI-based revision applied on a Manubot-based manuscript.</strong>
 <strong>a)</strong> A manuscript (written with Manubot) with different sections.
 <strong>b)</strong> Section-specific prompts used to process each paragraph.
-If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only.</figcaption>
+If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only.
+The prompt for the Methods section includes the formatting of equations with identifiers.
+All sections’ prompts include these instructions: <em>“the text grammar is correct, spelling errors are fixed, and the text has a clear sentence structure”</em>, although these are only shown for abstracts.</figcaption>
 </figure>
 </div>
 <p>We implemented the AI-based revision infrastructure in Manubot <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">6</a>]</span>.

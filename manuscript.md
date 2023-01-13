@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-01-10'
+date-meta: '2023-01-13'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-10" />
-  <meta name="citation_publication_date" content="2023-01-10" />
-  <meta property="article:published_time" content="2023-01-10" />
-  <meta name="dc.modified" content="2023-01-10T21:05:43+00:00" />
-  <meta property="article:modified_time" content="2023-01-10T21:05:43+00:00" />
+  <meta name="dc.date" content="2023-01-13" />
+  <meta name="citation_publication_date" content="2023-01-13" />
+  <meta property="article:published_time" content="2023-01-13" />
+  <meta name="dc.modified" content="2023-01-13T14:47:28+00:00" />
+  <meta property="article:modified_time" content="2023-01-13T14:47:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/333107c06d8245329a9a00c450ecb533cf18d952/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/333107c06d8245329a9a00c450ecb533cf18d952/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/333107c06d8245329a9a00c450ecb533cf18d952/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/333107c06d8245329a9a00c450ecb533cf18d952/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@333107c](https://github.com/greenelab/manubot-gpt-manuscript/tree/333107c06d8245329a9a00c450ecb533cf18d952)
-on January 10, 2023.
+from [greenelab/manubot-gpt-manuscript@cc0cb35](https://github.com/greenelab/manubot-gpt-manuscript/tree/cc0cb3593c6a85debe4413704379f4fbb3bfcdbb)
+on January 13, 2023.
 </em></small>
 
 
@@ -161,6 +161,8 @@ Changes are presented to the user through the GitHub interface for author review
 **a)** A manuscript (written with Manubot) with different sections.
 **b)** Section-specific prompts used to process each paragraph.
 If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only.
+The prompt for the Methods section includes the formatting of equations with identifiers.
+All sections' prompts include these instructions: *"the text grammar is correct, spelling errors are fixed, and the text has a clear sentence structure"*, although these are only shown for abstracts.
 ](images/figure_1.svg "AI-based revision applied on a Manubot manuscript"){#fig:ai_revision width="85%"}
 
 We implemented the AI-based revision infrastructure in Manubot [@doi:10.1371/journal.pcbi.1007128].
