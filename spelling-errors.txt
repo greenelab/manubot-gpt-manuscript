@@ -8,6 +8,7 @@ datasets
 Davinci
 DOCX
 endopoint
+explicitely
 genomic
 Genotype
 GPT
@@ -17,12 +18,16 @@ GWAS
 incorportes
 interpretability
 introdution
+LV
 miltondp
+MultiXcan
+nonexisting
 OpenAI
 OpenAI’s
 PhenoPLIER
 Pividori
 pre
+PrediXcan
 prefered
 PRs
 repurposing
@@ -31,3 +36,4 @@ Tokenizer
 transcriptional
 transcriptomic
 transcriptomics
+univariate
