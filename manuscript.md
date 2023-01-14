@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-01-13'
+date-meta: '2023-01-14'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-13" />
-  <meta name="citation_publication_date" content="2023-01-13" />
-  <meta property="article:published_time" content="2023-01-13" />
-  <meta name="dc.modified" content="2023-01-13T15:40:31+00:00" />
-  <meta property="article:modified_time" content="2023-01-13T15:40:31+00:00" />
+  <meta name="dc.date" content="2023-01-14" />
+  <meta name="citation_publication_date" content="2023-01-14" />
+  <meta property="article:published_time" content="2023-01-14" />
+  <meta name="dc.modified" content="2023-01-14T19:55:05+00:00" />
+  <meta property="article:modified_time" content="2023-01-14T19:55:05+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/1b8839887833122204c5dc1c8037bed45384899a/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/1b8839887833122204c5dc1c8037bed45384899a/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/1b8839887833122204c5dc1c8037bed45384899a/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/b109f529f6576952a38beac3e8de2fa032360e71/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/b109f529f6576952a38beac3e8de2fa032360e71/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/b109f529f6576952a38beac3e8de2fa032360e71/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/1b8839887833122204c5dc1c8037bed45384899a/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/b109f529f6576952a38beac3e8de2fa032360e71/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@1b88398](https://github.com/greenelab/manubot-gpt-manuscript/tree/1b8839887833122204c5dc1c8037bed45384899a)
-on January 13, 2023.
+from [greenelab/manubot-gpt-manuscript@b109f52](https://github.com/greenelab/manubot-gpt-manuscript/tree/b109f529f6576952a38beac3e8de2fa032360e71)
+on January 14, 2023.
 </em></small>
 
 
@@ -130,7 +130,7 @@ Users of Manubot can run a workflow, which will trigger a series of queries to O
 Given the amount of time that researchers put into crafting prose, we expect this advance to radically transform the type of knowledge work that academics perform.
 
 
-# Introduction
+## Introduction
 
 The manuscript pre-dates the invention of printing by thousands of years, but the practice of producing exclusively scientific journals only started roughly 350 years ago [@isbn:0810808447].
 The implementation of external peer review varies by journal but for many is less than 100 years old [@doi:10/d26d8b].
@@ -152,9 +152,9 @@ We developed a new workflow that parses the manuscript, uses a large language mo
 Changes are presented to the user through the GitHub interface for author review and integration into the published document.
 
 
-# Implementing AI-based revision into the Manubot publishing ecosystem
+## Implementing AI-based revision into the Manubot publishing ecosystem
 
-## Overview
+### Overview
 
 ![
 **AI-based revision applied on a Manubot-based manuscript.**
@@ -185,7 +185,7 @@ Additionally, several model parameters can be adjusted to tune costs even furthe
 For instance, using Davinci models (the most complex and capable ones), the cost per run is under $0.50 for most manuscripts.
 
 
-## Implementation details
+### Implementation details
 
 Our tools are comprised of Python scripts that perform the AI-based revision ([https://github.com/greenelab/manubot-ai-editor](https://github.com/greenelab/manubot-ai-editor)) and a GitHub Actions workflow that integrates manuscript with Manubot.
 The user only needs to run the workflow by specifing the branch that will be revised and selecting the files/sections of the manuscript (optional), the language model to use (`text-davinci-003` by default) and the output branch name.
@@ -222,7 +222,7 @@ TODO:
  -->
 
 
-## Properties of language models
+### Properties of language models
 
 Our AI-based revision workflow uses [text completion](https://beta.openai.com/docs/guides/completion) to process each paragraph, either using the completion endpoint or the new edits endpoint (which is currently in beta).
 We tested our tool using Davinci and Curie models, including `text-davinci-003`, `text-davinci-edit-001` and `text-curie-001`.
@@ -255,9 +255,9 @@ Additionally, our workflow allows to process either the entire manuscript or ind
 This allows to control costs more effectively while focusing on a single piece of text in which the user can run the tool several times and pick the prefered revised text.
 
 
-# Observations of AI-based revisions {#sec:results}
+## Observations of AI-based revisions {#sec:results}
 
-## Evaluation setup
+### Evaluation setup
 
 We evaluated our AI-based revision workflow by testing different language models and manuscripts.
 For this, we used three different GPT-3 models from OpenAI: `text-davinci-003`, `text-davinci-edit-001`, and `text-curie-001`.
@@ -301,7 +301,7 @@ PRs show the differences between the original text and the suggestions made by t
 Below we discussed our findings based on these PRs using the language models across different sections of the manuscripts.
 
 
-## Performance of language models
+### Performance of language models
 
 We found that Davinci models, as expected, were superior than the Curie model for all manuscripts.
 The Curie model is described as "very capable", and it is faster and less expensive than Davinci models.
@@ -319,7 +319,7 @@ The `text-davinci-003` model produced the best results for all manuscripts and a
 Since both `text-davinci-003` and `text-davinci-edit-001` are based on the same models, we only report the results of `text-davinci-003` below.
 
 
-## Revision of different sections
+### Revision of different sections
 
 We inspected the PRs generated by the AI-based workflow, and highlight below some of the most interesting changes suggested by the tool across different section of the manuscripts.
 These are our subjective assessments of the quality of the revisions, and we encourage the reader to inspect the PRs for each manuscript and model to see the full diffs and make their own conclusions.
@@ -333,7 +333,7 @@ In these cases, words underlined in red were removed by the tool, whereas words 
 The full diffs can be seen by inspecting the PRs for each manuscript and model, and then clicking on the "Files changed" tab.
 
 
-### Abstract
+#### Abstract
 
 This is the revision for the abstract of CCC:
 
@@ -351,7 +351,7 @@ The revised text for the abstract of PhenoPLIER was significantly shortened (fro
 However, in this case, important concepts (such as GWAS, TWAS, CRISPR) and a proper amount of background information were missing, producing a less informative abstract.
 
 
-### Introduction
+#### Introduction
 
 This is the revision of the first paragraph of the introduction of CCC:
 
@@ -375,7 +375,7 @@ We observed this issue when debugging the prompts, and it could be related to th
 However, since the model is stochastic, this can be solved by running the automated revision again.
 
 
-### Results
+#### Results
 
 Below is a paragraph of the Results section of CCC describing a set of simulations using different datasets shown in a figure (which is Figure 1 in [@doi:10.1101/2022.06.15.496326]).
 The figure shows four different datasets with two variables each, and different relationships or patterns named random/independent, non-coexistence, quadratic, and two-lines.
@@ -417,7 +417,7 @@ It included the idea of a "gene co-expression" analysis (a keyword) to identify 
 Although this was a poor model-based revision, the output suggests that the original paragraph may be too short or disconnected from the rest and that it could be merged with the next one (which describes follow-up and related experiments).
 
 
-### Discussion
+#### Discussion
 
 In both the CCC and PhenoPLIER manuscripts, revisions to the discussion section appeared to be of high quality.
 The model kept the correct format when necessary (e.g., using italics for gene symbols), maintained most of the citations, and improved the readability of the text in general.
@@ -433,7 +433,7 @@ It is also interesting how the model understood the format of citations and buil
 For instance, the two articles referenced in lines 2 and 3 in the original text were correctly merged into a single citation block and separated with ";" in line 2 of the revised text.
 
 
-### Methods
+#### Methods
 
 Prompts for the Methods section were the most challenging to design, especially when the sections included equations.
 The prompt for Methods (Figure @fig:ai_revision) is more focused in keeping the technical details, which was especially important for PhenoPLIER, whose Methods section contains paragraphs with several mathematical expressions.
@@ -457,7 +457,7 @@ For instance, in PhenoPLIER, one of the first original paragraphs in this sectio
 The details about these models, including the equations, are presented in the following paragraphs, but since the model have not seen that yet, it opted to add those equations right away (in the correct Manubot/Markdown format).
 
 
-# Conclusions
+## Conclusions
 
 We implemented AI-based models into publishing infrastructure.
 While most manuscripts have been written by humans, the process is time consuming and academic writing can be difficult to parse.
