@@ -1,5 +1,8 @@
+arxiv
 CCC
 cgreene
+chatbots
+ChatGPT
 chepear
 Clustermatch
 COVID
@@ -11,14 +14,19 @@ endopoint
 explicitely
 genomic
 Genotype
+GLM
 GPT
+Grammarly
 GreeneScientist
 GTEx
 GWAS
+ICML
 incorportes
 interpretability
 introdution
+LLM
 LV
+Meta’s
 miltondp
 MultiXcan
 nonexisting
@@ -29,6 +37,7 @@ Pividori
 pre
 PrediXcan
 prefered
+preprint
 PRs
 repurposing
 specifing
