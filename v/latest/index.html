@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2023-01-17" />
   <meta name="citation_publication_date" content="2023-01-17" />
   <meta property="article:published_time" content="2023-01-17" />
-  <meta name="dc.modified" content="2023-01-17T16:17:59+00:00" />
-  <meta property="article:modified_time" content="2023-01-17T16:17:59+00:00" />
+  <meta name="dc.modified" content="2023-01-17T22:18:28+00:00" />
+  <meta property="article:modified_time" content="2023-01-17T22:18:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/">permalink</a>)
+(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/f67f57804b503f1706248442866d74ba9640400d">greenelab/manubot-gpt-manuscript@f67f578</a>
+from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/98b0408448398e0dc3d9c38e2c7d91d250aae935">greenelab/manubot-gpt-manuscript@98b0408</a>
 on January 17, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -214,18 +214,13 @@ Figures and tables captions, as well as paragraphs that contain only one or two 
 <p>The section of a paragraph is automatically inferred from the file name using a simple strategy (such as if “introduction” or “methods” is part of the file name).
 If the tool fails to infer a section from the file, then the file will not be processed.
 If this happens, the user is still able to specify which section the file belongs to.
-The section could be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure <a href="#fig:ai_revision">1</a>b), or a non-standard one for which a default prompt will be used to instruct the model to perform only a basic revision (<code>minimize the use of jargon, ensure text grammar is correct spelling errors are fixed, and the text has a clear sentence structure</code>).
-<!--
-TODO:
-  - make sure the documentation of the workflow mention this section mapping, and also custom sections (using the default prompt)
- --></p>
+The section could be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure <a href="#fig:ai_revision">1</a>b), or a non-standard one for which a default prompt will be used to instruct the model to perform only a basic revision (<code>minimize the use of jargon, ensure text grammar is correct spelling errors are fixed, and the text has a clear sentence structure</code>).</p>
 <h3 id="properties-of-language-models">Properties of language models</h3>
 <p>Our AI-based revision workflow uses <a href="https://beta.openai.com/docs/guides/completion">text completion</a> to process each paragraph, either using the completion endpoint or the new edits endpoint (which is currently in beta).
 We tested our tool using Davinci and Curie models, including <code>text-davinci-003</code>, <code>text-davinci-edit-001</code> and <code>text-curie-001</code>.
 Davinci models are the most powerful GPT-3 model, whereas Curie ones are less capable but faster and less expensive.
 Although the edits endpoints would be the ideal interface for our task, it is still in beta.
 Therefore, we mainly focused on the completion endpoint.
-<!-- REMEMBER TO SEND RESULTS TO OPENAI ABOUT THE edits endpoint, they are requesting feedback -->
 All models can be fine-tuned using different parameters (see <a href="https://beta.openai.com/docs/api-reference/completions">OpenAI - API Reference</a>), and the most important ones can be easily adjusted using our tool.</p>
 <p>Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
 This limit includes the size of the prompt and the paragraph, and the maximum number of tokens to generate for the completion (parameter <code>max_tokens</code>).
