@@ -1,9 +1,13 @@
 content/01.abstract.md:8:OpenAI
 content/01.abstract.md:8:OpenAI's
 content/02.introduction.md:3:pre
+content/02.introduction.md:11:arxiv
 content/02.introduction.md:12:arxiv
-content/02.introduction.md:13:arxiv
-content/02.introduction.md:13:GPT
+content/02.introduction.md:12:OpenAI
+content/02.introduction.md:12:OpenAI's
+content/02.introduction.md:14:arxiv
+content/02.introduction.md:14:GPT
+content/02.introduction.md:14:Pre
 content/03.methods.md:18:DOCX
 content/03.methods.md:27:openai
 content/03.methods.md:27:OpenAI

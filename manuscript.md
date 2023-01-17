@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-01-17" />
   <meta name="citation_publication_date" content="2023-01-17" />
   <meta property="article:published_time" content="2023-01-17" />
-  <meta name="dc.modified" content="2023-01-17T15:33:08+00:00" />
-  <meta property="article:modified_time" content="2023-01-17T15:33:08+00:00" />
+  <meta name="dc.modified" content="2023-01-17T16:14:54+00:00" />
+  <meta property="article:modified_time" content="2023-01-17T16:14:54+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/36f50b1cb38d60abe08198689fa576d144326930/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/36f50b1cb38d60abe08198689fa576d144326930/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/36f50b1cb38d60abe08198689fa576d144326930/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/4b326bcc8ea21dfa4ef3e488e713b592e60784c2/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/4b326bcc8ea21dfa4ef3e488e713b592e60784c2/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/4b326bcc8ea21dfa4ef3e488e713b592e60784c2/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/36f50b1cb38d60abe08198689fa576d144326930/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/4b326bcc8ea21dfa4ef3e488e713b592e60784c2/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@36f50b1](https://github.com/greenelab/manubot-gpt-manuscript/tree/36f50b1cb38d60abe08198689fa576d144326930)
+from [greenelab/manubot-gpt-manuscript@4b326bc](https://github.com/greenelab/manubot-gpt-manuscript/tree/4b326bcc8ea21dfa4ef3e488e713b592e60784c2)
 on January 17, 2023.
 </em></small>
 
@@ -135,21 +135,26 @@ Given the amount of time that researchers put into crafting prose, we expect thi
 The manuscript pre-dates the invention of printing by thousands of years, but the practice of producing exclusively scientific journals only started roughly 350 years ago [@isbn:0810808447].
 The implementation of external peer review varies by journal but for many is less than 100 years old [@doi:10/d26d8b].
 To date, most manuscripts have been written by humans or teams of humans working together to describe scholarly advances.
-
 Modern scholarly manuscripts often describe new advances, summarize existing literature, or argue for changes in the status quo.
-However, writing and revising can be a time-consuming process.
+However, scholarly writing is a time-consuming process where results of a study are presented using a specific style and format.
 Academics can sometimes be long-winded in getting to key points, making writing more impenetrable to their audience [@doi:10.1038/d41586-018-02404-4].
 
-Modern computing capabilities and the widespread availability of text, images, and other data on the internet has laid the foundation for artificial intelligence (AI) models with many parameters.
+Current computing capabilities and the widespread availability of text, images, and other data on the internet has laid the foundation for artificial intelligence (AI) models with billions of parameters.
 Large language models, in particular, are opening the floodgates to new technologies with the capability to transform how society operates [@arxiv:2102.02503].
-The GPT-3 model, with its 175 billion parameters, has demonstrated strong performance on many tasks [@arxiv:2005.14165].
+Recently published OpenAI's models, for instance, have been trained on vast amounts of data and can generate human-like text [@arxiv:2005.14165].
+These models are based on the transformer architecture and use self-attention mechanisms to model the complexities of language.
+The most well-known of these models is the Generative Pre-trained Transformer 3 (GPT-3), which have been shown to be highly effective at a wide range of language tasks such as generating text, completing code, answering questions, among others [@arxiv:2005.14165].
+These capabilities might also deeply change how scientists write and revise scholarly manuscripts by saving time and effort.
+This would allow researchers to focus on more high-level tasks such as data analysis and interpretation.
 
-We developed a software publishing platform that imagines a future where authors co-write their manuscripts with the support of large language models.
-We used, as a base, the Manubot platform for scholarly publishing [@doi:10.1371/journal.pcbi.1007128].
-Manubot was designed as an end-to-end publishing platform for scholarly writing for both individual and large-collaborative projects.
-It has been used for collaborations of approximately 50 authors writing hundreds of pages of text reviewing progress during the COVID19 pandemic [@pmid:34545336].
-We developed a new workflow that parses the manuscript, uses a large language model with section-specific custom prompts to revise the manuscript, and then creates a set of suggested changes to reach the revised state.
+Here we introduce a new AI-based revision tool that imagines a future where authors co-write their manuscripts with the support of large language models.
+We used, as a base, the Manubot infrastructure for scholarly publishing [@doi:10.1371/journal.pcbi.1007128].
+Manubot was designed as an end-to-end publishing platform for scholarly writing for both individual and large-collaborative projects [@doi:10.1098/rsif.2017.0387; @pmid:34545336].
+We developed a new workflow that parses the manuscript, uses a large language model with section-specific prompts for revision, and then creates a set of suggested changes to reach the revised state.
 Changes are presented to the user through the GitHub interface for author review and integration into the published document.
+We tested this workflow through a case study with three Manubot-authored manuscripts that include sections with different levels of complexity.
+We found that, in most cases, the models were able to preserve the original meaning of text, improving the writing style, and even understand mathematical expressions.
+Our AI-assisted writing workflow can be integrated into any Manubot manuscript, and we expect it will help authors communicate their work more effectively.
 
 
 ## Implementing AI-based revision into the Manubot publishing ecosystem

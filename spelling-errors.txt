@@ -5,7 +5,6 @@ chatbots
 ChatGPT
 chepear
 Clustermatch
-COVID
 CRISPR
 datasets
 Davinci
@@ -34,7 +33,7 @@ OpenAI
 OpenAI’s
 PhenoPLIER
 Pividori
-pre
+Pre
 PrediXcan
 prefered
 preprint
