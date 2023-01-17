@@ -19,9 +19,9 @@ if __name__ == "__main__":
     )
 
     # revise the manuscript
-    with tempfile.TemporaryDirectory() as output_folder:
-        me.revise_manuscript(output_folder, model, debug=True)
+    output_folder = tempfile.TemporaryDirectory()
+    me.revise_manuscript(output_folder, model, debug=True)
 
-        # move the revised manuscript back to the content folder
-        for f in output_folder.glob("*"):
-            f.rename(me.content_dir / f.name)
+    # move the revised manuscript back to the content folder
+    for f in output_folder.glob("*"):
+        f.rename(me.content_dir / f.name)
