@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-01-17" />
   <meta name="citation_publication_date" content="2023-01-17" />
   <meta property="article:published_time" content="2023-01-17" />
-  <meta name="dc.modified" content="2023-01-17T16:17:59+00:00" />
-  <meta property="article:modified_time" content="2023-01-17T16:17:59+00:00" />
+  <meta name="dc.modified" content="2023-01-17T22:18:28+00:00" />
+  <meta property="article:modified_time" content="2023-01-17T22:18:28+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@f67f578](https://github.com/greenelab/manubot-gpt-manuscript/tree/f67f57804b503f1706248442866d74ba9640400d)
+from [greenelab/manubot-gpt-manuscript@98b0408](https://github.com/greenelab/manubot-gpt-manuscript/tree/98b0408448398e0dc3d9c38e2c7d91d250aae935)
 on January 17, 2023.
 </em></small>
 
@@ -222,10 +222,6 @@ The section of a paragraph is automatically inferred from the file name using a 
 If the tool fails to infer a section from the file, then the file will not be processed.
 If this happens, the user is still able to specify which section the file belongs to.
 The section could be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure {@fig:ai_revision}b), or a non-standard one for which a default prompt will be used to instruct the model to perform only a basic revision (`minimize the use of jargon, ensure text grammar is correct spelling errors are fixed, and the text has a clear sentence structure`).
-<!--
-TODO:
-  - make sure the documentation of the workflow mention this section mapping, and also custom sections (using the default prompt)
- -->
 
 
 ### Properties of language models
@@ -235,7 +231,6 @@ We tested our tool using Davinci and Curie models, including `text-davinci-003`,
 Davinci models are the most powerful GPT-3 model, whereas Curie ones are less capable but faster and less expensive.
 Although the edits endpoints would be the ideal interface for our task, it is still in beta.
 Therefore, we mainly focused on the completion endpoint.
-<!-- REMEMBER TO SEND RESULTS TO OPENAI ABOUT THE edits endpoint, they are requesting feedback -->
 All models can be fine-tuned using different parameters (see [OpenAI - API Reference](https://beta.openai.com/docs/api-reference/completions)), and the most important ones can be easily adjusted using our tool.
 
 
