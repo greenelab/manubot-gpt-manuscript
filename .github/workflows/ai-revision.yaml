@@ -1,4 +1,4 @@
-name: chatgpt-revise
+name: ai-revision
 on:
   workflow_dispatch:
     inputs:
