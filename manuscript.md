@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-01-17" />
   <meta name="citation_publication_date" content="2023-01-17" />
   <meta property="article:published_time" content="2023-01-17" />
-  <meta name="dc.modified" content="2023-01-17T16:14:54+00:00" />
-  <meta property="article:modified_time" content="2023-01-17T16:14:54+00:00" />
+  <meta name="dc.modified" content="2023-01-17T16:17:59+00:00" />
+  <meta property="article:modified_time" content="2023-01-17T16:17:59+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/4b326bcc8ea21dfa4ef3e488e713b592e60784c2/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/4b326bcc8ea21dfa4ef3e488e713b592e60784c2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/4b326bcc8ea21dfa4ef3e488e713b592e60784c2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/4b326bcc8ea21dfa4ef3e488e713b592e60784c2/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/f67f57804b503f1706248442866d74ba9640400d/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@4b326bc](https://github.com/greenelab/manubot-gpt-manuscript/tree/4b326bcc8ea21dfa4ef3e488e713b592e60784c2)
+from [greenelab/manubot-gpt-manuscript@f67f578](https://github.com/greenelab/manubot-gpt-manuscript/tree/f67f57804b503f1706248442866d74ba9640400d)
 on January 17, 2023.
 </em></small>
 
@@ -121,12 +121,13 @@ Casey S. Greene \<casey.s.greene@cuanschutz.edu\>.
 
 ## Abstract {.page_break_before}
 
-Academics often communicate through scholarly manuscripts.
-These manuscripts describe new advances, summarize existing literature, or argue for changes in the status quo.
-Writing and revising manuscripts can be a time-consuming process.
-Large language models are bringing new capabilities to many areas of knowledge work.
-We integrated the use of large language models into the Manubot publishing ecosystem.
-Users of Manubot can run a workflow, which will trigger a series of queries to OpenAI's language models, produce revisions, and create a timestamped set of suggested revisions.
+Academics often communicate through scholarly manuscripts, which describe new advances, summarize existing literature, or argue for changes in the status quo.
+However, writing and revising manuscripts is a time-consuming process.
+Large language models are bringing new capabilities to many areas of knowledge work that have shown impressive performance in different tasks.
+We integrated these models into the Manubot publishing ecosystem to suggest revisions for scholarly text.
+The user can run a workflow that will trigger a series of queries to OpenAI's language models to create a timestamped set of suggested revisions to the text.
+We tested this AI-based revision workflow in three case studies of existing manuscripts, including the present one.
+We found that these models can capture the concepts in the scholarly text and produce high-quality revisions that improved clarity.
 Given the amount of time that researchers put into crafting prose, we expect this advance to radically transform the type of knowledge work that academics perform.
 
 

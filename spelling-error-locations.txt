@@ -1,5 +1,5 @@
-content/01.abstract.md:8:OpenAI
-content/01.abstract.md:8:OpenAI's
+content/01.abstract.md:7:OpenAI
+content/01.abstract.md:7:OpenAI's
 content/02.introduction.md:3:pre
 content/02.introduction.md:11:arxiv
 content/02.introduction.md:12:arxiv
