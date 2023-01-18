@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Milton Pividori" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2023-01-17" />
+  <meta name="dcterms.date" content="2023-01-18" />
   <meta name="keywords" content="manubot, artificial intelligence, scholarly publishing, software" />
   <title>A publishing infrastructure for AI-assisted academic authoring</title>
   <style>
@@ -51,11 +51,11 @@
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-17" />
-  <meta name="citation_publication_date" content="2023-01-17" />
-  <meta property="article:published_time" content="2023-01-17" />
-  <meta name="dc.modified" content="2023-01-17T22:18:28+00:00" />
-  <meta property="article:modified_time" content="2023-01-17T22:18:28+00:00" />
+  <meta name="dc.date" content="2023-01-18" />
+  <meta name="citation_publication_date" content="2023-01-18" />
+  <meta property="article:published_time" content="2023-01-18" />
+  <meta name="dc.modified" content="2023-01-18T18:12:41+00:00" />
+  <meta property="article:modified_time" content="2023-01-18T18:12:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/">permalink</a>)
+(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/98b0408448398e0dc3d9c38e2c7d91d250aae935">greenelab/manubot-gpt-manuscript@98b0408</a>
-on January 17, 2023.
+from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/88e57c2d6afc374172aabd83a32d62656d1379e6">greenelab/manubot-gpt-manuscript@88e57c2</a>
+on January 18, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -240,6 +240,10 @@ The user can also instruct the model to generate, for each paragraph, several co
 Our proof-of-concept implementation generates only one completion (parameter <code>best_of=1</code>) to avoid potentially high costs for the user.
 Additionally, our workflow allows to process either the entire manuscript or individual sections.
 This allows to control costs more effectively while focusing on a single piece of text in which the user can run the tool several times and pick the prefered revised text.</p>
+<h3 id="installation-and-use">Installation and use</h3>
+<p>We have contributed our workflow (<a href="https://github.com/manubot/rootstock/pull/484">https://github.com/manubot/rootstock/pull/484</a>) to the standard Manubot template manuscript, which is called rootstock and available at <a href="https://github.com/manubot/rootstock">https://github.com/manubot/rootstock</a>.
+Users who wish to use the workflow before it is fully integrated into rootstock can copy the files from the linked pull request in the GitHub repository of their manuscript.
+After that, the workflow (named <code>ai-revision</code>) will be available in the Actions tab of the repository.</p>
 <h2 id="sec:results">Observations of AI-based revisions</h2>
 <h3 id="evaluation-setup">Evaluation setup</h3>
 <p>We evaluated our AI-based revision workflow by testing different language models and manuscripts.
@@ -428,16 +432,16 @@ Other sections, such as abstracts, were more challenging for the model to revise
 Opportunities exist to improve the underlying AI-based revisions, such as further refining prompts using few-shot learning <span class="citation" data-cites="S1Lim9f9">[<a href="#ref-S1Lim9f9" role="doc-biblioref">11</a>]</span> or fine-tuning the model with an additional corpus of academic writing focused on particularly challenging sections.
 Fine-tuning using preprint-publication pairs <span class="citation" data-cites="WVt383GU">[<a href="#ref-WVt383GU" role="doc-biblioref">12</a>]</span> may provide a strategy to detect sections or phrases likely to be changed during peer review.
 Our approach used GPT-3 to process each paragraph of the text, although it lacks a contextual thread between queries and this mainly affected the revision of the Results and Methods sections.
-Using chatbots that retain context, such as OpenAI’s ChatGPT <span class="citation" data-cites="191DVidaX">[<a href="#ref-191DVidaX" role="doc-biblioref">13</a>]</span>, could enable the revision of individual paragraphs while considering previously processed text.
+Using chatbots that retain context, such as <a href="https://openai.com/blog/chatgpt">OpenAI’s ChatGPT</a>, could enable the revision of individual paragraphs while considering previously processed text.
 Once an official API becomes available for ChatGPT, we plan to update our workflow to support this strategy.
-There is an increasing number of open models that could also be used, including BLOOM <span class="citation" data-cites="I4d1F0yv">[<a href="#ref-I4d1F0yv" role="doc-biblioref">14</a>]</span>, GLM <span class="citation" data-cites="1GG6zItDi">[<a href="#ref-1GG6zItDi" role="doc-biblioref">15</a>]</span>, or Meta’s OPT <span class="citation" data-cites="nEabcf28">[<a href="#ref-nEabcf28" role="doc-biblioref">16</a>]</span>, though lacking the highly usable OpenAI API.
+There is an increasing number of open models that could also be used, including BLOOM <span class="citation" data-cites="I4d1F0yv">[<a href="#ref-I4d1F0yv" role="doc-biblioref">13</a>]</span>, GLM <span class="citation" data-cites="1GG6zItDi">[<a href="#ref-1GG6zItDi" role="doc-biblioref">14</a>]</span>, or Meta’s OPT <span class="citation" data-cites="nEabcf28">[<a href="#ref-nEabcf28" role="doc-biblioref">15</a>]</span>, though lacking the highly usable OpenAI API.
 Even with these limitations, we found models captured the main ideas and generated a revision that often communicated the intended meaning more clearly and concisely.
 It is important to note, however, that our assessment of performance in case studies was necessarily subjective, as there could be, for example, writing styles that might not be widely shared across researchers.</p>
 <p>Using these types of tools for scientific authoring is controversial.
 Several questions arise concerning the novelty or ownership of the text generated by these models.
-For instance, the program chairs of the upcoming International Conference on Machine Learning (ICML) prohibit <em>“papers that include text generated from a large-scale language model (LLM)”</em> <span class="citation" data-cites="K58CKD6D">[<a href="#ref-K58CKD6D" role="doc-biblioref">17</a>]</span>, although editing tools for grammar and spelling correction are allowed.
+For instance, the program chairs of the upcoming International Conference on Machine Learning (ICML) prohibit <em>“papers that include text generated from a large-scale language model (LLM)”</em> <span class="citation" data-cites="K58CKD6D">[<a href="#ref-K58CKD6D" role="doc-biblioref">16</a>]</span>, although editing tools for grammar and spelling correction are allowed.
 We focus on revising an <em>existing</em> text written by a human author.
-In this way, it is not different from other automatic tools such as Grammarly <span class="citation" data-cites="ONOkdsyv">[<a href="#ref-ONOkdsyv" role="doc-biblioref">18</a>]</span>.
+In this way, it is not different from other automatic tools such as Grammarly <span class="citation" data-cites="ONOkdsyv">[<a href="#ref-ONOkdsyv" role="doc-biblioref">17</a>]</span>.
 While there are concerns, there are also significant opportunities, and our work lays the foundation for a future where both human and machine contributions construct academic manuscripts.
 Scientific articles need to follow a specific style, making the writing process a time-consuming task that requires a significant amount of effort in thinking about <em>how</em> to communicate a result or finding that was already obtained.
 The increasing ability of machines to improve a scholarly text means that humans can focus more on <em>what</em> to communicate to others instead of writing with a particular style.
@@ -481,23 +485,20 @@ A future in which scientists are only limited by their ideas and ability to perf
 <div id="ref-WVt383GU" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">12. </div><div class="csl-right-inline"><strong>Examining linguistic shifts between preprints and publications</strong> <div class="csl-block">David N Nicholson, Vincent Rubinetti, Dongbo Hu, Marvin Thielk, Lawrence E Hunter, Casey S Greene</div> <em>PLOS Biology</em> (2022-02-01) <a href="https://doi.org/gqqzn2">https://doi.org/gqqzn2</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1371/journal.pbio.3001470">10.1371/journal.pbio.3001470</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/35104289">35104289</a> · PMCID: <a href="https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8806061">PMC8806061</a></div></div>
 </div>
-<div id="ref-191DVidaX" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">13. </div><div class="csl-right-inline"><a href="https://openai.com/blog/chatgpt">https://openai.com/blog/chatgpt</a></div>
-</div>
 <div id="ref-I4d1F0yv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>BLOOM: A 176B-Parameter Open-Access Multilingual Language Model</strong> <div class="csl-block">BigScience Workshop, :, Teven Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ilić, Daniel Hesslow, Roman Castagné, Alexandra Sasha Luccioni, … Thomas Wolf</div> <em>arXiv</em> (2022-12-13) <a href="https://arxiv.org/abs/2211.05100">https://arxiv.org/abs/2211.05100</a></div>
+<div class="csl-left-margin">13. </div><div class="csl-right-inline"><strong>BLOOM: A 176B-Parameter Open-Access Multilingual Language Model</strong> <div class="csl-block">BigScience Workshop, :, Teven Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ilić, Daniel Hesslow, Roman Castagné, Alexandra Sasha Luccioni, … Thomas Wolf</div> <em>arXiv</em> (2022-12-13) <a href="https://arxiv.org/abs/2211.05100">https://arxiv.org/abs/2211.05100</a></div>
 </div>
 <div id="ref-1GG6zItDi" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>GLM-130B: An Open Bilingual Pre-trained Model</strong> <div class="csl-block">Aohan Zeng, Xiao Liu, Zhengxiao Du, Zihan Wang, Hanyu Lai, Ming Ding, Zhuoyi Yang, Yifan Xu, Wendi Zheng, Xiao Xia, … Jie Tang</div> <em>arXiv</em> (2022-10-06) <a href="https://arxiv.org/abs/2210.02414">https://arxiv.org/abs/2210.02414</a></div>
+<div class="csl-left-margin">14. </div><div class="csl-right-inline"><strong>GLM-130B: An Open Bilingual Pre-trained Model</strong> <div class="csl-block">Aohan Zeng, Xiao Liu, Zhengxiao Du, Zihan Wang, Hanyu Lai, Ming Ding, Zhuoyi Yang, Yifan Xu, Wendi Zheng, Xiao Xia, … Jie Tang</div> <em>arXiv</em> (2022-10-06) <a href="https://arxiv.org/abs/2210.02414">https://arxiv.org/abs/2210.02414</a></div>
 </div>
 <div id="ref-nEabcf28" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>OPT: Open Pre-trained Transformer Language Models</strong> <div class="csl-block">Susan Zhang, Stephen Roller, Naman Goyal, Mikel Artetxe, Moya Chen, Shuohui Chen, Christopher Dewan, Mona Diab, Xian Li, Xi Victoria Lin, … Luke Zettlemoyer</div> <em>arXiv</em> (2022-06-22) <a href="https://arxiv.org/abs/2205.01068">https://arxiv.org/abs/2205.01068</a></div>
+<div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>OPT: Open Pre-trained Transformer Language Models</strong> <div class="csl-block">Susan Zhang, Stephen Roller, Naman Goyal, Mikel Artetxe, Moya Chen, Shuohui Chen, Christopher Dewan, Mona Diab, Xian Li, Xi Victoria Lin, … Luke Zettlemoyer</div> <em>arXiv</em> (2022-06-22) <a href="https://arxiv.org/abs/2205.01068">https://arxiv.org/abs/2205.01068</a></div>
 </div>
 <div id="ref-K58CKD6D" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>ICML 2023</strong> <a href="https://icml.cc/Conferences/2023/llm-policy">https://icml.cc/Conferences/2023/llm-policy</a></div>
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>ICML 2023</strong> <a href="https://icml.cc/Conferences/2023/llm-policy">https://icml.cc/Conferences/2023/llm-policy</a></div>
 </div>
 <div id="ref-ONOkdsyv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>Write your best with Grammarly.</strong> <a href="https://www.grammarly.com/">https://www.grammarly.com/</a></div>
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Write your best with Grammarly.</strong> <a href="https://www.grammarly.com/">https://www.grammarly.com/</a></div>
 </div>
 </div>
 <!-- default theme -->
