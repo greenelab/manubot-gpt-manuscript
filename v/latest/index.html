@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2023-01-18" />
   <meta name="citation_publication_date" content="2023-01-18" />
   <meta property="article:published_time" content="2023-01-18" />
-  <meta name="dc.modified" content="2023-01-18T18:12:41+00:00" />
-  <meta property="article:modified_time" content="2023-01-18T18:12:41+00:00" />
+  <meta name="dc.modified" content="2023-01-18T22:10:55+00:00" />
+  <meta property="article:modified_time" content="2023-01-18T22:10:55+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/74c419a464a2b0f3fd7aacc537db68ec8b112535/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/74c419a464a2b0f3fd7aacc537db68ec8b112535/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/74c419a464a2b0f3fd7aacc537db68ec8b112535/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,9 +96,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/">permalink</a>)
+(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/74c419a464a2b0f3fd7aacc537db68ec8b112535/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/88e57c2d6afc374172aabd83a32d62656d1379e6">greenelab/manubot-gpt-manuscript@88e57c2</a>
+from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/74c419a464a2b0f3fd7aacc537db68ec8b112535">greenelab/manubot-gpt-manuscript@74c419a</a>
 on January 18, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -302,7 +302,7 @@ Manubot-AI provides an example with a simple structure and significantly less fi
 It was written and revised using our tool before submission, which provides a more real AI-based revision use case.
 These three manuscripts allowed us to significantly improve and test our prompts, and we report these findings below.</p>
 <p>We enabled the Manubot AI revision workflow in the GitHub repositories of the three manuscripts (CCC: <code>https://github.com/greenelab/ccc-manuscript</code>, PhenoPLIER: <code>https://github.com/greenelab/phenoplier_manuscript</code>, Manubot-AI: <code>https://github.com/greenelab/manubot-gpt-manuscript</code>).
-This added the <code class="red">"AI-revision"</code> workflow to the “Actions” tab of each repository, which allows to be manually triggered by the user.
+This added the “ai-revision” workflow to the “Actions” tab of each repository, which allows to be manually triggered by the user.
 Then, we ran the workflow on the three manuscripts using the three language models described above, producing one pull request (PR) per manuscript and model.
 These PRs (three per manuscript) can be accessed from the “Pull requests” tab from each repository, where they are titled <em>“GPT (MODEL) used to revise manuscript”</em> with <em>MODEL</em> being the identifier of the model used.
 PRs show the differences between the original text and the suggestions made by the AI-based revision tool.
@@ -328,11 +328,15 @@ When applicable, single words are also underlined and highlighted in colors to m
 In these cases, words underlined in red were removed by the tool, whereas words underlined in green were added and words not underlined were kept unchanged.
 The full diffs can be seen by inspecting the PRs for each manuscript and model, and then clicking on the “Files changed” tab.</p>
 <h4 id="abstract-1">Abstract</h4>
-<p>This is the revision for the abstract of CCC:</p>
+<div id="fig:abstract:ccc" class="fignos">
 <figure>
-<img src="images/diffs/abstract/ccc-abstract.svg" style="width:100.0%" />
+<img src="images/diffs/abstract/ccc-abstract.svg" style="width:100.0%" alt="Figure 2: Abstract of CCC. Original text is on the left and suggested revision on the right." />
+<figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Abstract of CCC.</strong>
+Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
-<p>The tool completely rewrote the text, where only the last sentence was mostly unchanged.
+</div>
+<p>We applied the AI-based revision workflow to the CCC abstract (Figure <a href="#fig:abstract:ccc">2</a>).
+The tool completely rewrote the text, where only the last sentence was mostly unchanged.
 The text was significantly shortened, although sentences are longer than the original ones which could make the abstract slightly harder to read.
 The revision removed the first two sentences that introduces correlation analyses and transcriptomics, and directly stated from the beginning the purpose of the manuscript.
 It also removed details about the method (line 5), and focused on the aims and the results obtained, ending with almost the same last sentence which suggest a more broad application of the coefficient to other data domains (as originally intended by the authors of CCC).
@@ -340,12 +344,15 @@ However, none of the ideas suggested to be removed were critical, and all the ma
 <p>The revised text for the abstract of PhenoPLIER was significantly shortened (from 10 sentences in the original, to only 3 in the revised version).
 However, in this case, important concepts (such as GWAS, TWAS, CRISPR) and a proper amount of background information were missing, producing a less informative abstract.</p>
 <h4 id="introduction-1">Introduction</h4>
-<p>This is the revision of the first paragraph of the introduction of CCC:</p>
+<div id="fig:intro:ccc" class="fignos">
 <figure>
-<img src="images/diffs/introduction/ccc-paragraph-01.svg" style="width:100.0%" />
+<img src="images/diffs/introduction/ccc-paragraph-01.svg" style="width:100.0%" alt="Figure 3: First paragraph in the Introduction section of CCC. Original text is on the left and suggested revision on the right." />
+<figcaption aria-hidden="true"><span>Figure 3:</span> <strong>First paragraph in the Introduction section of CCC.</strong>
+Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
-<p>The tool, again, significantly revised the text, producing a much better and more concise introductory paragraph.
-For example, the revised first sentence (on the right) incorportes the ideas of “large datasets”, and the “opportunities/possibilities” for “scientific exploration” in a clearly and briefly.
+</div>
+<p>When applied to the Introduction section, the tool, again, significantly revised the text, producing a much better and more concise introductory paragraph in CCC (Figure <a href="#fig:intro:ccc">3</a>).
+For example, the revised first sentence (on the right) incorportes the ideas of “large datasets”, and the “opportunities” or “possibilities” for “scientific exploration” clearly and briefly.
 These ideas are present in the first two sentences of the original text (on the left).
 Then the model generated a more concise and clear second sentence introducing the problem (“we need efficient tools” to find “multiple relationships” in these large datasets).
 The third sentence also nicely connects with the previous one.
@@ -358,12 +365,16 @@ Additionally, the model did not converge to a revised text for the last paragrap
 We observed this issue when debugging the prompts, and it could be related to the fact that the paragraph is large and has a more complex structure than the rest.
 However, since the model is stochastic, this can be solved by running the automated revision again.</p>
 <h4 id="results">Results</h4>
-<p>Below is a paragraph of the Results section of CCC describing a set of simulations using different datasets shown in a figure (which is Figure 1 in <span class="citation" data-cites="eirYTTyk">[<a href="#ref-eirYTTyk" role="doc-biblioref">9</a>]</span>).
-The figure shows four different datasets with two variables each, and different relationships or patterns named random/independent, non-coexistence, quadratic, and two-lines.</p>
+<div id="fig:results:ccc" class="fignos">
 <figure>
-<img src="images/diffs/results/ccc-paragraph-01.svg" style="width:100.0%" />
+<img src="images/diffs/results/ccc-paragraph-01.svg" style="width:100.0%" alt="Figure 4: A paragraph in the Results section of CCC. Original text is on the left and suggested revision on the right." />
+<figcaption aria-hidden="true"><span>Figure 4:</span> <strong>A paragraph in the Results section of CCC.</strong>
+Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
-<p>In addition to having fewer sentences that are slightly longer, the revised paragraph consistently uses only the past tense, whereas the original one has tense shifts.
+</div>
+<p>We tested the tool on a paragraph of the Results section of CCC that describes Figure 1 of that manuscript <span class="citation" data-cites="eirYTTyk">[<a href="#ref-eirYTTyk" role="doc-biblioref">9</a>]</span> (Figure <a href="#fig:results:ccc">4</a>).
+That figure shows four different datasets with two variables each, and different relationships or patterns named random/independent, non-coexistence, quadratic, and two-lines.
+In addition to having fewer sentences that are slightly longer, the revised paragraph consistently uses only the past tense, whereas the original one has tense shifts.
 This makes the text more consistent and easier to read.
 The revised paragraph also kept all citations, which although is not explicitely mentioned in the prompts for this section (as it is for introductions), in this case is important.
 Math was also kept in the original LaTeX format and the figure was correctly referenced using the Manubot syntax.
@@ -377,14 +388,18 @@ The model also produced high-quality revisions for several other paragraphs that
 For instance, for some paragraphs, the model generated a revised text that is shorter, more direct and clear.
 However, important details were removed, and sometimes sentences changed the meaning.
 In this case, we could accept the simplified sentence structure but add back the missing details.</p>
+<div id="fig:results:phenoplier" class="fignos">
+<figure>
+<img src="images/diffs/results/phenoplier-paragraph-01.svg" style="width:100.0%" alt="Figure 5: A paragraph in the Results section of PhenoPLIER. Original text is on the left and suggested revision on the right." />
+<figcaption aria-hidden="true"><span>Figure 5:</span> <strong>A paragraph in the Results section of PhenoPLIER.</strong>
+Original text is on the left and suggested revision on the right.</figcaption>
+</figure>
+</div>
 <p>In PhenoPLIER, the model also produced high-quality revisions for most paragraphs, while keeping citations and references to figures, tables and other section of the manuscript in the Manubot/Markdown format.
 In some cases, important details were left out, but they could be easily added back while keeping the improved sentence structure of the revised version.
 Other cases clearly showed the limitations of revising one paragraph at a time without considering the rest of the text.
-An example of this is when we describe our CRISPR screening approach to assess whether top genes in a latent variable (LV) could represent good therapeutic targets:</p>
-<figure>
-<img src="images/diffs/results/phenoplier-paragraph-01.svg" style="width:100.0%" />
-</figure>
-<p>In this case, the model generated a paragraph with a completely different meaning.
+For instance, one paragraph describes our CRISPR screening approach to assess whether top genes in a latent variable (LV) could represent good therapeutic targets.
+In this case, the model generated a paragraph with a completely different meaning (Figure <a href="#fig:results:phenoplier">5</a>).
 The revised paragraph describes an experiment that does not exist with a reference to a nonexisting section.
 There is no mention of the CRISPR screen and the gene symbols identified to be associated with the regulation of lipids, which are the key elements in the original text.
 Instead, the model seemed to have focused more on the title and keywords of the manuscript (Table <a href="#tbl:manuscripts">1</a>) that are part of every prompt (Figure <a href="#fig:ai_revision">1</a>).
@@ -394,21 +409,29 @@ Although this was a poor model-based revision, the output suggests that the orig
 <p>In both the CCC and PhenoPLIER manuscripts, revisions to the discussion section appeared to be of high quality.
 The model kept the correct format when necessary (e.g., using italics for gene symbols), maintained most of the citations, and improved the readability of the text in general.
 Revisions for some paragraphs introduced minor mistakes that a human author could readily fix.</p>
-<p>Below we show a paragraph of CCC where we discuss how not-only-linear correlation coefficients could potentially impact genetic studies of complex traits:</p>
+<div id="fig:discussion:ccc" class="fignos">
 <figure>
-<img src="images/diffs/discussion/ccc-paragraph-01.svg" style="width:100.0%" />
+<img src="images/diffs/discussion/ccc-paragraph-01.svg" style="width:100.0%" alt="Figure 6: A paragraph in the Discussion section of CCC. Original text is on the left and suggested revision on the right." />
+<figcaption aria-hidden="true"><span>Figure 6:</span> <strong>A paragraph in the Discussion section of CCC.</strong>
+Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
-<p>Although some minor changes could be added, we believe the revised text reads better than the original.
+</div>
+<p>One paragraph of CCC discusses how not-only-linear correlation coefficients could potentially impact genetic studies of complex traits (Figure <a href="#fig:discussion:ccc">6</a>).
+Although some minor changes could be added, we believe the revised text reads better than the original.
 It is also interesting how the model understood the format of citations and built more complex structures from it.
 For instance, the two articles referenced in lines 2 and 3 in the original text were correctly merged into a single citation block and separated with “;” in line 2 of the revised text.</p>
 <h4 id="methods">Methods</h4>
 <p>Prompts for the Methods section were the most challenging to design, especially when the sections included equations.
 The prompt for Methods (Figure <a href="#fig:ai_revision">1</a>) is more focused in keeping the technical details, which was especially important for PhenoPLIER, whose Methods section contains paragraphs with several mathematical expressions.</p>
-<p>We show below the revision of a paragraph in PhenoPLIER that contains two numbered equations:</p>
+<div id="fig:methods:phenoplier" class="fignos">
 <figure>
-<img src="images/diffs/methods/phenoplier-paragraph-01.svg" style="width:100.0%" />
+<img src="images/diffs/methods/phenoplier-paragraph-01.svg" style="width:100.0%" alt="Figure 7: A paragraph in the Methods section of PhenoPLIER. Original text is on the left and suggested revision on the right." />
+<figcaption aria-hidden="true"><span>Figure 7:</span> <strong>A paragraph in the Methods section of PhenoPLIER.</strong>
+Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
-<p>The revised text contains very few changes: all the equations, citations and most of the original text was preserved.
+</div>
+<p>We revised a paragraph in PhenoPLIER that contains two numbered equations (Figure <a href="#fig:methods:phenoplier">7</a>).
+The revised text contains very few changes: all the equations, citations and most of the original text was preserved.
 However, we found it remarkable how the model identified a mistake in the original text (line 8) and fixed it in the revision (line 7).
 Indeed, the equation with the univariate model used by PrediXcan (lines 4 to 6 in the original) includes the <em>true</em> effect size <span class="math inline">\(\gamma_l\)</span> (<code>\gamma_l</code>) instead of the <em>estimated</em> one <span class="math inline">\(\hat{\gamma}_l\)</span> (<code>\hat{\gamma}_l</code>).</p>
 <p>In PhenoPLIER, we found one large paragraph with several equations that the model failed to revise, although it performed relatively well in revising the rest of the section.
