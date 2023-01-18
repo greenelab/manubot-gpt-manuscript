@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-01-17'
+date-meta: '2023-01-18'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-17" />
-  <meta name="citation_publication_date" content="2023-01-17" />
-  <meta property="article:published_time" content="2023-01-17" />
-  <meta name="dc.modified" content="2023-01-17T22:18:28+00:00" />
-  <meta property="article:modified_time" content="2023-01-17T22:18:28+00:00" />
+  <meta name="dc.date" content="2023-01-18" />
+  <meta name="citation_publication_date" content="2023-01-18" />
+  <meta property="article:published_time" content="2023-01-18" />
+  <meta name="dc.modified" content="2023-01-18T18:12:41+00:00" />
+  <meta property="article:modified_time" content="2023-01-18T18:12:41+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/98b0408448398e0dc3d9c38e2c7d91d250aae935/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/88e57c2d6afc374172aabd83a32d62656d1379e6/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@98b0408](https://github.com/greenelab/manubot-gpt-manuscript/tree/98b0408448398e0dc3d9c38e2c7d91d250aae935)
-on January 17, 2023.
+from [greenelab/manubot-gpt-manuscript@88e57c2](https://github.com/greenelab/manubot-gpt-manuscript/tree/88e57c2d6afc374172aabd83a32d62656d1379e6)
+on January 18, 2023.
 </em></small>
 
 
@@ -254,6 +254,13 @@ The user can also instruct the model to generate, for each paragraph, several co
 Our proof-of-concept implementation generates only one completion (parameter `best_of=1`) to avoid potentially high costs for the user.
 Additionally, our workflow allows to process either the entire manuscript or individual sections.
 This allows to control costs more effectively while focusing on a single piece of text in which the user can run the tool several times and pick the prefered revised text.
+
+
+### Installation and use
+
+We have contributed our workflow ([https://github.com/manubot/rootstock/pull/484](https://github.com/manubot/rootstock/pull/484)) to the standard Manubot template manuscript, which is called rootstock and available at [https://github.com/manubot/rootstock](https://github.com/manubot/rootstock).
+Users who wish to use the workflow before it is fully integrated into rootstock can copy the files from the linked pull request in the GitHub repository of their manuscript.
+After that, the workflow (named `ai-revision`) will be available in the Actions tab of the repository.
 
 
 ## Observations of AI-based revisions {#sec:results}
@@ -477,7 +484,7 @@ Other sections, such as abstracts, were more challenging for the model to revise
 Opportunities exist to improve the underlying AI-based revisions, such as further refining prompts using few-shot learning [@doi:10.1145/3386252] or fine-tuning the model with an additional corpus of academic writing focused on particularly challenging sections.
 Fine-tuning using preprint-publication pairs [@doi:10.1371/journal.pbio.3001470] may provide a strategy to detect sections or phrases likely to be changed during peer review.
 Our approach used GPT-3 to process each paragraph of the text, although it lacks a contextual thread between queries and this mainly affected the revision of the Results and Methods sections.
-Using chatbots that retain context, such as OpenAI's ChatGPT [@url:https://openai.com/blog/chatgpt], could enable the revision of individual paragraphs while considering previously processed text.
+Using chatbots that retain context, such as [OpenAI's ChatGPT](https://openai.com/blog/chatgpt), could enable the revision of individual paragraphs while considering previously processed text.
 Once an official API becomes available for ChatGPT, we plan to update our workflow to support this strategy.
 There is an increasing number of open models that could also be used, including BLOOM [@arxiv:2211.05100], GLM [@arxiv:2210.02414], or Meta's OPT [@arxiv:2205.01068], though lacking the highly usable OpenAI API.
 Even with these limitations, we found models captured the main ideas and generated a revision that often communicated the intended meaning more clearly and concisely.
