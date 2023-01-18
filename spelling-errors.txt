@@ -33,7 +33,7 @@ OpenAI
 OpenAI’s
 PhenoPLIER
 Pividori
-Pre
+pre
 PrediXcan
 prefered
 preprint
