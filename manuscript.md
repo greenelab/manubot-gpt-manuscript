@@ -24,8 +24,8 @@ header-includes: |
   <meta name="dc.date" content="2023-01-21" />
   <meta name="citation_publication_date" content="2023-01-21" />
   <meta property="article:published_time" content="2023-01-21" />
-  <meta name="dc.modified" content="2023-01-21T19:25:19+00:00" />
-  <meta property="article:modified_time" content="2023-01-21T19:25:19+00:00" />
+  <meta name="dc.modified" content="2023-01-21T21:52:52+00:00" />
+  <meta property="article:modified_time" content="2023-01-21T21:52:52+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/629d383139fa238ca3a5fa5570b2cd35cac61a28/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/629d383139fa238ca3a5fa5570b2cd35cac61a28/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/629d383139fa238ca3a5fa5570b2cd35cac61a28/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/17045e7968c1a2b89cb7c2e0068f479f961d0988/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/17045e7968c1a2b89cb7c2e0068f479f961d0988/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/17045e7968c1a2b89cb7c2e0068f479f961d0988/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,9 +71,9 @@ manubot-clear-requests-cache: false
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/629d383139fa238ca3a5fa5570b2cd35cac61a28/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/17045e7968c1a2b89cb7c2e0068f479f961d0988/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@629d383](https://github.com/greenelab/manubot-gpt-manuscript/tree/629d383139fa238ca3a5fa5570b2cd35cac61a28)
+from [greenelab/manubot-gpt-manuscript@17045e7](https://github.com/greenelab/manubot-gpt-manuscript/tree/17045e7968c1a2b89cb7c2e0068f479f961d0988)
 on January 21, 2023.
 </em></small>
 
@@ -94,6 +94,7 @@ on January 21, 2023.
     <br>
   <small>
      Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
+     · Funded by The National Human Genome Research Institute, K99 HG011898; The Eunice Kennedy Shriver National Institute of Child Health and Human Development, R01 HD109765
   </small>
 
 + **Casey S. Greene**
