@@ -8,12 +8,14 @@ datasets
 Davinci
 DOCX
 explicitely
+GBMF
 genomic
 GLM
 GPT
 Grammarly
 GreeneScientist
 GWAS
+HD
 ICML
 introdution
 LLM
@@ -31,6 +33,7 @@ PrediXcan
 preprint
 PRs
 repurposing
+Shriver
 Tokenizer
 transcriptional
 transcriptomic
