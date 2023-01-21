@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="Milton Pividori" />
   <meta name="author" content="Casey S. Greene" />
-  <meta name="dcterms.date" content="2023-01-18" />
+  <meta name="dcterms.date" content="2023-01-21" />
   <meta name="keywords" content="manubot, artificial intelligence, scholarly publishing, software" />
   <title>A publishing infrastructure for AI-assisted academic authoring</title>
   <style>
@@ -51,11 +51,11 @@
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-18" />
-  <meta name="citation_publication_date" content="2023-01-18" />
-  <meta property="article:published_time" content="2023-01-18" />
-  <meta name="dc.modified" content="2023-01-18T22:10:55+00:00" />
-  <meta property="article:modified_time" content="2023-01-18T22:10:55+00:00" />
+  <meta name="dc.date" content="2023-01-21" />
+  <meta name="citation_publication_date" content="2023-01-21" />
+  <meta property="article:published_time" content="2023-01-21" />
+  <meta name="dc.modified" content="2023-01-21T15:29:26+00:00" />
+  <meta property="article:modified_time" content="2023-01-21T15:29:26+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/74c419a464a2b0f3fd7aacc537db68ec8b112535/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/74c419a464a2b0f3fd7aacc537db68ec8b112535/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/74c419a464a2b0f3fd7aacc537db68ec8b112535/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/1cded86cc5f4b3dff4d80945b9efff1df0551aad/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/1cded86cc5f4b3dff4d80945b9efff1df0551aad/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/1cded86cc5f4b3dff4d80945b9efff1df0551aad/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -96,10 +96,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/74c419a464a2b0f3fd7aacc537db68ec8b112535/">permalink</a>)
+(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/1cded86cc5f4b3dff4d80945b9efff1df0551aad/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/74c419a464a2b0f3fd7aacc537db68ec8b112535">greenelab/manubot-gpt-manuscript@74c419a</a>
-on January 18, 2023.
+from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/1cded86cc5f4b3dff4d80945b9efff1df0551aad">greenelab/manubot-gpt-manuscript@1cded86</a>
+on January 21, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -134,36 +134,30 @@ or email to
 Casey S. Greene &lt;casey.s.greene@cuanschutz.edu&gt;.</p>
 </div>
 <h2 class="page_break_before" id="abstract">Abstract</h2>
-<p>Academics often communicate through scholarly manuscripts, which describe new advances, summarize existing literature, or argue for changes in the status quo.
-However, writing and revising manuscripts is a time-consuming process.
-Large language models are bringing new capabilities to many areas of knowledge work that have shown impressive performance in different tasks.
-We integrated these models into the Manubot publishing ecosystem to suggest revisions for scholarly text.
-The user can run a workflow that will trigger a series of queries to OpenAI’s language models to create a timestamped set of suggested revisions to the text.
-We tested this AI-based revision workflow in three case studies of existing manuscripts, including the present one.
-We found that these models can capture the concepts in the scholarly text and produce high-quality revisions that improved clarity.
-Given the amount of time that researchers put into crafting prose, we expect this advance to radically transform the type of knowledge work that academics perform.</p>
+<p>In this work we investigate how models with advanced natural language processing capabilities can be used to reduce the time-consuming process of writing and revising scholarly manuscripts.
+To this end, we integrate large language models into the Manubot publishing ecosystem to suggest revisions for scholarly text.
+We tested our AI-based revision workflow in three case studies of existing manuscripts, including the present one.
+Our results suggest that these models can capture the concepts in the scholarly text and produce high-quality revisions that improve clarity.
+Given the amount of time that researchers put into crafting prose, we anticipate that this advance will revolutionize the type of knowledge work performed by academics.</p>
 <h2 id="introduction">Introduction</h2>
-<p>The manuscript pre-dates the invention of printing by thousands of years, but the practice of producing exclusively scientific journals only started roughly 350 years ago <span class="citation" data-cites="F3iZfGUC">[<a href="#ref-F3iZfGUC" role="doc-biblioref">1</a>]</span>.
-The implementation of external peer review varies by journal but for many is less than 100 years old <span class="citation" data-cites="1HMhNrQq1">[<a href="#ref-1HMhNrQq1" role="doc-biblioref">2</a>]</span>.
-To date, most manuscripts have been written by humans or teams of humans working together to describe scholarly advances.
-Modern scholarly manuscripts often describe new advances, summarize existing literature, or argue for changes in the status quo.
+<p>Manuscripts have been around for thousands of years, but scientific journals have only been around for about 350 years <span class="citation" data-cites="F3iZfGUC">[<a href="#ref-F3iZfGUC" role="doc-biblioref">1</a>]</span>.
+External peer review, which is used by many journals, is even more recent, having been around for less than 100 years <span class="citation" data-cites="1HMhNrQq1">[<a href="#ref-1HMhNrQq1" role="doc-biblioref">2</a>]</span>.
+Most manuscripts are written by humans or teams of humans working together to describe new advances, summarize existing literature, or argue for changes in the status quo.
 However, scholarly writing is a time-consuming process where results of a study are presented using a specific style and format.
 Academics can sometimes be long-winded in getting to key points, making writing more impenetrable to their audience <span class="citation" data-cites="19YWsShi0">[<a href="#ref-19YWsShi0" role="doc-biblioref">3</a>]</span>.</p>
-<p>Current computing capabilities and the widespread availability of text, images, and other data on the internet has laid the foundation for artificial intelligence (AI) models with billions of parameters.
+<p>Recent advances in computing capabilities and the widespread availability of text, images, and other data on the internet have laid the foundation for artificial intelligence (AI) models with billions of parameters.
 Large language models, in particular, are opening the floodgates to new technologies with the capability to transform how society operates <span class="citation" data-cites="xq1uEbPa">[<a href="#ref-xq1uEbPa" role="doc-biblioref">4</a>]</span>.
-Recently published OpenAI’s models, for instance, have been trained on vast amounts of data and can generate human-like text <span class="citation" data-cites="bYOaJHMe">[<a href="#ref-bYOaJHMe" role="doc-biblioref">5</a>]</span>.
-These models are based on the transformer architecture and use self-attention mechanisms to model the complexities of language.
-The most well-known of these models is the Generative Pre-trained Transformer 3 (GPT-3), which have been shown to be highly effective at a wide range of language tasks such as generating text, completing code, answering questions, among others <span class="citation" data-cites="bYOaJHMe">[<a href="#ref-bYOaJHMe" role="doc-biblioref">5</a>]</span>.
-These capabilities might also deeply change how scientists write and revise scholarly manuscripts by saving time and effort.
-This would allow researchers to focus on more high-level tasks such as data analysis and interpretation.</p>
-<p>Here we introduce a new AI-based revision tool that imagines a future where authors co-write their manuscripts with the support of large language models.
-We used, as a base, the Manubot infrastructure for scholarly publishing <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">6</a>]</span>.
-Manubot was designed as an end-to-end publishing platform for scholarly writing for both individual and large-collaborative projects <span class="citation" data-cites="PZMP42Ak 10gsAq0o">[<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>,<a href="#ref-10gsAq0o" role="doc-biblioref">8</a>]</span>.
-We developed a new workflow that parses the manuscript, uses a large language model with section-specific prompts for revision, and then creates a set of suggested changes to reach the revised state.
-Changes are presented to the user through the GitHub interface for author review and integration into the published document.
-We tested this workflow through a case study with three Manubot-authored manuscripts that include sections with different levels of complexity.
-We found that, in most cases, the models were able to preserve the original meaning of text, improving the writing style, and even understand mathematical expressions.
-Our AI-assisted writing workflow can be integrated into any Manubot manuscript, and we expect it will help authors communicate their work more effectively.</p>
+OpenAI’s models, for instance, have been trained on vast amounts of data and can generate human-like text <span class="citation" data-cites="bYOaJHMe">[<a href="#ref-bYOaJHMe" role="doc-biblioref">5</a>]</span>.
+These models are based on the transformer architecture which uses self-attention mechanisms to model the complexities of language.
+The most well-known of these models is the Generative Pre-trained Transformer 3 (GPT-3), which have been shown to be highly effective for a range of language tasks such as generating text, completing code, and answering questions <span class="citation" data-cites="bYOaJHMe">[<a href="#ref-bYOaJHMe" role="doc-biblioref">5</a>]</span>.
+This has the potential to revolutionize how scientists write and revise scholarly manuscripts, saving time and effort and enabling researchers to focus on more high-level tasks such as data analysis and interpretation.</p>
+<p>We present a novel AI-assisted revision tool that envisions a future where authors collaborate with large language models in the writing of their manuscripts.
+This workflow builds on the Manubot infrastructure for scholarly publishing <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">6</a>]</span>, a platform designed to enable both individual and large-scale collaborative projects <span class="citation" data-cites="PZMP42Ak 10gsAq0o">[<a href="#ref-PZMP42Ak" role="doc-biblioref">7</a>,<a href="#ref-10gsAq0o" role="doc-biblioref">8</a>]</span>.
+Our workflow involves parsing the manuscript, utilizing a large language model with section-specific prompts for revision, and then generating a set of suggested changes to be integrated into the main document.
+These changes are presented to the user through the GitHub interface for review.
+To evaluate our workflow, we conducted a case study with three Manubot-authored manuscripts that included sections of varying complexity.
+Our findings indicate that, in most cases, the models were able to maintain the original meaning of text, improve the writing style, and even interpret mathematical expressions.
+Our AI-assisted writing workflow can be incorporated into any Manubot manuscript, and we anticipate it will help authors more effectively communicate their work.</p>
 <h2 id="implementing-ai-based-revision-into-the-manubot-publishing-ecosystem">Implementing AI-based revision into the Manubot publishing ecosystem</h2>
 <h3 id="overview">Overview</h3>
 <div id="fig:ai_revision" class="fignos">
@@ -177,82 +171,84 @@ The prompt for the Methods section includes the formatting of equations with ide
 All sections’ prompts include these instructions: <em>“the text grammar is correct, spelling errors are fixed, and the text has a clear sentence structure”</em>, although these are only shown for abstracts.</figcaption>
 </figure>
 </div>
-<p>We implemented the AI-based revision infrastructure in Manubot <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">6</a>]</span>.
-Manubot is a tool for collaborative writing of scientific manuscripts.
-It utilizes version control and a continuous integration workflow to facilitate efficient and transparent collaboration among authors.
+<p>We implemented an AI-based revision infrastructure in Manubot <span class="citation" data-cites="YuJbg3zO">[<a href="#ref-YuJbg3zO" role="doc-biblioref">6</a>]</span>, a tool for collaborative writing of scientific manuscripts.
 Manubot integrates with popular version control platforms such as GitHub, allowing authors to easily track changes and collaborate on writing in real time.
-Additionally, Manubot automates the process of generating a formatted manuscript (such as HTML, PDF, DOCX; Figure <a href="#fig:ai_revision">1</a>a shows the HTML output), reducing the time and effort required for manuscript preparation and submission.
-Built on this modern and open paradigm, our AI-based revision software was built using GitHub Actions, which allows the user to easily trigger an automated revision task on the entire manuscript or specific sections of it.</p>
-<p>When the user triggers the action, the manuscript is parsed by section and then by paragraph (Figure <a href="#fig:ai_revision">1</a>b), passed to the language model along with a set of custom prompts, returned, reformatted, and output.
+Furthermore, Manubot automates the process of generating a formatted manuscript (such as HTML, PDF, DOCX; Figure <a href="#fig:ai_revision">1</a>a shows the HTML output).
+Built on this modern and open paradigm, our AI-based revision software was developed using GitHub Actions, which allows the user to easily trigger an automated revision task on the entire manuscript or specific sections of it.</p>
+<p>When the user triggers the action, the manuscript is parsed by section and then by paragraph (Figure <a href="#fig:ai_revision">1</a>b) and passed to the language model along with a set of custom prompts.
+The model then returns a revised version of the text.
 Our workflow then uses the GitHub API to generate a new pull request, allowing the user to review and modify the output before merging the changes into the manuscript.
-This workflow attributes text to either the human user or to the AI language model, which may be important if future legal decisions alter the copyright landscape around the outputs of generative models.</p>
+This workflow attributes text to either the human user or to the AI language model, which may be important in light of potential future legal decisions that alter the copyright landscape around the outputs of generative models.</p>
 <p>We used the <a href="https://openai.com/api/">OpenAI API</a> for access to these models.
-Since this API incurs a cost with each run that depends on manuscript length, we implemented an workflow in GitHub Actions that can be manually triggered by the user.
-Our implementation allows users to tune the costs to their needs by allowing to select specific sections to be revised instead of the entire manuscript.
+Since this API incurs a cost with each run that depends on manuscript length, we implemented a workflow in GitHub Actions that can be manually triggered by the user.
+Our implementation allows users to tune the costs to their needs by allowing them to select specific sections to be revised instead of the entire manuscript.
 Additionally, several model parameters can be adjusted to tune costs even further, such as the language model version (including Davinci and Curie, and potentially newly published ones), how much risk the model will take, or the “quality” of the completions.
 For instance, using Davinci models (the most complex and capable ones), the cost per run is under $0.50 for most manuscripts.</p>
 <h3 id="implementation-details">Implementation details</h3>
-<p>Our tools are comprised of Python scripts that perform the AI-based revision (<a href="https://github.com/greenelab/manubot-ai-editor">https://github.com/greenelab/manubot-ai-editor</a>) and a GitHub Actions workflow that integrates manuscript with Manubot.
-The user only needs to run the workflow by specifing the branch that will be revised and selecting the files/sections of the manuscript (optional), the language model to use (<code>text-davinci-003</code> by default) and the output branch name.
-As explained later, for more advanced users it is also possible change most of the tool’s behavior or the language model parameters.</p>
+<p>Our tools are comprised of Python scripts that perform the AI-based revision (<a href="https://github.com/greenelab/manubot-ai-editor">https://github.com/greenelab/manubot-ai-editor</a>) and a GitHub Actions workflow integrated with Manubot.
+To run the workflow, the user must specify the branch that will be revised, select the files/sections of the manuscript (optional), specify the language model to use (<code>text-davinci-003</code> by default), and provide the output branch name.
+For more advanced users, it is also possible to change most of the tool’s behavior or the language model parameters.</p>
 <p>When the workflow is triggered, it downloads the manuscript by cloning the specified branch.
 It revises all of the manuscript files, or only some of them if the user specifies a subset.
 Next, each paragraph in the file is read and submitted to the OpenAI API for revision.
-If the request is successful, the tool will write the revised paragraph in place of the original one using one sentence per line (which is the recommended format for the input text).
-If the request fails, the tool might try again (up to five times by default) if it is a common error (such as “server overloaded”) or a model specific error that requires to change some of its parameters.
+If the request is successful, the tool will write the revised paragraph in place of the original one, using one sentence per line (which is the recommended format for the input text).
+If the request fails, the tool might try again (up to five times by default) if it is a common error (such as “server overloaded”) or a model-specific error that requires changing some of its parameters.
 If the error cannot be handled or the maximum number of retries is reached, the original paragraph is written instead with an HTML comment at the top explaining the cause of the error.
 This allows the user to debug the problem and attempt to fix it if desired.</p>
 <p>As shown in Figure <a href="#fig:ai_revision">1</a>b, each API request comprises a prompt (the instructions given to the model) and the paragraph to be revised.
-The prompt uses the manuscript title and keywords, so both have to be accurate for getting the best revision outcomes.
+The prompt uses the manuscript title and keywords, so both must be accurate to obtain the best revision outcomes.
 The other key component to process a paragraph is its section.
-Some paragraphs are simpler to process than others.
 For instance, the abstract is a set of sentences with no citations, whereas a paragraph from the Introduction section has several references to other scientific papers.
-A paragraph in the Results section has fewer citations but many references to figures or tables, where enough details about the experiments must be provided to understand and interpret the outcomes.
+A paragraph in the Results section has fewer citations but many references to figures or tables, and must provide enough details about the experiments to understand and interpret the outcomes.
 The Methods section is more dependent on the type of paper, but in general it has to provide technical details and sometimes mathematical formulas and equations.
 Therefore, we designed section-specific prompts, which we found led to the most useful suggestions.
-Figures and tables captions, as well as paragraphs that contain only one or two sentences and less than sixty words, are not processed and copied directly to the output file.</p>
-<p>The section of a paragraph is automatically inferred from the file name using a simple strategy (such as if “introduction” or “methods” is part of the file name).
-If the tool fails to infer a section from the file, then the file will not be processed.
-If this happens, the user is still able to specify which section the file belongs to.
-The section could be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure <a href="#fig:ai_revision">1</a>b), or a non-standard one for which a default prompt will be used to instruct the model to perform only a basic revision (<code>minimize the use of jargon, ensure text grammar is correct spelling errors are fixed, and the text has a clear sentence structure</code>).</p>
+Figures and tables captions, as well as paragraphs that contain only one or two sentences and less than sixty words, are not processed and are copied directly to the output file.</p>
+<p>The section of a paragraph is automatically inferred from the file name using a simple strategy, such as if “introduction” or “methods” is part of the file name.
+If the tool fails to infer a section from the file, then the user is still able to specify which section the file belongs to.
+The section can be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure <a href="#fig:ai_revision">1</a>b), or a non-standard one for which a default prompt is used to instruct the model to perform basic revision (minimizing the use of jargon, ensuring text grammar is correct, fixing spelling errors, and making sure the text has a clear sentence structure).</p>
 <h3 id="properties-of-language-models">Properties of language models</h3>
-<p>Our AI-based revision workflow uses <a href="https://beta.openai.com/docs/guides/completion">text completion</a> to process each paragraph, either using the completion endpoint or the new edits endpoint (which is currently in beta).
+<p>Our AI-based revision workflow uses <a href="https://beta.openai.com/docs/guides/completion">text completion</a> to process each paragraph.
 We tested our tool using Davinci and Curie models, including <code>text-davinci-003</code>, <code>text-davinci-edit-001</code> and <code>text-curie-001</code>.
 Davinci models are the most powerful GPT-3 model, whereas Curie ones are less capable but faster and less expensive.
-Although the edits endpoints would be the ideal interface for our task, it is still in beta.
-Therefore, we mainly focused on the completion endpoint.
+We mainly focused on the completion endpoint, as the edits endpoint is currently in beta.
 All models can be fine-tuned using different parameters (see <a href="https://beta.openai.com/docs/api-reference/completions">OpenAI - API Reference</a>), and the most important ones can be easily adjusted using our tool.</p>
 <p>Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
-This limit includes the size of the prompt and the paragraph, and the maximum number of tokens to generate for the completion (parameter <code>max_tokens</code>).
-For instance, the context length of Davinci models is 4,000, and 2,048 for Curie (see <a href="https://beta.openai.com/docs/models/overview">OpenAI - Models overview</a>).
-For this reason, it is still not possible to use the entire manuscript as input, not even entire sections.
-Therefore, our AI-assisted revision software process each paragraph of the manuscript with section-specific prompts, as shown in Figure <a href="#fig:ai_revision">1</a>b.
-The advantage of this approach is the ability to process large manuscripts by processing small chunks of text.
-The main issue, however, is that the language model processes only a single paragraph from a section, potentially losing important context to produce a better output.
-Nonetheless, we find that the model still produces high-quality output (see <a href="#sec:results">Results</a>).
-Additionally, since the goal of our tool is to revise a paragraph, by default we set the maximum number of tokens (parameter <code>max_tokens</code>) as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, see <a href="https://beta.openai.com/tokenizer%5D">OpenAI - Tokenizer</a>).
+This limit includes the size of the prompt and the paragraph, as well as the maximum number of tokens to generate for the completion (parameter <code>max_tokens</code>).
+For instance, the context length of Davinci models is 4,000 and 2,048 for Curie (see <a href="https://beta.openai.com/docs/models/overview">OpenAI - Models overview</a>).
+Therefore, it is not possible to use the entire manuscript as input, not even entire sections.
+To address this limitation, our AI-assisted revision software processes each paragraph of the manuscript with section-specific prompts, as shown in Figure <a href="#fig:ai_revision">1</a>b.
+This approach allows us to process large manuscripts by breaking them into small chunks of text.
+However, since the language model only processes a single paragraph from a section, it can potentially lose important context to produce a better output.
+Nonetheless, we find that the model still produces high-quality revisions (see <a href="#sec:results">Results</a>).
+Additionally, the maximum number of tokens (parameter <code>max_tokens</code>) is set as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, see <a href="https://beta.openai.com/tokenizer%5D">OpenAI - Tokenizer</a>.
 The tool automatically adjusts this parameter and performs the request again if a related error is returned by the API.
-The user can force the tool to either use a fixed value for <code>max_tokens</code> for all paragraphs, or change the fraction of maximum tokens based on the estimated paragraph size (two by default).</p>
-<p>The language models used are stochastic: they will generate a different revision for the same input paragraph each time.
-This behavior can be changed by using the “sampling temperature” or “nucleus sampling” parameters (we use <code>temperature=0.5</code> by default).
-Although we selected default values that worked well across multiple manuscripts, these parameters can be changed by the user if necessary to make the model more deterministic.
-The user can also instruct the model to generate, for each paragraph, several completions and select the one with the highest log probability per token, what can improve the quality of the revision.
+The user can also force the tool to either use a fixed value for <code>max_tokens</code> for all paragraphs, or change the fraction of maximum tokens based on the estimated paragraph size (two by default).</p>
+<p>The language models used are stochastic, meaning they generate a different revision for the same input paragraph each time.
+This behavior can be adjusted by using the “sampling temperature” or “nucleus sampling” parameters (we use <code>temperature=0.5</code> by default).
+Although we selected default values that worked well across multiple manuscripts, these parameters can be changed to make the model more deterministic.
+The user can also instruct the model to generate several completions and select the one with the highest log probability per token, which can improve the quality of the revision.
 Our proof-of-concept implementation generates only one completion (parameter <code>best_of=1</code>) to avoid potentially high costs for the user.
-Additionally, our workflow allows to process either the entire manuscript or individual sections.
-This allows to control costs more effectively while focusing on a single piece of text in which the user can run the tool several times and pick the prefered revised text.</p>
+Additionally, our workflow allows the user to process either the entire manuscript or individual sections.
+This allows for more cost-effective control while focusing on a single piece of text, wherein the user can run the tool several times and pick the preferred revised text.</p>
 <h3 id="installation-and-use">Installation and use</h3>
 <p>We have contributed our workflow (<a href="https://github.com/manubot/rootstock/pull/484">https://github.com/manubot/rootstock/pull/484</a>) to the standard Manubot template manuscript, which is called rootstock and available at <a href="https://github.com/manubot/rootstock">https://github.com/manubot/rootstock</a>.
 Users who wish to use the workflow before it is fully integrated into rootstock can copy the files from the linked pull request in the GitHub repository of their manuscript.
 After that, the workflow (named <code>ai-revision</code>) will be available in the Actions tab of the repository.</p>
 <h2 id="sec:results">Observations of AI-based revisions</h2>
+<ul>
+<li><em>TODO</em>: say that we are focusing in the other two manuscripts, because it is already here.
+<ul>
+<li>mention at the beginning that this manuscript was written by humans first, and then revised by the AI, and then revised by humans again on top of that.</li>
+<li>link the PR</li>
+<li>include the .patch (not diff), so commit history is preserved. Mention that in the text.</li>
+</ul></li>
+</ul>
 <h3 id="evaluation-setup">Evaluation setup</h3>
-<p>We evaluated our AI-based revision workflow by testing different language models and manuscripts.
-For this, we used three different GPT-3 models from OpenAI: <code>text-davinci-003</code>, <code>text-davinci-edit-001</code>, and <code>text-curie-001</code>.
-The first two are based on the most capable Davinci models, (see <a href="https://beta.openai.com/docs/models/gpt-3">OpenAI - GPT-3 models</a>).
-The difference between them is that <code>text-davinci-003</code> is a production-ready model for the completion endpoint, whereas <code>text-davinci-edit-001</code> is used for the newly edits endopoint (in beta).
-The edits endpoint provides a more natural interface for the revision of manuscripts since it has two inputs: the instructions and the text to revise.
-This is different from the completion endpoint, where there is a single input that contains the instructions and the text to revise.
-Finally, we also selected <code>text-curie-001</code> because, in addition to being faster and chepear than Davinci models, it is defined as a “very capable” model by their authors (see <a href="https://beta.openai.com/docs/models/gpt-3">OpenAI - GPT-3 models</a>).</p>
+<p>We evaluated our AI-assisted revision workflow using three GPT-3 models from OpenAI: <code>text-davinci-003</code>, <code>text-davinci-edit-001</code>, and <code>text-curie-001</code>.
+The first two are based on the most capable Davinci models (see <a href="https://beta.openai.com/docs/models/gpt-3">OpenAI - GPT-3 models</a>).
+Whereas <code>text-davinci-003</code> is a production-ready model for the completion endpoint, <code>text-davinci-edit-001</code> is used for the edits endpoint and is still in beta.
+The latter provides a more natural interface for revising manuscripts, as it takes two inputs: instructions and the text to revise.
+Model <code>text-curie-001</code> is faster and cheaper than Davinci models, and is defined as “very capable” by its authors (see <a href="https://beta.openai.com/docs/models/gpt-3">OpenAI - GPT-3 models</a>).</p>
 <div id="tbl:manuscripts" class="tablenos">
 <table id="tbl:manuscripts">
 <caption><span>Table 1:</span> <strong>Manuscripts used to evaluate the AI-based revision workflow.</strong> The title and keywords of a manuscript are used in prompts for revising paragraphs. IDs are used in the text to refer to them, and they link to their GitHub repositories. </caption>
@@ -288,44 +284,41 @@ Finally, we also selected <code>text-curie-001</code> because, in addition to be
 </table>
 </div>
 <p>Assessing the performance of an automated revision tool is not straightforward, since a review of a revision will necessarily be subjective.
-For this reason, we used three manuscripts of our own authorship to be able to more accurately assess the quality of the revision (Table <a href="#tbl:manuscripts">1</a>).
-The first two are existing manuscripts that were previously written, and the third one is this manuscript which was written and then revised using our tool before submission.
-The first manuscript describes the Clustermatch Correlation Coefficient (CCC) <span class="citation" data-cites="eirYTTyk">[<a href="#ref-eirYTTyk" role="doc-biblioref">9</a>]</span>, a new correlation coefficient that was evaluated in transcriptomic data to find novel, potentially nonlinear relationships between gene pairs in the Genotype-Tissue Expression v8 (GTEx) project.
-The second manuscript describes PhenoPLIER <span class="citation" data-cites="FEh1bD0A">[<a href="#ref-FEh1bD0A" role="doc-biblioref">10</a>]</span>, a framework that comprises three different methods to improve the interpretability of genetic studies of complex diseases.
-We refer to these two manuscripts as CCC and PhenoPLIER, respectively.
+To mitigate this, we used three manuscripts of our own authorship (Table <a href="#tbl:manuscripts">1</a>): the Clustermatch Correlation Coefficient (CCC) <span class="citation" data-cites="eirYTTyk">[<a href="#ref-eirYTTyk" role="doc-biblioref">9</a>]</span>, PhenoPLIER <span class="citation" data-cites="FEh1bD0A">[<a href="#ref-FEh1bD0A" role="doc-biblioref">10</a>]</span>, and Manubot-AI (this manuscript).
+CCC is a new correlation coefficient evaluated in transcriptomic data, while PhenoPLIER is a framework that comprises three different methods applied in the field of genetic studies.
 CCC is in the field of computational biology, whereas PhenoPLIER is in the field of genomic medicine.
 CCC describes one computational method applied to one data type (correlation to gene expression).
 PhenoPLIER describes a framework that comprises three different approaches (regression, clustering and drug-disease prediction) using data from genome-wide and transcription-wide association studies (GWAS and TWAS), gene expression, and transcriptional responses to small molecule perturbations.
-Therefore, CCC provides has a simpler structure, whereas PhenoPLIER is a more complex manuscript with more figures and tables and a Methods section including equations for different methods.
-The third manuscript is this one, where we describe software that uses machine learning models for the automated revision of scientific manuscripts, and we refer to it as Manubot-AI.
-Manubot-AI provides an example with a simple structure and significantly less figures than the rest.
-It was written and revised using our tool before submission, which provides a more real AI-based revision use case.
-These three manuscripts allowed us to significantly improve and test our prompts, and we report these findings below.</p>
+Therefore, CCC has a simpler structure, whereas PhenoPLIER is a more complex manuscript with more figures and tables and a Methods section including equations.
+The third manuscript, Manubot-AI, provides an example with a simpler structure, and it was written and revised using our tool before submission, which provides a more real AI-based revision use case.
+Using these manuscripts, we tested and improved our prompts.
+Our findings are reported below.</p>
 <p>We enabled the Manubot AI revision workflow in the GitHub repositories of the three manuscripts (CCC: <code>https://github.com/greenelab/ccc-manuscript</code>, PhenoPLIER: <code>https://github.com/greenelab/phenoplier_manuscript</code>, Manubot-AI: <code>https://github.com/greenelab/manubot-gpt-manuscript</code>).
-This added the “ai-revision” workflow to the “Actions” tab of each repository, which allows to be manually triggered by the user.
-Then, we ran the workflow on the three manuscripts using the three language models described above, producing one pull request (PR) per manuscript and model.
-These PRs (three per manuscript) can be accessed from the “Pull requests” tab from each repository, where they are titled <em>“GPT (MODEL) used to revise manuscript”</em> with <em>MODEL</em> being the identifier of the model used.
-PRs show the differences between the original text and the suggestions made by the AI-based revision tool.
-Below we discussed our findings based on these PRs using the language models across different sections of the manuscripts.</p>
+This added the “ai-revision” workflow to the “Actions” tab of each repository.
+We triggered the workflow manually and used the three language models described above to produce one pull request (PR) per manuscript and model.
+These PRs can be accessed from the “Pull requests” tab of each repository.
+They are titled <em>“GPT (MODEL) used to revise manuscript”</em> with <em>MODEL</em> being the identifier of the model used.
+The PRs show the differences between the original text and the AI-based revision suggestions.
+We discuss below our findings based on these PRs across different sections of the manuscripts.</p>
 <h3 id="performance-of-language-models">Performance of language models</h3>
-<p>We found that Davinci models, as expected, were superior than the Curie model for all manuscripts.
-The Curie model is described as “very capable”, and it is faster and less expensive than Davinci models.
-However, as shown in the PRs generated using this model (titled <code>GPT (text-curie-001) used to revise manuscript</code>), the model was not able to produce acceptable revisions for any of the manuscripts.
+<p>We found that Davinci models outperformed the Curie model across all manuscripts.
+The Curie model is faster and less expensive than Davinci models.
+However, the PRs show that the model was not able to produce acceptable revisions for any of the manuscripts.
 Most of its suggestions were not coherent with the original text in any of the sections.</p>
-<p>Among Davinci models, we found that for <code>text-davinci-edit-001</code> (edits endpoint), the quality of the revisions was subjectively inferior to <code>text-davinci-003</code> (completion endpoint).
-In general, the model either did not produce a revision (such as for abstracts) or the suggested changes were minimal or did not improve the original text.
-In paragraphs from the introduction, for instance, this model failed to keep references to other scientific articles in CCC, and in PhenoPLIER it didn’t produce a meaningful revision.
-This might be explained by the fact that the edits endpoint is still in beta.</p>
+<p>We found that the quality of the revisions produced by the <code>text-davinci-edit-001</code> (edits endpoint) model was subjectively inferior to <code>text-davinci-003</code> (completion endpoint).
+This model either did not produce a revision (such as for abstracts) or the suggested changes were minimal or did not improve the original text.
+For example, in paragraphs from the introduction, it failed to keep references to other scientific articles in CCC, and in PhenoPLIER it didn’t produce a meaningful revision.
+This might be because the edits endpoint is still in beta.</p>
 <p>The <code>text-davinci-003</code> model produced the best results for all manuscripts and across the different sections.
 Since both <code>text-davinci-003</code> and <code>text-davinci-edit-001</code> are based on the same models, we only report the results of <code>text-davinci-003</code> below.</p>
 <h3 id="revision-of-different-sections">Revision of different sections</h3>
-<p>We inspected the PRs generated by the AI-based workflow, and highlight below some of the most interesting changes suggested by the tool across different section of the manuscripts.
+<p>We inspected the PRs generated by the AI-based workflow and found interesting changes suggested by the tool across different sections of the manuscripts.
 These are our subjective assessments of the quality of the revisions, and we encourage the reader to inspect the PRs for each manuscript and model to see the full diffs and make their own conclusions.
-These PRs are available in the manuscripts’ GitHub repositories and included as diff files in Supplementary File 1 (CCC) and 2 (PhenoPLIER).</p>
-<p>We show the differences between the original text and the revisions by the tool in a <code>diff</code> format (obtained from GitHub), where the original text is on the left, and the suggested one on the right.
-Line numbers were also included to more easily see the differences in length.
-When applicable, single words are also underlined and highlighted in colors to more clearly see the differences within a single sentence.
-In these cases, words underlined in red were removed by the tool, whereas words underlined in green were added and words not underlined were kept unchanged.
+These PRs are available in the manuscripts’ GitHub repositories and also included as diff files in Supplementary File 1 (CCC), 2 (PhenoPLIER) and <code class="red">3 (Manubot-AI)</code>.</p>
+<p>We present the differences between the original text and the revisions by the tool in a <code>diff</code> format (obtained from GitHub).
+Line numbers are included to show the length differences.
+When applicable, single words are underlined and highlighted in colors to more clearly see the differences within a single sentence.
+Red indicates words removed by the tool, green indicates words added, and no underlining indicates words kept unchanged.
 The full diffs can be seen by inspecting the PRs for each manuscript and model, and then clicking on the “Files changed” tab.</p>
 <h4 id="abstract-1">Abstract</h4>
 <div id="fig:abstract:ccc" class="fignos">
@@ -336,11 +329,11 @@ Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
 </div>
 <p>We applied the AI-based revision workflow to the CCC abstract (Figure <a href="#fig:abstract:ccc">2</a>).
-The tool completely rewrote the text, where only the last sentence was mostly unchanged.
-The text was significantly shortened, although sentences are longer than the original ones which could make the abstract slightly harder to read.
-The revision removed the first two sentences that introduces correlation analyses and transcriptomics, and directly stated from the beginning the purpose of the manuscript.
-It also removed details about the method (line 5), and focused on the aims and the results obtained, ending with almost the same last sentence which suggest a more broad application of the coefficient to other data domains (as originally intended by the authors of CCC).
-However, none of the ideas suggested to be removed were critical, and all the main concepts are still present in the revised text.</p>
+The tool completely rewrote the text, leaving only the last sentence mostly unchanged.
+The text was significantly shortened, with longer sentences than the original ones, which could make the abstract slightly harder to read.
+The revision removed the first two sentences, which introduced correlation analyses and transcriptomics, and directly stated the purpose of the manuscript.
+It also removed details about the method (line 5), and focused on the aims and results obtained, ending with the same last sentence, suggesting a broader application of the coefficient to other data domains (as originally intended by the authors of CCC).
+The main concepts were still present in the revised text.</p>
 <p>The revised text for the abstract of PhenoPLIER was significantly shortened (from 10 sentences in the original, to only 3 in the revised version).
 However, in this case, important concepts (such as GWAS, TWAS, CRISPR) and a proper amount of background information were missing, producing a less informative abstract.</p>
 <h4 id="introduction-1">Introduction</h4>
@@ -351,19 +344,17 @@ However, in this case, important concepts (such as GWAS, TWAS, CRISPR) and a pro
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
 </div>
-<p>When applied to the Introduction section, the tool, again, significantly revised the text, producing a much better and more concise introductory paragraph in CCC (Figure <a href="#fig:intro:ccc">3</a>).
-For example, the revised first sentence (on the right) incorportes the ideas of “large datasets”, and the “opportunities” or “possibilities” for “scientific exploration” clearly and briefly.
-These ideas are present in the first two sentences of the original text (on the left).
-Then the model generated a more concise and clear second sentence introducing the problem (“we need efficient tools” to find “multiple relationships” in these large datasets).
-The third sentence also nicely connects with the previous one.
-In comparison, the rest of the changes are minor but they still significantly improved the reading.
-All references to scientific literature were kept using the correct Manubot format for citations, although our prompts do not specify the format of the text (“Manubot”, “Markdown”, or specific instructions about formatting are never mentioned).
-The rest of the sentences in this section of CCC were also correctly revised, and could be directly incorporated into the manuscript with minor or no further changes at all.</p>
+<p>The tool significantly revised the Introduction section of CCC (Figure <a href="#fig:intro:ccc">3</a>), producing a more concise and clear introductory paragraph.
+The revised first sentence concisely incorporated ideas from the original two sentences, introducing the concept of “large datasets” and the opportunities for scientific exploration.
+The model generated a more concise second sentence introducing the “need for efficient tools” to find “multiple relationships” in these datasets.
+The third sentence connected nicely with the previous one.
+All references to scientific literature were kept in the correct Manubot format, although our prompts do not specify the format of the text.
+The rest of the sentences in this section were also correctly revised, and could be incorporated into the manuscript with minor or no further changes.</p>
 <p>We also observed a high quality revision of the introdution of PhenoPLIER.
-For one paragraph, however, the model failed to keep the format of citations.
-Additionally, the model did not converge to a revised text for the last paragraph, and our tool left the error message as an HTML comment at the top of it: <code>The AI model returned an empty string</code>.
-We observed this issue when debugging the prompts, and it could be related to the fact that the paragraph is large and has a more complex structure than the rest.
-However, since the model is stochastic, this can be solved by running the automated revision again.</p>
+However, the model failed to keep the format of citations in one paragraph.
+Additionally, the model did not converge to a revised text for the last paragraph, and our tool left an error message as an HTML comment at the top: <code>The AI model returned an empty string</code>.
+Debugging the prompts revealed this issue, which could be related to the complexity of the paragraph.
+However, rerunning the automated revision should solve this as the model is stochastic.</p>
 <h4 id="results">Results</h4>
 <div id="fig:results:ccc" class="fignos">
 <figure>
@@ -372,22 +363,20 @@ However, since the model is stochastic, this can be solved by running the automa
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
 </div>
-<p>We tested the tool on a paragraph of the Results section of CCC that describes Figure 1 of that manuscript <span class="citation" data-cites="eirYTTyk">[<a href="#ref-eirYTTyk" role="doc-biblioref">9</a>]</span> (Figure <a href="#fig:results:ccc">4</a>).
-That figure shows four different datasets with two variables each, and different relationships or patterns named random/independent, non-coexistence, quadratic, and two-lines.
+<p>We tested the tool on a paragraph of the Results section of CCC (Figure <a href="#fig:results:ccc">4</a>).
+That paragraph describes Figure 1 of the CCC manuscript <span class="citation" data-cites="eirYTTyk">[<a href="#ref-eirYTTyk" role="doc-biblioref">9</a>]</span>, which shows four different datasets with two variables each, and different relationships or patterns named random/independent, non-coexistence, quadratic, and two-lines.
 In addition to having fewer sentences that are slightly longer, the revised paragraph consistently uses only the past tense, whereas the original one has tense shifts.
-This makes the text more consistent and easier to read.
 The revised paragraph also kept all citations, which although is not explicitely mentioned in the prompts for this section (as it is for introductions), in this case is important.
 Math was also kept in the original LaTeX format and the figure was correctly referenced using the Manubot syntax.
-The model retained the order of the descriptions of the different relationships in the figure (random/independent, non-coexistence, quadratic, and two-lines), which in this case is desirable since it is the same order as in the figure.
 In the third sentence of the revised paragraph (line 3), the model generated a good summary of how all coefficients performed in the last two, nonlinear patterns, and why CCC was able to capture them.
 We, as human authors, would make a single change by the end of this sentence to avoid repeating the word “complexity”: <em>“…, while CCC increased the complexity of the model <del>by using different degrees of complexity</del> to capture the relationships”</em>.
-Since a good summary of the performance of all coefficients was already provided, the next two sentences simply describe what the figure shows while keeping a focus on how CCC works.
-In this case study, we found it remarkable that the model mixed the ideas in the last sentences in the original paragraph (lines 4 to 8) to generate three new ones (lines 3 to 5) with the same meaning but more concisely and clearly.
+The revised paragraph is more concise and clearly describes what the figure shows and how CCC works.
+We found it remarkable that the model rewrote some of the concepts in the original paragraph (lines 4 to 8) into three new sentences (lines 3 to 5) with the same meaning but more concisely and clearly.
 The model also produced high-quality revisions for several other paragraphs that would only need minor changes.</p>
 <p>Other paragraphs in CCC, however, needed more changes before being ready to be incorporated into the manuscript.
 For instance, for some paragraphs, the model generated a revised text that is shorter, more direct and clear.
-However, important details were removed, and sometimes sentences changed the meaning.
-In this case, we could accept the simplified sentence structure but add back the missing details.</p>
+However, important details were removed and sometimes sentences changed the meaning.
+To address this, we could accept the simplified sentence structure but add back the missing details.</p>
 <div id="fig:results:phenoplier" class="fignos">
 <figure>
 <img src="images/diffs/results/phenoplier-paragraph-01.svg" style="width:100.0%" alt="Figure 5: A paragraph in the Results section of PhenoPLIER. Original text is on the left and suggested revision on the right." />
@@ -395,16 +384,16 @@ In this case, we could accept the simplified sentence structure but add back the
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
 </div>
-<p>In PhenoPLIER, the model also produced high-quality revisions for most paragraphs, while keeping citations and references to figures, tables and other section of the manuscript in the Manubot/Markdown format.
-In some cases, important details were left out, but they could be easily added back while keeping the improved sentence structure of the revised version.
-Other cases clearly showed the limitations of revising one paragraph at a time without considering the rest of the text.
-For instance, one paragraph describes our CRISPR screening approach to assess whether top genes in a latent variable (LV) could represent good therapeutic targets.
-In this case, the model generated a paragraph with a completely different meaning (Figure <a href="#fig:results:phenoplier">5</a>).
-The revised paragraph describes an experiment that does not exist with a reference to a nonexisting section.
-There is no mention of the CRISPR screen and the gene symbols identified to be associated with the regulation of lipids, which are the key elements in the original text.
-Instead, the model seemed to have focused more on the title and keywords of the manuscript (Table <a href="#tbl:manuscripts">1</a>) that are part of every prompt (Figure <a href="#fig:ai_revision">1</a>).
-It included the idea of a “gene co-expression” analysis (a keyword) to identify “therapeutic targets” (another keyword), and replaced the mention of “sets of genes” in the original text with “clusters of genes” in the revision (closer to the keyword including “clustering”).
-Although this was a poor model-based revision, the output suggests that the original paragraph may be too short or disconnected from the rest and that it could be merged with the next one (which describes follow-up and related experiments).</p>
+<p>When applied to the PhenoPLIER manuscript, the model produced high-quality revisions for most paragraphs, while preserving citations and references to figures, tables, and other sections of the manuscript in the Manubot/Markdown format.
+In some cases, important details were missing, but they could be easily added back while preserving the improved sentence structure of the revised version.
+In other cases, the model’s output demonstrated the limitations of revising one paragraph at a time without considering the rest of the text.
+For instance, one paragraph described our CRISPR screening approach to assess whether top genes in a latent variable (LV) could represent good therapeutic targets.
+The model generated a paragraph with a completely different meaning (Figure <a href="#fig:results:phenoplier">5</a>).
+It omitted the CRISPR screen and the gene symbols associated with the regulation of lipids, which were key elements in the original text.
+Instead, the new text describes an experiment that does not exist with a reference to a nonexisting section.
+This suggests that the model focused on the title and keywords of the manuscript (Table <a href="#tbl:manuscripts">1</a>) that were part of every prompt (Figure <a href="#fig:ai_revision">1</a>).
+For example, it included the idea of “gene co-expression” analysis (a keyword) to identify “therapeutic targets” (another keyword) and replaced the mention of “sets of genes” in the original text with “clusters of genes” (closer to the keyword including “clustering”).
+This was a poor model-based revision, indicating that the original paragraph may be too short or disconnected from the rest and could be merged with the next one (which describes follow-up and related experiments).</p>
 <h4 id="discussion">Discussion</h4>
 <p>In both the CCC and PhenoPLIER manuscripts, revisions to the discussion section appeared to be of high quality.
 The model kept the correct format when necessary (e.g., using italics for gene symbols), maintained most of the citations, and improved the readability of the text in general.
@@ -430,45 +419,44 @@ The prompt for Methods (Figure <a href="#fig:ai_revision">1</a>) is more focused
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
 </div>
-<p>We revised a paragraph in PhenoPLIER that contains two numbered equations (Figure <a href="#fig:methods:phenoplier">7</a>).
-The revised text contains very few changes: all the equations, citations and most of the original text was preserved.
-However, we found it remarkable how the model identified a mistake in the original text (line 8) and fixed it in the revision (line 7).
-Indeed, the equation with the univariate model used by PrediXcan (lines 4 to 6 in the original) includes the <em>true</em> effect size <span class="math inline">\(\gamma_l\)</span> (<code>\gamma_l</code>) instead of the <em>estimated</em> one <span class="math inline">\(\hat{\gamma}_l\)</span> (<code>\hat{\gamma}_l</code>).</p>
+<p>We revised a paragraph in PhenoPLIER that contained two numbered equations (Figure <a href="#fig:methods:phenoplier">7</a>).
+The model made very few changes, and all the equations, citations, and most of the original text were preserved.
+However, we found it remarkable how the model identified a wrong reference to a mathematical symbol (line 8) and fixed it in the revision (line 7).
+Indeed, the equation with the univariate model used by PrediXcan (lines 4-6 in the original) includes the <em>true</em> effect size <span class="math inline">\(\gamma_l\)</span> (<code>\gamma_l</code>) instead of the <em>estimated</em> one <span class="math inline">\(\hat{\gamma}_l\)</span> (<code>\hat{\gamma}_l</code>).</p>
 <p>In PhenoPLIER, we found one large paragraph with several equations that the model failed to revise, although it performed relatively well in revising the rest of the section.
 In CCC, the revision of this section was good overall, with some minor and easy-to-fix issues as in the other sections.</p>
 <p>We also observed issues from revising one paragraph at a time without context.
-For instance, in PhenoPLIER, one of the first original paragraphs in this section mentions the linear models used by S-PrediXcan and S-MultiXcan, but without providing any equations or details.
-The details about these models, including the equations, are presented in the following paragraphs, but since the model have not seen that yet, it opted to add those equations right away (in the correct Manubot/Markdown format).</p>
+For instance, in PhenoPLIER, one of the first paragraphs mentions the linear models used by S-PrediXcan and S-MultiXcan, without providing any equations or details.
+These were presented in the following paragraphs, but since the model had not encountered that yet, it opted to add those equations immediately (in the correct Manubot/Markdown format).</p>
 <h2 id="conclusions">Conclusions</h2>
-<p>We implemented AI-based revision models into the publishing infrastructure provided by Manubot <span class="citation" data-cites="YuJbg3zO bYOaJHMe">[<a href="#ref-bYOaJHMe" role="doc-biblioref">5</a>,<a href="#ref-YuJbg3zO" role="doc-biblioref">6</a>]</span>.
-While humans have written most manuscripts, the process is time-consuming, and academic writing can be challenging to read.
-We sought to incorporate technology into an existing publishing platform to assist researchers in the task of communicating their findings to the community.
-We implemented a workflow that authors can trigger to suggest revisions.
-It uses GPT-3 models through the OpenAI API and generates a pull request of revisions that authors can review.
-We provide default parameters for GPT-3 models that work well for our use cases across different sections and manuscripts.
-Users can customize the revision by selecting only specific sections or adjusting the model’s behavior to fit their needs and budget.
-Although evaluating a revision tool is subjective, we found that many paragraphs were improved.
-Parts of the text that were difficult for the AI model to revise highlighted paragraphs that also could stymie human readers.</p>
-<p>We designed section-specific prompts to guide the GPT-3-based revision of the text.
-We were surprised that, in one Methods section, the model revised a human-overlooked error in referencing a symbol from an equation.
-Other sections, such as abstracts, were more challenging for the model to revise.
-Opportunities exist to improve the underlying AI-based revisions, such as further refining prompts using few-shot learning <span class="citation" data-cites="S1Lim9f9">[<a href="#ref-S1Lim9f9" role="doc-biblioref">11</a>]</span> or fine-tuning the model with an additional corpus of academic writing focused on particularly challenging sections.
-Fine-tuning using preprint-publication pairs <span class="citation" data-cites="WVt383GU">[<a href="#ref-WVt383GU" role="doc-biblioref">12</a>]</span> may provide a strategy to detect sections or phrases likely to be changed during peer review.
-Our approach used GPT-3 to process each paragraph of the text, although it lacks a contextual thread between queries and this mainly affected the revision of the Results and Methods sections.
+<p>We implemented AI-based revision models into the Manubot publishing platform.
+Writing academic papers can be time-consuming and challenging to read, so we sought to use technology to help researchers communicate their findings to the community.
+We created a workflow that authors can easily trigger to suggest revisions.
+This workflow uses GPT-3 models through the OpenAI API, generating a pull request of revisions that authors can review.
+We set default parameters for GPT-3 models that work well for our use cases across different sections and manuscripts.
+Users can also customize the revision by selecting specific sections or adjusting the model’s behavior to fit their needs and budget.
+Although the evaluation of the revision tool is subjective, we found that many paragraphs were improved.
+The AI model also highlighted certain paragraphs that were difficult to revise, which could be challenging for human readers too.</p>
+<p>We designed section-specific prompts to guide the revision of text using GPT-3.
+Surprisingly, in one Methods section, the model detected an error when referencing a symbol in an equation that had been overlooked by humans.
+However, abstracts were more challenging for the model to revise, where revisions often removed background information about the research problem.
+There are opportunities to improve the AI-based revisions, such as further refining prompts using few-shot learning <span class="citation" data-cites="S1Lim9f9">[<a href="#ref-S1Lim9f9" role="doc-biblioref">11</a>]</span> or fine-tuning the model using an additional corpus of academic writing focused on particularly challenging sections.
+Fine-tuning using preprint-publication pairs <span class="citation" data-cites="WVt383GU">[<a href="#ref-WVt383GU" role="doc-biblioref">12</a>]</span> may help to identify sections or phrases likely to be changed during peer review.
+Our approach used GPT-3 to process each paragraph of the text, but it lacked a contextual thread between queries, which mainly affected the Results and Methods sections.
 Using chatbots that retain context, such as <a href="https://openai.com/blog/chatgpt">OpenAI’s ChatGPT</a>, could enable the revision of individual paragraphs while considering previously processed text.
 Once an official API becomes available for ChatGPT, we plan to update our workflow to support this strategy.
-There is an increasing number of open models that could also be used, including BLOOM <span class="citation" data-cites="I4d1F0yv">[<a href="#ref-I4d1F0yv" role="doc-biblioref">13</a>]</span>, GLM <span class="citation" data-cites="1GG6zItDi">[<a href="#ref-1GG6zItDi" role="doc-biblioref">14</a>]</span>, or Meta’s OPT <span class="citation" data-cites="nEabcf28">[<a href="#ref-nEabcf28" role="doc-biblioref">15</a>]</span>, though lacking the highly usable OpenAI API.
-Even with these limitations, we found models captured the main ideas and generated a revision that often communicated the intended meaning more clearly and concisely.
-It is important to note, however, that our assessment of performance in case studies was necessarily subjective, as there could be, for example, writing styles that might not be widely shared across researchers.</p>
-<p>Using these types of tools for scientific authoring is controversial.
-Several questions arise concerning the novelty or ownership of the text generated by these models.
-For instance, the program chairs of the upcoming International Conference on Machine Learning (ICML) prohibit <em>“papers that include text generated from a large-scale language model (LLM)”</em> <span class="citation" data-cites="K58CKD6D">[<a href="#ref-K58CKD6D" role="doc-biblioref">16</a>]</span>, although editing tools for grammar and spelling correction are allowed.
-We focus on revising an <em>existing</em> text written by a human author.
-In this way, it is not different from other automatic tools such as Grammarly <span class="citation" data-cites="ONOkdsyv">[<a href="#ref-ONOkdsyv" role="doc-biblioref">17</a>]</span>.
-While there are concerns, there are also significant opportunities, and our work lays the foundation for a future where both human and machine contributions construct academic manuscripts.
-Scientific articles need to follow a specific style, making the writing process a time-consuming task that requires a significant amount of effort in thinking about <em>how</em> to communicate a result or finding that was already obtained.
-The increasing ability of machines to improve a scholarly text means that humans can focus more on <em>what</em> to communicate to others instead of writing with a particular style.
-A future in which scientists are only limited by their ideas and ability to perform experiments that reveal underlying organizing principles of ourselves and our environment could lead to a more equitable and productive future for research.</p>
+Other open models, such as BLOOM <span class="citation" data-cites="I4d1F0yv">[<a href="#ref-I4d1F0yv" role="doc-biblioref">13</a>]</span>, GLM <span class="citation" data-cites="1GG6zItDi">[<a href="#ref-1GG6zItDi" role="doc-biblioref">14</a>]</span>, or OPT <span class="citation" data-cites="nEabcf28">[<a href="#ref-nEabcf28" role="doc-biblioref">15</a>]</span>, provide similar capabilities but lack the user-friendly OpenAI API.
+Despite these limitations, we found that models captured the main ideas and generated a revision that often communicated the intended meaning more clearly and concisely.
+It is important to note, however, that our assessment of performance in case studies was necessarily subjective, as there could be writing styles that are not widely shared across researchers.</p>
+<p>The use of AI-assisted tools for scientific authoring is controversial <span class="citation" data-cites="1EAonKBXJ KJTJqmxc">[<a href="#ref-1EAonKBXJ" role="doc-biblioref">16</a>,<a href="#ref-KJTJqmxc" role="doc-biblioref">17</a>]</span>.
+Questions arise concerning the originality and ownership of texts generated by these models.
+For example, the International Conference on Machine Learning (ICML) has prohibited the submission of <em>“papers that include text generated from a large-scale language model (LLM)”</em> <span class="citation" data-cites="K58CKD6D">[<a href="#ref-K58CKD6D" role="doc-biblioref">18</a>]</span>, although editing tools for grammar and spelling correction are allowed.
+Our work focuses on revising <em>existing</em> text written by a human author, similar to other tools such as <a href="https://www.grammarly.com">Grammarly</a>.
+Despite the concerns, there are also significant opportunities.
+Our work lays the foundation for a future in which humans and machines construct academic manuscripts.
+Scientific articles need to adhere to a certain style, which can make the writing time-consuming and require a significant amount of effort to think about <em>how</em> to communicate a result or finding that has already been obtained.
+As machines become increasingly capable of improving scholarly text, humans can focus more on <em>what</em> to communicate to others, rather than on <em>how</em> to write it.
+This could lead to a more equitable and productive future for research, where scientists are only limited by their ideas and ability to conduct experiments to uncover the underlying organizing principles of ourselves and our environment.</p>
 <h2 class="page_break_before" id="references">References</h2>
 <!-- Explicitly insert bibliography here -->
 <div id="refs" class="references csl-bib-body" role="doc-bibliography">
@@ -517,11 +505,14 @@ A future in which scientists are only limited by their ideas and ability to perf
 <div id="ref-nEabcf28" class="csl-entry" role="doc-biblioentry">
 <div class="csl-left-margin">15. </div><div class="csl-right-inline"><strong>OPT: Open Pre-trained Transformer Language Models</strong> <div class="csl-block">Susan Zhang, Stephen Roller, Naman Goyal, Mikel Artetxe, Moya Chen, Shuohui Chen, Christopher Dewan, Mona Diab, Xian Li, Xi Victoria Lin, … Luke Zettlemoyer</div> <em>arXiv</em> (2022-06-22) <a href="https://arxiv.org/abs/2205.01068">https://arxiv.org/abs/2205.01068</a></div>
 </div>
-<div id="ref-K58CKD6D" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>ICML 2023</strong> <a href="https://icml.cc/Conferences/2023/llm-policy">https://icml.cc/Conferences/2023/llm-policy</a></div>
+<div id="ref-1EAonKBXJ" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">16. </div><div class="csl-right-inline"><strong>Abstracts written by ChatGPT fool scientists</strong> <div class="csl-block">Holly Else</div> <em>Nature</em> (2023-01-12) <a href="https://doi.org/js2g">https://doi.org/js2g</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-00056-7">10.1038/d41586-023-00056-7</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36635510">36635510</a></div></div>
 </div>
-<div id="ref-ONOkdsyv" class="csl-entry" role="doc-biblioentry">
-<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>Write your best with Grammarly.</strong> <a href="https://www.grammarly.com/">https://www.grammarly.com/</a></div>
+<div id="ref-KJTJqmxc" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">17. </div><div class="csl-right-inline"><strong>ChatGPT listed as author on research papers: many scientists disapprove</strong> <div class="csl-block">Chris Stokel-Walker</div> <em>Nature</em> (2023-01-18) <a href="https://doi.org/grn72b">https://doi.org/grn72b</a> <div class="csl-block">DOI: <a href="https://doi.org/10.1038/d41586-023-00107-z">10.1038/d41586-023-00107-z</a> · PMID: <a href="https://www.ncbi.nlm.nih.gov/pubmed/36653617">36653617</a></div></div>
+</div>
+<div id="ref-K58CKD6D" class="csl-entry" role="doc-biblioentry">
+<div class="csl-left-margin">18. </div><div class="csl-right-inline"><strong>ICML 2023</strong> <a href="https://icml.cc/Conferences/2023/llm-policy">https://icml.cc/Conferences/2023/llm-policy</a></div>
 </div>
 </div>
 <!-- default theme -->
