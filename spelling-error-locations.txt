@@ -1,3 +1,4 @@
+content/00.front-matter.md:7:citable
 content/02.introduction.md:11:OpenAI
 content/02.introduction.md:11:OpenAI's
 content/02.introduction.md:13:GPT

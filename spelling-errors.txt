@@ -1,7 +1,8 @@
-ccc
+CCC
 cgreene
 chatbots
 ChatGPT
+citable
 Clustermatch
 CRISPR
 datasets
