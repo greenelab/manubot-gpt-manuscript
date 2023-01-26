@@ -1,4 +1,4 @@
-CCC
+ccc
 cgreene
 chatbots
 ChatGPT
@@ -21,13 +21,13 @@ ICML
 introdution
 LLM
 LV
-manubotai
+ManubotAI
 miltondp
 MultiXcan
 nonexisting
 OpenAI
 OpenAI’s
-PhenoPLIER
+phenoplier
 Pividori
 Pre
 PrediXcan

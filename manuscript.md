@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-01-24'
+date-meta: '2023-01-26'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-24" />
-  <meta name="citation_publication_date" content="2023-01-24" />
-  <meta property="article:published_time" content="2023-01-24" />
-  <meta name="dc.modified" content="2023-01-24T13:26:38+00:00" />
-  <meta property="article:modified_time" content="2023-01-24T13:26:38+00:00" />
+  <meta name="dc.date" content="2023-01-26" />
+  <meta name="citation_publication_date" content="2023-01-26" />
+  <meta property="article:published_time" content="2023-01-26" />
+  <meta name="dc.modified" content="2023-01-26T15:50:18+00:00" />
+  <meta property="article:modified_time" content="2023-01-26T15:50:18+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/fba1048687839ab9b936bbe4d354606615c24d91/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/fba1048687839ab9b936bbe4d354606615c24d91/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/fba1048687839ab9b936bbe4d354606615c24d91/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/3b6d0c5190b91a043fd7d113c9247ae98308e06e/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/3b6d0c5190b91a043fd7d113c9247ae98308e06e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/3b6d0c5190b91a043fd7d113c9247ae98308e06e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/fba1048687839ab9b936bbe4d354606615c24d91/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/3b6d0c5190b91a043fd7d113c9247ae98308e06e/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@fba1048](https://github.com/greenelab/manubot-gpt-manuscript/tree/fba1048687839ab9b936bbe4d354606615c24d91)
-on January 24, 2023.
+from [greenelab/manubot-gpt-manuscript@3b6d0c5](https://github.com/greenelab/manubot-gpt-manuscript/tree/3b6d0c5190b91a043fd7d113c9247ae98308e06e)
+on January 26, 2023.
 </em></small>
 
 
@@ -143,7 +143,8 @@ Large language models, in particular, are opening the floodgates to new technolo
 OpenAI's models, for instance, have been trained on vast amounts of data and can generate human-like text [@arxiv:2005.14165].
 These models are based on the transformer architecture which uses self-attention mechanisms to model the complexities of language.
 The most well-known of these models is the Generative Pre-trained Transformer 3 (GPT-3), which have been shown to be highly effective for a range of language tasks such as generating text, completing code, and answering questions [@arxiv:2005.14165].
-This has the potential to revolutionize how scientists write and revise scholarly manuscripts, saving time and effort and enabling researchers to focus on more high-level tasks such as data analysis and interpretation.
+Scientists are already using these tools to improve scientific writing [@doi:10.1038/d41586-022-03479-w].
+This technology has the potential to revolutionize how scientists write and revise scholarly manuscripts, saving time and effort and enabling researchers to focus on more high-level tasks such as data analysis and interpretation.
 
 We present a novel AI-assisted revision tool that envisions a future where authors collaborate with large language models in the writing of their manuscripts.
 This workflow builds on the Manubot infrastructure for scholarly publishing [@doi:10.1371/journal.pcbi.1007128], a platform designed to enable both individual and large-scale collaborative projects [@doi:10.1098/rsif.2017.0387; @pmid:34545336].
@@ -494,8 +495,9 @@ It is important to note, however, that our assessment of performance in case stu
 
 The use of AI-assisted tools for scientific authoring is controversial [@doi:10.1038/d41586-023-00056-7; @doi:10.1038/d41586-023-00107-z].
 Questions arise concerning the originality and ownership of texts generated by these models.
-For example, the International Conference on Machine Learning (ICML) has prohibited the submission of *"papers that include text generated from a large-scale language model (LLM)"* [@url:https://icml.cc/Conferences/2023/llm-policy], although editing tools for grammar and spelling correction are allowed.
+For example, the *Nature* journal has established that any use of these models in scientific writing must be documented [@doi:10.1038/d41586-023-00191-1], and the International Conference on Machine Learning (ICML) has prohibited the submission of *"papers that include text generated from a large-scale language model (LLM)"* [@url:https://icml.cc/Conferences/2023/llm-policy], although editing tools for grammar and spelling correction are allowed.
 Our work focuses on revising *existing* text written by a human author, similar to other tools such as [Grammarly](https://www.grammarly.com).
+Additionally, all changes made by humans and AI are tracked in the version control system, which allows for full transparency.
 Despite the concerns, there are also significant opportunities.
 Our work lays the foundation for a future in which humans and machines construct academic manuscripts.
 Scientific articles need to adhere to a certain style, which can make the writing time-consuming and require a significant amount of effort to think about *how* to communicate a result or finding that has already been obtained.
