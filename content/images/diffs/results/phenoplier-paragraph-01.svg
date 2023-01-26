@@ -31,7 +31,7 @@
      inkscape:cy="159.6701"
      inkscape:window-width="1908"
      inkscape:window-height="1491"
-     inkscape:window-x="8"
+     inkscape:window-x="1924"
      inkscape:window-y="64"
      inkscape:window-maximized="0"
      inkscape:current-layer="surface3501" />
@@ -2091,6 +2091,13 @@
   <g
      id="surface3501"
      transform="translate(-12.371094,-276.52734)">
+    <rect
+       style="fill:#ffffff;fill-opacity:0.993272;stroke:#000000;stroke-width:1.45;stroke-dasharray:1.45, 1.45"
+       id="rect2930"
+       width="662.81091"
+       height="395.41455"
+       x="-26.154596"
+       y="247.7823" />
     <g
        style="fill:#23282e;fill-opacity:1"
        id="g956">
