@@ -27,11 +27,11 @@
      fit-margin-right="0"
      fit-margin-bottom="0"
      inkscape:zoom="0.91860747"
-     inkscape:cx="364.13812"
+     inkscape:cx="364.68243"
      inkscape:cy="477.89727"
      inkscape:window-width="1908"
      inkscape:window-height="1491"
-     inkscape:window-x="8"
+     inkscape:window-x="1924"
      inkscape:window-y="64"
      inkscape:window-maximized="0"
      inkscape:current-layer="surface4041" />
@@ -1931,6 +1931,13 @@
   <g
      id="surface4041"
      transform="translate(-12.371094,-276.52734)">
+    <rect
+       style="fill:#ffffff;fill-opacity:0.993272;stroke:#000000;stroke-width:1.45;stroke-dasharray:1.45, 1.45"
+       id="rect3875"
+       width="655.05896"
+       height="647.19238"
+       x="-24.476141"
+       y="243.78726" />
     <g
        style="fill:#23282e;fill-opacity:1"
        id="g896">
