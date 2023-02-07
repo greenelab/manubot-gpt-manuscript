@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-01-27'
+date-meta: '2023-02-07'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-01-27" />
-  <meta name="citation_publication_date" content="2023-01-27" />
-  <meta property="article:published_time" content="2023-01-27" />
-  <meta name="dc.modified" content="2023-01-27T14:05:51+00:00" />
-  <meta property="article:modified_time" content="2023-01-27T14:05:51+00:00" />
+  <meta name="dc.date" content="2023-02-07" />
+  <meta name="citation_publication_date" content="2023-02-07" />
+  <meta property="article:published_time" content="2023-02-07" />
+  <meta name="dc.modified" content="2023-02-07T18:16:11+00:00" />
+  <meta property="article:modified_time" content="2023-02-07T18:16:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/70a860fa3d689b3345bf7f836a5b87fda71a3bd2/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/70a860fa3d689b3345bf7f836a5b87fda71a3bd2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/70a860fa3d689b3345bf7f836a5b87fda71a3bd2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/a17b33ff52a347544af72b874bef5e66777890d4/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/a17b33ff52a347544af72b874bef5e66777890d4/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/a17b33ff52a347544af72b874bef5e66777890d4/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/70a860fa3d689b3345bf7f836a5b87fda71a3bd2/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/a17b33ff52a347544af72b874bef5e66777890d4/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@70a860f](https://github.com/greenelab/manubot-gpt-manuscript/tree/70a860fa3d689b3345bf7f836a5b87fda71a3bd2)
-on January 27, 2023.
+from [greenelab/manubot-gpt-manuscript@a17b33f](https://github.com/greenelab/manubot-gpt-manuscript/tree/a17b33ff52a347544af72b874bef5e66777890d4)
+on February 7, 2023.
 </em></small>
 
 
@@ -252,8 +252,9 @@ This allows for more cost-effective control while focusing on a single piece of 
 ### Installation and use
 
 We have contributed our workflow ([https://github.com/manubot/rootstock/pull/484](https://github.com/manubot/rootstock/pull/484)) to the standard Manubot template manuscript, which is called rootstock and available at [https://github.com/manubot/rootstock](https://github.com/manubot/rootstock).
-Users who wish to use the workflow before it is fully integrated into rootstock can copy the files from the linked pull request in the GitHub repository of their manuscript.
-After that, the workflow (named `ai-revision`) will be available in the Actions tab of the repository.
+Users who wish to use the workflow only need to follow the standard procedures to install Manubot.
+The section "AI-assisted authoring", in the file `USAGE.md` of the rootstock repository, explains how to enable the tool. 
+After that, the workflow (named `ai-revision`) will be available and ready to use under the Actions tab of the user's manuscript repository.
 
 
 ## Observations of AI-based revisions {#sec:results}
