@@ -21,7 +21,7 @@ ICML
 introdution
 LLM
 LV
-manubotai
+ManubotAI
 miltondp
 MultiXcan
 nonexisting

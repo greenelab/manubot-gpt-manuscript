@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-02-07'
+date-meta: '2023-03-03'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-02-07" />
-  <meta name="citation_publication_date" content="2023-02-07" />
-  <meta property="article:published_time" content="2023-02-07" />
-  <meta name="dc.modified" content="2023-02-07T18:16:11+00:00" />
-  <meta property="article:modified_time" content="2023-02-07T18:16:11+00:00" />
+  <meta name="dc.date" content="2023-03-03" />
+  <meta name="citation_publication_date" content="2023-03-03" />
+  <meta property="article:published_time" content="2023-03-03" />
+  <meta name="dc.modified" content="2023-03-03T18:43:58+00:00" />
+  <meta property="article:modified_time" content="2023-03-03T18:43:58+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/a17b33ff52a347544af72b874bef5e66777890d4/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/a17b33ff52a347544af72b874bef5e66777890d4/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/a17b33ff52a347544af72b874bef5e66777890d4/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/c442e169c7249bd3a2f7b195817cec04366fa18c/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c442e169c7249bd3a2f7b195817cec04366fa18c/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c442e169c7249bd3a2f7b195817cec04366fa18c/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/a17b33ff52a347544af72b874bef5e66777890d4/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/c442e169c7249bd3a2f7b195817cec04366fa18c/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@a17b33f](https://github.com/greenelab/manubot-gpt-manuscript/tree/a17b33ff52a347544af72b874bef5e66777890d4)
-on February 7, 2023.
+from [greenelab/manubot-gpt-manuscript@c442e16](https://github.com/greenelab/manubot-gpt-manuscript/tree/c442e169c7249bd3a2f7b195817cec04366fa18c)
+on March 3, 2023.
 </em></small>
 
 
@@ -91,6 +91,8 @@ on February 7, 2023.
     [miltondp](https://github.com/miltondp)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [miltondp](https://twitter.com/miltondp)
+    · ![Mastodon icon](images/mastodon.svg){.inline_icon}
+    [\@miltondp@genomic.social](https://genomic.social/@miltondp)
     <br>
   <small>
      Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
@@ -105,6 +107,8 @@ on February 7, 2023.
     [cgreene](https://github.com/cgreene)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [GreeneScientist](https://twitter.com/GreeneScientist)
+    · ![Mastodon icon](images/mastodon.svg){.inline_icon}
+    [\@greenescientist@genomic.social](https://genomic.social/@greenescientist)
     <br>
   <small>
      Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA
