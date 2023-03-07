@@ -1,4 +1,4 @@
-ccc
+CCC
 cgreene
 chatbots
 ChatGPT
@@ -21,7 +21,7 @@ ICML
 introdution
 LLM
 LV
-ManubotAI
+manubotai
 miltondp
 MultiXcan
 nonexisting

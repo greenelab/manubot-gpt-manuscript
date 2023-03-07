@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-03-03'
+date-meta: '2023-03-07'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-03-03" />
-  <meta name="citation_publication_date" content="2023-03-03" />
-  <meta property="article:published_time" content="2023-03-03" />
-  <meta name="dc.modified" content="2023-03-03T18:43:58+00:00" />
-  <meta property="article:modified_time" content="2023-03-03T18:43:58+00:00" />
+  <meta name="dc.date" content="2023-03-07" />
+  <meta name="citation_publication_date" content="2023-03-07" />
+  <meta property="article:published_time" content="2023-03-07" />
+  <meta name="dc.modified" content="2023-03-07T15:42:21+00:00" />
+  <meta property="article:modified_time" content="2023-03-07T15:42:21+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/c442e169c7249bd3a2f7b195817cec04366fa18c/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c442e169c7249bd3a2f7b195817cec04366fa18c/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c442e169c7249bd3a2f7b195817cec04366fa18c/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/c442e169c7249bd3a2f7b195817cec04366fa18c/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@c442e16](https://github.com/greenelab/manubot-gpt-manuscript/tree/c442e169c7249bd3a2f7b195817cec04366fa18c)
-on March 3, 2023.
+from [greenelab/manubot-gpt-manuscript@26f3fbf](https://github.com/greenelab/manubot-gpt-manuscript/tree/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5)
+on March 7, 2023.
 </em></small>
 
 
@@ -127,11 +127,14 @@ Casey S. Greene \<casey.s.greene@cuanschutz.edu\>.
 
 ## Abstract {.page_break_before}
 
-In this work we investigate how models with advanced natural language processing capabilities can be used to reduce the time-consuming process of writing and revising scholarly manuscripts.
+In this work, we investigate how models with advanced natural language processing capabilities can be used to reduce the time-consuming process of writing and revising scholarly manuscripts.
 To this end, we integrate large language models into the Manubot publishing ecosystem to suggest revisions for scholarly text.
+Our AI-based revision workflow uses a prompt generator that integrates metadata from the manuscript into prompt templates to generate section-specific instructions for the language model.
+Then, the model generates a revised version of each paragraph that the human author can review.
 We tested our AI-based revision workflow in three case studies of existing manuscripts, including the present one.
 Our results suggest that these models can capture the concepts in the scholarly text and produce high-quality revisions that improve clarity.
-Given the amount of time that researchers put into crafting prose, we anticipate that this advance will revolutionize the type of knowledge work performed by academics.
+All changes to the manuscript are tracked using a version control system, providing transparency into the human or machine origin of text.
+Given the amount of time that researchers put into crafting prose, we anticipate that this advance will significantly improve the type of knowledge work performed by academics.
 
 
 ## Introduction
@@ -166,7 +169,7 @@ Our AI-assisted writing workflow can be incorporated into any Manubot manuscript
 ![
 **AI-based revision applied on a Manubot-based manuscript.**
 **a)** A manuscript (written with Manubot) with different sections.
-**b)** Section-specific prompts used to process each paragraph.
+**b)** The prompt generator integrates metadata using prompt templates to generate section-specific prompts for each paragraph.
 If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only.
 The prompt for the Methods section includes the formatting of equations with identifiers.
 All sections' prompts include these instructions: *"the text grammar is correct, spelling errors are fixed, and the text has a clear sentence structure"*, although these are only shown for abstracts.
@@ -477,11 +480,12 @@ Although these are important future directions, neither accurately describes the
 
 We implemented AI-based revision models into the Manubot publishing platform.
 Writing academic papers can be time-consuming and challenging to read, so we sought to use technology to help researchers communicate their findings to the community.
-We created a workflow that authors can easily trigger to suggest revisions.
+Our AI-based revision workflow uses a prompt generator that creates manuscript- and section-specific instructions for the language model.
+Authors can easily trigger this workflow from the GitHub repository to suggest revisions that can be later reviewed.
 This workflow uses GPT-3 models through the OpenAI API, generating a pull request of revisions that authors can review.
 We set default parameters for GPT-3 models that work well for our use cases across different sections and manuscripts.
 Users can also customize the revision by selecting specific sections or adjusting the model's behavior to fit their needs and budget.
-Although the evaluation of the revision tool is subjective, we found that many paragraphs were improved.
+Although the evaluation of the revision tool is subjective, we found that most paragraphs were improved.
 The AI model also highlighted certain paragraphs that were difficult to revise, which could be challenging for human readers too.
 
 
@@ -492,7 +496,7 @@ There are opportunities to improve the AI-based revisions, such as further refin
 Fine-tuning using preprint-publication pairs [@doi:10.1371/journal.pbio.3001470] may help to identify sections or phrases likely to be changed during peer review.
 Our approach used GPT-3 to process each paragraph of the text, but it lacked a contextual thread between queries, which mainly affected the Results and Methods sections.
 Using chatbots that retain context, such as [OpenAI's ChatGPT](https://openai.com/blog/chatgpt), could enable the revision of individual paragraphs while considering previously processed text.
-Once an official API becomes available for ChatGPT, we plan to update our workflow to support this strategy.
+Since an official [ChatGPT API](https://openai.com/blog/introducing-chatgpt-and-whisper-apis) became available recently, we plan to update our workflow to support this strategy.
 Other open models, such as BLOOM [@arxiv:2211.05100], GLM [@arxiv:2210.02414], or OPT [@arxiv:2205.01068], provide similar capabilities but lack the user-friendly OpenAI API.
 Despite these limitations, we found that models captured the main ideas and generated a revision that often communicated the intended meaning more clearly and concisely.
 It is important to note, however, that our assessment of performance in case studies was necessarily subjective, as there could be writing styles that are not widely shared across researchers.
