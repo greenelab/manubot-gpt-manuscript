@@ -383,9 +383,9 @@
     "issued": {
       "date-parts": [
         [
-          2022,
-          12,
-          13
+          2023,
+          6,
+          28
         ]
       ]
     },
@@ -1432,6 +1432,10 @@
       {
         "given": "Carlos Muñoz",
         "family": "Ferrandis"
+      },
+      {
+        "given": "Daniel",
+        "family": "McDuff"
       },
       {
         "given": "Danish",
@@ -2712,15 +2716,14 @@
   {
     "id": "K58CKD6D",
     "type": "webpage",
-    "abstract": "Conference Platform",
     "title": "ICML 2023",
     "URL": "https://icml.cc/Conferences/2023/llm-policy",
     "accessed": {
       "date-parts": [
         [
           "2023",
-          3,
-          7
+          6,
+          30
         ]
       ]
     },

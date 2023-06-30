@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-03-07'
+date-meta: '2023-06-30'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-03-07" />
-  <meta name="citation_publication_date" content="2023-03-07" />
-  <meta property="article:published_time" content="2023-03-07" />
-  <meta name="dc.modified" content="2023-03-07T15:42:21+00:00" />
-  <meta property="article:modified_time" content="2023-03-07T15:42:21+00:00" />
+  <meta name="dc.date" content="2023-06-30" />
+  <meta name="citation_publication_date" content="2023-06-30" />
+  <meta property="article:published_time" content="2023-06-30" />
+  <meta name="dc.modified" content="2023-06-30T21:38:23+00:00" />
+  <meta property="article:modified_time" content="2023-06-30T21:38:23+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -74,7 +74,7 @@ This manuscript
 ([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/))
 was automatically generated
 from [greenelab/manubot-gpt-manuscript@26f3fbf](https://github.com/greenelab/manubot-gpt-manuscript/tree/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5)
-on March 7, 2023.
+on June 30, 2023.
 </em></small>
 
 
