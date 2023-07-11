@@ -6,7 +6,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2023-06-30'
+date-meta: '2023-07-11'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -21,11 +21,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2023-06-30" />
-  <meta name="citation_publication_date" content="2023-06-30" />
-  <meta property="article:published_time" content="2023-06-30" />
-  <meta name="dc.modified" content="2023-06-30T21:38:23+00:00" />
-  <meta property="article:modified_time" content="2023-06-30T21:38:23+00:00" />
+  <meta name="dc.date" content="2023-07-11" />
+  <meta name="citation_publication_date" content="2023-07-11" />
+  <meta property="article:published_time" content="2023-07-11" />
+  <meta name="dc.modified" content="2023-07-11T08:52:11+00:00" />
+  <meta property="article:modified_time" content="2023-07-11T08:52:11+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -47,9 +47,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/c0da63541154b3b326685ef6dbbfc3c05d73bc5e/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c0da63541154b3b326685ef6dbbfc3c05d73bc5e/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/c0da63541154b3b326685ef6dbbfc3c05d73bc5e/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -71,10 +71,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/c0da63541154b3b326685ef6dbbfc3c05d73bc5e/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@26f3fbf](https://github.com/greenelab/manubot-gpt-manuscript/tree/26f3fbfaf917c27e8cc257c2771ab3fceb3267f5)
-on June 30, 2023.
+from [greenelab/manubot-gpt-manuscript@c0da635](https://github.com/greenelab/manubot-gpt-manuscript/tree/c0da63541154b3b326685ef6dbbfc3c05d73bc5e)
+on July 11, 2023.
 </em></small>
 
 
@@ -91,7 +91,7 @@ on June 30, 2023.
     [miltondp](https://github.com/miltondp)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [miltondp](https://twitter.com/miltondp)
-    · ![Mastodon icon](images/mastodon.svg){.inline_icon}
+    · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
     [\@miltondp@genomic.social](https://genomic.social/@miltondp)
     <br>
   <small>
@@ -107,7 +107,7 @@ on June 30, 2023.
     [cgreene](https://github.com/cgreene)
     · ![Twitter icon](images/twitter.svg){.inline_icon width=16 height=16}
     [GreeneScientist](https://twitter.com/GreeneScientist)
-    · ![Mastodon icon](images/mastodon.svg){.inline_icon}
+    · ![Mastodon icon](images/mastodon.svg){.inline_icon width=16 height=16}
     [\@greenescientist@genomic.social](https://genomic.social/@greenescientist)
     <br>
   <small>
