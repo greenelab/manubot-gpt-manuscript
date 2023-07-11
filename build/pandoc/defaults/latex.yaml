@@ -1,4 +1,12 @@
 # Pandoc --defaults for LaTeX output.
 # Load on top of common defaults.
 to: latex
-output-file: output/manuscript.tex
+output-file: latex/manuscript.tex
+standalone: true
+variables:
+  # papersize: a4
+  geometry:
+  - top=1in
+  - left=0.5in
+  - right=0.5in
+  - bottom=1in

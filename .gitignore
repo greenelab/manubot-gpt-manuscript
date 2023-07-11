@@ -1,4 +1,12 @@
 # Generated manuscript output files
+latex/svg-inkscape/
+latex/*.aux
+latex/*.bbl
+latex/*.blg
+latex/*.fdb_latexmk
+latex/*.fls
+latex/*.log
+latex/*.out
 output/*
 !output/README.md
 
