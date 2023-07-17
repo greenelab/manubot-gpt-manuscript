@@ -473,20 +473,20 @@ For instance, for some paragraphs, the model generated a revised text that is sh
 However, important details were removed and sometimes sentences changed the meaning.
 To address this, we could accept the simplified sentence structure but add back the missing details.
 
-\begin{figure}
-\hypertarget{fig:results:phenoplier}{%
-\centering
-\includesvg[width=0.75\textwidth,height=\textheight]{images/diffs/results/phenoplier-paragraph-01.svg}
-\caption{\textbf{A paragraph in the Results section of PhenoPLIER.}
-Original text is on the left and suggested revision on the right.}\label{fig:results:phenoplier}
-}
-\end{figure}
+% \begin{figure}
+% \hypertarget{fig:results:phenoplier}{%
+% \centering
+% \includesvg[width=0.75\textwidth,height=\textheight]{images/diffs/results/phenoplier-paragraph-01.svg}
+% \caption{\textbf{A paragraph in the Results section of PhenoPLIER.}
+% Original text is on the left and suggested revision on the right.}\label{fig:results:phenoplier}
+% }
+% \end{figure}
 
 When applied to the PhenoPLIER manuscript, the model produced high-quality revisions for most paragraphs, while preserving citations and references to figures, tables, and other sections of the manuscript in the Manubot/Markdown format.
 In some cases, important details were missing, but they could be easily added back while preserving the improved sentence structure of the revised version.
 In other cases, the model's output demonstrated the limitations of revising one paragraph at a time without considering the rest of the text.
 For instance, one paragraph described our CRISPR screening approach to assess whether top genes in a latent variable (LV) could represent good therapeutic targets.
-The model generated a paragraph with a completely different meaning (Figure \ref{fig:results:phenoplier}).
+The model generated a paragraph with a completely different meaning (Supplementary Figure 1).
 It omitted the CRISPR screen and the gene symbols associated with the regulation of lipids, which were key elements in the original text.
 Instead, the new text describes an experiment that does not exist with a reference to a nonexisting section.
 This suggests that the model focused on the title and keywords of the manuscript (Table \ref{tbl:manuscripts}) that were part of every prompt (Figure \ref{fig:ai_revision}).
@@ -541,19 +541,19 @@ We also observed issues from revising one paragraph at a time without context.
 For instance, in PhenoPLIER, one of the first paragraphs mentions the linear models used by S-PrediXcan and S-MultiXcan, without providing any equations or details.
 These were presented in the following paragraphs, but since the model had not encountered that yet, it opted to add those equations immediately (in the correct Manubot/Markdown format).
 
-\begin{figure}
-\hypertarget{fig:methods:manubotai}{%
-\centering
-\includesvg[width=0.75\textwidth,height=\textheight]{images/diffs/methods/manubotai-paragraph-01.svg}
-\caption{\textbf{A paragraph in the Methods section of ManubotAI.}
-Original text is on the left and suggested revision on the right.
-The revision (right) contains a repeated set of sentences at the top that we removed to improve the clarity of the figure.}\label{fig:methods:manubotai}
-}
-\end{figure}
+% \begin{figure}
+% \hypertarget{fig:methods:manubotai}{%
+% \centering
+% \includesvg[width=0.75\textwidth,height=\textheight]{images/diffs/methods/manubotai-paragraph-01.svg}
+% \caption{\textbf{A paragraph in the Methods section of ManubotAI.}
+% Original text is on the left and suggested revision on the right.
+% The revision (right) contains a repeated set of sentences at the top that we removed to improve the clarity of the figure.}\label{fig:methods:manubotai}
+% }
+% \end{figure}
 
 When revising the Methods sections of Manubot-AI (this manuscript), in some cases the model added novel sentences with wrong information.
 For instance, for one paragraph, it added a formula (using the correct Manubot format) to presumably predict the cost of a revision run.
-In another paragraph (Figure \ref{fig:methods:manubotai}), it added new sentences saying that the model was \emph{``trained on a corpus of scientific papers from the same field as the manuscript''} and that its suggested revisions resulted in a \emph{``modified version of the manuscript that is ready for submission''}.
+In another paragraph (Supplementary Figure 2), it added new sentences saying that the model was \emph{``trained on a corpus of scientific papers from the same field as the manuscript''} and that its suggested revisions resulted in a \emph{``modified version of the manuscript that is ready for submission''}.
 Although these are important future directions, neither accurately describes the present work.
 
 \hypertarget{discussion}{%
