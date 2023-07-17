@@ -308,13 +308,16 @@ The latter provides a more natural interface for revising manuscripts, as it tak
 Model \texttt{text-curie-001} is faster and cheaper than Davinci models, and is defined as ``very capable'' by its authors (see \href{https://beta.openai.com/docs/models/gpt-3}{OpenAI - GPT-3 models}).
 
 \begin{longtable}[]{@{}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.1905}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.5476}}
-  >{\raggedright\arraybackslash}p{(\columnwidth - 4\tabcolsep) * \real{0.2619}}@{}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1467}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.2822}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.3767}}
+  >{\raggedright\arraybackslash}p{(\columnwidth - 6\tabcolsep) * \real{0.1944}}@{}}
 \caption{\textbf{Manuscripts used to evaluate the AI-based revision workflow.} The title and keywords of a manuscript are used in prompts for revising paragraphs. IDs are used in the text to refer to them, and they link to their GitHub repositories. \label{tbl:manuscripts}}\label{tbl:manuscripts}\tabularnewline
 \toprule()
 \begin{minipage}[b]{\linewidth}\raggedright
 Manuscript ID
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+GitHub URL
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Title
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
@@ -326,15 +329,17 @@ Keywords
 \begin{minipage}[b]{\linewidth}\raggedright
 Manuscript ID
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
+GitHub URL
+\end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Title
 \end{minipage} & \begin{minipage}[b]{\linewidth}\raggedright
 Keywords
 \end{minipage} \\
 \midrule()
 \endhead
-\href{https://github.com/greenelab/ccc-manuscript}{CCC} & An efficient not-only-linear correlation coefficient based on machine learning & correlation coefficient, nonlinear relationships, gene expression \\
-\href{https://github.com/greenelab/phenoplier_manuscript}{PhenoPLIER} & Projecting genetic associations through gene expression patterns highlights disease etiology and drug mechanisms & genetic studies, functional genomics, gene co-expression, therapeutic targets, drug repurposing, clustering of complex traits \\
-\href{https://github.com/greenelab/manubot-gpt-manuscript}{Manubot-AI} & A publishing infrastructure for AI-assisted academic authoring & manubot, artificial intelligence, scholarly publishing, software \\
+CCC & \href{https://github.com/greenelab/ccc-manuscript}{greenelab/ccc-manuscript} & An efficient not-only-linear correlation coefficient based on machine learning & correlation coefficient, nonlinear relationships, gene expression \\
+PhenoPLIER & \href{https://github.com/greenelab/phenoplier_manuscript}{greenelab/phenoplier\_manuscript} & Projecting genetic associations through gene expression patterns highlights disease etiology and drug mechanisms & genetic studies, functional genomics, gene co-expression, therapeutic targets, drug repurposing, clustering of complex traits \\
+Manubot-AI & \href{https://github.com/greenelab/manubot-gpt-manuscript}{greenelab/manubot-gpt-manuscript} & A publishing infrastructure for AI-assisted academic authoring & manubot, artificial intelligence, scholarly publishing, software \\
 \bottomrule()
 \end{longtable}
 
@@ -349,7 +354,7 @@ The third manuscript, Manubot-AI, provides an example with a simpler structure, 
 Using these manuscripts, we tested and improved our prompts.
 Our findings are reported below.
 
-We enabled the Manubot AI revision workflow in the GitHub repositories of the three manuscripts (CCC:\linebreak \texttt{https://github.com/greenelab/ccc-manuscript}, PhenoPLIER: \texttt{https://github.com/greenelab/phenoplier\_manuscript}, Manubot-AI: \texttt{https://github.com/greenelab/manubot-gpt-manuscript}).
+We enabled the Manubot AI revision workflow in the GitHub repositories of the three manuscripts (CCC, PhenoPLIER, and Manubot-AI).
 This added the ``ai-revision'' workflow to the ``Actions'' tab of each repository.
 We triggered the workflow manually and used the three language models described above to produce one pull request (PR) per manuscript and model.
 These PRs can be accessed from the ``Pull requests'' tab of each repository.
