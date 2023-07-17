@@ -8,6 +8,8 @@ content/03.methods.md:26:openai
 content/03.methods.md:26:OpenAI
 content/03.methods.md:29:Davinci
 content/03.methods.md:30:Davinci
+content/03.methods.md:35:greenelab
+content/03.methods.md:35:greenelab
 content/03.methods.md:36:davinci
 content/03.methods.md:42:OpenAI
 content/03.methods.md:66:openai
@@ -42,10 +44,18 @@ content/04.results.md:9:GPT
 content/04.results.md:9:openai
 content/04.results.md:9:OpenAI
 content/04.results.md:14:ccc
+content/04.results.md:14:ccc
 content/04.results.md:14:CCC
+content/04.results.md:14:greenelab
+content/04.results.md:14:greenelab
+content/04.results.md:15:greenelab
+content/04.results.md:15:greenelab
 content/04.results.md:15:PhenoPLIER
 content/04.results.md:15:repurposing
 content/04.results.md:16:gpt
+content/04.results.md:16:gpt
+content/04.results.md:16:greenelab
+content/04.results.md:16:greenelab
 content/04.results.md:22:CCC
 content/04.results.md:22:Clustermatch
 content/04.results.md:22:PhenoPLIER
@@ -61,9 +71,7 @@ content/04.results.md:26:PhenoPLIER
 content/04.results.md:26:transcriptional
 content/04.results.md:27:CCC
 content/04.results.md:27:PhenoPLIER
-content/04.results.md:33:ccc
 content/04.results.md:33:CCC
-content/04.results.md:33:gpt
 content/04.results.md:33:PhenoPLIER
 content/04.results.md:36:PRs
 content/04.results.md:37:GPT

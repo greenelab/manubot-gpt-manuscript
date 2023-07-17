@@ -54,8 +54,8 @@
   <meta name="dc.date" content="2023-07-17" />
   <meta name="citation_publication_date" content="2023-07-17" />
   <meta property="article:published_time" content="2023-07-17" />
-  <meta name="dc.modified" content="2023-07-17T05:00:51+00:00" />
-  <meta property="article:modified_time" content="2023-07-17T05:00:51+00:00" />
+  <meta name="dc.modified" content="2023-07-17T06:25:50+00:00" />
+  <meta property="article:modified_time" content="2023-07-17T06:25:50+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -77,9 +77,9 @@
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/511e983d35d07ce990e66625baeebe25b1c8c4f0/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/511e983d35d07ce990e66625baeebe25b1c8c4f0/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/511e983d35d07ce990e66625baeebe25b1c8c4f0/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/09754ec5579dd5cb4da5e19cf404c9f0ef7abcf9/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/09754ec5579dd5cb4da5e19cf404c9f0ef7abcf9/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/09754ec5579dd5cb4da5e19cf404c9f0ef7abcf9/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -97,9 +97,9 @@
 <p><em>A DOI-citable version of this manuscript is available at <a href="https://doi.org/10.1101/2023.01.21.525030" class="uri">https://doi.org/10.1101/2023.01.21.525030</a></em>.</p>
 <p><small><em>
 This manuscript
-(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/511e983d35d07ce990e66625baeebe25b1c8c4f0/">permalink</a>)
+(<a href="https://greenelab.github.io/manubot-gpt-manuscript/v/09754ec5579dd5cb4da5e19cf404c9f0ef7abcf9/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/511e983d35d07ce990e66625baeebe25b1c8c4f0">greenelab/manubot-gpt-manuscript@511e983</a>
+from <a href="https://github.com/greenelab/manubot-gpt-manuscript/tree/09754ec5579dd5cb4da5e19cf404c9f0ef7abcf9">greenelab/manubot-gpt-manuscript@09754ec</a>
 on July 17, 2023.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -148,7 +148,9 @@ Then, the model generates a revised version of each paragraph that the human aut
 We tested our AI-based revision workflow in three case studies of existing manuscripts, including the present one.
 Our results suggest that these models can capture the concepts in the scholarly text and produce high-quality revisions that improve clarity.
 All changes to the manuscript are tracked using a version control system, providing transparency into the human or machine origin of text.
-Given the amount of time that researchers put into crafting prose, we anticipate that this advance will significantly improve the type of knowledge work performed by academics.</p>
+Given the amount of time that researchers put into crafting prose, incorporating large language models into the scholarly writing process can significantly improve the type of knowledge work performed by academics.
+It can also help scholars to focus on the most important aspects of their work, such as the novelty of their ideas, and automate the most tedious parts such as adhering to a certain writing style.
+Although the use of AI-assisted tools for scientific authoring is controversial, our work focuses on revising text written by humans and provides transparency into the origin of text by tracking changes, which can alleviate concerns about the use of AI in scientific authoring.</p>
 <h2 id="introduction">Introduction</h2>
 <p>Manuscripts have been around for thousands of years, but scientific journals have only been around for about 350 years <span class="citation" data-cites="F3iZfGUC">[<a href="#ref-F3iZfGUC" role="doc-biblioref">1</a>]</span>.
 External peer review, which is used by many journals, is even more recent, having been around for less than 100 years <span class="citation" data-cites="1HMhNrQq1">[<a href="#ref-1HMhNrQq1" role="doc-biblioref">2</a>]</span>.
@@ -173,7 +175,7 @@ Our AI-assisted writing workflow can be incorporated into any Manubot manuscript
 <h3 id="overview">Overview</h3>
 <div id="fig:ai_revision" class="fignos">
 <figure>
-<img src="images/figure_1.svg" style="width:85.0%" alt="Figure 1: AI-based revision applied on a Manubot-based manuscript. a) A manuscript (written with Manubot) with different sections. b) The prompt generator integrates metadata using prompt templates to generate section-specific prompts for each paragraph. If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only. The prompt for the Methods section includes the formatting of equations with identifiers. All sections’ prompts include these instructions: “the text grammar is correct, spelling errors are fixed, and the text has a clear sentence structure”, although these are only shown for abstracts." />
+<img src="images/figure_1.svg" style="width:75.0%" alt="Figure 1: AI-based revision applied on a Manubot-based manuscript. a) A manuscript (written with Manubot) with different sections. b) The prompt generator integrates metadata using prompt templates to generate section-specific prompts for each paragraph. If a paragraph belongs to a non-standard section, then a default prompt will be used to perform a basic revision only. The prompt for the Methods section includes the formatting of equations with identifiers. All sections’ prompts include these instructions: “the text grammar is correct, spelling errors are fixed, and the text has a clear sentence structure”, although these are only shown for abstracts." />
 <figcaption aria-hidden="true"><span>Figure 1:</span> <strong>AI-based revision applied on a Manubot-based manuscript.</strong>
 <strong>a)</strong> A manuscript (written with Manubot) with different sections.
 <strong>b)</strong> The prompt generator integrates metadata using prompt templates to generate section-specific prompts for each paragraph.
@@ -257,30 +259,35 @@ Model <code>text-curie-001</code> is faster and cheaper than Davinci models, and
 <table id="tbl:manuscripts">
 <caption><span>Table 1:</span> <strong>Manuscripts used to evaluate the AI-based revision workflow.</strong> The title and keywords of a manuscript are used in prompts for revising paragraphs. IDs are used in the text to refer to them, and they link to their GitHub repositories. </caption>
 <colgroup>
+<col style="width: 16%" />
+<col style="width: 22%" />
+<col style="width: 41%" />
 <col style="width: 19%" />
-<col style="width: 54%" />
-<col style="width: 26%" />
 </colgroup>
 <thead>
 <tr class="header">
 <th style="text-align: left;">Manuscript ID</th>
+<th style="text-align: left;">GitHub URL</th>
 <th style="text-align: left;">Title</th>
 <th style="text-align: left;">Keywords</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td style="text-align: left;"><a href="https://github.com/greenelab/ccc-manuscript">CCC</a></td>
+<td style="text-align: left;">CCC</td>
+<td style="text-align: left;"><a href="https://github.com/greenelab/ccc-manuscript">greenelab/ccc-manuscript</a></td>
 <td style="text-align: left;">An efficient not-only-linear correlation coefficient based on machine learning</td>
 <td style="text-align: left;">correlation coefficient, nonlinear relationships, gene expression</td>
 </tr>
 <tr class="even">
-<td style="text-align: left;"><a href="https://github.com/greenelab/phenoplier_manuscript">PhenoPLIER</a></td>
+<td style="text-align: left;">PhenoPLIER</td>
+<td style="text-align: left;"><a href="https://github.com/greenelab/phenoplier_manuscript">greenelab/phenoplier_manuscript</a></td>
 <td style="text-align: left;">Projecting genetic associations through gene expression patterns highlights disease etiology and drug mechanisms</td>
 <td style="text-align: left;">genetic studies, functional genomics, gene co-expression, therapeutic targets, drug repurposing, clustering of complex traits</td>
 </tr>
 <tr class="odd">
-<td style="text-align: left;"><a href="https://github.com/greenelab/manubot-gpt-manuscript">Manubot-AI</a></td>
+<td style="text-align: left;">Manubot-AI</td>
+<td style="text-align: left;"><a href="https://github.com/greenelab/manubot-gpt-manuscript">greenelab/manubot-gpt-manuscript</a></td>
 <td style="text-align: left;">A publishing infrastructure for AI-assisted academic authoring</td>
 <td style="text-align: left;">manubot, artificial intelligence, scholarly publishing, software</td>
 </tr>
@@ -297,7 +304,7 @@ Therefore, CCC has a simpler structure, whereas PhenoPLIER is a more complex man
 The third manuscript, Manubot-AI, provides an example with a simpler structure, and it was written and revised using our tool before submission, which provides a more real AI-based revision use case.
 Using these manuscripts, we tested and improved our prompts.
 Our findings are reported below.</p>
-<p>We enabled the Manubot AI revision workflow in the GitHub repositories of the three manuscripts (CCC: <code>https://github.com/greenelab/ccc-manuscript</code>, PhenoPLIER: <code>https://github.com/greenelab/phenoplier_manuscript</code>, Manubot-AI: <code>https://github.com/greenelab/manubot-gpt-manuscript</code>).
+<p>We enabled the Manubot AI revision workflow in the GitHub repositories of the three manuscripts (CCC, PhenoPLIER, and Manubot-AI).
 This added the “ai-revision” workflow to the “Actions” tab of each repository.
 We triggered the workflow manually and used the three language models described above to produce one pull request (PR) per manuscript and model.
 These PRs can be accessed from the “Pull requests” tab of each repository.
@@ -327,7 +334,7 @@ The full diffs can be seen by inspecting the PRs for each manuscript and model, 
 <h4 id="abstract-1">Abstract</h4>
 <div id="fig:abstract:ccc" class="fignos">
 <figure>
-<img src="images/diffs/abstract/ccc-abstract.svg" style="width:100.0%" alt="Figure 2: Abstract of CCC. Original text is on the left and suggested revision on the right." />
+<img src="images/diffs/abstract/ccc-abstract.svg" style="width:75.0%" alt="Figure 2: Abstract of CCC. Original text is on the left and suggested revision on the right." />
 <figcaption aria-hidden="true"><span>Figure 2:</span> <strong>Abstract of CCC.</strong>
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
@@ -343,7 +350,7 @@ However, in this case, important concepts (such as GWAS, TWAS, CRISPR) and a pro
 <h4 id="introduction-1">Introduction</h4>
 <div id="fig:intro:ccc" class="fignos">
 <figure>
-<img src="images/diffs/introduction/ccc-paragraph-01.svg" style="width:100.0%" alt="Figure 3: First paragraph in the Introduction section of CCC. Original text is on the left and suggested revision on the right." />
+<img src="images/diffs/introduction/ccc-paragraph-01.svg" style="width:75.0%" alt="Figure 3: First paragraph in the Introduction section of CCC. Original text is on the left and suggested revision on the right." />
 <figcaption aria-hidden="true"><span>Figure 3:</span> <strong>First paragraph in the Introduction section of CCC.</strong>
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
@@ -362,7 +369,7 @@ However, rerunning the automated revision should solve this as the model is stoc
 <h4 id="results">Results</h4>
 <div id="fig:results:ccc" class="fignos">
 <figure>
-<img src="images/diffs/results/ccc-paragraph-01.svg" style="width:100.0%" alt="Figure 4: A paragraph in the Results section of CCC. Original text is on the left and suggested revision on the right." />
+<img src="images/diffs/results/ccc-paragraph-01.svg" style="width:75.0%" alt="Figure 4: A paragraph in the Results section of CCC. Original text is on the left and suggested revision on the right." />
 <figcaption aria-hidden="true"><span>Figure 4:</span> <strong>A paragraph in the Results section of CCC.</strong>
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
@@ -383,7 +390,7 @@ However, important details were removed and sometimes sentences changed the mean
 To address this, we could accept the simplified sentence structure but add back the missing details.</p>
 <div id="fig:results:phenoplier" class="fignos">
 <figure>
-<img src="images/diffs/results/phenoplier-paragraph-01.svg" style="width:100.0%" alt="Figure 5: A paragraph in the Results section of PhenoPLIER. Original text is on the left and suggested revision on the right." />
+<img src="images/diffs/results/phenoplier-paragraph-01.svg" style="width:75.0%" alt="Figure 5: A paragraph in the Results section of PhenoPLIER. Original text is on the left and suggested revision on the right." />
 <figcaption aria-hidden="true"><span>Figure 5:</span> <strong>A paragraph in the Results section of PhenoPLIER.</strong>
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
@@ -404,7 +411,7 @@ The model kept the correct format when necessary (e.g., using italics for gene s
 Revisions for some paragraphs introduced minor mistakes that a human author could readily fix.</p>
 <div id="fig:discussion:ccc" class="fignos">
 <figure>
-<img src="images/diffs/discussion/ccc-paragraph-01.svg" style="width:100.0%" alt="Figure 6: A paragraph in the Discussion section of CCC. Original text is on the left and suggested revision on the right." />
+<img src="images/diffs/discussion/ccc-paragraph-01.svg" style="width:75.0%" alt="Figure 6: A paragraph in the Discussion section of CCC. Original text is on the left and suggested revision on the right." />
 <figcaption aria-hidden="true"><span>Figure 6:</span> <strong>A paragraph in the Discussion section of CCC.</strong>
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
@@ -418,7 +425,7 @@ For instance, the two articles referenced in lines 2 and 3 in the original text 
 The prompt for Methods (Figure <a href="#fig:ai_revision">1</a>) is more focused in keeping the technical details, which was especially important for PhenoPLIER, whose Methods section contains paragraphs with several mathematical expressions.</p>
 <div id="fig:methods:phenoplier" class="fignos">
 <figure>
-<img src="images/diffs/methods/phenoplier-paragraph-01.svg" style="width:100.0%" alt="Figure 7: A paragraph in the Methods section of PhenoPLIER. Original text is on the left and suggested revision on the right." />
+<img src="images/diffs/methods/phenoplier-paragraph-01.svg" style="width:75.0%" alt="Figure 7: A paragraph in the Methods section of PhenoPLIER. Original text is on the left and suggested revision on the right." />
 <figcaption aria-hidden="true"><span>Figure 7:</span> <strong>A paragraph in the Methods section of PhenoPLIER.</strong>
 Original text is on the left and suggested revision on the right.</figcaption>
 </figure>
@@ -434,7 +441,7 @@ For instance, in PhenoPLIER, one of the first paragraphs mentions the linear mod
 These were presented in the following paragraphs, but since the model had not encountered that yet, it opted to add those equations immediately (in the correct Manubot/Markdown format).</p>
 <div id="fig:methods:manubotai" class="fignos">
 <figure>
-<img src="images/diffs/methods/manubotai-paragraph-01.svg" style="width:100.0%" alt="Figure 8: A paragraph in the Methods section of ManubotAI. Original text is on the left and suggested revision on the right. The revision (right) contains a repeated set of sentences at the top that we removed to improve the clarity of the figure." />
+<img src="images/diffs/methods/manubotai-paragraph-01.svg" style="width:75.0%" alt="Figure 8: A paragraph in the Methods section of ManubotAI. Original text is on the left and suggested revision on the right. The revision (right) contains a repeated set of sentences at the top that we removed to improve the clarity of the figure." />
 <figcaption aria-hidden="true"><span>Figure 8:</span> <strong>A paragraph in the Methods section of ManubotAI.</strong>
 Original text is on the left and suggested revision on the right.
 The revision (right) contains a repeated set of sentences at the top that we removed to improve the clarity of the figure.</figcaption>
@@ -451,7 +458,7 @@ Our AI-based revision workflow uses a prompt generator that creates manuscript- 
 Authors can easily trigger this workflow from the GitHub repository to suggest revisions that can be later reviewed.
 This workflow uses GPT-3 models through the OpenAI API, generating a pull request of revisions that authors can review.
 We set default parameters for GPT-3 models that work well for our use cases across different sections and manuscripts.
-Users can also customize the revision by selecting specific sections or adjusting the model’s behavior to fit their needs and budget.
+Users can also customize the revision by selecting specific sections, adjusting the model’s behavior to fit their needs and budget, and even providing custom prompts instead of using the default, section-specific ones, which can be useful for specific use cases that do not require a complex revision.
 Although the evaluation of the revision tool is subjective, we found that most paragraphs were improved.
 The AI model also highlighted certain paragraphs that were difficult to revise, which could be challenging for human readers too.</p>
 <p>We designed section-specific prompts to guide the revision of text using GPT-3.
