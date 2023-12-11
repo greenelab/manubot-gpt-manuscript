@@ -12,7 +12,7 @@ explicitely
 GBMF
 genomic
 GLM
-GPT
+gpt
 Grammarly
 greenelab
 GreeneScientist
@@ -28,7 +28,7 @@ MultiXcan
 nonexisting
 OpenAI
 OpenAI’s
-phenoplier
+PhenoPLIER
 Pividori
 Pre
 PrediXcan
