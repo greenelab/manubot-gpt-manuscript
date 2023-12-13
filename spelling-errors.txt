@@ -1,4 +1,4 @@
-ccc
+CCC
 cgreene
 chatbots
 ChatGPT
@@ -12,7 +12,7 @@ explicitely
 GBMF
 genomic
 GLM
-gpt
+GPT
 Grammarly
 greenelab
 GreeneScientist
@@ -28,7 +28,7 @@ MultiXcan
 nonexisting
 OpenAI
 OpenAI’s
-PhenoPLIER
+phenoplier
 Pividori
 Pre
 PrediXcan
