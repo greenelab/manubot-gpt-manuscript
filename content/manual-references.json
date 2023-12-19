@@ -1,21 +1,32 @@
 [
 {
-  "id": "url:https://github.com/manubot/rootstock",
-  "type": "webpage",
-  "URL": "https://github.com/manubot/rootstock",
-  "title": "manubot/rootstock GitHub repository",
-  "container-title": "GitHub",
+  "id": "doi:10.1093/jamia/ocad245",
+  "type": "article-journal",
+  "URL": "https://doi.org/10.1093/jamia/ocad245",
+  "title": "Benchmarking the symptom-checking capabilities of ChatGPT for a broad range of diseases",
+  "container-title": "Journal of the American Medical Informatics Association",
   "issued": {
     "date-parts": [
       [
-        2019
+        2023,
+        12,
+        18
       ]
     ]
   },
+  "language": "en",
   "author": [
     {
-      "given": "Daniel",
-      "family": "Himmelstein"
+      "given": "Anjun",
+      "family": "Chen"
+    },
+    {
+      "given": "Drake O",
+      "family": "Chen"
+    },
+    {
+      "given": "Lu",
+      "family": "Tian"
     }
   ]
 }
