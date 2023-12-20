@@ -1,0 +1,32 @@
+Steps to generate/update Latex file:
+
+1. Run: BUILD_PDF=false BUILD_DOCX=false BUILD_LATEX=true bash build/build.sh
+2. Use a diff tool to add keep the desired changes.
+3. bash build_latex.sh
+
+Steps to generate diff latex file:
+
+1. Download latest latexdiff version (v1.3.3 used here):
+   export LATEXDIFF_PATH="/home/miltondp/software/latexdiff-1.3.3/latexdiff"
+
+2. Get the previous and current versions of the .tex file to compare:
+   export PREV_VER="v01.1"
+   export CURR_VER="v02.0"
+   mkdir diffs
+   git show ${PREV_VER}:latex/manuscript.tex > diffs/${PREV_VER}.tex
+   git show ${CURR_VER}:latex/manuscript.tex > diffs/${CURR_VER}.tex
+
+3. Generate diff between versions:
+   ${LATEXDIFF_PATH} \
+     --packages=hyperref \
+     --no-links \
+     diffs/${PREV_VER}.tex \
+     diffs/${CURR_VER}.tex > diffs/diff_${PREV_VER}_vs_${CURR_VER}.tex
+
+4. Compile (within latex/ directory):
+   latexmk diffs/diff_${PREV_VER}_vs_${CURR_VER}.tex
+
+5. Check diff pdf to ensure everything is correct.
+
+6. Add to git:
+   git add diffs/diff_${PREV_VER}_vs_${CURR_VER}.tex
