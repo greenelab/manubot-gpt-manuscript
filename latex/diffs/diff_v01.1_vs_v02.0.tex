@@ -1,7 +1,7 @@
 % Options for packages loaded elsewhere
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL diffs/v01.1.tex   Tue Dec 19 21:38:46 2023
-%DIF ADD diffs/v02.0.tex   Tue Dec 19 21:38:46 2023
+%DIF DEL diffs/v01.1.tex   Thu Dec 21 09:58:37 2023
+%DIF ADD diffs/v02.0.tex   Thu Dec 21 09:58:37 2023
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
@@ -247,7 +247,7 @@ Casey S. Greene \textless casey.s.greene@cuanschutz.edu\textgreater.
 \hypertarget{abstract}{%
 \subsection{Abstract}\label{abstract}}
 
-\textbf{Objective:} Investigate \DIFdelbegin \DIFdel{how models with }\DIFdelend \DIFaddbegin \DIFadd{the use of }\DIFaddend advanced natural language processing \DIFdelbegin \DIFdel{capabilities can }\DIFdelend \DIFaddbegin \DIFadd{models to }\DIFaddend reduce the time-consuming process of writing and revising scholarly manuscripts.\\
+\textbf{Objective:} Investigate \DIFdelbegin \DIFdel{how models with }\DIFdelend \DIFaddbegin \DIFadd{the use of }\DIFaddend advanced natural language processing \DIFdelbegin \DIFdel{capabilities can reduce }\DIFdelend \DIFaddbegin \DIFadd{models to streamline }\DIFaddend the time-consuming process of writing and revising scholarly manuscripts.\\
 \textbf{Materials and Methods:} \DIFdelbegin \DIFdel{To this end}\DIFdelend \DIFaddbegin \DIFadd{For this purpose}\DIFaddend , we integrate large language models into the Manubot publishing ecosystem to suggest revisions for scholarly \DIFdelbegin \DIFdel{text}\DIFdelend \DIFaddbegin \DIFadd{texts}\DIFaddend .
 Our AI-based revision workflow \DIFdelbegin \DIFdel{uses }\DIFdelend \DIFaddbegin \DIFadd{employs }\DIFaddend a prompt generator that \DIFdelbegin \DIFdel{integrates metadata from the manuscript into prompt templatesto generate }\DIFdelend \DIFaddbegin \DIFadd{incorporates manuscript metadata into templates, generating }\DIFaddend section-specific instructions for the language model.
 \DIFdelbegin \DIFdel{Then, the model generates a revised version }\DIFdelend \DIFaddbegin \DIFadd{The model then generates revised versions }\DIFaddend of each paragraph \DIFdelbegin \DIFdel{that the human author can }\DIFdelend \DIFaddbegin \DIFadd{for human authors to }\DIFaddend review.
@@ -255,17 +255,17 @@ We \DIFdelbegin \DIFdel{tested our AI-based revision workflow in }\DIFdelend \DI
 \textbf{Results:} Our results \DIFdelbegin \DIFdel{suggest }\DIFdelend \DIFaddbegin \DIFadd{indicate }\DIFaddend that these models\DIFdelbegin \DIFdel{can capture the concepts in the scholarly text and produce high-quality revisions that improve clarity}\DIFdelend \DIFaddbegin \DIFadd{, despite some limitations, can grasp complex academic concepts and enhance text quality}\DIFaddend .
 All changes to the manuscript are tracked using a version control system, \DIFdelbegin \DIFdel{providing transparency into the human or machine origin of }\DIFdelend \DIFaddbegin \DIFadd{ensuring transparency in distinguishing between human- and machine-generated }\DIFaddend text.\\
 \textbf{Conclusions:} Given the \DIFdelbegin \DIFdel{amount of time that researchers put into }\DIFdelend \DIFaddbegin \DIFadd{significant time researchers invest in }\DIFaddend crafting prose, incorporating large language models into the scholarly writing process can significantly improve the type of knowledge work performed by academics.
-\DIFdelbegin \DIFdel{It can also help scholars to focus on the most important }\DIFdelend \DIFaddbegin \DIFadd{Our approach also enables scholars to concentrate on critical }\DIFaddend aspects of their work, \DIFdelbegin \DIFdel{such as }\DIFdelend \DIFaddbegin \DIFadd{like }\DIFaddend the novelty of their ideas, \DIFdelbegin \DIFdel{and automate the most tedious parts }\DIFdelend \DIFaddbegin \DIFadd{while automating tedious tasks }\DIFaddend such as adhering to \DIFdelbegin \DIFdel{a certain writing style}\DIFdelend \DIFaddbegin \DIFadd{specific writing styles}\DIFaddend .
+\DIFdelbegin \DIFdel{It can also help scholars to focus on the most important }\DIFdelend \DIFaddbegin \DIFadd{Our approach also enables scholars to concentrate on critical }\DIFaddend aspects of their work, such as the novelty of their ideas, \DIFdelbegin \DIFdel{and automate the most tedious parts such as adhering to a certain writing style}\DIFdelend \DIFaddbegin \DIFadd{while automating tedious tasks like adhering to specific writing styles}\DIFaddend .
 Although the use of AI-assisted tools \DIFdelbegin \DIFdel{for }\DIFdelend \DIFaddbegin \DIFadd{in }\DIFaddend scientific authoring is controversial, our \DIFdelbegin \DIFdel{work }\DIFdelend \DIFaddbegin \DIFadd{approach, which }\DIFaddend focuses on revising \DIFdelbegin \DIFdel{text written by humans and provides transparency into the origin of text by tracking changes, which can alleviate concerns about the use of AIin scientific authoring}\DIFdelend \DIFaddbegin \DIFadd{human-written text and provides change-tracking transparency, can mitigate concerns regarding AI's role in scientific writing}\DIFaddend .
 
 \hypertarget{introduction}{%
 \subsection{Introduction and background}\label{introduction}}
 
-\DIFdelbegin \DIFdel{Manuscripts have been around for }\DIFdelend \DIFaddbegin \DIFadd{The tradition of scholarly manuscripts dates back }\DIFaddend thousands of years, \DIFdelbegin \DIFdel{but scientific journals have only been around for about }\DIFdelend \DIFaddbegin \DIFadd{evolving significantly with the advent of scientific journals approximately }\DIFaddend 350 years \DIFaddbegin \DIFadd{ago }\DIFaddend {[}\protect\hyperlink{ref-F3iZfGUC}{1}{]}.
-External peer review, which is used by many journals, is even more recent, having been around for less than 100 years {[}\protect\hyperlink{ref-1HMhNrQq1}{2}{]}.
-Most manuscripts are written by humans or teams of humans working together to describe new advances, summarize existing literature, or argue for changes in the status quo.
-However, scholarly writing is a time-consuming process where results of a study are presented using a specific style and format.
-Academics can sometimes be long-winded in getting to key points, making writing more impenetrable to their audience {[}\protect\hyperlink{ref-19YWsShi0}{3}{]}.
+\DIFdelbegin \DIFdel{Manuscripts have been around for }\DIFdelend \DIFaddbegin \DIFadd{The tradition of scholarly writing dates back }\DIFaddend thousands of years, \DIFdelbegin \DIFdel{but scientific journals have only been around for about }\DIFdelend \DIFaddbegin \DIFadd{evolving significantly with the advent of scientific journals approximately }\DIFaddend 350 years \DIFaddbegin \DIFadd{ago }\DIFaddend {[}\protect\hyperlink{ref-F3iZfGUC}{1}{]}.
+External peer review, \DIFdelbegin \DIFdel{which is }\DIFdelend used by many journals, is even more recent, having been around for less than 100 years {[}\protect\hyperlink{ref-1HMhNrQq1}{2}{]}.
+Most manuscripts are written by \DIFdelbegin \DIFdel{humans or teams of humans }\DIFdelend \DIFaddbegin \DIFadd{individuals or teams }\DIFaddend working together to describe new advances, summarize existing literature, or argue for changes in the status quo.
+However, scholarly writing is a time-consuming process \DIFdelbegin \DIFdel{where }\DIFdelend \DIFaddbegin \DIFadd{in which the }\DIFaddend results of a study are presented using a specific style and format.
+Academics can sometimes be long-winded in getting to key points, making \DIFaddbegin \DIFadd{their }\DIFaddend writing more impenetrable to their audience {[}\protect\hyperlink{ref-19YWsShi0}{3}{]}.
 
 Recent advances in computing capabilities and the widespread availability of text, images, and other data on the internet have laid the foundation for artificial intelligence (AI) models with billions of parameters.
 Large language models \DIFaddbegin \DIFadd{(LLMs)}\DIFaddend , in particular, are opening the floodgates to new technologies with the capability to transform how society operates {[}\protect\hyperlink{ref-xq1uEbPa}{4}{]}.
@@ -279,7 +279,7 @@ This technology has the potential to revolutionize how scientists write and revi
 \DIFaddbegin \DIFadd{However, the use of LLMs in research has sparked controversy, primarily due to their propensity to generate plausible yet factually incorrect or misleading information.
 }\DIFaddend 
 
-\DIFdelbegin \DIFdel{We present a novel }\DIFdelend \DIFaddbegin \DIFadd{In this work, we present a human-centric approach for the use of AI in manuscript writing where scholarly text, initially created by humans, is revised through edit suggestions from LLMs, and then ultimately reviewed and approved by humans.
+\DIFdelbegin \DIFdel{We present a novel }\DIFdelend \DIFaddbegin \DIFadd{In this work, we present a human-centric approach for the use of AI in manuscript writing where scholarly text, initially created by humans, is revised through edit suggestions from LLMs, and is ultimately reviewed and approved by humans.
 This approach mitigates the risk of generating misleading information while still providing the benefits of }\DIFaddend AI-assisted \DIFdelbegin \DIFdel{revision tool that envisions a future where authors collaborate with large language models in the writing of their manuscripts.
 This workflow }\DIFdelend \DIFaddbegin \DIFadd{writing.
 We developed an AI-assisted revision tool that implements this approach and }\DIFaddend builds on the Manubot infrastructure for scholarly publishing {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-YuJbg3zO}{7}{]}%%%
@@ -299,7 +299,7 @@ Our findings indicate that, in most cases, the models were able to maintain the 
 
 This study has two objectives:
 1) investigate how recently released large language models can reduce the time-consuming process of writing and revising scholarly manuscripts;
-2) develop \DIFdelbegin \DIFdel{a workflow }\DIFdelend \DIFaddbegin \DIFadd{an approach }\DIFaddend that integrates these models into the Manubot publishing ecosystem to transparently suggest revisions to improve the quality of the original text.
+2) develop \DIFdelbegin \DIFdel{a workflow that integrates }\DIFdelend \DIFaddbegin \DIFadd{an approach for incorporating }\DIFaddend these models into the Manubot publishing ecosystem to transparently suggest revisions to improve the quality of the original text.
 
 \hypertarget{materials-and-methods}{%
 \subsection{Materials and Methods}\label{materials-and-methods}}
@@ -346,26 +346,26 @@ Our tool allows the user to provide a custom prompt instead of using the default
 \DIFdelbegin \DIFdel{We implemented }\DIFdelend \DIFaddbegin \DIFadd{The Manubot AI Editor is }\DIFaddend an AI-based revision infrastructure \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{built into }\DIFaddend Manubot {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-YuJbg3zO}{7}{]}%%%
 \DIFdelend \DIFaddbegin \hyperlink{ref-YuJbg3zO}{11}{]}\DIFaddend , a tool for collaborative writing of scientific manuscripts.
 Manubot integrates with popular version control platforms such as GitHub, allowing authors to easily track changes and collaborate on writing in real time.
-Furthermore, Manubot automates the process of generating a formatted manuscript (such as HTML, PDF, DOCX; Figure \ref{fig:ai_revision}a shows the HTML output).
-Built on this modern and open paradigm, our \DIFdelbegin \DIFdel{AI-based revisionsoftware was developed using GitHub Actions, which }\DIFdelend \DIFaddbegin \DIFadd{Manubot AI Editor (}\url{https://github.com/manubot/manubot-ai-editor}\DIFadd{) includes three components:
+Furthermore, Manubot automates the process of generating a formatted manuscript (\DIFdelbegin \DIFdel{such as }\DIFdelend \DIFaddbegin \DIFadd{e.g., }\DIFaddend HTML, PDF, DOCX; Figure \ref{fig:ai_revision}a shows the HTML output).
+Built on this modern and open paradigm, our \DIFdelbegin \DIFdel{AI-based revisionsoftware was developed using GitHub Actions, which allows the user }\DIFdelend \DIFaddbegin \DIFadd{Manubot AI Editor (}\url{https://github.com/manubot/manubot-ai-editor}\DIFadd{) includes three components:
 1) a Python library that provides classes and functions to read the manuscript content and its metadata, calls the LLM for automatic text revision, and writes the results back;
 2) a GitHub Actions workflow that uses our Python library within GitHub to preserve provenance information for transparency;
 3) a prompt generator that integrates the manuscript's metadata using prompt templates to generate section-specific prompts for each paragraph (Figure \ref{fig:ai_revision}b).
 }
 
-\DIFadd{The GitHub Actions workflow }\DIFaddend allows the user to easily trigger an automated revision task on the entire manuscript or specific sections of it.
+\DIFadd{The GitHub Actions workflow allows users }\DIFaddend to easily trigger an automated revision task on the entire manuscript or specific sections of it.
 \DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\DIFdelend When the user triggers the action, the manuscript is parsed by section and then by paragraph (Figure \ref{fig:ai_revision}b) \DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{that are }\DIFaddend passed to the language model along with a set of custom prompts.
+\DIFdel{When the user triggers the action }\DIFdelend \DIFaddbegin \DIFadd{When the action is triggered}\DIFaddend , the manuscript is parsed by section and then by paragraph (Figure \ref{fig:ai_revision}b)\DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{, which are }\DIFaddend passed to the language model along with a set of custom prompts.
 The model then returns a revised version of the text.
-Our workflow then uses the GitHub API to generate a new pull request, allowing the user to review and modify the output before merging the changes into the manuscript.
-This workflow attributes text to either the human user or to the AI language model, which may be important in light of potential future legal decisions that alter the copyright landscape around the outputs of generative models.
+Our workflow \DIFdelbegin \DIFdel{then }\DIFdelend uses the GitHub API to generate a new pull request, allowing the user to review and modify the output before merging the changes into the manuscript.
+This workflow attributes text to either the human user or \DIFdelbegin \DIFdel{to }\DIFdelend the AI language model, which may be important in light of potential future legal decisions that \DIFaddbegin \DIFadd{could }\DIFaddend alter the copyright landscape around the outputs of generative models.
 
 We used the \href{https://openai.com/api/}{OpenAI API} for access to these models.
 Since this API incurs a cost with each run that depends on manuscript length, we implemented a workflow in GitHub Actions that can be manually triggered by the user.
-Our implementation allows users to tune the costs to their needs by allowing them to select specific sections to be revised instead of the entire manuscript.
-Additionally, several model parameters can be adjusted to tune costs even further, such as the language model version (including Davinci and Curie, \DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{the current GPT-3.5 Turbo and GPT-4, and }\DIFaddend potentially newly published ones), how much risk the model will take, or the ``quality'' of the completions.
+Our implementation allows users to tune the costs to their needs by \DIFdelbegin \DIFdel{allowing }\DIFdelend \DIFaddbegin \DIFadd{enabling }\DIFaddend them to select specific sections \DIFdelbegin \DIFdel{to be revised }\DIFdelend \DIFaddbegin \DIFadd{for revision }\DIFaddend instead of the entire manuscript.
+Additionally, several model parameters can be adjusted to \DIFdelbegin \DIFdel{tune costs even further}\DIFdelend \DIFaddbegin \DIFadd{further tune costs}\DIFaddend , such as the language model version (including Davinci and Curie, \DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{the current GPT-3.5 Turbo and GPT-4, and }\DIFaddend potentially newly published ones), how much risk the model will take, or the ``quality'' of the completions.
 For instance, using Davinci models\DIFdelbegin \DIFdel{(the most complex and capable ones)}\DIFdelend , the cost per run is under \$0.50 for most manuscripts.
 
 \hypertarget{implementation-details}{%
@@ -385,59 +385,63 @@ If the error cannot be handled or the maximum number of retries is reached, the 
 This allows the user to debug the problem and attempt to fix it if desired.
 
 As shown in Figure \ref{fig:ai_revision}b, each API request comprises a prompt (the instructions given to the model) and the paragraph to be revised.
-\DIFdelbegin \DIFdel{The promptuses the }\DIFdelend \DIFaddbegin \DIFadd{Unless the user specifies a custom prompt, the tool will use a section-specific prompt generator that incorporates the }\DIFaddend manuscript title and keywords, so both must be accurate to obtain the best revision outcomes.
+\DIFdelbegin \DIFdel{The promptuses the }\DIFdelend \DIFaddbegin \DIFadd{Unless the user specifies a custom prompt, the tool will use a section-specific prompt generator that incorporates the }\DIFaddend manuscript title and keywords\DIFdelbegin \DIFdel{, so }\DIFdelend \DIFaddbegin \DIFadd{.
+Therefore, }\DIFaddend both must be accurate to obtain the best revision outcomes.
 The other key component to process a paragraph is its section.
 For instance, the abstract is a set of sentences with no citations, whereas a paragraph from the Introduction section has several references to other scientific papers.
 A paragraph in the Results section has fewer citations but many references to figures or tables, and must provide enough details about the experiments to understand and interpret the outcomes.
-The Methods section is more dependent on the type of paper, but in general it has to provide technical details and sometimes mathematical formulas and equations.
+The Methods section is more dependent on the type of paper, but in general\DIFaddbegin \DIFadd{, }\DIFaddend it has to provide technical details and sometimes mathematical formulas and equations.
 Therefore, we designed section-specific prompts, which we found led to the most useful suggestions.
-Figures and tables captions, as well as paragraphs that contain only one or two sentences and less than sixty words, are not processed and are copied directly to the output file.
+\DIFdelbegin \DIFdel{Figures and tables }\DIFdelend \DIFaddbegin \DIFadd{Figure and table }\DIFaddend captions, as well as paragraphs that contain only one or two sentences and \DIFdelbegin \DIFdel{less }\DIFdelend \DIFaddbegin \DIFadd{fewer }\DIFaddend than sixty words, are not processed and are copied directly to the output file.
 
 The section of a paragraph is automatically inferred from the file name using a simple strategy, such as if ``introduction'' or ``methods'' is part of the file name.
-If the tool fails to infer a section from the file, then the user is still able to specify which section the file belongs to.
-The section can be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure \ref{fig:ai_revision}b), or a non-standard one for which a default prompt is used to instruct the model to perform basic revision (\DIFdelbegin \DIFdel{minimizing the use of jargon, ensuring text grammar is correct, fixing spelling errors, and making sure the text has a clear sentence structure}\DIFdelend \DIFaddbegin \emph{\DIFadd{``minimizing the use of jargon, ensuring text grammar is correct, fixing spelling errors, and making sure the text has a clear sentence structure''}}\DIFaddend ).
+If the tool fails to infer a section from the file, \DIFdelbegin \DIFdel{then the user is still able to specify }\DIFdelend \DIFaddbegin \DIFadd{the user can still specify to }\DIFaddend which section the file belongs\DIFdelbegin \DIFdel{to}\DIFdelend .
+The section can be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure \ref{fig:ai_revision}b), or a non-standard one for which a default prompt is used to instruct the model to perform basic revision\DIFdelbegin \DIFdel{(minimizing the use of jargon, ensuring text grammar is correct, fixing spelling errors, and making sure the text has a clear sentence structure).
+}\DIFdelend \DIFaddbegin \DIFadd{.
+This includes }\emph{\DIFadd{``minimizing the use of jargon, ensuring text grammar is correct, fixing spelling errors, and making sure the text has a clear sentence structure.''}}
+\DIFaddend 
 
 \hypertarget{properties-of-language-models}{%
 \subsubsection{Properties of language models}\label{properties-of-language-models}}
 
-Our AI-based revision workflow uses \DIFdelbegin %DIFDELCMD < \href{https://beta.openai.com/docs/guides/completion}{%%%
-\DIFdel{text completion}\DIFdelend \DIFaddbegin \DIFadd{the }\href{https://platform.openai.com/docs/guides/text-generation/chat-completions-api}{\DIFadd{Chat Completions API}\DIFaddend } to process each paragraph.
-We tested our tool using Davinci and Curie models, including \texttt{text-davinci-003}, \texttt{text-davinci-edit-001} and \texttt{text-curie-001}.
-\DIFaddbegin \DIFadd{Within the GPT-3 family, }\DIFaddend Davinci models are the most powerful\DIFdelbegin \DIFdel{GPT-3 model}\DIFdelend , whereas Curie ones are less capable but faster and less expensive.
+\DIFdelbegin \DIFdel{Our AI-based revision workflow uses }%DIFDELCMD < \href{https://beta.openai.com/docs/guides/completion}{%%%
+\DIFdel{text completion}\DIFdelend \DIFaddbegin \DIFadd{The Manubot AI Editor uses the }\href{https://platform.openai.com/docs/guides/text-generation/chat-completions-api}{\DIFadd{Chat Completions API}\DIFaddend } to process each paragraph.
+We \DIFaddbegin \DIFadd{have }\DIFaddend tested our tool using \DIFaddbegin \DIFadd{both the }\DIFaddend Davinci and Curie models, including \texttt{text-davinci-003}, \texttt{text-davinci-edit-001}\DIFaddbegin \DIFadd{, }\DIFaddend and \texttt{text-curie-001}.
+\DIFaddbegin \DIFadd{Within the GPT-3 family, the }\DIFaddend Davinci models are the most powerful\DIFdelbegin \DIFdel{GPT-3 model, whereas Curie ones }\DIFdelend \DIFaddbegin \DIFadd{, while the Curie models }\DIFaddend are less capable but faster and less expensive.
 \DIFdelbegin \DIFdel{We mainly focused on the completion endpoint, as the edits endpoint is currently in beta.
-}\DIFdelend All models can be fine-tuned using different parameters (see \DIFdelbegin %DIFDELCMD < \href{https://beta.openai.com/docs/api-reference/completions}{%%%
-\DIFdelend \DIFaddbegin \href{https://platform.openai.com/docs/api-reference/chat/create}{\DIFaddend OpenAI - API Reference}), and the most important ones can be easily adjusted using our tool.
+}\DIFdelend All models can be fine-tuned using different parameters (\DIFdelbegin \DIFdel{see }%DIFDELCMD < \href{https://beta.openai.com/docs/api-reference/completions}{%%%
+\DIFdelend \DIFaddbegin \DIFadd{refer to }\href{https://platform.openai.com/docs/api-reference/chat/create}{\DIFaddend OpenAI - API Reference}), and the most important ones can be easily adjusted using our tool.
 
 Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
 This limit includes the size of the prompt and the paragraph, as well as the maximum number of tokens to generate for the completion (parameter \texttt{max\_tokens}).
-For instance, the context length of Davinci models is 4,000 and 2,048 for Curie (see \DIFdelbegin %DIFDELCMD < \href{https://beta.openai.com/docs/models/overview}{%%%
-\DIFdelend \DIFaddbegin \href{https://platform.openai.com/docs/models/gpt-3}{\DIFaddend OpenAI - Models overview}).
+For instance, the context length of Davinci models is 4,000 and \DIFaddbegin \DIFadd{for Curie, it is }\DIFaddend 2,048 \DIFdelbegin \DIFdel{for Curie (see }%DIFDELCMD < \href{https://beta.openai.com/docs/models/overview}{%%%
+\DIFdelend \DIFaddbegin \DIFadd{(see }\href{https://platform.openai.com/docs/models/gpt-3}{\DIFaddend OpenAI - Models overview}).
 \DIFdelbegin \DIFdel{Therefore, it is not possible to use the entire manuscript as input, not even entire sections.
-To address this limitation}\DIFdelend \DIFaddbegin \DIFadd{To make sure we never surpass this context length}\DIFaddend , our AI-assisted revision software processes each paragraph of the manuscript with section-specific prompts, as shown in Figure \ref{fig:ai_revision}b.
-This approach allows us to process large manuscripts by breaking them into small chunks of text.
-However, since the language model only processes a single paragraph from a section, it can potentially lose important context to produce a better output.
+To address this limitation}\DIFdelend \DIFaddbegin \DIFadd{To ensure we never exceed this context length}\DIFaddend , our AI-assisted revision software processes each paragraph of the manuscript with section-specific prompts, as shown in Figure \ref{fig:ai_revision}b.
+This approach allows us to process large manuscripts by breaking them into \DIFdelbegin \DIFdel{small }\DIFdelend \DIFaddbegin \DIFadd{smaller }\DIFaddend chunks of text.
+However, since the language model only processes a single paragraph from a section, it can potentially lose important context \DIFaddbegin \DIFadd{needed }\DIFaddend to produce a better output.
 Nonetheless, we find that the model still produces high-quality revisions (see \protect\hyperlink{sec:results}{Results}).
 Additionally, the maximum number of tokens (parameter \texttt{max\_tokens}) is set as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, see \DIFdelbegin %DIFDELCMD < \href{https://beta.openai.com/tokenizer\%5D}{%%%
-\DIFdelend \DIFaddbegin \href{https://platform.openai.com/tokenizer\%5D}{\DIFaddend OpenAI - Tokenizer}.
+\DIFdelend \DIFaddbegin \href{https://platform.openai.com/tokenizer}{\DIFaddend OpenAI - Tokenizer}\DIFaddbegin \DIFadd{)}\DIFaddend .
 The tool automatically adjusts this parameter and performs the request again if a related error is returned by the API.
 The user can also force the tool to either use a fixed value for \texttt{max\_tokens} for all paragraphs, or change the fraction of maximum tokens based on the estimated paragraph size (two by default).
 
 The language models used are stochastic, meaning they generate a different revision for the same input paragraph each time.
 This behavior can be adjusted by using the ``sampling temperature'' or ``nucleus sampling'' parameters (we use \texttt{temperature=0.5} by default).
-Although we selected default values that worked well across multiple manuscripts, these parameters can be changed to make the model more deterministic.
+Although we selected default values that \DIFdelbegin \DIFdel{worked }\DIFdelend \DIFaddbegin \DIFadd{work }\DIFaddend well across multiple manuscripts, these parameters can be changed to make the model more deterministic.
 The user can also instruct the model to generate several completions and select the one with the highest log probability per token, which can improve the quality of the revision.
 Our \DIFdelbegin \DIFdel{proof-of-concept }\DIFdelend implementation generates only one completion (parameter \texttt{best\_of=1}) to avoid potentially high costs for the user.
 Additionally, our workflow allows the user to process either the entire manuscript or individual sections.
-This allows for more cost-effective control while focusing on a single piece of text, wherein the user can run the tool several times and pick the preferred revised text.
+This \DIFdelbegin \DIFdel{allows for }\DIFdelend \DIFaddbegin \DIFadd{provides }\DIFaddend more cost-effective control while focusing on a single piece of text, wherein the user can run the tool several times and pick the preferred revised text.
 
 \hypertarget{installation-and-use}{%
 \subsubsection{Installation and use}\label{installation-and-use}}
 
 \DIFdelbegin \DIFdel{We have contributed our workflow (}%DIFDELCMD < \url{https://github.com/manubot/rootstock/pull/484}%%%
-\DIFdel{) to }\DIFdelend \DIFaddbegin \DIFadd{The Manubot AI Editor is part of }\DIFaddend the standard Manubot template manuscript, which is called rootstock and available at \url{https://github.com/manubot/rootstock}.
-Users who wish to use the workflow only need to follow the standard procedures to install Manubot.
-The section ``AI-assisted authoring'', in the file \texttt{USAGE.md} of the rootstock repository, explains how to enable the tool.
-After that, the workflow (named \texttt{ai-revision}) will be available and ready to use under the Actions tab of the user's manuscript repository.
+\DIFdel{) to }\DIFdelend \DIFaddbegin \DIFadd{The Manubot AI Editor is part of }\DIFaddend the standard Manubot template manuscript, \DIFdelbegin \DIFdel{which is called rootstockand }\DIFdelend \DIFaddbegin \DIFadd{referred to as rootstock, and is }\DIFaddend available at \url{https://github.com/manubot/rootstock}.
+Users \DIFdelbegin \DIFdel{who wish }\DIFdelend \DIFaddbegin \DIFadd{wishing }\DIFaddend to use the workflow only need to follow the standard procedures to install Manubot.
+The section ``AI-assisted authoring'', \DIFaddbegin \DIFadd{found }\DIFaddend in the file \texttt{USAGE.md} of the rootstock repository, explains how to enable the tool.
+\DIFdelbegin \DIFdel{After that}\DIFdelend \DIFaddbegin \DIFadd{Afterward}\DIFaddend , the workflow (named \texttt{ai-revision}) will be available and ready to use under the Actions tab of the user's manuscript repository.
 
 \hypertarget{sec:results}{%
 \subsection{Results}\label{sec:results}}
@@ -445,10 +449,10 @@ After that, the workflow (named \texttt{ai-revision}) will be available and read
 \hypertarget{evaluation-setup}{%
 \subsubsection{Evaluation setup}\label{evaluation-setup}}
 
-\DIFaddbegin \DIFadd{Assessing the performance of text generation tasks is challenging, and this is specially true for automatic revisions of scientific content.
-In this context, we need to make sure the revision does not change the original meaning or does not introduce incorrect or misleading information.
+\DIFaddbegin \DIFadd{Assessing the performance of text generation tasks is challenging, and this is especially true for automatic revisions of scientific content.
+In this context, we need to make sure the revision does not change the original meaning or introduce incorrect or misleading information.
 For this reason, our approach emphasizes human assessments of the revisions to mitigate these issues, and we followed the same procedure in evaluating our tool.
-We used three manuscripts of our own authorship (see below), which allowed us to more objetively assess changes in the original meaning and whether revisions kept important details.
+We used three manuscripts of our own authorship (see below), which allowed us to more objectively assess changes in the original meaning and whether revisions retained important details.
 During the prompt engineering phase (see below), we also used a unit testing framework to ensure that the revisions produced by our prompts met a minimum set of quality measures.
 }
 
@@ -460,7 +464,7 @@ The first two are based on the most capable \DIFaddbegin \DIFadd{GPT-3 }\DIFadde
 \DIFdelend \DIFaddbegin \href{https://platform.openai.com/docs/models/gpt-3}{\DIFaddend OpenAI - GPT-3 models}).
 Whereas \texttt{text-davinci-003} is a production-ready model for the completion endpoint, \texttt{text-davinci-edit-001} is used for the edits endpoint and \DIFdelbegin \DIFdel{is }\DIFdelend \DIFaddbegin \DIFadd{was }\DIFaddend still in beta \DIFaddbegin \DIFadd{at the time of testing}\DIFaddend .
 The latter provides a more natural interface for revising manuscripts, as it takes two inputs: instructions and the text to revise.
-Model \texttt{text-curie-001} is faster and cheaper than Davinci models, and is defined as ``very capable'' by its authors (see \DIFdelbegin %DIFDELCMD < \href{https://beta.openai.com/docs/models/gpt-3}{%%%
+\DIFdelbegin \DIFdel{Model }\DIFdelend \DIFaddbegin \DIFadd{The }\DIFaddend \texttt{text-curie-001} \DIFaddbegin \DIFadd{model }\DIFaddend is faster and cheaper than \DIFdelbegin \DIFdel{Davinci models, }\DIFdelend \DIFaddbegin \DIFadd{the Davinci models }\DIFaddend and is defined as ``very capable'' by its authors (see \DIFdelbegin %DIFDELCMD < \href{https://beta.openai.com/docs/models/gpt-3}{%%%
 \DIFdelend \DIFaddbegin \href{https://platform.openai.com/docs/models/gpt-3}{\DIFaddend OpenAI - GPT-3 models}).
 
 \DIFaddbegin \hypertarget{manuscripts}{%
@@ -502,16 +506,16 @@ Manubot-AI & \href{https://github.com/greenelab/manubot-gpt-manuscript}{greenela
 \bottomrule()
 \end{longtable}
 
-\DIFdelbegin \DIFdel{Assessing the performance of an automated revision toolis not straightforward, since a review of a revision will necessarily be subjective.
-To mitigate this, }\DIFdelend \DIFaddbegin \DIFadd{For the evaluation of our tool, }\DIFaddend we used three manuscripts of our own authorship (Table \ref{tbl:manuscripts}): the Clustermatch Correlation Coefficient (CCC) {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-eirYTTyk}{10}{]}%%%
+\DIFdelbegin \DIFdel{Assessing the performance of an automated revision tool is not straightforward, since a review of a revision will necessarily be subjective.
+To mitigate this, we used three manuscripts }\DIFdelend \DIFaddbegin \DIFadd{The evaluation of our tool was conducted using three }\DIFaddend of our own \DIFdelbegin \DIFdel{authorship }\DIFdelend \DIFaddbegin \DIFadd{manuscripts }\DIFaddend (Table \ref{tbl:manuscripts}): the Clustermatch Correlation Coefficient (CCC) {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-eirYTTyk}{10}{]}%%%
 \DIFdelend \DIFaddbegin \hyperlink{ref-eirYTTyk}{14}{]}\DIFaddend , PhenoPLIER {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-FEh1bD0A}{11}{]}%%%
 \DIFdelend \DIFaddbegin \hyperlink{ref-NM3rHx1i}{15}{]}\DIFaddend , and Manubot-AI (this manuscript).
-CCC is a new correlation coefficient evaluated in transcriptomic data, while PhenoPLIER is a framework that comprises three different methods applied in the field of genetic studies.
-CCC is in the field of computational biology, whereas PhenoPLIER is in the field of genomic medicine.
-CCC describes one computational method applied to one data type (correlation to gene expression).
-PhenoPLIER describes a framework that comprises three different approaches (regression, clustering and drug-disease prediction) using data from genome-wide and transcription-wide association studies (GWAS and TWAS), gene expression, and transcriptional responses to small molecule perturbations.
-Therefore, CCC has a simpler structure, whereas PhenoPLIER is a more complex manuscript with more figures and tables and a Methods section including equations.
-The third manuscript, Manubot-AI, provides an example with a \DIFaddbegin \DIFadd{much }\DIFaddend simpler structure, and it was written and revised using our tool before submission, which provides a more real AI-based revision use case.
+CCC is a new correlation coefficient \DIFdelbegin \DIFdel{evaluated in }\DIFdelend \DIFaddbegin \DIFadd{applied to }\DIFaddend transcriptomic data, while PhenoPLIER is a framework \DIFdelbegin \DIFdel{that comprises }\DIFdelend \DIFaddbegin \DIFadd{consisting of }\DIFaddend three different methods \DIFdelbegin \DIFdel{applied in the field of }\DIFdelend \DIFaddbegin \DIFadd{used in }\DIFaddend genetic studies.
+CCC \DIFdelbegin \DIFdel{is in }\DIFdelend \DIFaddbegin \DIFadd{falls under }\DIFaddend the field of computational biology, whereas PhenoPLIER \DIFdelbegin \DIFdel{is in the field of }\DIFdelend \DIFaddbegin \DIFadd{pertains to }\DIFaddend genomic medicine.
+CCC \DIFdelbegin \DIFdel{describes }\DIFdelend \DIFaddbegin \DIFadd{outlines }\DIFaddend one computational method applied to \DIFdelbegin \DIFdel{one }\DIFdelend \DIFaddbegin \DIFadd{a specific }\DIFaddend data type (correlation to gene expression).
+\DIFaddbegin \DIFadd{In contrast, }\DIFaddend PhenoPLIER describes a framework that \DIFdelbegin \DIFdel{comprises }\DIFdelend \DIFaddbegin \DIFadd{integrates }\DIFaddend three different approaches (regression, clustering\DIFaddbegin \DIFadd{, }\DIFaddend and drug-disease prediction) using data from genome-wide and transcription-wide association studies (GWAS and TWAS), gene expression, and transcriptional responses to small molecule perturbations.
+\DIFdelbegin \DIFdel{Therefore}\DIFdelend \DIFaddbegin \DIFadd{Thus}\DIFaddend , CCC has a simpler structure, \DIFdelbegin \DIFdel{whereas }\DIFdelend \DIFaddbegin \DIFadd{while }\DIFaddend PhenoPLIER is a more complex manuscript with \DIFdelbegin \DIFdel{more }\DIFdelend \DIFaddbegin \DIFadd{additional }\DIFaddend figures and tables\DIFdelbegin \DIFdel{and }\DIFdelend \DIFaddbegin \DIFadd{, along with }\DIFaddend a Methods section \DIFdelbegin \DIFdel{including }\DIFdelend \DIFaddbegin \DIFadd{that includes }\DIFaddend equations.
+The third manuscript, Manubot-AI, \DIFdelbegin \DIFdel{provides an example with a simpler structure, and it }\DIFdelend \DIFaddbegin \DIFadd{has a much simpler structure and }\DIFaddend was written and revised using our tool \DIFdelbegin \DIFdel{before submission, which provides a more real }\DIFdelend \DIFaddbegin \DIFadd{prior to submission, demonstrating a practical }\DIFaddend AI-based revision use case.
 \DIFdelbegin \DIFdel{Using these manuscripts, we tested and improved our prompts.
 Our findings are reported below.
 }\DIFdelend 
@@ -523,7 +527,7 @@ Our findings are reported below.
 This added the ``ai-revision'' workflow to the ``Actions'' tab of each repository.
 We triggered the workflow manually and used the three language models described above to produce one pull request (PR) per manuscript and model.
 These PRs can be accessed from the ``Pull requests'' tab of each repository.
-They are titled \emph{``GPT (MODEL) used to revise manuscript''} with \emph{MODEL} being the identifier of the model used.
+They are titled \emph{``GPT (MODEL) used to revise manuscript''}\DIFaddbegin \DIFadd{, }\DIFaddend with \emph{MODEL} being the identifier of the model used.
 The PRs show \DIFaddbegin \DIFadd{all }\DIFaddend the differences between the original text and the AI-based revision suggestions.
 \DIFdelbegin \DIFdel{We discuss below our findings based on these PRs across different sections of the manuscripts}\DIFdelend \DIFaddbegin 
 
@@ -540,16 +544,17 @@ The PRs show \DIFaddbegin \DIFadd{all }\DIFaddend the differences between the or
 \paragraph{Prompt engineering}\label{prompt-engineering}}
 \DIFaddend 
 
-We \DIFdelbegin \DIFdel{found that Davinci models outperformed the Curie modelacross all manuscripts.
-The Curie model is faster and less expensive than Davinci models }\DIFdelend \DIFaddbegin \DIFadd{extensively tested our tool, including prompts, using a unit testing framework.
-Our unit tests cover the general processing of the manuscript content (such as splitting by paragraphs), the generation of custom prompts using the manuscript metadata, writing back the text suggestions (ensuring that the original style is preserved as much as possible to minimize the number of changes) and, more importantly, some basic quality measures of the revised text.
-The latter set of unit tests were used during our prompt engineering work, and they ensure that section-specific prompts yield revisions with a minimum set of quality measures.
-For instance, we wrote unit tests to check that revised Abstracts consist of a single paragraph, start with a capital letter, end with a period and that no citations to other articles are included.
+We \DIFdelbegin \DIFdel{found that Davinci models outperformed the Curie model across all manuscripts.
+The Curie model is }\DIFdelend \DIFaddbegin \DIFadd{extensively tested our tool, including prompts, using a unit testing framework.
+Our unit tests cover the general processing of the manuscript content (such as splitting by paragraphs), the generation of custom prompts using the manuscript metadata, and writing back the text suggestions (ensuring that the original style is preserved as much as possible to minimize the number of changes).
+More importantly, they also cover some basic quality measures of the revised text.
+This latter set of unit tests was used during our prompt engineering work, and they ensure that section-specific prompts yield revisions with a minimum set of quality measures.
+For instance, we wrote unit tests to check that revised Abstracts consist of a single paragraph, start with a capital letter, end with a period, and that no citations to other articles are included.
 For the Introduction section, we check that a certain percentage of citations are kept, which also attempts to give the model some flexibility to remove text deemed unnecessary.
-We found that adding the instruction }\emph{\DIFadd{``most of the citations to other academic papers are kept''}} \DIFadd{to the prompt was enough to achieve this with the most capable model}\DIFaddend .
-\DIFdelbegin \DIFdel{However, the PRs show that the }\DIFdelend \DIFaddbegin \DIFadd{We also wrote unit tests to ensure the models returned citations in the correct Manubot/Markdown format (e.g., }\texttt{{[}\DIFadd{@doi:...}{]}} \DIFadd{or }\texttt{{[}\DIFadd{@arxiv:...}{]}}\DIFadd{), and found that no changes to the prompt were needed for this (i.e., the model automatically detected the correct format in most cases).
-For the Results section, we included tests with short inline formulas in LaTeX (e.g., }\texttt{\DIFadd{\$\textbackslash{}gamma\_l\$}}\DIFadd{) and references to figures, tables, equations or other sections (e.g., }\texttt{\DIFadd{Figure\ @id}} \DIFadd{or }\texttt{\DIFadd{Equation\ (@id)}}\DIFadd{) and found that, in the majority of cases, the most capable model was able to correctly keep them with the right format.
-For the Methods section, in addition to the aforementioned tests, we also evaluated the ability of models to use the correct format for the definition of numbered, multiline equations, and found that the most capable model succedded in most cases.
+We found that adding the instruction }\emph{\DIFadd{``most of the citations to other academic papers are kept''}} \DIFadd{to the prompt was enough to achieve this with the most capable model.
+We also wrote unit tests to ensure the models returned citations in the correct Manubot/Markdown format (e.g., }\texttt{{[}\DIFadd{@doi:...}{]}} \DIFadd{or }\texttt{{[}\DIFadd{@arxiv:...}{]}}\DIFadd{), and found that no changes to the prompt were needed for this (i.e., the model automatically detected the correct format in most cases).
+For the Results section, we included tests with short inline formulas in LaTeX (e.g., }\texttt{\DIFadd{\$\textbackslash{}gamma\_l\$}}\DIFadd{) and references to figures, tables, equations, or other sections (e.g., }\texttt{\DIFadd{Figure\ @id}} \DIFadd{or }\texttt{\DIFadd{Equation\ (@id)}}\DIFadd{) and found that, in the majority of cases, the most capable model was able to correctly keep them with the right format.
+For the Methods section, in addition to the aforementioned tests, we also evaluated the ability of models to use the correct format for the definition of numbered, multiline equations, and found that the most capable model succeeded in most cases.
 For this particular case, we needed to modify our prompt to explicitly mention the correct format of multiline equations (see prompt for Methods in Figure \ref{fig:ai_revision}).
 }
 
@@ -561,21 +566,23 @@ We ran our unit tests across all models under evaluation.
 \hypertarget{general-assessment-of-language-models}{%
 \subsubsection{General assessment of language models}\label{general-assessment-of-language-models}}
 
-\DIFadd{Our initial human assessments across the three manuscripts and unit tests revealed that, although faster and the least expensive, the Curie }\DIFaddend model was not able to produce acceptable revisions for any of the manuscripts.
+\DIFadd{Our initial human assessments across the three manuscripts and unit tests revealed that, although }\DIFaddend faster and less expensive\DIFdelbegin \DIFdel{than Davinci models.
+However, the PRs show that the model was not able }\DIFdelend \DIFaddbegin \DIFadd{, the Curie model was unable }\DIFaddend to produce acceptable revisions for any of the manuscripts.
 \DIFdelbegin \DIFdel{Most }\DIFdelend \DIFaddbegin \DIFadd{The PRs show that most }\DIFaddend of its suggestions were not coherent with the original text in any of the \DIFdelbegin \DIFdel{sections.
 }%DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\DIFdel{We }\DIFdelend \DIFaddbegin \DIFadd{manuscript sections, where the model was clearly not able to understand the revision instructions: in most of the cases the model did not produce a meaningful revision, replaced the text with the instructions, added the title of the manuscript at the beginning of the paragraph, consistently failed in keeping citations to other articles (especially in the Introduction section) or added content that was not present in the original text.
-In addition, and for similar reasons, we }\DIFaddend found that the quality of the revisions produced by the \texttt{text-davinci-edit-001} \DIFaddbegin \DIFadd{model }\DIFaddend (edits endpoint) \DIFdelbegin \DIFdel{model was subjectively }\DIFdelend \DIFaddbegin \DIFadd{was }\DIFaddend inferior to \texttt{text-davinci-003} (completion endpoint).
+\DIFdel{We }\DIFdelend \DIFaddbegin \DIFadd{manuscript sections.
+The model clearly could not understand the revision instructions; in most cases, it did not produce a meaningful revision, replaced the text with the instructions, added the title of the manuscript at the beginning of the paragraph, consistently failed to keep citations to other articles (especially in the Introduction section), or added content that was not present in the original text.
+In addition, for similar reasons, we }\DIFaddend found that the quality of the revisions produced by the \texttt{text-davinci-edit-001} \DIFaddbegin \DIFadd{model }\DIFaddend (edits endpoint) \DIFdelbegin \DIFdel{model was subjectively inferior to }\DIFdelend \DIFaddbegin \DIFadd{was inferior to those produced by the }\DIFaddend \texttt{text-davinci-003} \DIFaddbegin \DIFadd{model }\DIFaddend (completion endpoint).
 This \DIFdelbegin \DIFdel{model either did not produce a revision (such as for abstracts) or the suggested changes were minimal or did not improve the original text.
 For example, in paragraphs from the introduction, it failed to keep references to other scientific articles in CCC, and in PhenoPLIER it didn't produce a meaningful revision.
 This }\DIFdelend might be because\DIFdelbegin \DIFdel{the edits endpoint is }\DIFdelend \DIFaddbegin \DIFadd{, at the time of testing, the edits endpoint was }\DIFaddend still in beta.
 \DIFdelbegin %DIFDELCMD < 
 
 %DIFDELCMD < %%%
-\DIFdelend The \texttt{text-davinci-003} model produced the best results for all manuscripts and across the different sections.
-\DIFdelbegin \DIFdel{Since both }\DIFdelend \DIFaddbegin \DIFadd{This led us to focus on the }\DIFaddend \texttt{text-davinci-003} \DIFdelbegin \DIFdel{and }\texttt{\DIFdel{text-davinci-edit-001}} %DIFAUXCMD
+\DIFdelend The \texttt{text-davinci-003} model produced the best results for all manuscripts and across the different sections\DIFdelbegin \DIFdel{.
+Since both }\DIFdelend \DIFaddbegin \DIFadd{, leading us to focus on the }\DIFaddend \texttt{text-davinci-003} \DIFdelbegin \DIFdel{and }\texttt{\DIFdel{text-davinci-edit-001}} %DIFAUXCMD
 \DIFdel{are based on the same models, we only report the results of }\texttt{\DIFdel{text-davinci-003}} %DIFAUXCMD
 \DIFdelend \DIFaddbegin \DIFadd{model for the rest of the evaluation }\DIFaddend below.
 
@@ -614,7 +621,7 @@ Single words are not underlined/highlighed in this case because the revision com
 
 We applied the AI-based revision workflow to the CCC abstract (Figure \ref{fig:abstract:ccc}).
 The tool completely rewrote the text, leaving only the last sentence mostly unchanged.
-The text was significantly shortened, with longer sentences than the original ones, which could make the abstract slightly harder to read.
+The text was significantly shortened, \DIFdelbegin \DIFdel{with longer sentences than the original ones}\DIFdelend \DIFaddbegin \DIFadd{and the sentences were longer than those in the original}\DIFaddend , which could make the abstract slightly harder to read.
 The revision removed the first two sentences, which introduced correlation analyses and transcriptomics, and directly stated the purpose of the manuscript.
 It also removed details about the method (line 5), and focused on the aims and results obtained, ending with the same last sentence, suggesting a broader application of the coefficient to other data domains (as originally intended by the authors of CCC).
 The main concepts were still present in the revised text.
@@ -638,14 +645,14 @@ The tool significantly revised the Introduction section of CCC (Figure \ref{fig:
 The revised first sentence concisely incorporated ideas from the original two sentences, introducing the concept of ``large datasets'' and the opportunities for scientific exploration.
 The model generated a more concise second sentence introducing the ``need for efficient tools'' to find ``multiple relationships'' in these datasets.
 The third sentence connected nicely with the previous one.
-All references to scientific literature were kept in the correct Manubot format, although our prompts do not specify the \DIFdelbegin \DIFdel{format of the text}\DIFdelend \DIFaddbegin \DIFadd{references format}\DIFaddend .
-The rest of the sentences in this section were also correctly revised, and could be incorporated into the manuscript with minor or no further changes.
+All references to scientific literature were kept in the correct Manubot format, \DIFdelbegin \DIFdel{although }\DIFdelend \DIFaddbegin \DIFadd{even though }\DIFaddend our prompts do not specify the \DIFdelbegin \DIFdel{format of the text}\DIFdelend \DIFaddbegin \DIFadd{references format}\DIFaddend .
+The rest of the sentences in this section were also correctly revised \DIFdelbegin \DIFdel{, }\DIFdelend and could be incorporated into the manuscript with minor or no further changes.
 
-We also observed a high quality revision of the introdution of PhenoPLIER.
-However, the model failed to keep the format of citations in one paragraph.
+We also observed a \DIFdelbegin \DIFdel{high quality }\DIFdelend \DIFaddbegin \DIFadd{high-quality }\DIFaddend revision of the \DIFdelbegin \DIFdel{introdution }\DIFdelend \DIFaddbegin \DIFadd{introduction }\DIFaddend of PhenoPLIER.
+However, the model failed to \DIFdelbegin \DIFdel{keep }\DIFdelend \DIFaddbegin \DIFadd{maintain }\DIFaddend the format of citations in one paragraph.
 Additionally, the model did not converge to a revised text for the last paragraph, and our tool left an error message as an HTML comment at the top: \texttt{The\ AI\ model\ returned\ an\ empty\ string}.
 Debugging the prompts revealed this issue, which could be related to the complexity of the paragraph.
-\DIFdelbegin \DIFdel{However}\DIFdelend \DIFaddbegin \DIFadd{In these cases}\DIFaddend , rerunning the automated revision \DIFdelbegin \DIFdel{should solve this as the model is stochastic}\DIFdelend \DIFaddbegin \DIFadd{might solve this type of issues}\DIFaddend .
+\DIFdelbegin \DIFdel{However}\DIFdelend \DIFaddbegin \DIFadd{In these cases}\DIFaddend , rerunning the automated revision \DIFdelbegin \DIFdel{should solve this as the model is stochastic}\DIFdelend \DIFaddbegin \DIFadd{might solve this type of issue}\DIFaddend .
 
 \hypertarget{results}{%
 \paragraph{Results}\label{results}}
@@ -667,22 +674,24 @@ Single words are not underlined/highlighed in this case because the revision com
 }
 \DIFaddendFL \end{figure}
 
-We tested the tool on a paragraph of the Results section of CCC (Figure \ref{fig:results:ccc}).
-That paragraph describes Figure 1 of the CCC manuscript {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-eirYTTyk}{10}{]}%%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-eirYTTyk}{14}{]}\DIFaddend , which shows four different datasets with two variables each, and different relationships or patterns named random/independent, non-coexistence, quadratic, and two-lines.
-In addition to having fewer sentences that are slightly longer, the revised paragraph consistently uses only the past tense, whereas the original one has tense shifts.
-The revised paragraph also kept all citations, which although is not explicitely mentioned in the prompts for this section (as it is for introductions), in this case is important.
-Math was also kept in the original LaTeX format and the figure was correctly referenced using the Manubot syntax.
-In the third sentence of the revised paragraph (line 3), the model generated a good summary of how all coefficients performed in the last two, nonlinear patterns, and why CCC was able to capture them.
-We, as human authors, would make a single change by the end of this sentence to avoid repeating the word ``complexity'': \emph{``\ldots, while CCC increased the complexity of the model \sout{by using different degrees of complexity} to capture the relationships''}.
-The revised paragraph is more concise and clearly describes what the figure shows and how CCC works.
-We found it remarkable that the model rewrote some of the concepts in the original paragraph (lines 4 to 8) into three new sentences (lines 3 to 5) with the same meaning but more concisely and clearly.
+We tested the tool on a paragraph \DIFdelbegin \DIFdel{of }\DIFdelend \DIFaddbegin \DIFadd{from }\DIFaddend the Results section of CCC (Figure \ref{fig:results:ccc}).
+\DIFdelbegin \DIFdel{That }\DIFdelend \DIFaddbegin \DIFadd{This }\DIFaddend paragraph describes Figure 1 of the CCC manuscript {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-eirYTTyk}{10}{]}%%%
+\DIFdel{, which shows }\DIFdelend \DIFaddbegin \hyperlink{ref-eirYTTyk}{14}{]}\DIFadd{, which showcases }\DIFaddend four different datasets\DIFaddbegin \DIFadd{, each }\DIFaddend with two variables\DIFdelbegin \DIFdel{each, and different }\DIFdelend \DIFaddbegin \DIFadd{, and various }\DIFaddend relationships or patterns \DIFdelbegin \DIFdel{named }\DIFdelend \DIFaddbegin \DIFadd{labeled as }\DIFaddend random/independent, non-coexistence, quadratic, and two-lines.
+\DIFdelbegin \DIFdel{In addition to }\DIFdelend \DIFaddbegin \DIFadd{The revised paragraph, while }\DIFaddend having fewer sentences\DIFdelbegin \DIFdel{that are slightly longer , the revised paragraph consistently uses only the }\DIFdelend \DIFaddbegin \DIFadd{, is slightly longer and consistently uses }\DIFaddend past tense, \DIFdelbegin \DIFdel{whereas }\DIFdelend \DIFaddbegin \DIFadd{unlike }\DIFaddend the original one \DIFaddbegin \DIFadd{which }\DIFaddend has tense shifts.
+The revised paragraph also \DIFdelbegin \DIFdel{kept }\DIFdelend \DIFaddbegin \DIFadd{retains }\DIFaddend all citations, which\DIFdelbegin \DIFdel{although is not explicitely }\DIFdelend \DIFaddbegin \DIFadd{, although not explicitly }\DIFaddend mentioned in the prompts for this section (as it is for introductions), \DIFaddbegin \DIFadd{is important }\DIFaddend in this case\DIFdelbegin \DIFdel{is important.
+Math was also kept in the }\DIFdelend \DIFaddbegin \DIFadd{.
+The }\DIFaddend original LaTeX format \DIFaddbegin \DIFadd{was maintained for the math }\DIFaddend and the figure was correctly referenced using the Manubot syntax.
+In the third sentence of the revised paragraph (line 3), the model generated a good summary of how all coefficients performed in the last two \DIFdelbegin \DIFdel{, }\DIFdelend nonlinear patterns, and why CCC was able to capture them.
+\DIFdelbegin \DIFdel{We, as }\DIFdelend \DIFaddbegin \DIFadd{As }\DIFaddend human authors, \DIFaddbegin \DIFadd{we }\DIFaddend would make a single change \DIFdelbegin \DIFdel{by }\DIFdelend \DIFaddbegin \DIFadd{at }\DIFaddend the end of this sentence to avoid repeating the word ``complexity'': \emph{``\ldots, while CCC increased the \DIFdelbegin \DIFdel{complexity of the }\DIFdelend model\DIFaddbegin \DIFadd{'s complexity }\DIFaddend \sout{by using different degrees of complexity} to capture the relationships\DIFaddbegin \DIFadd{.}\DIFaddend ''}
+\DIFdelbegin \DIFdel{.
+}\DIFdelend The revised paragraph is more concise and clearly describes what the figure shows and how CCC works.
+\DIFdelbegin \DIFdel{We found it }\DIFdelend \DIFaddbegin \DIFadd{It's }\DIFaddend remarkable that the model rewrote some of the concepts in the original paragraph (lines 4 to 8) into three new sentences (lines 3 to 5) with the same meaning\DIFaddbegin \DIFadd{, }\DIFaddend but more concisely and clearly.
 The model also produced high-quality revisions for several other paragraphs that would only need minor changes.
 
-Other paragraphs in CCC, however, needed more changes before being ready to be incorporated into the manuscript.
-For instance, for some paragraphs, the model generated a revised text that is shorter, more direct and clear.
-However, important details were removed and sometimes sentences changed the meaning.
-To address this, we could accept the simplified sentence structure but add back the missing details.
+\DIFdelbegin \DIFdel{Other }\DIFdelend \DIFaddbegin \DIFadd{However, other }\DIFaddend paragraphs in CCC \DIFdelbegin \DIFdel{, however, needed more changes before being ready to }\DIFdelend \DIFaddbegin \DIFadd{required extensive changes before they could }\DIFaddend be incorporated into the manuscript.
+For instance, \DIFdelbegin \DIFdel{for some paragraphs, }\DIFdelend the model generated \DIFdelbegin \DIFdel{a revised text that is shorter, more direct }\DIFdelend \DIFaddbegin \DIFadd{revised text for certain paragraphs that was more concise, direct, }\DIFaddend and clear.
+However, \DIFdelbegin \DIFdel{important details were removed and sometimes sentences changed the meaning}\DIFdelend \DIFaddbegin \DIFadd{this often resulted in the removal of important details and occasionally altered the intended meaning of sentences}\DIFaddend .
+To address this \DIFaddbegin \DIFadd{issue}\DIFaddend , we could accept the simplified sentence structure \DIFdelbegin \DIFdel{but add back }\DIFdelend \DIFaddbegin \DIFadd{proposed by the model, but reintroduce }\DIFaddend the missing details \DIFaddbegin \DIFadd{for clarity and completeness}\DIFaddend .
 
 % \begin{figure}
 % \hypertarget{fig:results:phenoplier}{%
@@ -695,16 +704,16 @@ To address this, we could accept the simplified sentence structure but add back 
 % }
 % \end{figure}
 
-When applied to the PhenoPLIER manuscript, the model produced high-quality revisions for most paragraphs, while preserving citations and references to figures, tables, and other sections of the manuscript in the Manubot/Markdown format.
+When applied to the PhenoPLIER manuscript, the model produced high-quality revisions for most paragraphs \DIFdelbegin \DIFdel{, }\DIFdelend while preserving citations and references to figures, tables, and other sections of the manuscript in the Manubot/Markdown format.
 In some cases, important details were missing, but they could be easily added back while preserving the improved sentence structure of the revised version.
 In other cases, the model's output demonstrated the limitations of revising one paragraph at a time without considering the rest of the text.
 For instance, one paragraph described our CRISPR screening approach to assess whether top genes in a latent variable (LV) could represent good therapeutic targets.
 The model generated a paragraph with a completely different meaning (Supplementary Figure 1).
 It omitted the CRISPR screen and the gene symbols associated with the regulation of lipids, which were key elements in the original text.
-Instead, the new text describes an experiment that does not exist with a reference to a nonexisting section.
+Instead, the new text describes an experiment that does not exist with a reference to a \DIFdelbegin \DIFdel{nonexisting }\DIFdelend \DIFaddbegin \DIFadd{non-existent }\DIFaddend section.
 This suggests that the model focused on the title and keywords of the manuscript (Table \ref{tbl:manuscripts}) that were part of every prompt (Figure \ref{fig:ai_revision}).
 For example, it included the idea of ``gene co-expression'' analysis (a keyword) to identify ``therapeutic targets'' (another keyword) and replaced the mention of ``sets of genes'' in the original text with ``clusters of genes'' (closer to the keyword including ``clustering'').
-This was a poor model-based revision, indicating that the original paragraph may be too short or disconnected from the rest and could be merged with the next one (which describes follow-up and related experiments).
+This was a poor model-based revision, indicating that the original paragraph may be too short or disconnected from the rest and could be merged with the next one\DIFdelbegin \DIFdel{(}\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend which describes follow-up and related experiments\DIFdelbegin \DIFdel{)}\DIFdelend .
 
 \hypertarget{discussion}{%
 \paragraph{Discussion}\label{discussion}}
@@ -722,10 +731,10 @@ Original text is on the left and suggested revision on the right.}\label{fig:dis
 }
 \end{figure}
 
-One paragraph of CCC discusses how not-only-linear correlation coefficients could potentially impact genetic studies of complex traits (Figure \ref{fig:discussion:ccc}).
-Although some minor changes could be added, we believe the revised text reads better than the original.
-It is also interesting how the model understood the format of citations and built more complex structures from it.
-For instance, the two articles referenced in lines 2 and 3 in the original text were correctly merged into a single citation block and separated with ``;'' in line 2 of the revised text.
+One paragraph \DIFdelbegin \DIFdel{of }\DIFdelend \DIFaddbegin \DIFadd{from }\DIFaddend CCC discusses how not-only-linear correlation coefficients could potentially impact genetic studies of complex traits (Figure \ref{fig:discussion:ccc}).
+Although some minor changes could be \DIFdelbegin \DIFdel{added}\DIFdelend \DIFaddbegin \DIFadd{incorporated}\DIFaddend , we believe the revised text reads better than the original.
+It is also interesting \DIFaddbegin \DIFadd{to see }\DIFaddend how the model understood the format of citations and built more complex structures from it.
+For instance, the two articles referenced in lines 2 and 3 in the original text were correctly merged into a single citation block and separated with \DIFaddbegin \DIFadd{a }\DIFaddend ``;'' in line 2 of the revised text.
 
 \hypertarget{methods}{%
 \paragraph{Methods}\label{methods}}
@@ -750,9 +759,9 @@ Indeed, the equation with the univariate model used by PrediXcan (lines 4-6 in t
 In PhenoPLIER, we found one large paragraph with several equations that the model failed to revise, although it performed relatively well in revising the rest of the section.
 In CCC, the revision of this section was good overall, with some minor and easy-to-fix issues as in the other sections.
 
-We also observed issues from revising one paragraph at a time without context.
-For instance, in PhenoPLIER, one of the first paragraphs mentions the linear models used by S-PrediXcan and S-MultiXcan, without providing any equations or details.
-These were presented in the following paragraphs, but since the model had not encountered that yet, it opted to add those equations immediately (in the correct Manubot/Markdown format).
+We also observed issues \DIFaddbegin \DIFadd{arising }\DIFaddend from revising one paragraph at a time without context.
+For instance, in PhenoPLIER, one of the first paragraphs mentions the linear models used by S-PrediXcan and S-MultiXcan \DIFdelbegin \DIFdel{, }\DIFdelend without providing any equations or details.
+These were presented in the following paragraphs, but since the model had not \DIFdelbegin \DIFdel{encountered that yet}\DIFdelend \DIFaddbegin \DIFadd{yet encountered that information}\DIFaddend , it opted to add those equations immediately (in the correct Manubot/Markdown format).
 
 % \begin{figure}
 % \hypertarget{fig:methods:manubotai}{%
@@ -764,39 +773,41 @@ These were presented in the following paragraphs, but since the model had not en
 % }
 % \end{figure}
 
-When revising the Methods sections of Manubot-AI (this manuscript), in some cases the model added novel sentences with wrong information.
-For instance, for one paragraph, it added a formula (using the correct Manubot format) to presumably predict the cost of a revision run.
-In another paragraph (Supplementary Figure 2), it added new sentences saying that the model was \emph{``trained on a corpus of scientific papers from the same field as the manuscript''} and that its suggested revisions resulted in a \emph{``modified version of the manuscript that is ready for submission''}.
-Although these are important future directions, neither accurately describes the present work.
+When revising the Methods sections of Manubot-AI (this manuscript), \DIFaddbegin \DIFadd{the model, }\DIFaddend in some cases\DIFdelbegin \DIFdel{the model }\DIFdelend \DIFaddbegin \DIFadd{, }\DIFaddend added novel sentences \DIFdelbegin \DIFdel{with wrong }\DIFdelend \DIFaddbegin \DIFadd{containing incorrect }\DIFaddend information.
+For \DIFdelbegin \DIFdel{instance}\DIFdelend \DIFaddbegin \DIFadd{example}\DIFaddend , for one paragraph, it \DIFdelbegin \DIFdel{added }\DIFdelend \DIFaddbegin \DIFadd{included }\DIFaddend a formula (using the correct Manubot format) \DIFdelbegin \DIFdel{to presumably }\DIFdelend \DIFaddbegin \DIFadd{presumably to }\DIFaddend predict the cost of a revision run.
+In another paragraph (Supplementary Figure 2), it \DIFdelbegin \DIFdel{added new sentences saying }\DIFdelend \DIFaddbegin \DIFadd{introduced new sentences stating }\DIFaddend that the model was \emph{``trained on a corpus of scientific papers from the same field as the manuscript''} and that its suggested revisions resulted in a \emph{``modified version of the manuscript that is ready for submission''}.
+Although these are important future directions, neither \DIFaddbegin \DIFadd{statement }\DIFaddend accurately describes the present work.
 
 \hypertarget{discussion}{%
 \subsection{Discussion}\label{discussion}}
 
-\DIFdelbegin \DIFdel{We implemented }\DIFdelend \DIFaddbegin \DIFadd{Our tool, the Manubot AI Editor, implements }\DIFaddend AI-based revision models into the Manubot publishing platform.
-Writing academic papers can be time-consuming and challenging to read, so we sought to use technology to help researchers communicate their findings to the community.
+\DIFdelbegin \DIFdel{We implemented }\DIFdelend \DIFaddbegin \DIFadd{Our tool, the Manubot AI Editor, integrates }\DIFaddend AI-based revision models into the Manubot publishing platform.
+Writing academic papers can be time-consuming and challenging to \DIFdelbegin \DIFdel{read}\DIFdelend \DIFaddbegin \DIFadd{comprehend}\DIFaddend , so we \DIFdelbegin \DIFdel{sought }\DIFdelend \DIFaddbegin \DIFadd{aimed }\DIFaddend to use technology to \DIFdelbegin \DIFdel{help researchers communicate their findings to the community}\DIFdelend \DIFaddbegin \DIFadd{assist researchers in communicating their findings more effectively}\DIFaddend .
 Our AI-based revision workflow uses a prompt generator that creates manuscript- and section-specific instructions for the language model.
-Authors can easily trigger this workflow from the GitHub repository to suggest revisions that can be later reviewed.
-This workflow uses GPT-3 models through the OpenAI API, generating a pull request of revisions that authors can review.
-We set default parameters for GPT-3 models that work well for our use cases across different sections and manuscripts.
-Users can also customize the revision by selecting specific sections, adjusting the model's behavior to fit their needs and budget, and even providing custom prompts instead of using the default, section-specific ones, which can be useful for specific use cases that do not require a complex revision.
-Although the evaluation of \DIFdelbegin \DIFdel{the revision tool is subjective}\DIFdelend \DIFaddbegin \DIFadd{automatic text revision is challenging}\DIFaddend , we found that most paragraphs were improved\DIFaddbegin \DIFadd{, while in some cases the model removed important information or introduced errors}\DIFaddend .
-The AI model also highlighted certain paragraphs that were difficult to revise, which could be challenging for human readers too.
+Authors can easily trigger this workflow from the GitHub repository to suggest revisions that can be \DIFdelbegin \DIFdel{later reviewed }\DIFdelend \DIFaddbegin \DIFadd{reviewed later}\DIFaddend .
+This workflow \DIFdelbegin \DIFdel{uses }\DIFdelend \DIFaddbegin \DIFadd{utilizes }\DIFaddend GPT-3 models \DIFdelbegin \DIFdel{through }\DIFdelend \DIFaddbegin \DIFadd{via }\DIFaddend the OpenAI API, generating a pull request of revisions \DIFdelbegin \DIFdel{that authors can }\DIFdelend \DIFaddbegin \DIFadd{for authors to }\DIFaddend review.
+We \DIFdelbegin \DIFdel{set }\DIFdelend \DIFaddbegin \DIFadd{have established }\DIFaddend default parameters for GPT-3 models that \DIFdelbegin \DIFdel{work }\DIFdelend \DIFaddbegin \DIFadd{perform }\DIFaddend well for our use cases across different sections and manuscripts.
+Users \DIFdelbegin \DIFdel{can also }\DIFdelend \DIFaddbegin \DIFadd{also have the option to }\DIFaddend customize the revision \DIFaddbegin \DIFadd{process }\DIFaddend by selecting specific sections, adjusting the model's behavior to \DIFdelbegin \DIFdel{fit }\DIFdelend \DIFaddbegin \DIFadd{suit }\DIFaddend their needs and budget, and even providing custom prompts instead of using the default, section-specific ones\DIFdelbegin \DIFdel{, which can be useful }\DIFdelend \DIFaddbegin \DIFadd{.
+This can be particularly beneficial }\DIFaddend for specific use cases that do not require a complex revision.
+Although \DIFdelbegin \DIFdel{the evaluation of the revision tool is subjective}\DIFdelend \DIFaddbegin \DIFadd{evaluating automatic text revision is challenging}\DIFaddend , we found that most paragraphs were \DIFdelbegin \DIFdel{improved}\DIFdelend \DIFaddbegin \DIFadd{enhanced, while in some cases the model removed important information or introduced errors}\DIFaddend .
+The AI model also highlighted certain paragraphs that were difficult to revise, which could \DIFdelbegin \DIFdel{be challenging }\DIFdelend \DIFaddbegin \DIFadd{pose challenges }\DIFaddend for human readers \DIFdelbegin \DIFdel{too}\DIFdelend \DIFaddbegin \DIFadd{as well}\DIFaddend .
 
 We designed section-specific prompts to guide the revision of text using GPT-3.
 Surprisingly, in one Methods section, the model detected an error when referencing a symbol in an equation that had been overlooked by humans.
-However, abstracts were more challenging for the model to revise, where revisions often removed background information about the research problem.
+However, \DIFdelbegin \DIFdel{abstracts were }\DIFdelend \DIFaddbegin \DIFadd{revising abstracts proved }\DIFaddend more challenging for the model\DIFdelbegin \DIFdel{to revise, where }\DIFdelend \DIFaddbegin \DIFadd{, as }\DIFaddend revisions often removed background information about the research problem.
 There are opportunities to improve the AI-based revisions, such as further refining prompts using few-shot learning {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-S1Lim9f9}{12}{]} %%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-S1Lim9f9}{16}{]} \DIFaddend or fine-tuning the model using an additional corpus of academic writing focused on particularly challenging sections.
+\DIFdelend \DIFaddbegin \hyperlink{ref-S1Lim9f9}{16}{]}\DIFadd{, }\DIFaddend or fine-tuning the model using an additional corpus of academic writing focused on particularly challenging sections.
 Fine-tuning using preprint-publication pairs {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-WVt383GU}{13}{]} %%%
 \DIFdelend \DIFaddbegin \hyperlink{ref-WVt383GU}{17}{]} \DIFaddend may help to identify sections or phrases likely to be changed during peer review.
 Our approach used GPT-3 to process each paragraph of the text, but it lacked a contextual thread between queries, which mainly affected the Results and Methods sections.
-Using chatbots that retain context, such as \href{https://openai.com/blog/chatgpt}{OpenAI's ChatGPT}, could enable the revision of individual paragraphs while considering previously processed text\DIFdelbegin \DIFdel{.
-Since an official }\href{https://openai.com/blog/introducing-chatgpt-and-whisper-apis}{\DIFdel{ChatGPT API}} %DIFAUXCMD
-\DIFdel{became available recently, }\DIFdelend \DIFaddbegin \DIFadd{, and }\DIFaddend we plan to update our workflow to support this strategy.
+Using chatbots that retain context \DIFdelbegin \DIFdel{, such as }\href{https://openai.com/blog/chatgpt}{\DIFdel{OpenAI's ChatGPT}}%DIFAUXCMD
+\DIFdel{, }\DIFdelend could enable the revision of individual paragraphs while considering previously processed text.
+\DIFdelbegin \DIFdel{Since an official }\href{https://openai.com/blog/introducing-chatgpt-and-whisper-apis}{\DIFdel{ChatGPT API}} %DIFAUXCMD
+\DIFdel{became available recently, we }\DIFdelend \DIFaddbegin \DIFadd{We }\DIFaddend plan to update our workflow to support this strategy.
 \DIFdelbegin \DIFdel{Other open }\DIFdelend \DIFaddbegin \DIFadd{Open and semi-open }\DIFaddend models, such as BLOOM {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-I4d1F0yv}{14}{]}%%%
 \DIFdel{, GLM }\DIFdelend \DIFaddbegin \hyperlink{ref-I4d1F0yv}{18}{]}\DIFadd{, Meta's Llama 2 }\DIFaddend {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-1GG6zItDi}{15}{]}%%%
-\DIFdel{, or OPT }\DIFdelend \DIFaddbegin \hyperlink{ref-A213xAuD}{19}{]}\DIFadd{, or Mistral 7B }\DIFaddend {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-nEabcf28}{16}{]}%%%
-\DIFdel{, provide similar capabilities}\DIFdelend \DIFaddbegin \hyperlink{ref-1wOalSCp}{20}{]}\DIFadd{, are growing in popularity and capabilities, }\DIFaddend but lack the user-friendly OpenAI API.
+\DIFdel{, or OPT }\DIFdelend \DIFaddbegin \hyperlink{ref-A213xAuD}{19}{]}\DIFadd{, and Mistral 7B }\DIFaddend {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-nEabcf28}{16}{]}%%%
+\DIFdel{, provide similar capabilitiesbut }\DIFdelend \DIFaddbegin \hyperlink{ref-1wOalSCp}{20}{]}\DIFadd{, are growing in popularity and capabilities, but they }\DIFaddend lack the user-friendly OpenAI API.
 \DIFaddbegin \DIFadd{We used a combination of human evaluation and automated tools available at the time to assess the outcomes of the AI-based revisions.
 Recent frameworks such as }\href{https://github.com/openai/evals}{\DIFadd{OpenAI Evals}} \DIFadd{or strategies such as LLM-as-a-Judge }{[}\protect\hyperlink{ref-LhEwBH2w}{21}{]} \DIFadd{could be used to evaluate the quality of the revisions in a more automated way.
 }\DIFaddend Despite these limitations, we found that models captured the main ideas and generated a revision that often communicated the intended meaning more clearly and concisely.
@@ -816,7 +827,7 @@ Our work\DIFaddbegin \DIFadd{, however, }\DIFaddend focuses on revising \emph{ex
 \DIFdelend .
 Additionally, all changes made by humans and AI are tracked in the version control system, which allows for full transparency.
 Despite the concerns, there are also significant opportunities.
-Our work lays the foundation for a future in which humans and machines construct academic manuscripts.
+Our work lays the foundation for a future in which humans and machines construct academic manuscripts \DIFaddbegin \DIFadd{together}\DIFaddend .
 Scientific articles need to adhere to a certain style, which can make the writing time-consuming and require a significant amount of effort to think about \emph{how} to communicate a result or finding that has already been obtained.
 As machines become increasingly capable of improving scholarly text, humans can focus more on \emph{what} to communicate to others, rather than on \emph{how} to write it.
 This could lead to a more equitable and productive future for research, where scientists are only limited by their ideas and ability to conduct experiments to uncover the underlying organizing principles of ourselves and our environment.
