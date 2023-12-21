@@ -1,4 +1,4 @@
-ccc
+CCC
 centric
 cgreene
 chatbots
@@ -24,7 +24,7 @@ introdution
 LLM
 LLMs
 LV
-ManubotAI
+manubotai
 Meta’s
 miltondp
 multiline
@@ -33,7 +33,7 @@ nonexisting
 objetively
 OpenAI
 OpenAI’s
-PhenoPLIER
+phenoplier
 Pividori
 Pre
 PrediXcan
