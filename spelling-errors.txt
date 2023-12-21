@@ -2,7 +2,6 @@ CCC
 centric
 cgreene
 chatbots
-ChatGPT
 citable
 Clustermatch
 CRISPR
@@ -10,7 +9,6 @@ datasets
 Davinci
 DOCX
 Evals
-explicitely
 GBMF
 genomic
 GPT
@@ -20,7 +18,6 @@ GWAS
 HD
 highlighed
 ICML
-introdution
 LLM
 LLMs
 LV
@@ -29,8 +26,6 @@ Meta’s
 miltondp
 multiline
 MultiXcan
-nonexisting
-objetively
 OpenAI
 OpenAI’s
 phenoplier
@@ -41,7 +36,6 @@ preprint
 PRs
 repurposing
 Shriver
-succedded
 Tokenizer
 transcriptional
 transcriptomic
