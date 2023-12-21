@@ -1,4 +1,4 @@
-CCC
+ccc
 centric
 cgreene
 chatbots
@@ -28,7 +28,7 @@ multiline
 MultiXcan
 OpenAI
 OpenAI’s
-phenoplier
+PhenoPLIER
 Pividori
 Pre
 PrediXcan
