@@ -26,7 +26,7 @@
 1. Define versions to compare:
    ```bash
    export PREV_VER="v01.1"
-   export CURR_VER="v02.0"
+   export CURR_VER="v02.1"
    ```
 
 1. Tag the current version of the latex file (do not push yet):
@@ -34,23 +34,17 @@
    git tag -f ${CURR_VER} <commit hash>
    ```
 
-1. Get the previous and current versions of the .tex file to compare:
+1. Generate diff between versions and compile:
    ```bash
    mkdir -p diffs
    git show ${PREV_VER}:latex/manuscript.tex > diffs/${PREV_VER}.tex
    git show ${CURR_VER}:latex/manuscript.tex > diffs/${CURR_VER}.tex
-   ```
 
-1. Generate diff between versions:
-   ```bash
    ${LATEXDIFF_PATH} \
      diffs/${PREV_VER}.tex \
      diffs/${CURR_VER}.tex > \
      diffs/diff_${PREV_VER}_vs_${CURR_VER}.tex
-   ```
-
-1. Compile (within latex/ directory):
-   ```bash
+   
    latexmk diffs/diff_${PREV_VER}_vs_${CURR_VER}.tex
    ```
 
