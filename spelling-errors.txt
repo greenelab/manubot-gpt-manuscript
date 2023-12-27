@@ -1,4 +1,4 @@
-ccc
+CCC
 centric
 cgreene
 chatbots
@@ -21,14 +21,14 @@ ICML
 LLM
 LLMs
 LV
-ManubotAI
+manubotai
 Meta’s
 miltondp
 multiline
 MultiXcan
 OpenAI
 OpenAI’s
-phenoplier
+PhenoPLIER
 Pividori
 Pre
 PrediXcan
