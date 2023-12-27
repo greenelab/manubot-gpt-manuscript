@@ -21,14 +21,14 @@ ICML
 LLM
 LLMs
 LV
-manubotai
+ManubotAI
 Meta’s
 miltondp
 multiline
 MultiXcan
 OpenAI
 OpenAI’s
-PhenoPLIER
+phenoplier
 Pividori
 Pre
 PrediXcan
