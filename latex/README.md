@@ -34,7 +34,7 @@
    git tag -f ${CURR_VER} <commit hash>
    ```
 
-1. Generate diff between versions and compile:
+1. Generate diff between versions and compile (**WARNING**: figure some captions were manually updated):
    ```bash
    mkdir -p diffs
    git show ${PREV_VER}:latex/manuscript.tex > diffs/${PREV_VER}.tex
