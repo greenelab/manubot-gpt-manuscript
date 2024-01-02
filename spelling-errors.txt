@@ -21,7 +21,7 @@ ICML
 LLM
 LLMs
 LV
-manubotai
+ManubotAI
 Meta’s
 miltondp
 multiline
