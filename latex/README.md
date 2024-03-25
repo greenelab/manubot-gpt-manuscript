@@ -59,3 +59,8 @@
    ```bash
    git add diffs/diff_${PREV_VER}_vs_${CURR_VER}.tex
    ```
+
+1. Push tags:
+   ```bash
+   git push origin ${CURR_VER}
+   ```
