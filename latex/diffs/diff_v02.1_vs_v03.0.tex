@@ -1,7 +1,7 @@
 % Options for packages loaded elsewhere
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL diffs/v02.1.tex   Tue Mar 26 12:21:57 2024
-%DIF ADD diffs/v03.0.tex   Tue Mar 26 12:21:57 2024
+%DIF DEL diffs/v02.1.tex   Tue Mar 26 14:20:48 2024
+%DIF ADD diffs/v03.0.tex   Tue Mar 26 14:20:48 2024
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
@@ -258,33 +258,51 @@ Although the use of AI-assisted tools in scientific authoring is controversial, 
 
 \subsection{Introduction and background}
 
-The tradition of scholarly writing dates back thousands of years, evolving significantly with the advent of scientific journals approximately 350 years ago {[}\protect\hyperlink{ref-F3iZfGUC}{1}{]}.
-External peer review, used by many journals, is even more recent, having been around for less than 100 years {[}\protect\hyperlink{ref-1HMhNrQq1}{2}{]}.
-Most manuscripts are written by individuals or teams working together to describe new advances, summarize existing literature, or argue for changes in the status quo.
+\DIFdelbegin \DIFdel{The tradition of scholarly writing dates back thousands of years, evolving significantly with the advent of scientific journals approximately }\DIFdelend \DIFaddbegin \DIFadd{Scholarly writing has evolved since the first scientific journals }\DIFaddend 350 years ago\DIFaddbegin \DIFadd{, adopting practices like external peer review in the last century }\DIFaddend {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-F3iZfGUC}{1}{]}%%%
+\DIFdel{.
+External peer review , used by many journals, is even more recent, having been around for less than 100 years }%DIFDELCMD < {[}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-F3iZfGUC}{1}\DIFadd{,}\DIFaddend \protect\hyperlink{ref-1HMhNrQq1}{2}{]}.
+\DIFdelbegin \DIFdel{Most manuscripts are written by individuals or teams working together to describe new advances , summarize existing literature, or argue for changes in the status quo.
 However, scholarly writing is a time-consuming process in which the results of a study are presented using a specific style and format.
-Academics can sometimes be long-winded in getting to key points, making their writing more impenetrable to their audience {[}\protect\hyperlink{ref-19YWsShi0}{3}{]}.
+Academics can sometimes be long-winded in getting to key points, making their writing more impenetrable to their audience }\DIFdelend \DIFaddbegin \DIFadd{It often involves dense language to convey new advances or literature summaries }\DIFaddend {[}\protect\hyperlink{ref-19YWsShi0}{3}{]}.
+\DIFdelbegin %DIFDELCMD < 
 
-Recent advances in computing capabilities and the widespread availability of text, images, and other data on the internet have laid the foundation for artificial intelligence (AI) models with billions of parameters.
-Large language models (LLMs), in particular, are opening the floodgates to new technologies with the capability to transform how society operates {[}\protect\hyperlink{ref-xq1uEbPa}{4}{]}.
-OpenAI's models, for instance, have been trained on vast amounts of data and can generate human-like text {[}\protect\hyperlink{ref-bYOaJHMe}{5}{]}.
-These models are based on the transformer architecture\DIFaddbegin \DIFadd{, }\DIFaddend which uses self-attention mechanisms to model the complexities of language.
-The most well-known of these models is the Generative Pre-trained Transformer (GPT-3\DIFdelbegin \DIFdel{and, }\DIFdelend \DIFaddbegin \DIFadd{, and }\DIFaddend more recently, GPT-4), which \DIFdelbegin \DIFdel{have been shown to be }\DIFdelend \DIFaddbegin \DIFadd{is }\DIFaddend highly effective for a range of language tasks such as generating text, completing code, and answering questions {[}\protect\hyperlink{ref-bYOaJHMe}{5}{]}.
-In the realm of medical informatics, scientists are beginning to explore the utility of these tools in optimizing clinical decision support {[}\protect\hyperlink{ref-gRhoGuC4}{6}{]} or assessing its potential to reduce health disparities {[}\protect\hyperlink{ref-CYB5vhZp}{7}{]}, while also raising concerns about their impact \DIFdelbegin \DIFdel{in }\DIFdelend \DIFaddbegin \DIFadd{on }\DIFaddend medical education {[}\protect\hyperlink{ref-h8wInPLE}{8}{]} and the importance of keeping the human aspect central in AI development and application {[}\protect\hyperlink{ref-Z2ek25Ak}{9}{]}.
-These tools have \DIFdelbegin \DIFdel{been also used in enhancing }\DIFdelend \DIFaddbegin \DIFadd{also been used to enhance }\DIFaddend scientific communication {[}\protect\hyperlink{ref-Svww2RUh}{10}{]}.
+%DIFDELCMD < %%%
+\DIFdel{Recent advances in computing capabilities and the widespread availability of text, images, and other data on the internet have laid the foundation for artificial intelligence (AI) models with billions of parameters.
+Large }\DIFdelend \DIFaddbegin \DIFadd{Meanwhile, recent computing advances have enabled large }\DIFaddend language models (LLMs) \DIFdelbegin \DIFdel{, in particular, are opening the floodgates to new technologies with the capability to transform how society operates }%DIFDELCMD < {[}\protect\hyperlink{ref-xq1uEbPa}{4}{]}%%%
+\DIFdel{.
+}\DIFdelend \DIFaddbegin \DIFadd{like }\DIFaddend OpenAI's \DIFdelbegin \DIFdel{models, for instance, have been trained on vast amounts of data and can generate human-like text }%DIFDELCMD < {[}\protect\hyperlink{ref-bYOaJHMe}{5}{]}%%%
+\DIFdel{.
+These models are based on the transformer architecture which uses self-attention mechanisms to model the complexities of language.
+The most well-known of these models is the Generative Pre-trained Transformer (}\DIFdelend GPT-3 and \DIFdelbegin \DIFdel{, more recently, }\DIFdelend GPT-4 \DIFdelbegin \DIFdel{), which have been shown to be highly effective for a range of language tasks such as generating text, completing code, and answering questions }\DIFdelend {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-bYOaJHMe}{5}{]}%%%
+\DIFdel{.
+In the realm of medical informatics,scientists are beginning to explore the utility of these tools in optimizing clinical decision support }\DIFdelend \DIFaddbegin \hyperlink{ref-bYOaJHMe}{4}{]}\DIFadd{, revolutionizing technologies and applications in various fields, including medical informatics and scientific communication }\DIFaddend {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-gRhoGuC4}{6}{]} %%%
+\DIFdel{or assessing its potential to reduce health disparities }%DIFDELCMD < {[}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-gRhoGuC4}{5}\DIFadd{,}\DIFaddend \protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-CYB5vhZp}{7}{]}%%%
+\DIFdel{, while also raising concerns about their impact in medical education }\DIFdelend \DIFaddbegin \hyperlink{ref-CYB5vhZp}{6}{]}\DIFadd{.
+These models promise to streamline scientific writing }\DIFaddend {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-h8wInPLE}{8}{]} %%%
+\DIFdel{and the importance of keeping the human aspect central in AI development and application }\DIFdelend \DIFaddbegin \hyperlink{ref-Svww2RUh}{7}{]}\DIFadd{, though their use raises accuracy and ethical concerns }\DIFaddend {[}\protect\DIFaddbegin \hyperlink{ref-h8wInPLE}{8}\DIFadd{,}\protect\DIFaddend \hyperlink{ref-Z2ek25Ak}{9}{]}.
+\DIFdelbegin \DIFdel{These tools have been also used in enhancing scientific communication }%DIFDELCMD < {[}\protect\hyperlink{ref-Svww2RUh}{10}{]}%%%
+\DIFdel{.
 This technology has the potential to revolutionize how scientists write and revise scholarly manuscripts, saving time and effort and enabling researchers to focus on more high-level tasks such as data analysis and interpretation.
-However, \DIFdelbegin \DIFdel{the use of }\DIFdelend \DIFaddbegin \DIFadd{using }\DIFaddend LLMs in research has sparked controversy, primarily due to their propensity to generate plausible yet factually incorrect or misleading information.
+However, the use of LLMs in research has sparked controversy, primarily due to their propensity to generate plausible yet factually incorrect or misleading information.
+}\DIFdelend 
 
-In this work, we present a human-centric approach for \DIFdelbegin \DIFdel{the use of }\DIFdelend \DIFaddbegin \DIFadd{using }\DIFaddend AI in manuscript writing\DIFaddbegin \DIFadd{, }\DIFaddend where scholarly text, initially created by humans, is revised through edit suggestions from LLMs \DIFdelbegin \DIFdel{, }\DIFdelend and is ultimately reviewed and approved by humans.
+\DIFdelbegin \DIFdel{In this work, we present }\DIFdelend \DIFaddbegin \DIFadd{We introduce }\DIFaddend a human-centric \DIFdelbegin \DIFdel{approach for the use of AI in manuscript writing where scholarly text, initially created by humans, is revised through edit suggestions from LLMs , and is ultimately reviewed and approved by humans.
 This approach mitigates the risk of generating misleading information while still providing the benefits of AI-assisted writing.
-We developed an AI-assisted revision tool that implements this approach and builds on the Manubot infrastructure for scholarly publishing {[}\protect\hyperlink{ref-YuJbg3zO}{11}{]}, a platform designed to enable both individual and large-scale collaborative projects {[}\protect\hyperlink{ref-PZMP42Ak}{12},\protect\hyperlink{ref-10gsAq0o}{13}{]}.
-Our tool, named the Manubot AI Editor, parses the manuscript, utilizes an LLM with section-specific prompts for revision, and then generates a set of suggested changes to be integrated into the main document.
+We developed an AI-assisted revision tool that implements this approach and builds on the Manubot infrastructure for scholarly publishing }\DIFdelend \DIFaddbegin \DIFadd{AI method for scholarly writing, leveraging LLMs for draft revision within the Manubot platform, a tool for collaborative publishing }\DIFaddend {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-YuJbg3zO}{11}{]}%%%
+\DIFdel{, a platform designed to enable both individual and large-scale collaborative projects }%DIFDELCMD < {[}\protect\hyperlink{ref-PZMP42Ak}{12}%%%
+\DIFdel{,}%DIFDELCMD < \protect\hyperlink{ref-10gsAq0o}{13}{]}%%%
+\DIFdel{.
+Our tool, named }\DIFdelend \DIFaddbegin \hyperlink{ref-YuJbg3zO}{10}{]}\DIFadd{.
+Here, we propose }\DIFaddend the Manubot AI Editor, \DIFdelbegin \DIFdel{parses the manuscript, utilizes an LLM with section-specific prompts for revision, and then generates a set of suggested changes to be integrated into the main document.
 These changes are presented to the user through the GitHub interface for review.
-During prompt engineering, we developed unit tests to ensure that \DIFaddbegin \DIFadd{the AI revisions met }\DIFaddend a minimum set of quality measures\DIFdelbegin \DIFdel{are met by the AI revisions.
-For }\DIFdelend \DIFaddbegin \DIFadd{.
-For an }\DIFaddend end-to-end evaluation, we \DIFdelbegin \DIFdel{manually reviewed the AI revisions on three Manubot-authored }\DIFdelend \DIFaddbegin \DIFadd{applied our tool to five }\DIFaddend manuscripts that included sections of varying complexity.
-\DIFaddbegin \DIFadd{We performed 1) a human evaluation by manually reviewing the AI revisions, and 2) an automatic evaluation using the LLM-as-a-Judge technique }{[}\protect\hyperlink{ref-LhEwBH2w}{14}{]} \DIFadd{to assess the quality of the AI revisions.
-}\DIFaddend Our findings indicate that, in most cases, the models \DIFdelbegin \DIFdel{were able to }\DIFdelend \DIFaddbegin \DIFadd{could }\DIFaddend maintain the original meaning of \DIFaddbegin \DIFadd{the }\DIFaddend text, improve the writing style, and even interpret mathematical expressions.
-Officially part of the Manubot platform, our Manubot AI Editor can be readily incorporated into Manubot-based manuscripts, and we anticipate it will help authors more effectively communicate their work.
+During prompt engineering, we developed unit tests to ensure that a minimum set of quality measures are met by the AI revisions.
+For end-to-end evaluation, we manually reviewed the AI revisions on three Manubot-authored manuscriptsthat included sections of varying complexity.
+Our findings indicate that, in most cases, the models were able to maintain the original meaningof text, improve the writing }\DIFdelend \DIFaddbegin \DIFadd{which suggests revisions via GitHub, balancing AI's efficiency with human oversight to ensure accuracy.
+Tested on five manuscripts, we found it maintained the original meaning, improved }\DIFaddend style, and \DIFdelbegin \DIFdel{even interpret mathematical expressions.
+Officially part of the Manubot platform, our Manubot AI Editor can be readily incorporated into Manubot-based manuscripts, and we anticipate it }\DIFdelend \DIFaddbegin \DIFadd{handled complex expressions, proving a valuable addition to the Manubot suite.
+We anticipate our tool }\DIFaddend will help authors more effectively communicate their work.
 
 \subsection{Objective}
 
@@ -299,7 +317,8 @@ We propose a human-centric approach for the use of AI in manuscript writing, whi
 2) an LLM revises the manuscript, generating a set of suggested changes;
 3) human authors review the suggested changes, and the approved edits are then integrated into the manuscript.
 By focusing on human review, this approach attempts to mitigate the risk of generating incorrect or misleading information.
-To implement this human-centric approach, we developed a tool called the Manubot AI Editor, which is part of the Manubot infrastructure for scholarly publishing {[}\protect\hyperlink{ref-YuJbg3zO}{11}{]}.
+To implement this human-centric approach, we developed a tool called the Manubot AI Editor, which is part of the Manubot infrastructure for scholarly publishing {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-YuJbg3zO}{11}{]}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-YuJbg3zO}{10}{]}\DIFaddend .
 
 \subsubsection{Overview of the Manubot AI Editor}
 
@@ -317,7 +336,8 @@ Our tool allows the user to provide a custom prompt instead of using the default
 }
 \end{figure}
 
-The Manubot AI Editor is an AI-based revision infrastructure \DIFdelbegin \DIFdel{built }\DIFdelend \DIFaddbegin \DIFadd{integrated }\DIFaddend into Manubot {[}\protect\hyperlink{ref-YuJbg3zO}{11}{]}, a tool for collaborative writing of scientific manuscripts.
+The Manubot AI Editor is an AI-based revision infrastructure \DIFdelbegin \DIFdel{built }\DIFdelend \DIFaddbegin \DIFadd{integrated }\DIFaddend into Manubot {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-YuJbg3zO}{11}{]}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-YuJbg3zO}{10}{]}\DIFaddend , a tool for collaborative writing of scientific manuscripts.
 Manubot integrates with popular version control platforms such as GitHub, allowing authors to easily track changes and collaborate on writing in real time.
 Furthermore, Manubot automates the process of generating a formatted manuscript (e.g., HTML, PDF, DOCX; Figure \ref{fig:ai_revision}a shows the HTML output).
 Built \DIFdelbegin \DIFdel{on }\DIFdelend \DIFaddbegin \DIFadd{upon }\DIFaddend this modern and open paradigm, our Manubot AI Editor (\url{https://github.com/manubot/manubot-ai-editor}) includes three components:
@@ -517,8 +537,8 @@ Manubot-AI & \href{https://github.com/greenelab/manubot-gpt-manuscript}{greenela
 
 \DIFdelbegin \DIFdel{The }\DIFdelend \DIFaddbegin \DIFadd{For the }\DIFaddend evaluation of our tool\DIFdelbegin \DIFdel{was conducted using }\DIFdelend \DIFaddbegin \DIFadd{, we conducted manual assessments performed by humans and automatic assessments performed by an LLM.
 For the human assessments, we used }\DIFaddend three of our own manuscripts (Table \ref{tbl:manuscripts}): the Clustermatch Correlation Coefficient (CCC) {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-eirYTTyk}{14}{]}%%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-eirYTTyk}{15}{]}\DIFaddend , PhenoPLIER {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-NM3rHx1i}{15}{]}%%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-NM3rHx1i}{16}{]}\DIFaddend , and Manubot-AI (this manuscript).
+\DIFdelend \DIFaddbegin \hyperlink{ref-eirYTTyk}{11}{]}\DIFaddend , PhenoPLIER {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-NM3rHx1i}{15}{]}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-NM3rHx1i}{12}{]}\DIFaddend , and Manubot-AI (this manuscript).
 CCC is a new correlation coefficient applied to transcriptomic data, while PhenoPLIER is a framework consisting of three different methods used in genetic studies.
 CCC falls under the field of computational biology, whereas PhenoPLIER pertains to genomic medicine.
 CCC outlines one computational method applied to a specific data type (correlation to gene expression).
@@ -559,7 +579,7 @@ We also wrote unit tests to ensure the models returned citations in the correct 
 \DIFdelend \DIFaddbegin \DIFadd{For this evaluation, we ran our workflow on manuscripts CCC, PhenoPLIER, BioChatter, and Epistasis using the GPT-3.5 Turbo model (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{).
 We then inspected each PR and manually matched all pairs of original and revised paragraphs, across the abstract, introduction, methods, results, and supplementary material sections.
 This procedure generated 31 paragraph pairs for CCC, 63 for PhenoPLIER, 37 for BioChatter, and 63 for Epistasis.
-Using the LLM-as-a-Judge method }\DIFaddend {[}\DIFdelbegin \DIFdel{@doi:}\DIFdelend \DIFaddbegin \protect\hyperlink{ref-LhEwBH2w}{14}{]}\DIFadd{, we evaluated the quality of the revisions using both GPT-3.5 Turbo (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{) and GPT-4 Turbo (}\texttt{\DIFadd{gpt-4-turbo-preview}}\DIFadd{) as judges.
+Using the LLM-as-a-Judge method }\DIFaddend {[}\DIFdelbegin \DIFdel{@doi:}\DIFdelend \DIFaddbegin \protect\hyperlink{ref-LhEwBH2w}{13}{]}\DIFadd{, we evaluated the quality of the revisions using both GPT-3.5 Turbo (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{) and GPT-4 Turbo (}\texttt{\DIFadd{gpt-4-turbo-preview}}\DIFadd{) as judges.
 The judge is asked to decide which of the two paragraphs in each pair is better or if they are equally good (tie)}\DIFaddend .
 \DIFdelbegin \DIFdel{..}\DIFdelend \DIFaddbegin \DIFadd{For this, we used prompt chaining, where the judge first evaluates the quality of each paragraph independently by writing a list with positive and negative aspects in the following areas: 1) clear sentence structure, 2) ease of understanding, 3) grammatical correctness, 4) absence of spelling errors.
 Then, the judge was asked to be as objective as possible and decide if one of the paragraphs is clearly better than the other or if they are similar in quality, while also providing a rationale for the decision.
@@ -592,7 +612,7 @@ We ran our unit tests across all models under evaluation.
 %DIFDELCMD < %%%
 \DIFdel{Our initial human assessments across the three manuscripts and unit tests revealed that, although faster and less expensive, the Curie model was unable to produce acceptable revisions for any of the manuscripts.
 The PRs show that most of its suggestions were not coherent with the original text in any of the manuscript sections.
-The model clearly could not understand the revision instructions; in most cases, it did not produce a meaningful revision, replaced the text with the instructions, added the title of the manuscript at the beginning of the paragraph, consistently failed to keep citations to other articles (especially in the Introduction section), or added content that was not present in }\DIFdelend \DIFaddbegin \protect\hyperlink{ref-LhEwBH2w}{14}{]} \DIFadd{(i.e., the order in which the paragraphs were presented could influence the decision) by swapping the order of }\DIFaddend the \DIFdelbegin \DIFdel{original text.
+The model clearly could not understand the revision instructions; in most cases, it did not produce a meaningful revision, replaced the text with the instructions, added the title of the manuscript at the beginning of the paragraph, consistently failed to keep citations to other articles (especially in the Introduction section), or added content that was not present in }\DIFdelend \DIFaddbegin \protect\hyperlink{ref-LhEwBH2w}{13}{]} \DIFadd{(i.e., the order in which the paragraphs were presented could influence the decision) by swapping the order of }\DIFaddend the \DIFdelbegin \DIFdel{original text.
 In addition, for similar reasons, we found that the quality of the revisions produced by the }\texttt{\DIFdel{text-davinci-edit-001}} %DIFAUXCMD
 \DIFdel{model (edits endpoint) was inferior to those produced by the }\texttt{\DIFdel{text-davinci-003}} %DIFAUXCMD
 \DIFdel{model (completion endpoint).
@@ -674,7 +694,7 @@ Single words are not underlined/highlighed in this case because the revision com
 
 We tested the tool on a paragraph from the Results section of CCC (Figure \ref{fig:results:ccc}).
 This paragraph describes Figure 1 of the CCC manuscript {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-eirYTTyk}{14}{]}%%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-eirYTTyk}{15}{]}\DIFaddend , which showcases four different datasets, each with two variables, and various relationships or patterns labeled as random/independent, non-coexistence, quadratic, and two-lines.
+\DIFdelend \DIFaddbegin \hyperlink{ref-eirYTTyk}{11}{]}\DIFaddend , which showcases four different datasets, each with two variables, and various relationships or patterns labeled as random/independent, non-coexistence, quadratic, and two-lines.
 The revised paragraph, while having fewer sentences, is slightly longer and consistently uses \DIFaddbegin \DIFadd{the }\DIFaddend past tense, unlike the original one which has tense shifts.
 The revised paragraph also retains all citations, which, although not explicitly mentioned in the prompts for this section (as it is for introductions), is important in this case.
 The original LaTeX format was maintained for the math\DIFaddbegin \DIFadd{, }\DIFaddend and the figure was correctly referenced using the Manubot syntax.
@@ -808,16 +828,16 @@ We designed section-specific prompts to guide the revision of text using GPT-3.
 Surprisingly, in one Methods section, the model detected an error when referencing a symbol in an equation that had been overlooked by humans.
 However, revising abstracts proved more challenging for the model, as revisions often removed background information about the research problem.
 There are opportunities to improve the AI-based revisions, such as further refining prompts using few-shot learning {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-S1Lim9f9}{16}{]}%%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-S1Lim9f9}{17}{]}\DIFaddend , or fine-tuning the model using an additional corpus of academic writing focused on particularly challenging sections.
+\DIFdelend \DIFaddbegin \hyperlink{ref-S1Lim9f9}{14}{]}\DIFaddend , or fine-tuning the model using an additional corpus of academic writing focused on particularly challenging sections.
 Fine-tuning using preprint-publication pairs {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-WVt383GU}{17}{]} %%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-WVt383GU}{18}{]} \DIFaddend may help to identify sections or phrases likely to be changed during peer review.
+\DIFdelend \DIFaddbegin \hyperlink{ref-WVt383GU}{15}{]} \DIFaddend may help to identify sections or phrases likely to be changed during peer review.
 Our approach \DIFdelbegin \DIFdel{used GPT-3 to process }\DIFdelend \DIFaddbegin \DIFadd{processed }\DIFaddend each paragraph of the text \DIFdelbegin \DIFdel{, but it }\DIFdelend \DIFaddbegin \DIFadd{but }\DIFaddend lacked a contextual thread between queries, which mainly affected the Results and Methods sections.
 Using chatbots that retain context could enable the revision of individual paragraphs while considering previously processed text.
 We plan to update our workflow to support this strategy.
 Open and semi-open models, such as BLOOM {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-I4d1F0yv}{18}{]}%%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-I4d1F0yv}{19}{]}\DIFaddend , Meta's Llama 2 {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-A213xAuD}{19}{]}%%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-A213xAuD}{20}{]}\DIFaddend , and Mistral 7B {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-1wOalSCp}{20}{]}%%%
-\DIFdelend \DIFaddbegin \hyperlink{ref-1wOalSCp}{21}{]}\DIFaddend , are growing in popularity and capabilities, but they lack the user-friendly OpenAI API.
+\DIFdelend \DIFaddbegin \hyperlink{ref-I4d1F0yv}{16}{]}\DIFaddend , Meta's Llama 2 {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-A213xAuD}{19}{]}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-A213xAuD}{17}{]}\DIFaddend , and Mistral 7B {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-1wOalSCp}{20}{]}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-1wOalSCp}{18}{]}\DIFaddend , are growing in popularity and capabilities, but they lack the user-friendly OpenAI API.
 \DIFdelbegin \DIFdel{We used a combination of human evaluation and automated tools available at the time to assess the outcomes of the AI-based revisions.
 Recent frameworks such as }\href{https://github.com/openai/evals}{\DIFdel{OpenAI Evals}} %DIFAUXCMD
 \DIFdel{or strategies such as LLM-as-a-Judge }%DIFDELCMD < {[}\protect\hyperlink{ref-LhEwBH2w}{21}{]} %%%
@@ -827,9 +847,13 @@ While our study \DIFdelbegin \DIFdel{used }\DIFdelend \DIFaddbegin \DIFadd{focus
 
 \subsection{Conclusions}
 
-The use of AI-assisted tools for scientific authoring is controversial {[}\protect\hyperlink{ref-1EAonKBXJ}{22},\protect\hyperlink{ref-KJTJqmxc}{23}{]}.
+The use of AI-assisted tools for scientific authoring is controversial {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-1EAonKBXJ}{22}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-1EAonKBXJ}{19}\DIFaddend ,\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-KJTJqmxc}{23}{]}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-KJTJqmxc}{20}{]}\DIFaddend .
 Questions arise concerning the originality and ownership of texts generated by these models.
-For example, the \emph{Nature} journal has established that any use of these models in scientific writing must be documented {[}\protect\hyperlink{ref-wQLVc4o7}{24}{]}, and the International Conference on Machine Learning (ICML) has prohibited the submission of \emph{``papers that include text generated from a large-scale language model (LLM)''} {[}\protect\hyperlink{ref-K58CKD6D}{25}{]}, although editing tools for grammar and spelling correction are allowed.
+For example, the \emph{Nature} journal has established that any use of these models in scientific writing must be documented {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-wQLVc4o7}{24}{]}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-wQLVc4o7}{21}{]}\DIFaddend , and the International Conference on Machine Learning (ICML) has prohibited the submission of \emph{``papers that include text generated from a large-scale language model (LLM)''} {[}\protect\DIFdelbegin %DIFDELCMD < \hyperlink{ref-K58CKD6D}{25}{]}%%%
+\DIFdelend \DIFaddbegin \hyperlink{ref-K58CKD6D}{22}{]}\DIFaddend , although editing tools for grammar and spelling correction are allowed.
 Our work, however, focuses on revising \emph{existing} text written by a human author.
 Additionally, all changes made by humans and AI are tracked in the version control system, which allows for full transparency.
 Despite the concerns, there are also significant opportunities.
@@ -886,26 +910,48 @@ M. Pividori and C.S. Greene revised the manuscript and provided critical feedbac
 \CSLBlock{Virginia Gewin} \emph{Nature} (2018-02-28) \url{https://doi.org/ggh63n}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-018-02404-4}{10.1038/d41586-018-02404-4}}}
 
-\leavevmode\vadjust pre{\hypertarget{ref-xq1uEbPa}{}}%
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-xq1uEbPa}{}%%%
+\DIFdelend \DIFaddbegin \hypertarget{ref-bYOaJHMe}{}\DIFaddend }%
 \CSLLeftMargin{4. }%
-\CSLRightInline{\textbf{Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models}
-\CSLBlock{Alex Tamkin, Miles Brundage, Jack Clark, Deep Ganguli} \emph{arXiv} (2021-02-05) \url{https://arxiv.org/abs/2102.02503}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-bYOaJHMe}{}}%
-\CSLLeftMargin{5. }%
-\CSLRightInline{\textbf{Language Models are Few-Shot Learners}
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Understanding the Capabilities, Limitations, and Societal Impact of Large Language Models}
+%DIFDELCMD < \CSLBlock{Alex Tamkin, Miles Brundage, Jack Clark, Deep Ganguli} \emph{arXiv} (2021-02-05) \url{https://arxiv.org/abs/2102.02503}}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Language Models are Few-Shot Learners}
 \CSLBlock{Tom B Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, \ldots{} Dario Amodei} \emph{arXiv} (2020-07-24) \url{https://arxiv.org/abs/2005.14165}}
+\DIFaddend 
 
-\leavevmode\vadjust pre{\hypertarget{ref-gRhoGuC4}{}}%
-\CSLLeftMargin{6. }%
-\CSLRightInline{\textbf{Using AI-generated suggestions from ChatGPT to optimize clinical decision support}
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-bYOaJHMe}{}%%%
+\DIFdelend \DIFaddbegin \hypertarget{ref-gRhoGuC4}{}\DIFaddend }%
+\CSLLeftMargin{5. }%
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Language Models are Few-Shot Learners}
+%DIFDELCMD < \CSLBlock{Tom B Brown, Benjamin Mann, Nick Ryder, Melanie Subbiah, Jared Kaplan, Prafulla Dhariwal, Arvind Neelakantan, Pranav Shyam, Girish Sastry, Amanda Askell, \ldots{} Dario Amodei} \emph{arXiv} (2020-07-24) \url{https://arxiv.org/abs/2005.14165}}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Using AI-generated suggestions from ChatGPT to optimize clinical decision support}
 \CSLBlock{Siru Liu, Aileen P Wright, Barron L Patterson, Jonathan P Wanderer, Robert W Turer, Scott D Nelson, Allison B McCoy, Dean F Sittig, Adam Wright} \emph{Journal of the American Medical Informatics Association} (2023-04-22) \url{https://doi.org/gsgvw2}
 \CSLBlock{DOI: \href{https://doi.org/10.1093/jamia/ocad072}{10.1093/jamia/ocad072} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37087108}{37087108} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10280357}{PMC10280357}}}
+\DIFaddend 
 
-\leavevmode\vadjust pre{\hypertarget{ref-CYB5vhZp}{}}%
-\CSLLeftMargin{7. }%
-\CSLRightInline{\textbf{Benchmarking the symptom-checking capabilities of ChatGPT for a broad range of diseases}
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-gRhoGuC4}{}%%%
+\DIFdelend \DIFaddbegin \hypertarget{ref-CYB5vhZp}{}\DIFaddend }%
+\CSLLeftMargin{6. }%
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Using AI-generated suggestions from ChatGPT to optimize clinical decision support}
+%DIFDELCMD < \CSLBlock{Siru Liu, Aileen P Wright, Barron L Patterson, Jonathan P Wanderer, Robert W Turer, Scott D Nelson, Allison B McCoy, Dean F Sittig, Adam Wright} \emph{Journal of the American Medical Informatics Association} (2023-04-22) \url{https://doi.org/gsgvw2}
+%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1093/jamia/ocad072}{10.1093/jamia/ocad072} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37087108}{37087108} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10280357}{PMC10280357}}}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Benchmarking the symptom-checking capabilities of ChatGPT for a broad range of diseases}
 \CSLBlock{Anjun Chen, Drake O Chen, Lu Tian} \emph{Journal of the American Medical Informatics Association} (2023-12-18) \url{https://doi.org/10.1093/jamia/ocad245}}
+\DIFaddend 
+
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-CYB5vhZp}{}%%%
+\DIFdelend \DIFaddbegin \hypertarget{ref-Svww2RUh}{}\DIFaddend }%
+\CSLLeftMargin{7. }%
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Benchmarking the symptom-checking capabilities of ChatGPT for a broad range of diseases}
+%DIFDELCMD < \CSLBlock{Anjun Chen, Drake O Chen, Lu Tian} \emph{Journal of the American Medical Informatics Association} (2023-12-18) \url{https://doi.org/10.1093/jamia/ocad245}}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Could AI help you to write your next paper?}
+\CSLBlock{Matthew Hutson} \emph{Nature} (2022-10-31) \url{https://doi.org/grpm4w}
+\CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-022-03479-w}{10.1038/d41586-022-03479-w} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/36316468}{36316468}}}
+\DIFaddend 
 
 \leavevmode\vadjust pre{\hypertarget{ref-h8wInPLE}{}}%
 \CSLLeftMargin{8. }%
@@ -919,138 +965,139 @@ M. Pividori and C.S. Greene revised the manuscript and provided critical feedbac
 \CSLBlock{Suzanne Bakken} \emph{Journal of the American Medical Informatics Association} (2023-06-20) \url{https://doi.org/gs9km7}
 \CSLBlock{DOI: \href{https://doi.org/10.1093/jamia/ocad091}{10.1093/jamia/ocad091} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37337923}{37337923} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10280340}{PMC10280340}}}
 
-\leavevmode\vadjust pre{\hypertarget{ref-Svww2RUh}{}}%
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-Svww2RUh}{}%%%
+\DIFdelend \DIFaddbegin \hypertarget{ref-YuJbg3zO}{}\DIFaddend }%
 \CSLLeftMargin{10. }%
-\CSLRightInline{\textbf{Could AI help you to write your next paper?}
-\CSLBlock{Matthew Hutson} \emph{Nature} (2022-10-31) \url{https://doi.org/grpm4w}
-\CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-022-03479-w}{10.1038/d41586-022-03479-w} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/36316468}{36316468}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-YuJbg3zO}{}}%
-\CSLLeftMargin{11. }%
-\CSLRightInline{\textbf{Open collaborative writing with Manubot}
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Could AI help you to write your next paper?}
+%DIFDELCMD < \CSLBlock{Matthew Hutson} \emph{Nature} (2022-10-31) \url{https://doi.org/grpm4w}
+%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-022-03479-w}{10.1038/d41586-022-03479-w} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/36316468}{36316468}}}
+%DIFDELCMD < %%%
+\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Open collaborative writing with Manubot}
 \CSLBlock{Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter} \emph{PLOS Computational Biology} (2019-06-24) \url{https://doi.org/c7np}
 \CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1007128}{10.1371/journal.pcbi.1007128} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31233491}{31233491} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653}{PMC6611653}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-PZMP42Ak}{}}%
-\CSLLeftMargin{12. }%
-\CSLRightInline{\textbf{Opportunities and obstacles for deep learning in biology and medicine}
-\CSLBlock{Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, \ldots{} Casey S Greene} \emph{Journal of The Royal Society Interface} (2018-04) \url{https://doi.org/gddkhn}
-\CSLBlock{DOI: \href{https://doi.org/10.1098/rsif.2017.0387}{10.1098/rsif.2017.0387} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29618526}{29618526} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574}{PMC5938574}}}
-
-\leavevmode\vadjust pre{\hypertarget{ref-10gsAq0o}{}}%
-\CSLLeftMargin{13. }%
-\CSLRightInline{\textbf{An Open-Publishing Response to the COVID-19 Infodemic.}
-\CSLBlock{Halie M Rando, Simina M Boca, Lucy D\textquotesingle Agostino McGowan, Daniel S Himmelstein, Michael P Robson, Vincent Rubinetti, Ryan Velazquez, Casey S Greene, Anthony Gitter} \emph{ArXiv} (2021-09-17) \url{https://www.ncbi.nlm.nih.gov/pubmed/34545336}
-\CSLBlock{PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34545336}{34545336} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8452106}{PMC8452106}}}
-
-\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-eirYTTyk}{}%%%
-\DIFdelend \DIFaddbegin \hypertarget{ref-LhEwBH2w}{}\DIFaddend }%
-\CSLLeftMargin{14. }%
-\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{An efficient not-only-linear correlation coefficient based on machine learning}
-%DIFDELCMD < \CSLBlock{Milton Pividori, Marylyn D Ritchie, Diego H Milone, Casey S Greene} \emph{Cold Spring Harbor Laboratory} (2022-06-17) \url{https://doi.org/gqcvbw}
-%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1101/2022.06.15.496326}{10.1101/2022.06.15.496326}}}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena}
-\CSLBlock{Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, EricP Xing, \ldots{} Ion Stoica} \emph{arXiv} (2023-10-17) \url{https://arxiv.org/abs/2306.05685}}
 \DIFaddend 
 
-\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-NM3rHx1i}{}%%%
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-YuJbg3zO}{}%%%
 \DIFdelend \DIFaddbegin \hypertarget{ref-eirYTTyk}{}\DIFaddend }%
-\CSLLeftMargin{15. }%
-\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Projecting genetic associations through gene expression patterns highlights disease etiology and drug mechanisms}
-%DIFDELCMD < \CSLBlock{Milton Pividori, Sumei Lu, Binglan Li, Chun Su, Matthew E Johnson, Wei-Qi Wei, Qiping Feng, Bahram Namjou, Krzysztof Kiryluk, Iftikhar J Kullo, \ldots{} } \emph{Nature Communications} (2023-09-09) \url{https://doi.org/gspsxr}
-%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-023-41057-4}{10.1038/s41467-023-41057-4} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37689782}{37689782} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10492839}{PMC10492839}}}
+\CSLLeftMargin{11. }%
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Open collaborative writing with Manubot}
+%DIFDELCMD < \CSLBlock{Daniel S Himmelstein, Vincent Rubinetti, David R Slochower, Dongbo Hu, Venkat S Malladi, Casey S Greene, Anthony Gitter} \emph{PLOS Computational Biology} (2019-06-24) \url{https://doi.org/c7np}
+%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pcbi.1007128}{10.1371/journal.pcbi.1007128} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/31233491}{31233491} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC6611653}{PMC6611653}}}
 %DIFDELCMD < %%%
 \DIFdelend \DIFaddbegin \CSLRightInline{\textbf{An efficient not-only-linear correlation coefficient based on machine learning}
 \CSLBlock{Milton Pividori, Marylyn D Ritchie, Diego H Milone, Casey S Greene} \emph{Cold Spring Harbor Laboratory} (2022-06-17) \url{https://doi.org/gqcvbw}
 \CSLBlock{DOI: \href{https://doi.org/10.1101/2022.06.15.496326}{10.1101/2022.06.15.496326}}}
 \DIFaddend 
 
-\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-S1Lim9f9}{}%%%
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-PZMP42Ak}{}%%%
 \DIFdelend \DIFaddbegin \hypertarget{ref-NM3rHx1i}{}\DIFaddend }%
-\CSLLeftMargin{16. }%
-\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Generalizing from a Few Examples}
-%DIFDELCMD < \CSLBlock{Yaqing Wang, Quanming Yao, James T Kwok, Lionel M Ni} \emph{ACM Computing Surveys} (2020-06-12) \url{https://doi.org/gg37m2}
-%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1145/3386252}{10.1145/3386252}}}
+\CSLLeftMargin{12. }%
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Opportunities and obstacles for deep learning in biology and medicine}
+%DIFDELCMD < \CSLBlock{Travers Ching, Daniel S Himmelstein, Brett K Beaulieu-Jones, Alexandr A Kalinin, Brian T Do, Gregory P Way, Enrico Ferrero, Paul-Michael Agapow, Michael Zietz, Michael M Hoffman, \ldots{} Casey S Greene} \emph{Journal of The Royal Society Interface} (2018-04) \url{https://doi.org/gddkhn}
+%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1098/rsif.2017.0387}{10.1098/rsif.2017.0387} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/29618526}{29618526} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC5938574}{PMC5938574}}}
 %DIFDELCMD < %%%
 \DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Projecting genetic associations through gene expression patterns highlights disease etiology and drug mechanisms}
 \CSLBlock{Milton Pividori, Sumei Lu, Binglan Li, Chun Su, Matthew E Johnson, Wei-Qi Wei, Qiping Feng, Bahram Namjou, Krzysztof Kiryluk, Iftikhar J Kullo, \ldots{} } \emph{Nature Communications} (2023-09-09) \url{https://doi.org/gspsxr}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-023-41057-4}{10.1038/s41467-023-41057-4} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37689782}{37689782} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10492839}{PMC10492839}}}
 \DIFaddend 
 
-\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-WVt383GU}{}%%%
-\DIFdelend \DIFaddbegin \hypertarget{ref-S1Lim9f9}{}\DIFaddend }%
-\CSLLeftMargin{17. }%
-\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Examining linguistic shifts between preprints and publications}
-%DIFDELCMD < \CSLBlock{David N Nicholson, Vincent Rubinetti, Dongbo Hu, Marvin Thielk, Lawrence E Hunter, Casey S Greene} \emph{PLOS Biology} (2022-02-01) \url{https://doi.org/gqqzn2}
-%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pbio.3001470}{10.1371/journal.pbio.3001470} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35104289}{35104289} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8806061}{PMC8806061}}}
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-10gsAq0o}{}%%%
+\DIFdelend \DIFaddbegin \hypertarget{ref-LhEwBH2w}{}\DIFaddend }%
+\CSLLeftMargin{13. }%
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{An Open-Publishing Response to the COVID-19 Infodemic.}
+%DIFDELCMD < \CSLBlock{Halie M Rando, Simina M Boca, Lucy D\textquotesingle Agostino McGowan, Daniel S Himmelstein, Michael P Robson, Vincent Rubinetti, Ryan Velazquez, Casey S Greene, Anthony Gitter} \emph{ArXiv} (2021-09-17) \url{https://www.ncbi.nlm.nih.gov/pubmed/34545336}
+%DIFDELCMD < \CSLBlock{PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/34545336}{34545336} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8452106}{PMC8452106}}}
 %DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Generalizing from a Few Examples}
+\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena}
+\CSLBlock{Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, EricP Xing, \ldots{} Ion Stoica} \emph{arXiv} (2023-10-17) \url{https://arxiv.org/abs/2306.05685}}
+\DIFaddend 
+
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-eirYTTyk}{}%%%
+\DIFdelend \DIFaddbegin \hypertarget{ref-S1Lim9f9}{}\DIFaddend }%
+\CSLLeftMargin{14. }%
+\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{An efficient not-only-linear correlation coefficient based on machine learning}
+%DIFDELCMD < \CSLBlock{Milton Pividori, Marylyn D Ritchie, Diego H Milone, Casey S Greene} \emph{Cold Spring Harbor Laboratory} (2022-06-17) \url{https://doi.org/gqcvbw}
+%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1101/2022.06.15.496326}{10.1101/2022.06.15.496326}}}
+%DIFDELCMD < 
+
+%DIFDELCMD < \leavevmode\vadjust %%%
+\DIFdel{pre}%DIFDELCMD < {\hypertarget{ref-NM3rHx1i}{}}%%%
+%DIF < 
+%DIFDELCMD < \CSLLeftMargin{15. }%%%
+%DIF < 
+%DIFDELCMD < \CSLRightInline{\textbf{Projecting genetic associations through gene expression patterns highlights disease etiology and drug mechanisms}
+%DIFDELCMD < \CSLBlock{Milton Pividori, Sumei Lu, Binglan Li, Chun Su, Matthew E Johnson, Wei-Qi Wei, Qiping Feng, Bahram Namjou, Krzysztof Kiryluk, Iftikhar J Kullo, \ldots{} } \emph{Nature Communications} (2023-09-09) \url{https://doi.org/gspsxr}
+%DIFDELCMD < \CSLBlock{DOI: \href{https://doi.org/10.1038/s41467-023-41057-4}{10.1038/s41467-023-41057-4} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/37689782}{37689782} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC10492839}{PMC10492839}}}
+%DIFDELCMD < 
+
+%DIFDELCMD < \leavevmode\vadjust %%%
+\DIFdel{pre}%DIFDELCMD < {\hypertarget{ref-S1Lim9f9}{}}%%%
+%DIF < 
+%DIFDELCMD < \CSLLeftMargin{16. }%%%
+%DIF < 
+\DIFdelend \CSLRightInline{\textbf{Generalizing from a Few Examples}
 \CSLBlock{Yaqing Wang, Quanming Yao, James T Kwok, Lionel M Ni} \emph{ACM Computing Surveys} (2020-06-12) \url{https://doi.org/gg37m2}
 \CSLBlock{DOI: \href{https://doi.org/10.1145/3386252}{10.1145/3386252}}}
-\DIFaddend 
 
-\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-I4d1F0yv}{}%%%
-\DIFdelend \DIFaddbegin \hypertarget{ref-WVt383GU}{}\DIFaddend }%
-\CSLLeftMargin{18. }%
-\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{BLOOM: A 176B-Parameter Open-Access Multilingual Language Model}
-%DIFDELCMD < \CSLBlock{BigScience Workshop, :, Teven Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ilić, Daniel Hesslow, Roman Castagné, Alexandra Sasha Luccioni, \ldots{} Thomas Wolf} \emph{arXiv} (2023-06-28) \url{https://arxiv.org/abs/2211.05100}}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Examining linguistic shifts between preprints and publications}
+\leavevmode\vadjust pre{\hypertarget{ref-WVt383GU}{}}%
+\DIFdelbegin %DIFDELCMD < \CSLLeftMargin{17. }%%%
+\DIFdelend \DIFaddbegin \CSLLeftMargin{15. }\DIFaddend %
+\CSLRightInline{\textbf{Examining linguistic shifts between preprints and publications}
 \CSLBlock{David N Nicholson, Vincent Rubinetti, Dongbo Hu, Marvin Thielk, Lawrence E Hunter, Casey S Greene} \emph{PLOS Biology} (2022-02-01) \url{https://doi.org/gqqzn2}
 \CSLBlock{DOI: \href{https://doi.org/10.1371/journal.pbio.3001470}{10.1371/journal.pbio.3001470} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/35104289}{35104289} · PMCID: \href{https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8806061}{PMC8806061}}}
-\DIFaddend 
 
-\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-A213xAuD}{}%%%
-\DIFdelend \DIFaddbegin \hypertarget{ref-I4d1F0yv}{}\DIFaddend }%
-\CSLLeftMargin{19. }%
-\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Llama 2: Open Foundation and Fine-Tuned Chat Models}
-%DIFDELCMD < \CSLBlock{Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, \ldots{} Thomas Scialom} \emph{arXiv} (2023-07-20) \url{https://arxiv.org/abs/2307.09288}}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{BLOOM: A 176B-Parameter Open-Access Multilingual Language Model}
+\leavevmode\vadjust pre{\hypertarget{ref-I4d1F0yv}{}}%
+\DIFdelbegin %DIFDELCMD < \CSLLeftMargin{18. }%%%
+\DIFdelend \DIFaddbegin \CSLLeftMargin{16. }\DIFaddend %
+\CSLRightInline{\textbf{BLOOM: A 176B-Parameter Open-Access Multilingual Language Model}
 \CSLBlock{BigScience Workshop, :, Teven Le Scao, Angela Fan, Christopher Akiki, Ellie Pavlick, Suzana Ilić, Daniel Hesslow, Roman Castagné, Alexandra Sasha Luccioni, \ldots{} Thomas Wolf} \emph{arXiv} (2023-06-28) \url{https://arxiv.org/abs/2211.05100}}
-\DIFaddend 
 
-\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-1wOalSCp}{}%%%
-\DIFdelend \DIFaddbegin \hypertarget{ref-A213xAuD}{}\DIFaddend }%
-\CSLLeftMargin{20. }%
-\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Mistral 7B}
-%DIFDELCMD < \CSLBlock{Albert Q Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lucile Saulnier, \ldots{} William El Sayed} \emph{arXiv} (2023-10-11) \url{https://arxiv.org/abs/2310.06825}}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Llama 2: Open Foundation and Fine-Tuned Chat Models}
+\leavevmode\vadjust pre{\hypertarget{ref-A213xAuD}{}}%
+\DIFdelbegin %DIFDELCMD < \CSLLeftMargin{19. }%%%
+\DIFdelend \DIFaddbegin \CSLLeftMargin{17. }\DIFaddend %
+\CSLRightInline{\textbf{Llama 2: Open Foundation and Fine-Tuned Chat Models}
 \CSLBlock{Hugo Touvron, Louis Martin, Kevin Stone, Peter Albert, Amjad Almahairi, Yasmine Babaei, Nikolay Bashlykov, Soumya Batra, Prajjwal Bhargava, Shruti Bhosale, \ldots{} Thomas Scialom} \emph{arXiv} (2023-07-20) \url{https://arxiv.org/abs/2307.09288}}
-\DIFaddend 
 
-\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-LhEwBH2w}{}%%%
-\DIFdelend \DIFaddbegin \hypertarget{ref-1wOalSCp}{}\DIFaddend }%
-\CSLLeftMargin{21. }%
-\DIFdelbegin %DIFDELCMD < \CSLRightInline{\textbf{Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena}
-%DIFDELCMD < \CSLBlock{Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, EricP Xing, \ldots{} Ion Stoica} \emph{arXiv} (2023-10-17) \url{https://arxiv.org/abs/2306.05685}}
-%DIFDELCMD < %%%
-\DIFdelend \DIFaddbegin \CSLRightInline{\textbf{Mistral 7B}
+\leavevmode\vadjust pre{\hypertarget{ref-1wOalSCp}{}}%
+\DIFdelbegin %DIFDELCMD < \CSLLeftMargin{20. }%%%
+\DIFdelend \DIFaddbegin \CSLLeftMargin{18. }\DIFaddend %
+\CSLRightInline{\textbf{Mistral 7B}
 \CSLBlock{Albert Q Jiang, Alexandre Sablayrolles, Arthur Mensch, Chris Bamford, Devendra Singh Chaplot, Diego de las Casas, Florian Bressand, Gianna Lengyel, Guillaume Lample, Lucile Saulnier, \ldots{} William El Sayed} \emph{arXiv} (2023-10-11) \url{https://arxiv.org/abs/2310.06825}}
-\DIFaddend 
 
-\leavevmode\vadjust pre{\hypertarget{ref-1EAonKBXJ}{}}%
-\CSLLeftMargin{22. }%
+\leavevmode\vadjust pre{\DIFdelbegin %DIFDELCMD < \hypertarget{ref-LhEwBH2w}{}}%%%
+%DIF < 
+%DIFDELCMD < \CSLLeftMargin{21. }%%%
+%DIF < 
+%DIFDELCMD < \CSLRightInline{\textbf{Judging LLM-as-a-Judge with MT-Bench and Chatbot Arena}
+%DIFDELCMD < \CSLBlock{Lianmin Zheng, Wei-Lin Chiang, Ying Sheng, Siyuan Zhuang, Zhanghao Wu, Yonghao Zhuang, Zi Lin, Zhuohan Li, Dacheng Li, EricP Xing, \ldots{} Ion Stoica} \emph{arXiv} (2023-10-17) \url{https://arxiv.org/abs/2306.05685}}
+%DIFDELCMD < 
+
+%DIFDELCMD < \leavevmode\vadjust %%%
+\DIFdel{pre}%DIFDELCMD < {%%%
+\DIFdelend \hypertarget{ref-1EAonKBXJ}{}}%
+\DIFdelbegin %DIFDELCMD < \CSLLeftMargin{22. }%%%
+\DIFdelend \DIFaddbegin \CSLLeftMargin{19. }\DIFaddend %
 \CSLRightInline{\textbf{Abstracts written by ChatGPT fool scientists}
 \CSLBlock{Holly Else} \emph{Nature} (2023-01-12) \url{https://doi.org/js2g}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-023-00056-7}{10.1038/d41586-023-00056-7} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/36635510}{36635510}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-KJTJqmxc}{}}%
-\CSLLeftMargin{23. }%
+\DIFdelbegin %DIFDELCMD < \CSLLeftMargin{23. }%%%
+\DIFdelend \DIFaddbegin \CSLLeftMargin{20. }\DIFaddend %
 \CSLRightInline{\textbf{ChatGPT listed as author on research papers: many scientists disapprove}
 \CSLBlock{Chris Stokel-Walker} \emph{Nature} (2023-01-18) \url{https://doi.org/grn72b}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-023-00107-z}{10.1038/d41586-023-00107-z} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/36653617}{36653617}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-wQLVc4o7}{}}%
-\CSLLeftMargin{24. }%
+\DIFdelbegin %DIFDELCMD < \CSLLeftMargin{24. }%%%
+\DIFdelend \DIFaddbegin \CSLLeftMargin{21. }\DIFaddend %
 \CSLRightInline{\textbf{Tools such as ChatGPT threaten transparent science; here are our ground rules for their use}
 \CSLBlock{Nature} (2023-01-24) \url{https://doi.org/grpm2s}
 \CSLBlock{DOI: \href{https://doi.org/10.1038/d41586-023-00191-1}{10.1038/d41586-023-00191-1} · PMID: \href{https://www.ncbi.nlm.nih.gov/pubmed/36694020}{36694020}}}
 
 \leavevmode\vadjust pre{\hypertarget{ref-K58CKD6D}{}}%
-\CSLLeftMargin{25. }%
+\DIFdelbegin %DIFDELCMD < \CSLLeftMargin{25. }%%%
+\DIFdelend \DIFaddbegin \CSLLeftMargin{22. }\DIFaddend %
 \CSLRightInline{\textbf{ICML 2023} \url{https://icml.cc/Conferences/2023/llm-policy}}
 
 \end{CSLReferences}
