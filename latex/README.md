@@ -25,13 +25,18 @@
 
 1. Define versions to compare:
    ```bash
-   export PREV_VER="v01.1"
-   export CURR_VER="v02.1"
+   export PREV_VER="v02.1"
+   export CURR_VER="v03.0"
    ```
 
 1. Tag the current version of the latex file (do not push yet):
    ```bash
    git tag -f ${CURR_VER} <commit hash>
+   ```
+
+   To remove a tag:
+   ```bash
+   git tag -d <tag>
    ```
 
 1. Generate diff between versions and compile (**WARNING**: figure some captions were manually updated):
@@ -48,9 +53,14 @@
    latexmk diffs/diff_${PREV_VER}_vs_${CURR_VER}.tex
    ```
 
-1. Check diff pdf and compare with previous and current version.
+1. Check diff pdf and compare with previous and current versions.
 
 1. If everything is ok, add to git:
    ```bash
    git add diffs/diff_${PREV_VER}_vs_${CURR_VER}.tex
+   ```
+
+1. Push tags:
+   ```bash
+   git push origin ${CURR_VER}
    ```
