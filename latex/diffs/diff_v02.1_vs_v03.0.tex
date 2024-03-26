@@ -1,7 +1,7 @@
 % Options for packages loaded elsewhere
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL diffs/v02.1.tex   Mon Mar 25 12:03:40 2024
-%DIF ADD diffs/v03.0.tex   Mon Mar 25 12:03:40 2024
+%DIF DEL diffs/v02.1.tex   Tue Mar 26 12:21:57 2024
+%DIF ADD diffs/v03.0.tex   Tue Mar 26 12:21:57 2024
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
@@ -55,7 +55,11 @@
 \makeatother
 % Scale images if necessary, so that they will not overflow the page
 % margins by default, and it is still possible to overwrite the defaults
-% using explicit options in \includegraphics[width, height, ...]{}
+%DIF 55c55
+%DIF < % using explicit options in \includegraphics[width, height, ...]{}
+%DIF -------
+% using explicit options in \includesvg[width, height, ...]{} %DIF > 
+%DIF -------
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 % Set default figure placement to htbp
 \makeatletter
@@ -332,87 +336,133 @@ Since this API incurs a cost with each run that depends on \DIFaddbegin \DIFadd{
 Our implementation allows users to tune the costs to their needs by enabling them to select specific sections for revision instead of the entire manuscript.
 Additionally, several model parameters can be adjusted to further tune costs, such as the language model version (including \DIFdelbegin \DIFdel{Davinci and Curie, }\DIFdelend the current GPT-3.5 Turbo and GPT-4, and potentially newly published ones), how much risk the model will take, or the ``quality'' of the completions.
 For instance, using Davinci models, the cost per run is under \$0.50 for most manuscripts.
+\DIFdelbegin %DIFDELCMD < 
 
-\subsubsection{Implementation details}
+%DIFDELCMD < %%%
+\subsubsection{\DIFdel{Implementation details}}
+%DIFAUXCMD
+\addtocounter{subsubsection}{-1}%DIFAUXCMD
+%DIFDELCMD < 
 
-To run the workflow, the user must specify the branch that will be revised, select the files/sections of the manuscript (optional), specify the language model to use\DIFdelbegin \DIFdel{(}\texttt{\DIFdel{text-davinci-003}} %DIFAUXCMD
-\DIFdel{by default), }\DIFdelend \DIFaddbegin \DIFadd{, provide }\DIFaddend an optional custom prompt (section-specific prompts are used by default), and provide the output branch name.
-For more advanced users, it is also possible to \DIFdelbegin \DIFdel{change }\DIFdelend \DIFaddbegin \DIFadd{modify }\DIFaddend most of the tool's behavior or the language model parameters.
+%DIFDELCMD < %%%
+\DIFdel{To run the workflow, the user must specify the branch that will be revised, select the files/sections of the manuscript (optional), specify the language model to use (}\texttt{\DIFdel{text-davinci-003}} %DIFAUXCMD
+\DIFdel{by default), an optional custom prompt (section-specific prompts are used by default), and provide the output branch name.
+For more advanced users, it is also possible to change most of the tool's behavior or the language model parameters.
+}%DIFDELCMD < 
 
-When the workflow is triggered, it downloads the manuscript by cloning the specified branch.
+%DIFDELCMD < %%%
+\DIFdel{When the workflow is triggered, it downloads the manuscript by cloning the specified branch.
 It revises all of the manuscript files, or only some of them if the user specifies a subset.
 Next, each paragraph in the file is read and submitted to the OpenAI API for revision.
 If the request is successful, the tool will write the revised paragraph in place of the original one, using one sentence per line (which is the recommended format for the input text).
 If the request fails, the tool might try again (up to five times by default) if it is a common error (such as ``server overloaded'') or a model-specific error that requires changing some of its parameters.
-If the error cannot be handled or the maximum number of retries is reached, the original paragraph is written instead\DIFaddbegin \DIFadd{, }\DIFaddend with an HTML comment at the top explaining the cause of the error.
+If the error cannot be handled or the maximum number of retries is reached, the original paragraph is written instead with an HTML comment at the top explaining the cause of the error.
 This allows the user to debug the problem and attempt to fix it if desired.
+}%DIFDELCMD < 
 
-As shown in Figure \ref{fig:ai_revision}b, each API request comprises a prompt (the instructions given to the model) and the paragraph to be revised.
+%DIFDELCMD < %%%
+\DIFdel{As shown in Figure \ref{fig:ai_revision}b, each API request comprises a prompt (the instructions given to the model) and the paragraph to be revised.
 Unless the user specifies a custom prompt, the tool will use a section-specific prompt generator that incorporates the manuscript title and keywords.
 Therefore, both must be accurate to obtain the best revision outcomes.
 The other key component to process a paragraph is its section.
 For instance, the abstract is a set of sentences with no citations, whereas a paragraph from the Introduction section has several references to other scientific papers.
-A paragraph in the Results section has fewer citations but many references to figures or tables \DIFdelbegin \DIFdel{, }\DIFdelend and must provide enough details about the experiments to understand and interpret the outcomes.
+A paragraph in the Results section has fewer citations but many references to figures or tables, and must provide enough }\DIFdelend \DIFaddbegin \DIFadd{More }\DIFaddend details about the \DIFdelbegin \DIFdel{experiments to understand and interpret the outcomes.
 The Methods section is more dependent on the type of paper, but in general, it has to provide technical details and sometimes mathematical formulas and equations.
 Therefore, we designed section-specific prompts, which we found led to the most useful suggestions.
 Figure and table captions, as well as paragraphs that contain only one or two sentences and fewer than sixty words, are not processed and are copied directly to the output file.
+}%DIFDELCMD < 
 
-The section of a paragraph is automatically inferred from the file name using a simple strategy, such as if ``introduction'' or ``methods'' is part of the file name.
+%DIFDELCMD < %%%
+\DIFdel{The section of a paragraph is automatically inferred from the file name using a simple strategy, such as if ``introduction'' or ``methods'' is part of the file name.
 If the tool fails to infer a section from the file, the user can still specify to which section the file belongs.
 The section can be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure \ref{fig:ai_revision}b), or a non-standard one for which a default prompt is used to instruct the model to perform basic revision.
-This includes \emph{``minimizing the use of jargon, ensuring text grammar is correct, fixing spelling errors, and making sure the text has a clear sentence structure.''}
+This includes }\emph{\DIFdel{``minimizing the use of jargon, ensuring text grammar is correct, fixing spelling errors, and making sure the text has a clear sentence structure.''}}
+%DIFAUXCMD
+%DIFDELCMD < 
 
-\subsubsection{Properties of language models}
+%DIFDELCMD < %%%
+\subsubsection{\DIFdel{Properties of language models}}
+%DIFAUXCMD
+\addtocounter{subsubsection}{-1}%DIFAUXCMD
+%DIFDELCMD < 
 
-The Manubot AI Editor uses the \href{https://platform.openai.com/docs/guides/text-generation/chat-completions-api}{Chat Completions API} to process each paragraph.
-We have tested our tool using \DIFdelbegin \DIFdel{both the Davinci and Curie models, including }\DIFdelend \DIFaddbegin \DIFadd{the Davinci (}\DIFaddend \texttt{text-davinci-003}, \DIFdelbegin \texttt{\DIFdel{text-davinci-edit-001}}%DIFAUXCMD
+%DIFDELCMD < %%%
+\DIFdel{The }\DIFdelend \DIFaddbegin \DIFadd{implementation, installation, and usage of the }\DIFaddend Manubot AI Editor \DIFdelbegin \DIFdel{uses the }\href{https://platform.openai.com/docs/guides/text-generation/chat-completions-api}{\DIFdel{Chat Completions API}} %DIFAUXCMD
+\DIFdel{to process each paragraph.
+We have tested our tool using both the Davinci and Curie models, including }\texttt{\DIFdel{text-davinci-003}}%DIFAUXCMD
+\DIFdel{, }\texttt{\DIFdel{text-davinci-edit-001}}%DIFAUXCMD
 \DIFdel{, and }\texttt{\DIFdel{text-curie-001}}%DIFAUXCMD
 \DIFdel{.
-Within the }\DIFdelend \DIFaddbegin \DIFadd{based on the initial }\DIFaddend GPT-3 \DIFdelbegin \DIFdel{family, the Davinci modelsare the most powerful, while the Curie models are less capable but faster and less expensive}\DIFdelend \DIFaddbegin \DIFadd{models) and GPT-3.5 Turbo models (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{)}\DIFaddend .
-All models can be \DIFdelbegin \DIFdel{fine-tuned }\DIFdelend \DIFaddbegin \DIFadd{adjusted }\DIFaddend using different parameters (refer to \href{https://platform.openai.com/docs/api-reference/chat/create}{OpenAI - API Reference}), and the most important ones can be easily adjusted using our tool.
+Within the GPT-3 family, the Davinci models are the most powerful, while the Curie models are less capable but faster and less expensive.
+All models can be fine-tuned using different parameters (refer to }\href{https://platform.openai.com/docs/api-reference/chat/create}{\DIFdel{OpenAI - API Reference}}%DIFAUXCMD
+\DIFdel{), and the most important ones can be easily adjusted using our tool.
+}%DIFDELCMD < 
 
-Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
-This limit includes the size of the prompt and the paragraph, as well as the maximum number of tokens to generate for the completion (parameter \texttt{max\_tokens}).
-\DIFdelbegin \DIFdel{For instance, the context length of Davinci models is 4,000 and for Curie, it is 2,048 (see }\href{https://platform.openai.com/docs/models/gpt-3}{\DIFdel{OpenAI - Models overview}}%DIFAUXCMD
+%DIFDELCMD < %%%
+\DIFdel{Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
+This limit includes the size of the prompt and the paragraph, as well as the maximum number of tokens to generate for the completion (parameter }\texttt{\DIFdel{max\_tokens}}%DIFAUXCMD
 \DIFdel{).
-}\DIFdelend To ensure we never exceed this context length, our AI-assisted revision software processes each paragraph of the manuscript with section-specific prompts, as shown in Figure \ref{fig:ai_revision}b.
+For instance, the context length of Davinci models is 4,000 and for Curie, it is 2,048 (see }\href{https://platform.openai.com/docs/models/gpt-3}{\DIFdel{OpenAI - Models overview}}%DIFAUXCMD
+\DIFdel{).
+To ensure we never exceed this context length, our AI-assisted revision software processes each paragraph of the manuscript with section-specific prompts, as shown in Figure \ref{fig:ai_revision}b.
 This approach allows us to process large manuscripts by breaking them into smaller chunks of text.
-However, since the language model only processes a single paragraph from a section, it can potentially lose \DIFdelbegin \DIFdel{important }\DIFdelend \DIFaddbegin \DIFadd{the }\DIFaddend context needed to produce a better output.
-Nonetheless, we find that the model still produces high-quality revisions (see \protect\hyperlink{sec:results}{Results}).
-Additionally, the maximum number of tokens (parameter \texttt{max\_tokens}) is \DIFdelbegin \DIFdel{set as }\DIFdelend twice the estimated number of tokens in the paragraph (one token approximately represents four characters, see \href{https://platform.openai.com/tokenizer}{OpenAI - Tokenizer}).
+However, since the language model only processes a single paragraph from a section, it can potentially lose important context needed to produce a better output.
+Nonetheless, we find that the model still produces high-quality revisions (see }\DIFdelend \DIFaddbegin \DIFadd{can be found in the }\DIFaddend \protect\DIFdelbegin %DIFDELCMD < \hyperlink{sec:results}{Results}%%%
+\DIFdel{).
+Additionally, the maximum number of tokens (parameter }\texttt{\DIFdel{max\_tokens}}%DIFAUXCMD
+\DIFdel{) is set as twice the estimated number of tokens in the paragraph (one token approximately represents four characters, see }\href{https://platform.openai.com/tokenizer}{\DIFdel{OpenAI - Tokenizer}}%DIFAUXCMD
+\DIFdel{).
 The tool automatically adjusts this parameter and performs the request again if a related error is returned by the API.
-The user can also force the tool to either use a fixed value for \texttt{max\_tokens} for all paragraphs \DIFdelbegin \DIFdel{, }\DIFdelend or change the fraction of maximum tokens based on the estimated paragraph size (two by default).
+The user can also force the tool to either use a fixed value for }\texttt{\DIFdel{max\_tokens}} %DIFAUXCMD
+\DIFdel{for all paragraphs, or change the fraction of maximum tokens based on the estimated paragraph size (two by default).
+}\DIFdelend \DIFaddbegin \hyperlink{sec:supp_mat}{Supplementary Material}\DIFadd{.
+}\DIFaddend 
 
-The language models used are stochastic, meaning they generate a different revision for the same input paragraph each time.
-This behavior can be adjusted by using the ``sampling temperature'' or ``nucleus sampling'' parameters (we use \texttt{temperature=0.5} by default).
+\DIFdelbegin \DIFdel{The language models used are stochastic, meaning they generate a different revision for the same input paragraph each time.
+This behavior can be adjusted by using the ``sampling temperature'' or ``nucleus sampling'' parameters (we use }\texttt{\DIFdel{temperature=0.5}} %DIFAUXCMD
+\DIFdel{by default).
 Although we selected default values that work well across multiple manuscripts, these parameters can be changed to make the model more deterministic.
 The user can also instruct the model to generate several completions and select the one with the highest log probability per token, which can improve the quality of the revision.
-Our implementation generates only one completion (parameter \texttt{best\_of=1}) to avoid potentially high costs for the user.
+Our implementation generates only one completion (parameter }\texttt{\DIFdel{best\_of=1}}%DIFAUXCMD
+\DIFdel{) to avoid potentially high costs for the user.
 Additionally, our workflow allows the user to process either the entire manuscript or individual sections.
 This provides more cost-effective control while focusing on a single piece of text, wherein the user can run the tool several times and pick the preferred revised text.
+}%DIFDELCMD < 
 
-\subsubsection{Installation and use}
+%DIFDELCMD < %%%
+\subsubsection{\DIFdel{Installation and use}}
+%DIFAUXCMD
+\addtocounter{subsubsection}{-1}%DIFAUXCMD
+%DIFDELCMD < 
 
-The Manubot AI Editor is part of the standard Manubot template manuscript, referred to as rootstock, and is available at \url{https://github.com/manubot/rootstock}.
+%DIFDELCMD < %%%
+\DIFdel{The Manubot AI Editor is part of the standard Manubot template manuscript, referred to as rootstock, and is available at }%DIFDELCMD < \url{https://github.com/manubot/rootstock}%%%
+\DIFdel{.
 Users wishing to use the workflow only need to follow the standard procedures to install Manubot.
-The section ``AI-assisted authoring\DIFdelbegin \DIFdel{'',}\DIFdelend \DIFaddbegin \DIFadd{,'' }\DIFaddend found in the file \texttt{USAGE.md} of the rootstock repository, explains how to enable the tool.
-Afterward, the workflow (named \texttt{ai-revision}) will be available and ready to use under the Actions tab of the user's manuscript repository.
+The section ``AI-assisted authoring'', found in the file }\texttt{\DIFdel{USAGE.md}} %DIFAUXCMD
+\DIFdel{of the rootstock repository, explains how to enable the tool.
+Afterward, the workflow (named }\texttt{\DIFdel{ai-revision}}%DIFAUXCMD
+\DIFdel{) will be available and ready to use under the Actions tab of the user's manuscript repository.
+}%DIFDELCMD < 
 
-\subsection{Results}
+%DIFDELCMD < %%%
+\DIFdelend \subsection{Results}
 
 \subsubsection{Evaluation setup}
 
-Assessing the performance of text generation tasks is challenging, and this is especially true for automatic revisions of scientific content.
+\DIFdelbegin \DIFdel{Assessing the performance of text generation tasks is challenging, and this is especially true for automatic revisions of scientific content.
 In this context, we need to make sure the revision does not change the original meaning or introduce incorrect or misleading information.
 For this reason, our approach emphasizes human assessments of the revisions to mitigate these issues, and we followed the same procedure in evaluating our tool.
-We used three manuscripts of our own authorship (\DIFaddbegin \DIFadd{CCC, PhenoPLIER, and Manubot-AI; }\DIFaddend see below), which allowed us to \DIFdelbegin \DIFdel{more objectively }\DIFdelend assess changes in the original meaning and whether revisions retained important details.
-During the prompt engineering phase (see below), we also used a unit testing framework to ensure that the revisions produced by our prompts met a minimum set of quality measures.
-\DIFaddbegin \DIFadd{Finally, by incorporating two external manuscripts (BioChatter and Epistasis), we used the LLM-as-a-Judge technique }{[}\protect\hyperlink{ref-LhEwBH2w}{14}{]}\DIFadd{, where we asked an LLM to evaluate the quality of the revisions produced by another LLM.
-}\DIFaddend 
+We used three manuscripts of our own authorship }\DIFdelend \DIFaddbegin \DIFadd{We used five different manuscript for the evaluation of our AI-based revision workflow }\DIFaddend (see below), \DIFdelbegin \DIFdel{which allowed us to more objectively assess changes in the original meaning and whether revisions retained important details.
+During }\DIFdelend \DIFaddbegin \DIFadd{and during }\DIFaddend the prompt engineering phase (see below), we also used a unit testing framework to ensure that the revisions produced by our prompts met a minimum set of quality measures \DIFaddbegin \DIFadd{(see Supplementary Material)}\DIFaddend .
 
-\paragraph{Language models}
+\DIFdelbegin \paragraph{\DIFdel{Language models}}
+%DIFAUXCMD
+\addtocounter{paragraph}{-1}%DIFAUXCMD
+%DIFDELCMD < 
 
-We evaluated our AI-assisted revision workflow using \DIFdelbegin \DIFdel{three GPT-3 }\DIFdelend \DIFaddbegin \DIFadd{two }\DIFaddend models from OpenAI: \DIFaddbegin \DIFadd{Davinci (}\DIFaddend \texttt{text-davinci-003}\DIFdelbegin \DIFdel{, }\texttt{\DIFdel{text-davinci-edit-001}}%DIFAUXCMD
+%DIFDELCMD < %%%
+\DIFdelend We evaluated our AI-assisted revision workflow using \DIFdelbegin \DIFdel{three GPT-3 }\DIFdelend \DIFaddbegin \DIFadd{two }\DIFaddend models from OpenAI: \DIFaddbegin \DIFadd{Davinci (}\DIFaddend \texttt{text-davinci-003}\DIFdelbegin \DIFdel{, }\texttt{\DIFdel{text-davinci-edit-001}}%DIFAUXCMD
 \DIFdel{, and }\DIFdelend \DIFaddbegin \DIFadd{) and GPT-3.5 Turbo (}\DIFaddend \texttt{\DIFdelbegin \DIFdel{text-curie-001}\DIFdelend \DIFaddbegin \DIFadd{gpt-3.5-turbo}\DIFaddend }\DIFaddbegin \DIFadd{)}\DIFaddend .
 The first \DIFdelbegin \DIFdel{two are based on the most capable }\DIFdelend \DIFaddbegin \DIFadd{one is based on }\DIFaddend GPT-3 Davinci models \DIFdelbegin \DIFdel{(see }\href{https://platform.openai.com/docs/models/gpt-3}{\DIFdel{OpenAI - GPT-3 models}}%DIFAUXCMD
 \DIFdel{).
@@ -495,60 +545,67 @@ When manually assessing the quality of the revisions, we considered whether the 
 4) introduced new and incorrect information, and
 5) preserve the correct Markdown format (e.g., citations, equations).
 
-\DIFaddbegin \paragraph{\DIFadd{Evaluation using an LLM as a judge}}
+\paragraph{\DIFdelbegin \DIFdel{Prompt engineering}\DIFdelend \DIFaddbegin \DIFadd{Evaluation using an LLM as a judge}\DIFaddend }
 
-\DIFadd{For this evaluation, we ran our workflow on manuscripts CCC, PhenoPLIER, BioChatter, and Epistasis using the GPT-3.5 Turbo model (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{).
-We then inspected each PR and manually matched all pairs of original and revised paragraphs, across the abstract, introduction, methods, results, and supplementary material sections.
-This procedure generated 31 paragraph pairs for CCC, 63 for PhenoPLIER, 37 for BioChatter, and 63 for Epistasis.
-Using the LLM-as-a-Judge method }{[}\protect\hyperlink{ref-LhEwBH2w}{14}{]}\DIFadd{, we evaluated the quality of the revisions using both GPT-3.5 Turbo (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{) and GPT-4 Turbo (}\texttt{\DIFadd{gpt-4-turbo-preview}}\DIFadd{) as judges.
-The judge is asked to decide which of the two paragraphs in each pair is better or if they are equally good (tie).
-For this, we used prompt chaining, where the judge first evaluates the quality of each paragraph independently by writing a list with positive and negative aspects in the following areas: 1) clear sentence structure, 2) ease of understanding, 3) grammatical correctness, 4) absence of spelling errors.
-Then, the judge was asked to be as objective as possible and decide if one of the paragraphs is clearly better than the other or if they are similar in quality, while also providing a rationale for the decision.
-We also accounted for the case of position bias }{[}\protect\hyperlink{ref-LhEwBH2w}{14}{]} \DIFadd{(i.e., the order in which the paragraphs were presented could influence the decision) by swapping the order of the paragraphs.
-Each assessment was repeated ten times.
-The full prompt chain can be seen in Supplementary File 4, which includes an example of the output in each step generated by GPT-4 Turbo as a judge.
-}
-
-\DIFaddend \paragraph{Prompt engineering}
-
-We extensively tested our tool, including prompts, using a unit testing framework.
+\DIFdelbegin \DIFdel{We extensively tested our tool, including prompts, using a unit testing framework.
 Our unit tests cover the general processing of the manuscript content (such as splitting by paragraphs), the generation of custom prompts using the manuscript metadata, and writing back the text suggestions (ensuring that the original style is preserved as much as possible to minimize the number of changes).
 More importantly, they also cover some basic quality measures of the revised text.
 This latter set of unit tests was used during our prompt engineering work, and they ensure that section-specific prompts yield revisions with a minimum set of quality measures.
-For instance, we wrote unit tests to check that revised Abstracts consist of a single paragraph, start with a capital letter, end with a period, and that no citations to other articles are included.
+For instance, we wrote unit tests to check that revised Abstracts consist of a single paragraph , start with a capital letter, end with a period, and that no citations to other articles are included.
 For the Introduction section, we check that a certain percentage of citations are kept, which also attempts to give the model some flexibility to remove text deemed unnecessary.
-We found that adding the instruction \emph{``most of the citations to other academic papers are kept''} to the prompt was enough to achieve this with the most capable model.
-We also wrote unit tests to ensure the models returned citations in the correct Manubot/Markdown format (e.g., \texttt{{[}@doi:...{]}} or \texttt{{[}@arxiv:...{]}}), and found that no changes to the prompt were needed for this (i.e., the model automatically detected the correct format in most cases).
-For the Results section, we included tests with short inline formulas in LaTeX (e.g., \texttt{\$\textbackslash{}gamma\_l\$}) and references to figures, tables, equations, or other sections (e.g., \texttt{Figure\ @id} or \texttt{Equation\ (@id)}) and found that, in the majority of cases, the most capable model was able to correctly keep them with the right format.
+We found that adding the instruction }\emph{\DIFdel{``most of the citations to other academic papers are kept''}} %DIFAUXCMD
+\DIFdel{to the prompt was enough to achieve this with the most capable model.
+We also wrote unit tests to ensure the models returned citations in the correct Manubot/Markdown format (e.g., }%DIFDELCMD < \texttt{%%%
+\DIFdelend \DIFaddbegin \DIFadd{For this evaluation, we ran our workflow on manuscripts CCC, PhenoPLIER, BioChatter, and Epistasis using the GPT-3.5 Turbo model (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{).
+We then inspected each PR and manually matched all pairs of original and revised paragraphs, across the abstract, introduction, methods, results, and supplementary material sections.
+This procedure generated 31 paragraph pairs for CCC, 63 for PhenoPLIER, 37 for BioChatter, and 63 for Epistasis.
+Using the LLM-as-a-Judge method }\DIFaddend {[}\DIFdelbegin \DIFdel{@doi:}\DIFdelend \DIFaddbegin \protect\hyperlink{ref-LhEwBH2w}{14}{]}\DIFadd{, we evaluated the quality of the revisions using both GPT-3.5 Turbo (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{) and GPT-4 Turbo (}\texttt{\DIFadd{gpt-4-turbo-preview}}\DIFadd{) as judges.
+The judge is asked to decide which of the two paragraphs in each pair is better or if they are equally good (tie)}\DIFaddend .
+\DIFdelbegin \DIFdel{..}\DIFdelend \DIFaddbegin \DIFadd{For this, we used prompt chaining, where the judge first evaluates the quality of each paragraph independently by writing a list with positive and negative aspects in the following areas: 1) clear sentence structure, 2) ease of understanding, 3) grammatical correctness, 4) absence of spelling errors.
+Then, the judge was asked to be as objective as possible and decide if one of the paragraphs is clearly better than the other or if they are similar in quality, while also providing a rationale for the decision.
+We also accounted for the case of position bias }\DIFaddend {\DIFdelbegin %DIFDELCMD < ]%%%
+\DIFdelend \DIFaddbegin [\DIFaddend }\DIFdelbegin %DIFDELCMD < \MBLOCKRIGHTBRACE %%%
+\DIFdel{or }\texttt{%DIFDELCMD < {[}%%%
+\DIFdel{@arxiv:...}%DIFDELCMD < {]}%%%
+}%DIFAUXCMD
+\DIFdel{) , and found that no changes to the prompt were needed for this (i.e., the model automatically detected the correct format in most cases) .
+For the Results section, we included tests with short inline formulas in LaTeX (e.g., }\texttt{\DIFdel{\$\textbackslash{}gamma\_l\$}}%DIFAUXCMD
+\DIFdel{) and references to figures, tables, equations, or other sections (e.g., }\texttt{\DIFdel{Figure\ @id}} %DIFAUXCMD
+\DIFdel{or }\texttt{\DIFdel{Equation\ (@id)}}%DIFAUXCMD
+\DIFdel{)and found that, in the majority of cases, the most capable model was able to correctly keep them with the right format.
 For the Methods section, in addition to the aforementioned tests, we also evaluated the ability of models to use the correct format for the definition of numbered, multiline equations, and found that the most capable model succeeded in most cases.
-For this particular case, we needed to modify our prompt to explicitly mention the correct format of multiline equations (see prompt for Methods in Figure \ref{fig:ai_revision}).
+For this particular case, we needed to modify our prompt to explicitly mention the correct format of multiline equations (see prompt for Methods in Figure \ref{fig:ai_revision}) .
+}%DIFDELCMD < 
 
-We also included tests where the model is expected to fail in generating a revision (for instance, when the input paragraph is too long for the model's context length).
+%DIFDELCMD < %%%
+\DIFdel{We also included tests where the model is expected to fail in generating a revision (for instance, when the input paragraph is too long for the model's context length) .
 In these cases, we ensure that the tool returns a proper error message.
 We ran our unit tests across all models under evaluation.
+}%DIFDELCMD < 
 
-\subsubsection{\DIFdelbegin \DIFdel{General assessment of language models}\DIFdelend \DIFaddbegin \DIFadd{Human assessments across different sections}\DIFaddend }
+%DIFDELCMD < %%%
+\subsubsection{\DIFdel{General assessment of language models}}
+%DIFAUXCMD
+\addtocounter{subsubsection}{-1}%DIFAUXCMD
+%DIFDELCMD < 
 
-\DIFdelbegin \DIFdel{Our initial human assessments across the three manuscripts and unit tests revealed that, although faster and less expensive, the Curie model was unable to produce acceptable revisions for any of the manuscripts.
+%DIFDELCMD < %%%
+\DIFdel{Our initial human assessments across the three manuscripts and unit tests revealed that, although faster and less expensive, the Curie model was unable to produce acceptable revisions for any of the manuscripts.
 The PRs show that most of its suggestions were not coherent with the original text in any of the manuscript sections.
-The model clearly could not understand the revision instructions; in most cases, it did not produce a meaningful revision, replaced the text with the instructions, added the title of the manuscript at the beginning of the paragraph, consistently failed to keep citations to other articles (especially in the Introduction section), or added content that was not present in the original text.
+The model clearly could not understand the revision instructions; in most cases, it did not produce a meaningful revision, replaced the text with the instructions, added the title of the manuscript at the beginning of the paragraph, consistently failed to keep citations to other articles (especially in the Introduction section), or added content that was not present in }\DIFdelend \DIFaddbegin \protect\hyperlink{ref-LhEwBH2w}{14}{]} \DIFadd{(i.e., the order in which the paragraphs were presented could influence the decision) by swapping the order of }\DIFaddend the \DIFdelbegin \DIFdel{original text.
 In addition, for similar reasons, we found that the quality of the revisions produced by the }\texttt{\DIFdel{text-davinci-edit-001}} %DIFAUXCMD
 \DIFdel{model (edits endpoint) was inferior to those produced by the }\texttt{\DIFdel{text-davinci-003}} %DIFAUXCMD
 \DIFdel{model (completion endpoint).
 This might be because, at the time of testing, the edits endpoint was still in beta.
 The }\texttt{\DIFdel{text-davinci-003}} %DIFAUXCMD
 \DIFdel{model produced the best results for all manuscripts and across the different sections, leading us to focus on the }\texttt{\DIFdel{text-davinci-003}} %DIFAUXCMD
-\DIFdel{model for the rest of the evaluation below.
-}%DIFDELCMD < 
+\DIFdel{model for the rest of the evaluation below}\DIFdelend \DIFaddbegin \DIFadd{paragraphs.
+Each assessment was repeated ten times.
+The full prompt chain can be seen in Supplementary File 4, which includes an example of the output in each step generated by GPT-4 Turbo as a judge}\DIFaddend .
 
-%DIFDELCMD < %%%
-\subsubsection{\DIFdel{Revision of different sections}}
-%DIFAUXCMD
-\addtocounter{subsubsection}{-1}%DIFAUXCMD
-%DIFDELCMD < 
+\subsubsection{\DIFdelbegin \DIFdel{Revision of }\DIFdelend \DIFaddbegin \DIFadd{Human assessments across }\DIFaddend different sections}
 
-%DIFDELCMD < %%%
-\DIFdelend Following our criteria \DIFaddbegin \DIFadd{for human assessments }\DIFaddend (see above), we inspected the PRs generated by the AI-based workflow and \DIFdelbegin \DIFdel{report }\DIFdelend \DIFaddbegin \DIFadd{reported }\DIFaddend on our assessment of the changes suggested by the tool across different sections of the manuscripts.
+Following our criteria \DIFaddbegin \DIFadd{for human assessments }\DIFaddend (see above), we inspected the PRs generated by the AI-based workflow and \DIFdelbegin \DIFdel{report }\DIFdelend \DIFaddbegin \DIFadd{reported }\DIFaddend on our assessment of the changes suggested by the tool across different sections of the manuscripts.
 The reader can access the PRs in the manuscripts' GitHub repositories (Table \ref{tbl:manuscripts}) and also included as diff files in Supplementary File 1 (CCC), 2 (PhenoPLIER)\DIFaddbegin \DIFadd{, }\DIFaddend and 3 (Manubot-AI).
 
 Below, we present the differences between the original text and the revisions \DIFaddbegin \DIFadd{made }\DIFaddend by the tool in a \texttt{diff} format (obtained from GitHub).
@@ -630,7 +687,7 @@ The model also produced high-quality revisions for several other paragraphs that
 However, other paragraphs in CCC required extensive changes before they could be incorporated into the manuscript.
 For instance, the model generated revised text for certain paragraphs that was more concise, direct, and clear.
 However, this often resulted in the removal of important details and occasionally altered the intended meaning of sentences.
-To address this issue, we could accept the simplified sentence structure proposed by the model, but reintroduce the missing details for clarity and completeness.
+To address this issue, we could accept the simplified sentence structure proposed by the model \DIFdelbegin \DIFdel{, }\DIFdelend but reintroduce the missing details for clarity and completeness.
 
 % \begin{figure}
 % \hypertarget{fig:results:phenoplier}{%
@@ -711,8 +768,9 @@ These were presented in the following paragraphs, but since the model had not ye
 
 When revising the Methods sections of Manubot-AI (this manuscript), the model, in some cases, added novel sentences containing incorrect information.
 For example, for one paragraph, it included a formula (using the correct Manubot format) presumably to predict the cost of a revision run.
-In another paragraph (Supplementary Figure 2), it introduced new sentences stating that the model was \emph{``trained on a corpus of scientific papers from the same field as the manuscript''} and that its suggested revisions resulted in a \emph{``modified version of the manuscript that is ready for submission''}.
-Although these are important future directions, neither statement accurately describes the present work.
+In another paragraph (Supplementary Figure 2), it introduced new sentences stating that the model was \emph{``trained on a corpus of scientific papers from the same field as the manuscript''} and that its suggested revisions resulted in a \emph{``modified version of the manuscript that is ready for submission\DIFaddbegin \DIFadd{.}\DIFaddend ''}
+\DIFdelbegin \DIFdel{.
+}\DIFdelend Although these are important future directions, neither statement accurately describes the present work.
 
 \DIFaddbegin \subsubsection{\DIFadd{Automated assessments}}
 
@@ -996,5 +1054,96 @@ M. Pividori and C.S. Greene revised the manuscript and provided critical feedbac
 \CSLRightInline{\textbf{ICML 2023} \url{https://icml.cc/Conferences/2023/llm-policy}}
 
 \end{CSLReferences}
+\DIFaddbegin 
+
+\clearpage
+\setcounter{page}{1}
+\subsection{\DIFadd{Supplementary Material}}
+
+\subsubsection{\DIFadd{Installation and use}}
+
+\DIFadd{The Manubot AI Editor is part of the standard Manubot template manuscript, referred to as rootstock, and is available at }\url{https://github.com/manubot/rootstock}\DIFadd{.
+Users wishing to use the workflow only need to follow the standard procedures to install Manubot.
+The section ``AI-assisted authoring,'' found in the file }\texttt{\DIFadd{USAGE.md}} \DIFadd{of the rootstock repository, explains how to enable the tool.
+Afterward, the workflow (named }\texttt{\DIFadd{ai-revision}}\DIFadd{) will be available and ready to use under the Actions tab of the user's manuscript repository.
+}
+
+\subsubsection{\DIFadd{Implementation details}}
+
+\DIFadd{To run the workflow, the user must specify the branch that will be revised, select the files/sections of the manuscript (optional), specify the language model to use, provide an optional custom prompt (section-specific prompts are used by default), and provide the output branch name.
+For more advanced users, it is also possible to modify most of the tool's behavior or the language model parameters.
+}
+
+\DIFadd{When the workflow is triggered, it downloads the manuscript by cloning the specified branch.
+It revises all of the manuscript files, or only some of them if the user specifies a subset.
+Next, each paragraph in the file is read and submitted to the OpenAI API for revision.
+If the request is successful, the tool will write the revised paragraph in place of the original one, using one sentence per line (which is the recommended format for the input text).
+If the request fails, the tool might try again (up to five times by default) if it is a common error (such as ``server overloaded'') or a model-specific error that requires changing some of its parameters.
+If the error cannot be handled or the maximum number of retries is reached, the original paragraph is written instead, with an HTML comment at the top explaining the cause of the error.
+This allows the user to debug the problem and attempt to fix it if desired.
+}
+
+\DIFadd{As shown in Figure \ref{fig:ai_revision}b, each API request comprises a prompt (the instructions given to the model) and the paragraph to be revised.
+Unless the user specifies a custom prompt, the tool will use a section-specific prompt generator that incorporates the manuscript title and keywords.
+Therefore, both must be accurate to obtain the best revision outcomes.
+The other key component to process a paragraph is its section.
+For instance, the abstract is a set of sentences with no citations, whereas a paragraph from the Introduction section has several references to other scientific papers.
+A paragraph in the Results section has fewer citations but many references to figures or tables and must provide enough details about the experiments to understand and interpret the outcomes.
+The Methods section is more dependent on the type of paper, but in general, it has to provide technical details and sometimes mathematical formulas and equations.
+Therefore, we designed section-specific prompts, which we found led to the most useful suggestions.
+Figure and table captions, as well as paragraphs that contain only one or two sentences and fewer than sixty words, are not processed and are copied directly to the output file.
+}
+
+\DIFadd{The section of a paragraph is automatically inferred from the file name using a simple strategy, such as if ``introduction'' or ``methods'' is part of the file name.
+If the tool fails to infer a section from the file, the user can still specify to which section the file belongs.
+The section can be a standard one (abstract, introduction, results, methods, or discussion) for which a specific prompt is used (Figure \ref{fig:ai_revision}b), or a non-standard one for which a default prompt is used to instruct the model to perform basic revision.
+This includes }\emph{\DIFadd{``minimizing the use of jargon, ensuring text grammar is correct, fixing spelling errors, and making sure the text has a clear sentence structure.''}}
+
+\subsubsection{\DIFadd{Properties of language models}}
+
+\DIFadd{The Manubot AI Editor uses the }\href{https://platform.openai.com/docs/guides/text-generation/chat-completions-api}{\DIFadd{Chat Completions API}} \DIFadd{to process each paragraph.
+We have tested our tool using the Davinci (}\texttt{\DIFadd{text-davinci-003}}\DIFadd{, based on the initial GPT-3 models) and GPT-3.5 Turbo models (}\texttt{\DIFadd{gpt-3.5-turbo}}\DIFadd{).
+All models can be adjusted using different parameters (refer to }\href{https://platform.openai.com/docs/api-reference/chat/create}{\DIFadd{OpenAI - API Reference}}\DIFadd{), and the most important ones can be easily adjusted using our tool.
+}
+
+\DIFadd{Language models for text completion have a context length that indicates the limit of tokens they can process (tokens are common character sequences in text).
+This limit includes the size of the prompt and the paragraph, as well as the maximum number of tokens to generate for the completion (parameter }\texttt{\DIFadd{max\_tokens}}\DIFadd{).
+To ensure we never exceed this context length, our AI-assisted revision software processes each paragraph of the manuscript with section-specific prompts, as shown in Figure \ref{fig:ai_revision}b.
+This approach allows us to process large manuscripts by breaking them into smaller chunks of text.
+However, since the language model only processes a single paragraph from a section, it can potentially lose the context needed to produce a better output.
+Nonetheless, we find that the model still produces high-quality revisions (see }\protect\hyperlink{sec:results}{Results}\DIFadd{).
+Additionally, the maximum number of tokens (parameter }\texttt{\DIFadd{max\_tokens}}\DIFadd{) is twice the estimated number of tokens in the paragraph (one token approximately represents four characters, see }\href{https://platform.openai.com/tokenizer}{\DIFadd{OpenAI - Tokenizer}}\DIFadd{).
+The tool automatically adjusts this parameter and performs the request again if a related error is returned by the API.
+The user can also force the tool to either use a fixed value for }\texttt{\DIFadd{max\_tokens}} \DIFadd{for all paragraphs or change the fraction of maximum tokens based on the estimated paragraph size (two by default).
+}
+
+\DIFadd{The language models used are stochastic, meaning they generate a different revision for the same input paragraph each time.
+This behavior can be adjusted by using the ``sampling temperature'' or ``nucleus sampling'' parameters (we use }\texttt{\DIFadd{temperature=0.5}} \DIFadd{by default).
+Although we selected default values that work well across multiple manuscripts, these parameters can be changed to make the model more deterministic.
+The user can also instruct the model to generate several completions and select the one with the highest log probability per token, which can improve the quality of the revision.
+Our implementation generates only one completion (parameter }\texttt{\DIFadd{best\_of=1}}\DIFadd{) to avoid potentially high costs for the user.
+Additionally, our workflow allows the user to process either the entire manuscript or individual sections.
+This provides more cost-effective control while focusing on a single piece of text, wherein the user can run the tool several times and pick the preferred revised text.
+}
+
+\subsubsection{\DIFadd{Prompt engineering}}
+
+\DIFadd{We extensively tested our tool, including prompts, using a unit testing framework.
+Our unit tests cover the general processing of the manuscript content (such as splitting by paragraphs), the generation of custom prompts using the manuscript metadata, and writing back the text suggestions (ensuring that the original style is preserved as much as possible to minimize the number of changes).
+More importantly, they also cover some basic quality measures of the revised text.
+This latter set of unit tests was used during our prompt engineering work, and they ensure that section-specific prompts yield revisions with a minimum set of quality measures.
+For instance, we wrote unit tests to check that revised Abstracts consist of a single paragraph, start with a capital letter, end with a period, and that no citations to other articles are included.
+For the Introduction section, we check that a certain percentage of citations are kept, which also attempts to give the model some flexibility to remove text deemed unnecessary.
+We found that adding the instruction }\emph{\DIFadd{``most of the citations to other academic papers are kept''}} \DIFadd{to the prompt was enough to achieve this with the most capable model.
+We also wrote unit tests to ensure the models returned citations in the correct Manubot/Markdown format (e.g., }\texttt{{[}\DIFadd{@doi:...}{]}} \DIFadd{or }\texttt{{[}\DIFadd{@arxiv:...}{]}}\DIFadd{), and found that no changes to the prompt were needed for this (i.e., the model automatically detected the correct format in most cases).
+For the Results section, we included tests with short inline formulas in LaTeX (e.g., }\texttt{\DIFadd{\$\textbackslash{}gamma\_l\$}}\DIFadd{) and references to figures, tables, equations, or other sections (e.g., }\texttt{\DIFadd{Figure\ @id}} \DIFadd{or }\texttt{\DIFadd{Equation\ (@id)}}\DIFadd{) and found that, in the majority of cases, the most capable model was able to correctly keep them with the right format.
+For the Methods section, in addition to the aforementioned tests, we also evaluated the ability of models to use the correct format for the definition of numbered, multiline equations, and found that the most capable model succeeded in most cases.
+For this particular case, we needed to modify our prompt to explicitly mention the correct format of multiline equations (see prompt for Methods in Figure \ref{fig:ai_revision}).
+}
+
+\DIFadd{We also included tests where the model is expected to fail in generating a revision (for instance, when the input paragraph is too long for the model's context length).
+In these cases, we ensure that the tool returns a proper error message.
+We ran our unit tests across all models under evaluation.
+}\DIFaddend 
 
 \end{document}
