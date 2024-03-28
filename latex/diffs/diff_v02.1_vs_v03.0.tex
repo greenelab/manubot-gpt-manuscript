@@ -1,7 +1,7 @@
 % Options for packages loaded elsewhere
 %DIF LATEXDIFF DIFFERENCE FILE
-%DIF DEL diffs/v02.1.tex   Tue Mar 26 14:20:48 2024
-%DIF ADD diffs/v03.0.tex   Tue Mar 26 14:20:48 2024
+%DIF DEL diffs/v02.1.tex   Thu Mar 28 10:17:58 2024
+%DIF ADD diffs/v03.0.tex   Thu Mar 28 10:17:58 2024
 \PassOptionsToPackage{unicode}{hyperref}
 \PassOptionsToPackage{hyphens}{url}
 %
@@ -55,11 +55,7 @@
 \makeatother
 % Scale images if necessary, so that they will not overflow the page
 % margins by default, and it is still possible to overwrite the defaults
-%DIF 55c55
-%DIF < % using explicit options in \includegraphics[width, height, ...]{}
-%DIF -------
-% using explicit options in \includesvg[width, height, ...]{} %DIF > 
-%DIF -------
+% using explicit options in \includegraphics[width, height, ...]{}
 \setkeys{Gin}{width=\maxwidth,height=\maxheight,keepaspectratio}
 % Set default figure placement to htbp
 \makeatletter
@@ -222,7 +218,7 @@
   · \includesvg[width=0.16667in,height=0.16667in]{images/mastodon.svg}
   \href{https://genomic.social/@miltondp}{@miltondp@genomic.social} \\
   Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Genetics, Perelman School of Medicine, University of Pennsylvania, Philadelphia, PA 19104, USA
-  · Funded by The National Human Genome Research Institute, K99/R00 HG011898; The Alfred P. Sloan Foundation, G-2023-20989; The Eunice Kennedy Shriver National Institute of Child Health and Human Development, R01 HD109765
+  · Funded by The National Human Genome Research Institute, K99/R00 HG011898; The Alfred P. Sloan Foundation, G-2023-20989; The \DIFaddbegin \DIFadd{Chan Zuckerberg Initiative; The }\DIFaddend Eunice Kennedy Shriver National Institute of Child Health and Human Development, R01 HD109765
 \item
   \textbf{Casey S. Greene, Ph.D.}
   \textsuperscript{\protect\hyperlink{correspondence}{\Letter}}
@@ -232,7 +228,7 @@
   \href{https://github.com/cgreene}{cgreene}
   · \includesvg[width=0.16667in,height=0.16667in]{images/twitter.svg}
   \href{https://twitter.com/GreeneScientist}{GreeneScientist}
-  · \includesvg[width=0.16667in,height=0.16667in]{images/mastodon.svg}
+  · \DIFaddbegin \\ \DIFaddend \includesvg[width=0.16667in,height=0.16667in]{images/mastodon.svg}
   \href{https://genomic.social/@greenescientist}{@greenescientist@genomic.social} \\
   Center for Health AI, University of Colorado School of Medicine, Aurora, CO 80045, USA; Department of Biomedical Informatics, University of Colorado School of Medicine, Aurora, CO 80045, USA
   · Funded by The Gordon and Betty Moore Foundation, GBMF4552; The National Human Genome Research Institute, R01 HG010067; The Eunice Kennedy Shriver National Institute of Child Health and Human Development, R01 HD109765
@@ -868,7 +864,8 @@ This work was supported by:
 The National Human Genome Research Institute grant numbers K99/R00 HG011898 and R01 HG010067;
 The Eunice Kennedy Shriver National Institute of Child Health and Human Development grant number R01 HD109765;
 The Alfred P. Sloan Foundation grant number G-2023-20989;
-The Gordon and Betty Moore Foundation grant number GBMF4552.
+The \DIFaddbegin \DIFadd{Chan Zuckerberg Initiative;
+The }\DIFaddend Gordon and Betty Moore Foundation grant number GBMF4552.
 
 \subsection{Competing interests statement}
 
