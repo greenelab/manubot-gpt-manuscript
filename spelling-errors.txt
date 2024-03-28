@@ -1,3 +1,6 @@
+BioChatter
+biocypher
+biomedicine
 ccc
 centric
 cgreene
@@ -8,9 +11,10 @@ CRISPR
 datasets
 Davinci
 DOCX
-Evals
+epistasis
 GBMF
 genomic
+germline
 GPT
 greenelab
 GreeneScientist
@@ -21,19 +25,20 @@ ICML
 LLM
 LLMs
 LV
-manubotai
+ManubotAI
 Meta’s
 miltondp
 multiline
 MultiXcan
+mutator
 OpenAI
 OpenAI’s
 PhenoPLIER
 Pividori
-Pre
 PrediXcan
 preprint
 PRs
+quinlan
 repurposing
 Shriver
 Tokenizer
@@ -41,3 +46,4 @@ transcriptional
 transcriptomic
 transcriptomics
 univariate
+Zuckerberg
