@@ -11,7 +11,7 @@ CRISPR
 datasets
 Davinci
 DOCX
-Epistasis
+epistasis
 GBMF
 genomic
 germline
@@ -33,7 +33,7 @@ MultiXcan
 mutator
 OpenAI
 OpenAI’s
-PhenoPLIER
+phenoplier
 Pividori
 PrediXcan
 preprint
