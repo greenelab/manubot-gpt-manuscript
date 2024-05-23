@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/greenelab/manubot-gpt-manuscript/tree/gh-pages) branch hosts the contents of this directory at <https://greenelab.github.io/manubot-gpt-manuscript/>.
-The permalink for this webpage version is <https://greenelab.github.io/manubot-gpt-manuscript/v/d0aabcf60df2b02925ff2d8b8422dd9747662f83/>.
+The permalink for this webpage version is <https://greenelab.github.io/manubot-gpt-manuscript/v/3df517f3c6d4b6c7e6cc33eb285f66bec5d4432b/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://greenelab.github.io/manubot-gpt-manuscript/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`d0aabcf60df2b02925ff2d8b8422dd9747662f83`](https://github.com/greenelab/manubot-gpt-manuscript/commit/d0aabcf60df2b02925ff2d8b8422dd9747662f83).
+[`3df517f3c6d4b6c7e6cc33eb285f66bec5d4432b`](https://github.com/greenelab/manubot-gpt-manuscript/commit/3df517f3c6d4b6c7e6cc33eb285f66bec5d4432b).
