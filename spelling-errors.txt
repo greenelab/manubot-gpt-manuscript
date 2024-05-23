@@ -1,4 +1,4 @@
-BioChatter
+biochatter
 biocypher
 biomedicine
 ccc
@@ -11,7 +11,7 @@ CRISPR
 datasets
 Davinci
 DOCX
-epistasis
+Epistasis
 GBMF
 genomic
 germline
@@ -25,7 +25,7 @@ ICML
 LLM
 LLMs
 LV
-ManubotAI
+manubotai
 Meta’s
 miltondp
 multiline

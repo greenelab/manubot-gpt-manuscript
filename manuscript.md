@@ -7,7 +7,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2024-03-28'
+date-meta: '2024-05-23'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -22,11 +22,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2024-03-28" />
-  <meta name="citation_publication_date" content="2024-03-28" />
-  <meta property="article:published_time" content="2024-03-28" />
-  <meta name="dc.modified" content="2024-03-28T17:25:05+00:00" />
-  <meta property="article:modified_time" content="2024-03-28T17:25:05+00:00" />
+  <meta name="dc.date" content="2024-05-23" />
+  <meta name="citation_publication_date" content="2024-05-23" />
+  <meta property="article:published_time" content="2024-05-23" />
+  <meta name="dc.modified" content="2024-05-23T04:39:16+00:00" />
+  <meta property="article:modified_time" content="2024-05-23T04:39:16+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/017cd9f3aae1d65c65add9428ba87d2799e05fdc/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/017cd9f3aae1d65c65add9428ba87d2799e05fdc/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/017cd9f3aae1d65c65add9428ba87d2799e05fdc/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/d0aabcf60df2b02925ff2d8b8422dd9747662f83/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/d0aabcf60df2b02925ff2d8b8422dd9747662f83/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/d0aabcf60df2b02925ff2d8b8422dd9747662f83/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -74,10 +74,10 @@ _A DOI-citable version of this manuscript is available at <https://doi.org/10.11
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/017cd9f3aae1d65c65add9428ba87d2799e05fdc/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/d0aabcf60df2b02925ff2d8b8422dd9747662f83/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@017cd9f](https://github.com/greenelab/manubot-gpt-manuscript/tree/017cd9f3aae1d65c65add9428ba87d2799e05fdc)
-on March 28, 2024.
+from [greenelab/manubot-gpt-manuscript@d0aabcf](https://github.com/greenelab/manubot-gpt-manuscript/tree/d0aabcf60df2b02925ff2d8b8422dd9747662f83)
+on May 23, 2024.
 </em></small>
 
 
@@ -426,11 +426,12 @@ Although these are important future directions, neither statement accurately des
 
 ![
 **Automated assessment of preference over revised paragraphs.**
-A revision score ($y$-axis) close to 1 indicates that the LLM acting as a judge preferred the revised paragraph over the original one, while a score of -1 indicates the opposite; a zero value indicates either a tie or position bias.
+A revision score ($y$-axis) close to 1 indicates that the LLM acting as a judge preferred the revised paragraph over the original one, while a score of -1 indicates the opposite; a score close to zero indicates either a tie or position bias.
 Each point represents the average score of paragraphs from a section in one of the four manuscripts: CCC, PhenoPLIER, BioChatter and Epistasis.
 ](images/llm_judge.svg "Automated assessments using LLM-as-a-Judge"){#fig:llm_judge width="90%"}
 
 The automatic assessment of paragraphs from different sections across four manuscripts is depicted in Figure @fig:llm_judge.
+A revision score above zero indicates that the LLM acting as a judge preferred the revised paragraph over the original one on average, while a score below zero indicates the opposite.
 It can be seen that the two models used as judges, GPT-3.5 Turbo and GPT-4 Turbo, generally agreed and favored the revised paragraphs over the original ones (revision score above zero) in most cases.
 The only section where the original paragraphs were clearly preferred was the Abstract of the PhenoPLIER and Epistasis manuscripts.
 GPT-3.5 Turbo showed a preference for the original abstract of PhenoPLIER in most cases, and the model rationale (Supplementary File 5) aligns with our human assessment: the original abstract provides a more "detailed explanation" of the approaches and a "comprehensive overview of the research."
@@ -451,15 +452,18 @@ We found that most paragraphs were enhanced, while in some cases the model remov
 The AI model also highlighted certain paragraphs that were difficult to revise, which could pose challenges for human readers as well.
 
 
-We designed section-specific prompts to guide the revision of text using GPT-3.
-Surprisingly, in one Methods section, the model detected an error when referencing a symbol in an equation that had been overlooked by humans.
-However, revising abstracts proved more challenging for the model, as revisions often removed background information about the research problem.
+Our approach has some limitations.
+We found that revising abstracts proved more challenging for the model, as revisions often removed background information about the research problem.
 There are opportunities to improve the AI-based revisions, such as further refining prompts using few-shot learning [@doi:10.1145/3386252], or fine-tuning the model using an additional corpus of academic writing focused on particularly challenging sections.
 Fine-tuning using preprint-publication pairs [@doi:10.1371/journal.pbio.3001470] may help to identify sections or phrases likely to be changed during peer review.
 Our approach processed each paragraph of the text but lacked a contextual thread between queries, which mainly affected the Results and Methods sections.
 Using chatbots that retain context could enable the revision of individual paragraphs while considering previously processed text.
 We plan to update our workflow to support this strategy.
-Open and semi-open models, such as BLOOM [@arxiv:2211.05100], Meta's Llama 2 [@arxiv:2307.09288], and Mistral 7B [@arxiv:2310.06825], are growing in popularity and capabilities, but they lack the user-friendly OpenAI API.
+Regarding the LLM used, open and semi-open models, such as BLOOM [@arxiv:2211.05100], Meta's Llama 2 [@arxiv:2307.09288], and Mistral 7B [@arxiv:2310.06825], are growing in popularity and capabilities, but they lack the user-friendly OpenAI API.
+We used the LLM-as-a-Judge method to automatically assess the quality of revisions, which has limitations such as the self-enhancement bias where LLMs tend to favor text generated by themselves.
+Although our approach is based on revising human-generated text (rather than generating answers from scratch), we used two LLM judges, GPT-3.5 and GPT-4, to address this potential issue.
+These two models have shown limited self-enhancement bias and high alignment with human preferences [@arxiv:2306.05685].
+In this study, we found that the automated assessments were consistent with our human evaluations.
 Despite these limitations, we found that models captured the main ideas and generated a revision that often communicated the intended meaning more clearly and concisely.
 While our study focused on OpenAI's GPT-3 and GPT-3.5 Turbo for revisions, the Manubot AI Editor is prepared to support future models.
 
