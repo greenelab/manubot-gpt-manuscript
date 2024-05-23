@@ -29,7 +29,7 @@
    export CURR_VER="v04.0"
    ```
 
-1. Tag the current version of the latex file (do not push yet):
+1. Commit current changes to the latex files (added from Markdown), and tag the commit (do not push yet):
    ```bash
    git tag -f ${CURR_VER} <commit hash>
    ```
