@@ -25,8 +25,8 @@
 
 1. Define versions to compare:
    ```bash
-   export PREV_VER="v02.1"
-   export CURR_VER="v03.0"
+   export PREV_VER="v03.0"
+   export CURR_VER="v04.0"
    ```
 
 1. Tag the current version of the latex file (do not push yet):
