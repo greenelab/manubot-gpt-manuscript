@@ -1,7 +1,7 @@
 biochatter
 biocypher
 biomedicine
-CCC
+ccc
 centric
 cgreene
 chatbots
@@ -11,7 +11,7 @@ CRISPR
 datasets
 Davinci
 DOCX
-Epistasis
+epistasis
 GBMF
 genomic
 germline
@@ -22,10 +22,10 @@ GWAS
 HD
 highlighed
 ICML
-llm
+LLM
 LLMs
 LV
-ManubotAI
+manubotai
 Meta’s
 miltondp
 multiline

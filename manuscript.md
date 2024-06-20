@@ -25,8 +25,8 @@ header-includes: |
   <meta name="dc.date" content="2024-06-14" />
   <meta name="citation_publication_date" content="2024-06-14" />
   <meta property="article:published_time" content="2024-06-14" />
-  <meta name="dc.modified" content="2024-06-20T04:38:44+00:00" />
-  <meta property="article:modified_time" content="2024-06-20T04:38:44+00:00" />
+  <meta name="dc.modified" content="2024-06-20T04:39:44+00:00" />
+  <meta property="article:modified_time" content="2024-06-20T04:39:44+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/ef412673b74f6808aa749ec807f97a942cf661c2/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/ef412673b74f6808aa749ec807f97a942cf661c2/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/ef412673b74f6808aa749ec807f97a942cf661c2/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/b8edba151bf4e9179811d3ccbc73b7f90e52c100/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/b8edba151bf4e9179811d3ccbc73b7f90e52c100/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/b8edba151bf4e9179811d3ccbc73b7f90e52c100/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,14 +69,14 @@ manubot-clear-requests-cache: false
 
 
 
-_A DOI-citable version of this manuscript is available at<br /><https://doi.org/10.1093/jamia/ocae139>_.
+_A DOI-citable version of this manuscript is available at<br /><https://doi.org/10.1093/jamia/ocae139>_
 
 <!-- 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/ef412673b74f6808aa749ec807f97a942cf661c2/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/b8edba151bf4e9179811d3ccbc73b7f90e52c100/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@ef41267](https://github.com/greenelab/manubot-gpt-manuscript/tree/ef412673b74f6808aa749ec807f97a942cf661c2)
+from [greenelab/manubot-gpt-manuscript@b8edba1](https://github.com/greenelab/manubot-gpt-manuscript/tree/b8edba151bf4e9179811d3ccbc73b7f90e52c100)
 on June 20, 2024.
 </em></small> -->
 
