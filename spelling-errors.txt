@@ -11,7 +11,7 @@ CRISPR
 datasets
 Davinci
 DOCX
-epistasis
+Epistasis
 GBMF
 genomic
 germline
@@ -25,7 +25,7 @@ ICML
 llm
 LLMs
 LV
-manubotai
+ManubotAI
 Meta’s
 miltondp
 multiline
