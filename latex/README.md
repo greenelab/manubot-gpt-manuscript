@@ -7,6 +7,8 @@
 
 1. Use a diff tool to keep the desired changes.
 
+1. Open the file build_latex.sh and update the version in the lines where files are moved.
+
 1. Run:
    ```bash
    bash build_latex.sh
