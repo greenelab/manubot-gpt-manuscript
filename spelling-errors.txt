@@ -1,7 +1,7 @@
-biochatter
+BioChatter
 biocypher
 biomedicine
-ccc
+CCC
 centric
 cgreene
 chatbots
@@ -11,7 +11,7 @@ CRISPR
 datasets
 Davinci
 DOCX
-epistasis
+Epistasis
 GBMF
 genomic
 germline

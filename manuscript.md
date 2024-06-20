@@ -7,7 +7,7 @@ keywords:
 - scholarly publishing
 - software
 lang: en-US
-date-meta: '2024-05-23'
+date-meta: '2024-06-14'
 author-meta:
 - Milton Pividori
 - Casey S. Greene
@@ -22,11 +22,11 @@ header-includes: |
   <meta name="citation_title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="og:title" content="A publishing infrastructure for AI-assisted academic authoring" />
   <meta property="twitter:title" content="A publishing infrastructure for AI-assisted academic authoring" />
-  <meta name="dc.date" content="2024-05-23" />
-  <meta name="citation_publication_date" content="2024-05-23" />
-  <meta property="article:published_time" content="2024-05-23" />
-  <meta name="dc.modified" content="2024-05-23T05:05:24+00:00" />
-  <meta property="article:modified_time" content="2024-05-23T05:05:24+00:00" />
+  <meta name="dc.date" content="2024-06-14" />
+  <meta name="citation_publication_date" content="2024-06-14" />
+  <meta property="article:published_time" content="2024-06-14" />
+  <meta name="dc.modified" content="2024-06-20T04:33:30+00:00" />
+  <meta property="article:modified_time" content="2024-06-20T04:33:30+00:00" />
   <meta name="dc.language" content="en-US" />
   <meta name="citation_language" content="en-US" />
   <meta name="dc.relation.ispartof" content="Manubot" />
@@ -49,9 +49,9 @@ header-includes: |
   <meta name="citation_fulltext_html_url" content="https://greenelab.github.io/manubot-gpt-manuscript/" />
   <meta name="citation_pdf_url" content="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
   <link rel="alternate" type="application/pdf" href="https://greenelab.github.io/manubot-gpt-manuscript/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/3df517f3c6d4b6c7e6cc33eb285f66bec5d4432b/" />
-  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/3df517f3c6d4b6c7e6cc33eb285f66bec5d4432b/" />
-  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/3df517f3c6d4b6c7e6cc33eb285f66bec5d4432b/manuscript.pdf" />
+  <link rel="alternate" type="text/html" href="https://greenelab.github.io/manubot-gpt-manuscript/v/e767f1928098399beb5eff07678b15554512b951/" />
+  <meta name="manubot_html_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/e767f1928098399beb5eff07678b15554512b951/" />
+  <meta name="manubot_pdf_url_versioned" content="https://greenelab.github.io/manubot-gpt-manuscript/v/e767f1928098399beb5eff07678b15554512b951/manuscript.pdf" />
   <meta property="og:type" content="article" />
   <meta property="twitter:card" content="summary_large_image" />
   <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
@@ -69,17 +69,18 @@ manubot-clear-requests-cache: false
 
 
 
-_A DOI-citable version of this manuscript is available at <https://doi.org/10.1101/2023.01.21.525030>_.
+_A DOI-citable version of this manuscript is available at<br /><https://doi.org/10.1093/jamia/ocae139>_.
 
 
 <small><em>
 This manuscript
-([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/3df517f3c6d4b6c7e6cc33eb285f66bec5d4432b/))
+([permalink](https://greenelab.github.io/manubot-gpt-manuscript/v/e767f1928098399beb5eff07678b15554512b951/))
 was automatically generated
-from [greenelab/manubot-gpt-manuscript@3df517f](https://github.com/greenelab/manubot-gpt-manuscript/tree/3df517f3c6d4b6c7e6cc33eb285f66bec5d4432b)
-on May 23, 2024.
+from [greenelab/manubot-gpt-manuscript@e767f19](https://github.com/greenelab/manubot-gpt-manuscript/tree/e767f1928098399beb5eff07678b15554512b951)
+on June 20, 2024.
 </em></small>
 
+Published: June 14, 2024
 
 
 ## Authors
