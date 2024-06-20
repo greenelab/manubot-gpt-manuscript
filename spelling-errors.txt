@@ -1,4 +1,4 @@
-BioChatter
+biochatter
 biocypher
 biomedicine
 CCC
@@ -11,7 +11,7 @@ CRISPR
 datasets
 Davinci
 DOCX
-Epistasis
+epistasis
 GBMF
 genomic
 germline
@@ -22,7 +22,7 @@ GWAS
 HD
 highlighed
 ICML
-LLM
+llm
 LLMs
 LV
 manubotai
@@ -33,7 +33,7 @@ MultiXcan
 mutator
 OpenAI
 OpenAI’s
-phenoplier
+PhenoPLIER
 Pividori
 PrediXcan
 preprint
